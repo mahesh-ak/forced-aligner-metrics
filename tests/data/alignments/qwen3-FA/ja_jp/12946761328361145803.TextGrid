@@ -1,0 +1,154 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.6
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.6
+		intervals: size = 35
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.6
+				text = ""
+			intervals [2]:
+				xmin = 1.6
+				xmax = 2.08
+				text = "小さい"
+			intervals [3]:
+				xmin = 2.08
+				xmax = 2.56
+				text = "島々"
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.72
+				text = "の"
+			intervals [5]:
+				xmin = 2.72
+				xmax = 3.2
+				text = "大半"
+			intervals [6]:
+				xmin = 3.2
+				xmax = 3.28
+				text = ""
+			intervals [7]:
+				xmin = 3.28
+				xmax = 3.6
+				text = "独立"
+			intervals [8]:
+				xmin = 3.6
+				xmax = 3.68
+				text = ""
+			intervals [9]:
+				xmin = 3.68
+				xmax = 3.84
+				text = "国"
+			intervals [10]:
+				xmin = 3.84
+				xmax = 4.0
+				text = ""
+			intervals [11]:
+				xmin = 4.0
+				xmax = 4.16
+				text = "か"
+			intervals [12]:
+				xmin = 4.16
+				xmax = 4.64
+				text = ""
+			intervals [13]:
+				xmin = 4.64
+				xmax = 4.88
+				text = "また"
+			intervals [14]:
+				xmin = 4.88
+				xmax = 5.04
+				text = "は"
+			intervals [15]:
+				xmin = 5.04
+				xmax = 5.52
+				text = "フランス"
+			intervals [16]:
+				xmin = 5.52
+				xmax = 5.6
+				text = "に"
+			intervals [17]:
+				xmin = 5.6
+				xmax = 6.08
+				text = "関係"
+			intervals [18]:
+				xmin = 6.08
+				xmax = 6.32
+				text = "する"
+			intervals [19]:
+				xmin = 6.32
+				xmax = 6.56
+				text = ""
+			intervals [20]:
+				xmin = 6.56
+				xmax = 6.88
+				text = "国々"
+			intervals [21]:
+				xmin = 6.88
+				xmax = 7.04
+				text = ""
+			intervals [22]:
+				xmin = 7.04
+				xmax = 7.12
+				text = "で"
+			intervals [23]:
+				xmin = 7.12
+				xmax = 7.36
+				text = "あり"
+			intervals [24]:
+				xmin = 7.36
+				xmax = 7.84
+				text = ""
+			intervals [25]:
+				xmin = 7.84
+				xmax = 8.24
+				text = "有名"
+			intervals [26]:
+				xmin = 8.24
+				xmax = 8.4
+				text = "な"
+			intervals [27]:
+				xmin = 8.4
+				xmax = 8.72
+				text = ""
+			intervals [28]:
+				xmin = 8.72
+				xmax = 9.04
+				text = "高級"
+			intervals [29]:
+				xmin = 9.04
+				xmax = 9.12
+				text = ""
+			intervals [30]:
+				xmin = 9.12
+				xmax = 9.44
+				text = "ビーチ"
+			intervals [31]:
+				xmin = 9.44
+				xmax = 9.92
+				text = "リゾート"
+			intervals [32]:
+				xmin = 9.92
+				xmax = 10.0
+				text = "も"
+			intervals [33]:
+				xmin = 10.0
+				xmax = 10.24
+				text = "あり"
+			intervals [34]:
+				xmin = 10.24
+				xmax = 10.56
+				text = "ます"
+			intervals [35]:
+				xmin = 10.56
+				xmax = 12.6
+				text = ""

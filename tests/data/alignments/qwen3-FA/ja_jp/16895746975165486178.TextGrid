@@ -1,0 +1,98 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 11.82
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 11.82
+		intervals: size = 21
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.32
+				text = ""
+			intervals [2]:
+				xmin = 2.32
+				xmax = 2.64
+				text = "脳"
+			intervals [3]:
+				xmin = 2.64
+				xmax = 3.04
+				text = "病理"
+			intervals [4]:
+				xmin = 3.04
+				xmax = 3.36
+				text = "と"
+			intervals [5]:
+				xmin = 3.36
+				xmax = 3.44
+				text = ""
+			intervals [6]:
+				xmin = 3.44
+				xmax = 3.84
+				text = "行動"
+			intervals [7]:
+				xmin = 3.84
+				xmax = 4.0
+				text = "の"
+			intervals [8]:
+				xmin = 4.0
+				xmax = 4.48
+				text = "相関"
+			intervals [9]:
+				xmin = 4.48
+				xmax = 4.96
+				text = "関係"
+			intervals [10]:
+				xmin = 4.96
+				xmax = 5.28
+				text = "は"
+			intervals [11]:
+				xmin = 5.28
+				xmax = 5.44
+				text = ""
+			intervals [12]:
+				xmin = 5.44
+				xmax = 5.76
+				text = "科学"
+			intervals [13]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "者"
+			intervals [14]:
+				xmin = 5.92
+				xmax = 6.16
+				text = "たち"
+			intervals [15]:
+				xmin = 6.16
+				xmax = 6.32
+				text = "の"
+			intervals [16]:
+				xmin = 6.32
+				xmax = 6.72
+				text = "研究"
+			intervals [17]:
+				xmin = 6.72
+				xmax = 6.96
+				text = "を"
+			intervals [18]:
+				xmin = 6.96
+				xmax = 7.6
+				text = "裏付ける"
+			intervals [19]:
+				xmin = 7.6
+				xmax = 7.84
+				text = "もの"
+			intervals [20]:
+				xmin = 7.84
+				xmax = 8.24
+				text = "です"
+			intervals [21]:
+				xmin = 8.24
+				xmax = 11.82
+				text = ""

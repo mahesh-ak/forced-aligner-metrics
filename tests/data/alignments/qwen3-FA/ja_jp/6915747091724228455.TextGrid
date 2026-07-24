@@ -1,0 +1,174 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.86
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 13.86
+		intervals: size = 40
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.84
+				text = ""
+			intervals [2]:
+				xmin = 1.84
+				xmax = 2.24
+				text = "ムハンマド"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.48
+				text = "は"
+			intervals [4]:
+				xmin = 2.48
+				xmax = 2.8
+				text = "日常"
+			intervals [5]:
+				xmin = 2.8
+				xmax = 3.2
+				text = "生活"
+			intervals [6]:
+				xmin = 3.2
+				xmax = 3.28
+				text = "を"
+			intervals [7]:
+				xmin = 3.28
+				xmax = 3.52
+				text = "超え"
+			intervals [8]:
+				xmin = 3.52
+				xmax = 3.6
+				text = "た"
+			intervals [9]:
+				xmin = 3.6
+				xmax = 4.0
+				text = "問題"
+			intervals [10]:
+				xmin = 4.0
+				xmax = 4.32
+				text = "深い"
+			intervals [11]:
+				xmin = 4.32
+				xmax = 4.72
+				text = "関心"
+			intervals [12]:
+				xmin = 4.72
+				xmax = 4.8
+				text = "を"
+			intervals [13]:
+				xmin = 4.8
+				xmax = 4.88
+				text = "持っ"
+			intervals [14]:
+				xmin = 4.88
+				xmax = 5.04
+				text = "てい"
+			intervals [15]:
+				xmin = 5.04
+				xmax = 5.44
+				text = "ました"
+			intervals [16]:
+				xmin = 5.44
+				xmax = 5.84
+				text = ""
+			intervals [17]:
+				xmin = 5.84
+				xmax = 6.0
+				text = "彼"
+			intervals [18]:
+				xmin = 6.0
+				xmax = 6.16
+				text = "は"
+			intervals [19]:
+				xmin = 6.16
+				xmax = 6.48
+				text = "瞑想"
+			intervals [20]:
+				xmin = 6.48
+				xmax = 6.56
+				text = "の"
+			intervals [21]:
+				xmin = 6.56
+				xmax = 6.8
+				text = "ため"
+			intervals [22]:
+				xmin = 6.8
+				xmax = 6.96
+				text = "に"
+			intervals [23]:
+				xmin = 6.96
+				xmax = 7.44
+				text = "ヌール"
+			intervals [24]:
+				xmin = 7.44
+				xmax = 7.52
+				text = ""
+			intervals [25]:
+				xmin = 7.52
+				xmax = 7.84
+				text = "光"
+			intervals [26]:
+				xmin = 7.84
+				xmax = 7.92
+				text = "の"
+			intervals [27]:
+				xmin = 7.92
+				xmax = 8.16
+				text = "山"
+			intervals [28]:
+				xmin = 8.16
+				xmax = 8.32
+				text = "に"
+			intervals [29]:
+				xmin = 8.32
+				xmax = 8.56
+				text = "ある"
+			intervals [30]:
+				xmin = 8.56
+				xmax = 9.04
+				text = "ヒーラ"
+			intervals [31]:
+				xmin = 9.04
+				xmax = 9.2
+				text = "と"
+			intervals [32]:
+				xmin = 9.2
+				xmax = 9.36
+				text = "呼ば"
+			intervals [33]:
+				xmin = 9.36
+				xmax = 9.52
+				text = "れる"
+			intervals [34]:
+				xmin = 9.52
+				xmax = 9.84
+				text = "洞窟"
+			intervals [35]:
+				xmin = 9.84
+				xmax = 10.0
+				text = ""
+			intervals [36]:
+				xmin = 10.0
+				xmax = 10.24
+				text = "よく"
+			intervals [37]:
+				xmin = 10.24
+				xmax = 10.56
+				text = "訪れ"
+			intervals [38]:
+				xmin = 10.56
+				xmax = 10.8
+				text = "まし"
+			intervals [39]:
+				xmin = 10.8
+				xmax = 10.96
+				text = "た"
+			intervals [40]:
+				xmin = 10.96
+				xmax = 13.86
+				text = ""

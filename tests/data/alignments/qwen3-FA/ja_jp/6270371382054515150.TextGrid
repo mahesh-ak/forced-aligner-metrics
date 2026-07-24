@@ -1,0 +1,198 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 16.38
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 16.38
+		intervals: size = 46
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.68
+				text = ""
+			intervals [2]:
+				xmin = 1.68
+				xmax = 2.16
+				text = "社会"
+			intervals [3]:
+				xmin = 2.16
+				xmax = 2.72
+				text = "生活"
+			intervals [4]:
+				xmin = 2.72
+				xmax = 2.8
+				text = ""
+			intervals [5]:
+				xmin = 2.8
+				xmax = 3.12
+				text = "を"
+			intervals [6]:
+				xmin = 3.12
+				xmax = 3.44
+				text = ""
+			intervals [7]:
+				xmin = 3.44
+				xmax = 3.92
+				text = "営む"
+			intervals [8]:
+				xmin = 3.92
+				xmax = 4.0
+				text = ""
+			intervals [9]:
+				xmin = 4.0
+				xmax = 4.16
+				text = "人"
+			intervals [10]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "は"
+			intervals [11]:
+				xmin = 4.32
+				xmax = 4.48
+				text = ""
+			intervals [12]:
+				xmin = 4.48
+				xmax = 4.72
+				text = "誰"
+			intervals [13]:
+				xmin = 4.72
+				xmax = 4.8
+				text = "で"
+			intervals [14]:
+				xmin = 4.8
+				xmax = 5.04
+				text = "も"
+			intervals [15]:
+				xmin = 5.04
+				xmax = 5.84
+				text = ""
+			intervals [16]:
+				xmin = 5.84
+				xmax = 6.4
+				text = "交通"
+			intervals [17]:
+				xmin = 6.4
+				xmax = 6.56
+				text = ""
+			intervals [18]:
+				xmin = 6.56
+				xmax = 6.88
+				text = "機関"
+			intervals [19]:
+				xmin = 6.88
+				xmax = 6.96
+				text = ""
+			intervals [20]:
+				xmin = 6.96
+				xmax = 7.28
+				text = "利用"
+			intervals [21]:
+				xmin = 7.28
+				xmax = 7.44
+				text = "し"
+			intervals [22]:
+				xmin = 7.44
+				xmax = 7.6
+				text = "ます"
+			intervals [23]:
+				xmin = 7.6
+				xmax = 8.16
+				text = ""
+			intervals [24]:
+				xmin = 8.16
+				xmax = 8.4
+				text = "その"
+			intervals [25]:
+				xmin = 8.4
+				xmax = 8.48
+				text = ""
+			intervals [26]:
+				xmin = 8.48
+				xmax = 9.12
+				text = "ほとんど"
+			intervals [27]:
+				xmin = 9.12
+				xmax = 9.76
+				text = ""
+			intervals [28]:
+				xmin = 9.76
+				xmax = 10.32
+				text = "全員"
+			intervals [29]:
+				xmin = 10.32
+				xmax = 10.48
+				text = "が"
+			intervals [30]:
+				xmin = 10.48
+				xmax = 10.72
+				text = ""
+			intervals [31]:
+				xmin = 10.72
+				xmax = 11.04
+				text = "交通"
+			intervals [32]:
+				xmin = 11.04
+				xmax = 11.44
+				text = ""
+			intervals [33]:
+				xmin = 11.44
+				xmax = 12.0
+				text = "システム"
+			intervals [34]:
+				xmin = 12.0
+				xmax = 12.08
+				text = ""
+			intervals [35]:
+				xmin = 12.08
+				xmax = 12.24
+				text = "に"
+			intervals [36]:
+				xmin = 12.24
+				xmax = 12.8
+				text = ""
+			intervals [37]:
+				xmin = 12.8
+				xmax = 13.12
+				text = "不満"
+			intervals [38]:
+				xmin = 13.12
+				xmax = 13.28
+				text = ""
+			intervals [39]:
+				xmin = 13.28
+				xmax = 13.44
+				text = "を"
+			intervals [40]:
+				xmin = 13.44
+				xmax = 13.6
+				text = ""
+			intervals [41]:
+				xmin = 13.6
+				xmax = 13.84
+				text = "抱い"
+			intervals [42]:
+				xmin = 13.84
+				xmax = 14.0
+				text = ""
+			intervals [43]:
+				xmin = 14.0
+				xmax = 14.08
+				text = "て"
+			intervals [44]:
+				xmin = 14.08
+				xmax = 14.16
+				text = "い"
+			intervals [45]:
+				xmin = 14.16
+				xmax = 14.4
+				text = "ます"
+			intervals [46]:
+				xmin = 14.4
+				xmax = 16.38
+				text = ""

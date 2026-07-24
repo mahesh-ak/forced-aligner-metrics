@@ -1,0 +1,186 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.5
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 13.5
+		intervals: size = 43
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.84
+				text = ""
+			intervals [2]:
+				xmin = 1.84
+				xmax = 2.08
+				text = "実"
+			intervals [3]:
+				xmin = 2.08
+				xmax = 2.16
+				text = "に"
+			intervals [4]:
+				xmin = 2.16
+				xmax = 2.56
+				text = "均整"
+			intervals [5]:
+				xmin = 2.56
+				xmax = 2.72
+				text = "取れ"
+			intervals [6]:
+				xmin = 2.72
+				xmax = 2.88
+				text = "た"
+			intervals [7]:
+				xmin = 2.88
+				xmax = 3.12
+				text = "体"
+			intervals [8]:
+				xmin = 3.12
+				xmax = 3.28
+				text = "で"
+			intervals [9]:
+				xmin = 3.28
+				xmax = 3.68
+				text = "運動"
+			intervals [10]:
+				xmin = 3.68
+				xmax = 4.0
+				text = "能力"
+			intervals [11]:
+				xmin = 4.0
+				xmax = 4.16
+				text = "の"
+			intervals [12]:
+				xmin = 4.16
+				xmax = 4.48
+				text = "高い"
+			intervals [13]:
+				xmin = 4.48
+				xmax = 4.64
+				text = "虎"
+			intervals [14]:
+				xmin = 4.64
+				xmax = 4.88
+				text = "は"
+			intervals [15]:
+				xmin = 4.88
+				xmax = 4.96
+				text = ""
+			intervals [16]:
+				xmin = 4.96
+				xmax = 5.28
+				text = "うまく"
+			intervals [17]:
+				xmin = 5.28
+				xmax = 5.36
+				text = "は"
+			intervals [18]:
+				xmin = 5.36
+				xmax = 5.6
+				text = "ない"
+			intervals [19]:
+				xmin = 5.6
+				xmax = 5.76
+				text = "もの"
+			intervals [20]:
+				xmin = 5.76
+				xmax = 6.0
+				text = "の"
+			intervals [21]:
+				xmin = 6.0
+				xmax = 6.08
+				text = ""
+			intervals [22]:
+				xmin = 6.08
+				xmax = 6.24
+				text = "登っ"
+			intervals [23]:
+				xmin = 6.24
+				xmax = 6.64
+				text = "たり"
+			intervals [24]:
+				xmin = 6.64
+				xmax = 6.88
+				text = "泳い"
+			intervals [25]:
+				xmin = 6.88
+				xmax = 7.2
+				text = "だり"
+			intervals [26]:
+				xmin = 7.2
+				xmax = 7.52
+				text = "長い"
+			intervals [27]:
+				xmin = 7.52
+				xmax = 7.76
+				text = "距離"
+			intervals [28]:
+				xmin = 7.76
+				xmax = 7.84
+				text = "を"
+			intervals [29]:
+				xmin = 7.84
+				xmax = 8.08
+				text = "跳ん"
+			intervals [30]:
+				xmin = 8.08
+				xmax = 8.32
+				text = "だり"
+			intervals [31]:
+				xmin = 8.32
+				xmax = 8.88
+				text = "たくましい"
+			intervals [32]:
+				xmin = 8.88
+				xmax = 9.28
+				text = "人間"
+			intervals [33]:
+				xmin = 9.28
+				xmax = 9.36
+				text = "の"
+			intervals [34]:
+				xmin = 9.36
+				xmax = 9.44
+				text = "五"
+			intervals [35]:
+				xmin = 9.44
+				xmax = 9.6
+				text = "倍"
+			intervals [36]:
+				xmin = 9.6
+				xmax = 9.76
+				text = "の"
+			intervals [37]:
+				xmin = 9.76
+				xmax = 10.0
+				text = "力"
+			intervals [38]:
+				xmin = 10.0
+				xmax = 10.16
+				text = "で"
+			intervals [39]:
+				xmin = 10.16
+				xmax = 10.4
+				text = "引っ張っ"
+			intervals [40]:
+				xmin = 10.4
+				xmax = 10.72
+				text = "たり"
+			intervals [41]:
+				xmin = 10.72
+				xmax = 10.88
+				text = "でき"
+			intervals [42]:
+				xmin = 10.88
+				xmax = 11.28
+				text = "ます"
+			intervals [43]:
+				xmin = 11.28
+				xmax = 13.5
+				text = ""

@@ -1,0 +1,126 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 10.68
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 10.68
+		intervals: size = 28
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.08
+				text = ""
+			intervals [2]:
+				xmin = 2.08
+				xmax = 2.4
+				text = "南"
+			intervals [3]:
+				xmin = 2.4
+				xmax = 2.8
+				text = "アフリカ"
+			intervals [4]:
+				xmin = 2.8
+				xmax = 2.88
+				text = "に"
+			intervals [5]:
+				xmin = 2.88
+				xmax = 3.04
+				text = "ある"
+			intervals [6]:
+				xmin = 3.04
+				xmax = 3.36
+				text = "すべて"
+			intervals [7]:
+				xmin = 3.36
+				xmax = 3.44
+				text = ""
+			intervals [8]:
+				xmin = 3.44
+				xmax = 3.52
+				text = "の"
+			intervals [9]:
+				xmin = 3.52
+				xmax = 3.92
+				text = "国立"
+			intervals [10]:
+				xmin = 3.92
+				xmax = 4.24
+				text = "公園"
+			intervals [11]:
+				xmin = 4.24
+				xmax = 4.32
+				text = "と"
+			intervals [12]:
+				xmin = 4.32
+				xmax = 4.8
+				text = "同様"
+			intervals [13]:
+				xmin = 4.8
+				xmax = 4.88
+				text = "に"
+			intervals [14]:
+				xmin = 4.88
+				xmax = 5.6
+				text = ""
+			intervals [15]:
+				xmin = 5.6
+				xmax = 5.76
+				text = "この"
+			intervals [16]:
+				xmin = 5.76
+				xmax = 6.16
+				text = "公園"
+			intervals [17]:
+				xmin = 6.16
+				xmax = 6.32
+				text = "に"
+			intervals [18]:
+				xmin = 6.32
+				xmax = 6.4
+				text = "は"
+			intervals [19]:
+				xmin = 6.4
+				xmax = 6.88
+				text = "毎日"
+			intervals [20]:
+				xmin = 6.88
+				xmax = 7.12
+				text = "保護"
+			intervals [21]:
+				xmin = 7.12
+				xmax = 7.2
+				text = "費"
+			intervals [22]:
+				xmin = 7.2
+				xmax = 7.28
+				text = "と"
+			intervals [23]:
+				xmin = 7.28
+				xmax = 7.76
+				text = "入園"
+			intervals [24]:
+				xmin = 7.76
+				xmax = 7.92
+				text = "料"
+			intervals [25]:
+				xmin = 7.92
+				xmax = 8.0
+				text = "が"
+			intervals [26]:
+				xmin = 8.0
+				xmax = 8.32
+				text = "かかり"
+			intervals [27]:
+				xmin = 8.32
+				xmax = 8.64
+				text = "ます"
+			intervals [28]:
+				xmin = 8.64
+				xmax = 10.68
+				text = ""

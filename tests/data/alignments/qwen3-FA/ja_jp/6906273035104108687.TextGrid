@@ -1,0 +1,114 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 10.56
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 10.56
+		intervals: size = 25
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.08
+				text = ""
+			intervals [2]:
+				xmin = 2.08
+				xmax = 2.64
+				text = "暖かい"
+			intervals [3]:
+				xmin = 2.64
+				xmax = 3.2
+				text = "チョコレート"
+			intervals [4]:
+				xmin = 3.2
+				xmax = 3.52
+				text = "は"
+			intervals [5]:
+				xmin = 3.52
+				xmax = 3.92
+				text = "ベルギー"
+			intervals [6]:
+				xmin = 3.92
+				xmax = 4.0
+				text = "の"
+			intervals [7]:
+				xmin = 4.0
+				xmax = 4.4
+				text = "基準"
+			intervals [8]:
+				xmin = 4.4
+				xmax = 4.48
+				text = "を"
+			intervals [9]:
+				xmin = 4.48
+				xmax = 4.8
+				text = "満たす"
+			intervals [10]:
+				xmin = 4.8
+				xmax = 5.28
+				text = "飲み物"
+			intervals [11]:
+				xmin = 5.28
+				xmax = 5.52
+				text = "です"
+			intervals [12]:
+				xmin = 5.52
+				xmax = 5.92
+				text = ""
+			intervals [13]:
+				xmin = 5.92
+				xmax = 6.16
+				text = "果汁"
+			intervals [14]:
+				xmin = 6.16
+				xmax = 6.64
+				text = "飲料"
+			intervals [15]:
+				xmin = 6.64
+				xmax = 6.72
+				text = "は"
+			intervals [16]:
+				xmin = 6.72
+				xmax = 6.96
+				text = ""
+			intervals [17]:
+				xmin = 6.96
+				xmax = 7.2
+				text = "値"
+			intervals [18]:
+				xmin = 7.2
+				xmax = 7.36
+				text = "ます"
+			intervals [19]:
+				xmin = 7.36
+				xmax = 7.52
+				text = "が"
+			intervals [20]:
+				xmin = 7.52
+				xmax = 7.68
+				text = ""
+			intervals [21]:
+				xmin = 7.68
+				xmax = 8.0
+				text = "たいへん"
+			intervals [22]:
+				xmin = 8.0
+				xmax = 8.16
+				text = "美味"
+			intervals [23]:
+				xmin = 8.16
+				xmax = 8.24
+				text = ""
+			intervals [24]:
+				xmin = 8.24
+				xmax = 8.48
+				text = "です"
+			intervals [25]:
+				xmin = 8.48
+				xmax = 10.56
+				text = ""

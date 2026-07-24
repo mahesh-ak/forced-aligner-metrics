@@ -1,0 +1,114 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.9
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.9
+		intervals: size = 25
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.08
+				text = ""
+			intervals [2]:
+				xmin = 2.08
+				xmax = 2.4
+				text = "わずか"
+			intervals [3]:
+				xmin = 2.4
+				xmax = 2.56
+				text = "二"
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.96
+				text = "週間"
+			intervals [5]:
+				xmin = 2.96
+				xmax = 3.12
+				text = "で"
+			intervals [6]:
+				xmin = 3.12
+				xmax = 3.52
+				text = "アメリカ"
+			intervals [7]:
+				xmin = 3.52
+				xmax = 3.68
+				text = "軍"
+			intervals [8]:
+				xmin = 3.68
+				xmax = 3.76
+				text = "と"
+			intervals [9]:
+				xmin = 3.76
+				xmax = 4.0
+				text = "自由"
+			intervals [10]:
+				xmin = 4.0
+				xmax = 4.08
+				text = ""
+			intervals [11]:
+				xmin = 4.08
+				xmax = 4.48
+				text = "フランス"
+			intervals [12]:
+				xmin = 4.48
+				xmax = 4.64
+				text = "軍"
+			intervals [13]:
+				xmin = 4.64
+				xmax = 4.8
+				text = "は"
+			intervals [14]:
+				xmin = 4.8
+				xmax = 5.12
+				text = "南"
+			intervals [15]:
+				xmin = 5.12
+				xmax = 5.44
+				text = "フランス"
+			intervals [16]:
+				xmin = 5.44
+				xmax = 5.52
+				text = "を"
+			intervals [17]:
+				xmin = 5.52
+				xmax = 5.92
+				text = "解放"
+			intervals [18]:
+				xmin = 5.92
+				xmax = 6.24
+				text = "し"
+			intervals [19]:
+				xmin = 6.24
+				xmax = 6.56
+				text = "ドイツ"
+			intervals [20]:
+				xmin = 6.56
+				xmax = 6.64
+				text = "に"
+			intervals [21]:
+				xmin = 6.64
+				xmax = 6.88
+				text = "向かっ"
+			intervals [22]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "て"
+			intervals [23]:
+				xmin = 7.04
+				xmax = 7.12
+				text = "い"
+			intervals [24]:
+				xmin = 7.12
+				xmax = 7.44
+				text = "ました"
+			intervals [25]:
+				xmin = 7.44
+				xmax = 9.9
+				text = ""

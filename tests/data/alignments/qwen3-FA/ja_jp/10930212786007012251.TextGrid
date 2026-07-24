@@ -1,0 +1,134 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 10.68
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 10.68
+		intervals: size = 30
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.36
+				text = ""
+			intervals [2]:
+				xmin = 1.36
+				xmax = 1.52
+				text = "この"
+			intervals [3]:
+				xmin = 1.52
+				xmax = 1.84
+				text = "都市"
+			intervals [4]:
+				xmin = 1.84
+				xmax = 2.08
+				text = "は"
+			intervals [5]:
+				xmin = 2.08
+				xmax = 2.32
+				text = ""
+			intervals [6]:
+				xmin = 2.32
+				xmax = 2.8
+				text = "アフリカ"
+			intervals [7]:
+				xmin = 2.8
+				xmax = 2.88
+				text = "の"
+			intervals [8]:
+				xmin = 2.88
+				xmax = 3.2
+				text = "都市"
+			intervals [9]:
+				xmin = 3.2
+				xmax = 3.28
+				text = "と"
+			intervals [10]:
+				xmin = 3.28
+				xmax = 3.52
+				text = "いう"
+			intervals [11]:
+				xmin = 3.52
+				xmax = 3.76
+				text = "より"
+			intervals [12]:
+				xmin = 3.76
+				xmax = 4.0
+				text = "も"
+			intervals [13]:
+				xmin = 4.0
+				xmax = 4.48
+				text = "アラビア"
+			intervals [14]:
+				xmin = 4.48
+				xmax = 4.72
+				text = "色"
+			intervals [15]:
+				xmin = 4.72
+				xmax = 4.8
+				text = "が"
+			intervals [16]:
+				xmin = 4.8
+				xmax = 5.28
+				text = "強く"
+			intervals [17]:
+				xmin = 5.28
+				xmax = 6.0
+				text = ""
+			intervals [18]:
+				xmin = 6.0
+				xmax = 6.48
+				text = "国内"
+			intervals [19]:
+				xmin = 6.48
+				xmax = 6.56
+				text = "の"
+			intervals [20]:
+				xmin = 6.56
+				xmax = 6.88
+				text = "他"
+			intervals [21]:
+				xmin = 6.88
+				xmax = 6.96
+				text = "の"
+			intervals [22]:
+				xmin = 6.96
+				xmax = 7.2
+				text = "都市"
+			intervals [23]:
+				xmin = 7.2
+				xmax = 7.36
+				text = "と"
+			intervals [24]:
+				xmin = 7.36
+				xmax = 7.44
+				text = "は"
+			intervals [25]:
+				xmin = 7.44
+				xmax = 7.92
+				text = "対照"
+			intervals [26]:
+				xmin = 7.92
+				xmax = 8.16
+				text = "的"
+			intervals [27]:
+				xmin = 8.16
+				xmax = 8.24
+				text = "な"
+			intervals [28]:
+				xmin = 8.24
+				xmax = 8.72
+				text = "雰囲気"
+			intervals [29]:
+				xmin = 8.72
+				xmax = 9.04
+				text = "です"
+			intervals [30]:
+				xmin = 9.04
+				xmax = 10.68
+				text = ""

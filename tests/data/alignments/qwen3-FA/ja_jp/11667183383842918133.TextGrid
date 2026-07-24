@@ -1,0 +1,182 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.62
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 13.62
+		intervals: size = 42
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.76
+				text = ""
+			intervals [2]:
+				xmin = 1.76
+				xmax = 2.16
+				text = "キャンセル"
+			intervals [3]:
+				xmin = 2.16
+				xmax = 2.48
+				text = "ポリシー"
+			intervals [4]:
+				xmin = 2.48
+				xmax = 2.56
+				text = "は"
+			intervals [5]:
+				xmin = 2.56
+				xmax = 2.96
+				text = "さまざま"
+			intervals [6]:
+				xmin = 2.96
+				xmax = 3.2
+				text = "です"
+			intervals [7]:
+				xmin = 3.2
+				xmax = 3.36
+				text = "が"
+			intervals [8]:
+				xmin = 3.36
+				xmax = 3.44
+				text = ""
+			intervals [9]:
+				xmin = 3.44
+				xmax = 3.68
+				text = "三"
+			intervals [10]:
+				xmin = 3.68
+				xmax = 3.92
+				text = "月"
+			intervals [11]:
+				xmin = 3.92
+				xmax = 4.16
+				text = "下旬"
+			intervals [12]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "の"
+			intervals [13]:
+				xmin = 4.32
+				xmax = 4.56
+				text = "時点"
+			intervals [14]:
+				xmin = 4.56
+				xmax = 4.72
+				text = "で"
+			intervals [15]:
+				xmin = 4.72
+				xmax = 5.2
+				text = "ほとんど"
+			intervals [16]:
+				xmin = 5.2
+				xmax = 5.28
+				text = "の"
+			intervals [17]:
+				xmin = 5.28
+				xmax = 5.68
+				text = "コロナ"
+			intervals [18]:
+				xmin = 5.68
+				xmax = 6.0
+				text = "ウイルス"
+			intervals [19]:
+				xmin = 6.0
+				xmax = 6.4
+				text = "関連"
+			intervals [20]:
+				xmin = 6.4
+				xmax = 6.48
+				text = "の"
+			intervals [21]:
+				xmin = 6.48
+				xmax = 6.88
+				text = "キャンセル"
+			intervals [22]:
+				xmin = 6.88
+				xmax = 7.36
+				text = "ポリシー"
+			intervals [23]:
+				xmin = 7.36
+				xmax = 7.6
+				text = "は"
+			intervals [24]:
+				xmin = 7.6
+				xmax = 8.16
+				text = "オリンピック"
+			intervals [25]:
+				xmin = 8.16
+				xmax = 8.24
+				text = "が"
+			intervals [26]:
+				xmin = 8.24
+				xmax = 8.48
+				text = "予定"
+			intervals [27]:
+				xmin = 8.48
+				xmax = 8.72
+				text = "され"
+			intervals [28]:
+				xmin = 8.72
+				xmax = 8.88
+				text = "て"
+			intervals [29]:
+				xmin = 8.88
+				xmax = 9.12
+				text = "いた"
+			intervals [30]:
+				xmin = 9.12
+				xmax = 9.2
+				text = ""
+			intervals [31]:
+				xmin = 9.2
+				xmax = 9.52
+				text = "二千"
+			intervals [32]:
+				xmin = 9.52
+				xmax = 9.76
+				text = "二十"
+			intervals [33]:
+				xmin = 9.76
+				xmax = 9.92
+				text = "年"
+			intervals [34]:
+				xmin = 9.92
+				xmax = 10.16
+				text = "七"
+			intervals [35]:
+				xmin = 10.16
+				xmax = 10.32
+				text = "月"
+			intervals [36]:
+				xmin = 10.32
+				xmax = 10.4
+				text = ""
+			intervals [37]:
+				xmin = 10.4
+				xmax = 10.64
+				text = "まで"
+			intervals [38]:
+				xmin = 10.64
+				xmax = 10.88
+				text = "延長"
+			intervals [39]:
+				xmin = 10.88
+				xmax = 11.04
+				text = "され"
+			intervals [40]:
+				xmin = 11.04
+				xmax = 11.36
+				text = "ませ"
+			intervals [41]:
+				xmin = 11.36
+				xmax = 11.44
+				text = "ん"
+			intervals [42]:
+				xmin = 11.44
+				xmax = 13.62
+				text = ""

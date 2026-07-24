@@ -1,0 +1,194 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 17.64
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 17.64
+		intervals: size = 45
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.08
+				text = ""
+			intervals [2]:
+				xmin = 2.08
+				xmax = 2.64
+				text = "最後"
+			intervals [3]:
+				xmin = 2.64
+				xmax = 2.8
+				text = "に"
+			intervals [4]:
+				xmin = 2.8
+				xmax = 3.12
+				text = ""
+			intervals [5]:
+				xmin = 3.12
+				xmax = 3.84
+				text = "昆虫"
+			intervals [6]:
+				xmin = 3.84
+				xmax = 4.32
+				text = ""
+			intervals [7]:
+				xmin = 4.32
+				xmax = 4.4
+				text = "げっ歯"
+			intervals [8]:
+				xmin = 4.4
+				xmax = 4.72
+				text = ""
+			intervals [9]:
+				xmin = 4.72
+				xmax = 4.96
+				text = "類"
+			intervals [10]:
+				xmin = 4.96
+				xmax = 5.52
+				text = ""
+			intervals [11]:
+				xmin = 5.52
+				xmax = 5.92
+				text = "トカゲ"
+			intervals [12]:
+				xmin = 5.92
+				xmax = 6.56
+				text = ""
+			intervals [13]:
+				xmin = 6.56
+				xmax = 6.8
+				text = "鳥"
+			intervals [14]:
+				xmin = 6.8
+				xmax = 6.96
+				text = "と"
+			intervals [15]:
+				xmin = 6.96
+				xmax = 7.36
+				text = "いった"
+			intervals [16]:
+				xmin = 7.36
+				xmax = 7.84
+				text = "はるか"
+			intervals [17]:
+				xmin = 7.84
+				xmax = 8.0
+				text = "に"
+			intervals [18]:
+				xmin = 8.0
+				xmax = 8.48
+				text = "多数"
+			intervals [19]:
+				xmin = 8.48
+				xmax = 8.64
+				text = "の"
+			intervals [20]:
+				xmin = 8.64
+				xmax = 9.12
+				text = "小さい"
+			intervals [21]:
+				xmin = 9.12
+				xmax = 9.28
+				text = ""
+			intervals [22]:
+				xmin = 9.28
+				xmax = 9.68
+				text = "獲物"
+			intervals [23]:
+				xmin = 9.68
+				xmax = 9.76
+				text = ""
+			intervals [24]:
+				xmin = 9.76
+				xmax = 10.0
+				text = "餌"
+			intervals [25]:
+				xmin = 10.0
+				xmax = 10.16
+				text = "と"
+			intervals [26]:
+				xmin = 10.16
+				xmax = 10.4
+				text = "する"
+			intervals [27]:
+				xmin = 10.4
+				xmax = 10.48
+				text = ""
+			intervals [28]:
+				xmin = 10.48
+				xmax = 10.88
+				text = "小型"
+			intervals [29]:
+				xmin = 10.88
+				xmax = 11.04
+				text = "の"
+			intervals [30]:
+				xmin = 11.04
+				xmax = 11.36
+				text = "猫"
+			intervals [31]:
+				xmin = 11.36
+				xmax = 11.84
+				text = ""
+			intervals [32]:
+				xmin = 11.84
+				xmax = 12.4
+				text = "野良猫"
+			intervals [33]:
+				xmin = 12.4
+				xmax = 12.48
+				text = "を"
+			intervals [34]:
+				xmin = 12.48
+				xmax = 12.88
+				text = "含む"
+			intervals [35]:
+				xmin = 12.88
+				xmax = 13.12
+				text = ""
+			intervals [36]:
+				xmin = 13.12
+				xmax = 13.36
+				text = "が"
+			intervals [37]:
+				xmin = 13.36
+				xmax = 13.52
+				text = ""
+			intervals [38]:
+				xmin = 13.52
+				xmax = 14.08
+				text = "数多く"
+			intervals [39]:
+				xmin = 14.08
+				xmax = 14.64
+				text = "生息"
+			intervals [40]:
+				xmin = 14.64
+				xmax = 14.8
+				text = "し"
+			intervals [41]:
+				xmin = 14.8
+				xmax = 14.88
+				text = "て"
+			intervals [42]:
+				xmin = 14.88
+				xmax = 14.96
+				text = "い"
+			intervals [43]:
+				xmin = 14.96
+				xmax = 15.04
+				text = ""
+			intervals [44]:
+				xmin = 15.04
+				xmax = 15.36
+				text = "ます"
+			intervals [45]:
+				xmin = 15.36
+				xmax = 17.64
+				text = ""

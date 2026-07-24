@@ -1,0 +1,182 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 16.5
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 16.5
+		intervals: size = 42
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.76
+				text = ""
+			intervals [2]:
+				xmin = 1.76
+				xmax = 2.0
+				text = "漏れ聞い"
+			intervals [3]:
+				xmin = 2.0
+				xmax = 2.08
+				text = "た"
+			intervals [4]:
+				xmin = 2.08
+				xmax = 2.64
+				text = "情報"
+			intervals [5]:
+				xmin = 2.64
+				xmax = 2.72
+				text = "に"
+			intervals [6]:
+				xmin = 2.72
+				xmax = 2.96
+				text = "よれ"
+			intervals [7]:
+				xmin = 2.96
+				xmax = 3.12
+				text = "ば"
+			intervals [8]:
+				xmin = 3.12
+				xmax = 3.52
+				text = ""
+			intervals [9]:
+				xmin = 3.52
+				xmax = 3.92
+				text = "当該"
+			intervals [10]:
+				xmin = 3.92
+				xmax = 4.32
+				text = "文書"
+			intervals [11]:
+				xmin = 4.32
+				xmax = 4.56
+				text = "は"
+			intervals [12]:
+				xmin = 4.56
+				xmax = 4.72
+				text = ""
+			intervals [13]:
+				xmin = 4.72
+				xmax = 5.2
+				text = "国境"
+			intervals [14]:
+				xmin = 5.2
+				xmax = 5.68
+				text = "紛争"
+			intervals [15]:
+				xmin = 5.68
+				xmax = 5.84
+				text = "に"
+			intervals [16]:
+				xmin = 5.84
+				xmax = 6.24
+				text = "言及"
+			intervals [17]:
+				xmin = 6.24
+				xmax = 6.48
+				text = "する"
+			intervals [18]:
+				xmin = 6.48
+				xmax = 6.72
+				text = "もの"
+			intervals [19]:
+				xmin = 6.72
+				xmax = 6.88
+				text = "で"
+			intervals [20]:
+				xmin = 6.88
+				xmax = 7.52
+				text = ""
+			intervals [21]:
+				xmin = 7.52
+				xmax = 8.08
+				text = "パレスチナ"
+			intervals [22]:
+				xmin = 8.08
+				xmax = 8.16
+				text = "の"
+			intervals [23]:
+				xmin = 8.16
+				xmax = 8.64
+				text = "希望"
+			intervals [24]:
+				xmin = 8.64
+				xmax = 8.8
+				text = "は"
+			intervals [25]:
+				xmin = 8.8
+				xmax = 9.04
+				text = ""
+			intervals [26]:
+				xmin = 9.04
+				xmax = 9.36
+				text = "千"
+			intervals [27]:
+				xmin = 9.36
+				xmax = 9.84
+				text = "九百"
+			intervals [28]:
+				xmin = 9.84
+				xmax = 10.24
+				text = "六十"
+			intervals [29]:
+				xmin = 10.24
+				xmax = 10.56
+				text = "七"
+			intervals [30]:
+				xmin = 10.56
+				xmax = 10.72
+				text = "年"
+			intervals [31]:
+				xmin = 10.72
+				xmax = 10.8
+				text = ""
+			intervals [32]:
+				xmin = 10.8
+				xmax = 10.88
+				text = "の"
+			intervals [33]:
+				xmin = 10.88
+				xmax = 11.68
+				text = "中東"
+			intervals [34]:
+				xmin = 11.68
+				xmax = 12.24
+				text = "戦争"
+			intervals [35]:
+				xmin = 12.24
+				xmax = 12.48
+				text = "前"
+			intervals [36]:
+				xmin = 12.48
+				xmax = 12.56
+				text = "の"
+			intervals [37]:
+				xmin = 12.56
+				xmax = 13.04
+				text = "国境"
+			intervals [38]:
+				xmin = 13.04
+				xmax = 13.12
+				text = "に"
+			intervals [39]:
+				xmin = 13.12
+				xmax = 13.68
+				text = "基づく"
+			intervals [40]:
+				xmin = 13.68
+				xmax = 13.92
+				text = "もの"
+			intervals [41]:
+				xmin = 13.92
+				xmax = 14.24
+				text = "です"
+			intervals [42]:
+				xmin = 14.24
+				xmax = 16.5
+				text = ""

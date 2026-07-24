@@ -1,0 +1,162 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 16.32
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 16.32
+		intervals: size = 37
+			intervals [1]:
+				xmin = 0.0
+				xmax = 3.6
+				text = ""
+			intervals [2]:
+				xmin = 3.6
+				xmax = 4.08
+				text = "革命"
+			intervals [3]:
+				xmin = 4.08
+				xmax = 4.24
+				text = "後"
+			intervals [4]:
+				xmin = 4.24
+				xmax = 4.48
+				text = "は"
+			intervals [5]:
+				xmin = 4.48
+				xmax = 4.96
+				text = "職業"
+			intervals [6]:
+				xmin = 4.96
+				xmax = 5.12
+				text = "も"
+			intervals [7]:
+				xmin = 5.12
+				xmax = 5.44
+				text = "公募"
+			intervals [8]:
+				xmin = 5.44
+				xmax = 5.76
+				text = "制"
+			intervals [9]:
+				xmin = 5.76
+				xmax = 5.84
+				text = "に"
+			intervals [10]:
+				xmin = 5.84
+				xmax = 6.08
+				text = "なっ"
+			intervals [11]:
+				xmin = 6.08
+				xmax = 6.32
+				text = "て"
+			intervals [12]:
+				xmin = 6.32
+				xmax = 6.4
+				text = ""
+			intervals [13]:
+				xmin = 6.4
+				xmax = 6.88
+				text = "男性"
+			intervals [14]:
+				xmin = 6.88
+				xmax = 7.36
+				text = "全員"
+			intervals [15]:
+				xmin = 7.36
+				xmax = 7.6
+				text = "応募"
+			intervals [16]:
+				xmin = 7.6
+				xmax = 8.0
+				text = "資格"
+			intervals [17]:
+				xmin = 8.0
+				xmax = 8.08
+				text = "が"
+			intervals [18]:
+				xmin = 8.08
+				xmax = 8.4
+				text = "あり"
+			intervals [19]:
+				xmin = 8.4
+				xmax = 8.56
+				text = ""
+			intervals [20]:
+				xmin = 8.56
+				xmax = 9.04
+				text = "最も"
+			intervals [21]:
+				xmin = 9.04
+				xmax = 9.36
+				text = "意欲"
+			intervals [22]:
+				xmin = 9.36
+				xmax = 9.44
+				text = "が"
+			intervals [23]:
+				xmin = 9.44
+				xmax = 9.52
+				text = "あっ"
+			intervals [24]:
+				xmin = 9.52
+				xmax = 9.76
+				text = "て"
+			intervals [25]:
+				xmin = 9.76
+				xmax = 10.0
+				text = "勝ち"
+			intervals [26]:
+				xmin = 10.0
+				xmax = 10.24
+				text = "抜い"
+			intervals [27]:
+				xmin = 10.24
+				xmax = 10.32
+				text = "た"
+			intervals [28]:
+				xmin = 10.32
+				xmax = 10.56
+				text = "者"
+			intervals [29]:
+				xmin = 10.56
+				xmax = 10.8
+				text = "が"
+			intervals [30]:
+				xmin = 10.8
+				xmax = 11.04
+				text = "職"
+			intervals [31]:
+				xmin = 11.04
+				xmax = 11.2
+				text = "に"
+			intervals [32]:
+				xmin = 11.2
+				xmax = 11.52
+				text = "就ける"
+			intervals [33]:
+				xmin = 11.52
+				xmax = 11.68
+				text = "よう"
+			intervals [34]:
+				xmin = 11.68
+				xmax = 11.76
+				text = "に"
+			intervals [35]:
+				xmin = 11.76
+				xmax = 12.0
+				text = "なり"
+			intervals [36]:
+				xmin = 12.0
+				xmax = 12.32
+				text = "ました"
+			intervals [37]:
+				xmin = 12.32
+				xmax = 16.32
+				text = ""

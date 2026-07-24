@@ -1,0 +1,130 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.0
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.0
+		intervals: size = 29
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.6
+				text = ""
+			intervals [2]:
+				xmin = 1.6
+				xmax = 2.0
+				text = "本件"
+			intervals [3]:
+				xmin = 2.0
+				xmax = 2.16
+				text = "は"
+			intervals [4]:
+				xmin = 2.16
+				xmax = 2.24
+				text = ""
+			intervals [5]:
+				xmin = 2.24
+				xmax = 2.72
+				text = "トランプ"
+			intervals [6]:
+				xmin = 2.72
+				xmax = 3.28
+				text = "大統領"
+			intervals [7]:
+				xmin = 3.28
+				xmax = 3.36
+				text = "が"
+			intervals [8]:
+				xmin = 3.36
+				xmax = 3.6
+				text = ""
+			intervals [9]:
+				xmin = 3.6
+				xmax = 3.84
+				text = "トルコ"
+			intervals [10]:
+				xmin = 3.84
+				xmax = 4.0
+				text = "の"
+			intervals [11]:
+				xmin = 4.0
+				xmax = 4.16
+				text = ""
+			intervals [12]:
+				xmin = 4.16
+				xmax = 4.72
+				text = "レセップ"
+			intervals [13]:
+				xmin = 4.72
+				xmax = 4.88
+				text = ""
+			intervals [14]:
+				xmin = 4.88
+				xmax = 5.36
+				text = "タイップ"
+			intervals [15]:
+				xmin = 5.36
+				xmax = 5.68
+				text = ""
+			intervals [16]:
+				xmin = 5.68
+				xmax = 5.92
+				text = "エル"
+			intervals [17]:
+				xmin = 5.92
+				xmax = 6.24
+				text = "ドアン"
+			intervals [18]:
+				xmin = 6.24
+				xmax = 6.88
+				text = "大統領"
+			intervals [19]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "と"
+			intervals [20]:
+				xmin = 7.04
+				xmax = 7.2
+				text = ""
+			intervals [21]:
+				xmin = 7.2
+				xmax = 7.52
+				text = "電話"
+			intervals [22]:
+				xmin = 7.52
+				xmax = 7.92
+				text = "会談"
+			intervals [23]:
+				xmin = 7.92
+				xmax = 8.16
+				text = "した"
+			intervals [24]:
+				xmin = 8.16
+				xmax = 8.32
+				text = "後"
+			intervals [25]:
+				xmin = 8.32
+				xmax = 8.4
+				text = "で"
+			intervals [26]:
+				xmin = 8.4
+				xmax = 8.8
+				text = "発表"
+			intervals [27]:
+				xmin = 8.8
+				xmax = 9.04
+				text = "され"
+			intervals [28]:
+				xmin = 9.04
+				xmax = 9.44
+				text = "ました"
+			intervals [29]:
+				xmin = 9.44
+				xmax = 12.0
+				text = ""

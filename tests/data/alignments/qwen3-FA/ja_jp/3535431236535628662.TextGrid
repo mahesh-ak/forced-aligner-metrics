@@ -1,0 +1,206 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 19.2
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 19.2
+		intervals: size = 48
+			intervals [1]:
+				xmin = 0.0
+				xmax = 4.16
+				text = ""
+			intervals [2]:
+				xmin = 4.16
+				xmax = 4.64
+				text = "クルーズ"
+			intervals [3]:
+				xmin = 4.64
+				xmax = 4.8
+				text = "に"
+			intervals [4]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "よっ"
+			intervals [5]:
+				xmin = 4.96
+				xmax = 5.12
+				text = "て"
+			intervals [6]:
+				xmin = 5.12
+				xmax = 5.44
+				text = "は"
+			intervals [7]:
+				xmin = 5.44
+				xmax = 5.92
+				text = "案内"
+			intervals [8]:
+				xmin = 5.92
+				xmax = 6.0
+				text = "書"
+			intervals [9]:
+				xmin = 6.0
+				xmax = 6.16
+				text = "に"
+			intervals [10]:
+				xmin = 6.16
+				xmax = 6.48
+				text = "ドイツ"
+			intervals [11]:
+				xmin = 6.48
+				xmax = 6.56
+				text = "の"
+			intervals [12]:
+				xmin = 6.56
+				xmax = 6.96
+				text = "ベルリン"
+			intervals [13]:
+				xmin = 6.96
+				xmax = 7.12
+				text = "が"
+			intervals [14]:
+				xmin = 7.12
+				xmax = 7.2
+				text = "載っ"
+			intervals [15]:
+				xmin = 7.2
+				xmax = 7.44
+				text = "て"
+			intervals [16]:
+				xmin = 7.44
+				xmax = 7.52
+				text = "い"
+			intervals [17]:
+				xmin = 7.52
+				xmax = 7.92
+				text = "ます"
+			intervals [18]:
+				xmin = 7.92
+				xmax = 8.32
+				text = ""
+			intervals [19]:
+				xmin = 8.32
+				xmax = 8.56
+				text = "上"
+			intervals [20]:
+				xmin = 8.56
+				xmax = 8.64
+				text = "の"
+			intervals [21]:
+				xmin = 8.64
+				xmax = 8.96
+				text = "地図"
+			intervals [22]:
+				xmin = 8.96
+				xmax = 9.2
+				text = "から"
+			intervals [23]:
+				xmin = 9.2
+				xmax = 9.28
+				text = "お"
+			intervals [24]:
+				xmin = 9.28
+				xmax = 9.6
+				text = "わかり"
+			intervals [25]:
+				xmin = 9.6
+				xmax = 9.68
+				text = "の"
+			intervals [26]:
+				xmin = 9.68
+				xmax = 9.84
+				text = "よう"
+			intervals [27]:
+				xmin = 9.84
+				xmax = 10.08
+				text = "に"
+			intervals [28]:
+				xmin = 10.08
+				xmax = 10.16
+				text = ""
+			intervals [29]:
+				xmin = 10.16
+				xmax = 10.72
+				text = "ベルリン"
+			intervals [30]:
+				xmin = 10.72
+				xmax = 10.8
+				text = "は"
+			intervals [31]:
+				xmin = 10.8
+				xmax = 11.04
+				text = "海"
+			intervals [32]:
+				xmin = 11.04
+				xmax = 11.28
+				text = "から"
+			intervals [33]:
+				xmin = 11.28
+				xmax = 11.6
+				text = "離れ"
+			intervals [34]:
+				xmin = 11.6
+				xmax = 11.76
+				text = "て"
+			intervals [35]:
+				xmin = 11.76
+				xmax = 12.08
+				text = "おり"
+			intervals [36]:
+				xmin = 12.08
+				xmax = 12.32
+				text = ""
+			intervals [37]:
+				xmin = 12.32
+				xmax = 12.72
+				text = "市街"
+			intervals [38]:
+				xmin = 12.72
+				xmax = 13.12
+				text = "観光"
+			intervals [39]:
+				xmin = 13.12
+				xmax = 13.44
+				text = "は"
+			intervals [40]:
+				xmin = 13.44
+				xmax = 13.84
+				text = "クルーズ"
+			intervals [41]:
+				xmin = 13.84
+				xmax = 14.32
+				text = "料金"
+			intervals [42]:
+				xmin = 14.32
+				xmax = 14.4
+				text = "と"
+			intervals [43]:
+				xmin = 14.4
+				xmax = 14.56
+				text = "は"
+			intervals [44]:
+				xmin = 14.56
+				xmax = 14.8
+				text = "別"
+			intervals [45]:
+				xmin = 14.8
+				xmax = 14.88
+				text = "に"
+			intervals [46]:
+				xmin = 14.88
+				xmax = 15.12
+				text = "なり"
+			intervals [47]:
+				xmin = 15.12
+				xmax = 15.52
+				text = "ます"
+			intervals [48]:
+				xmin = 15.52
+				xmax = 19.2
+				text = ""

@@ -1,0 +1,182 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.66
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.66
+		intervals: size = 42
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.88
+				text = ""
+			intervals [2]:
+				xmin = 0.88
+				xmax = 1.28
+				text = "子供"
+			intervals [3]:
+				xmin = 1.28
+				xmax = 1.44
+				text = "と"
+			intervals [4]:
+				xmin = 1.44
+				xmax = 2.16
+				text = "高齢"
+			intervals [5]:
+				xmin = 2.16
+				xmax = 2.24
+				text = ""
+			intervals [6]:
+				xmin = 2.24
+				xmax = 2.32
+				text = "者"
+			intervals [7]:
+				xmin = 2.32
+				xmax = 2.48
+				text = "を"
+			intervals [8]:
+				xmin = 2.48
+				xmax = 3.44
+				text = ""
+			intervals [9]:
+				xmin = 3.44
+				xmax = 3.68
+				text = "含め"
+			intervals [10]:
+				xmin = 3.68
+				xmax = 3.92
+				text = "た"
+			intervals [11]:
+				xmin = 3.92
+				xmax = 4.32
+				text = ""
+			intervals [12]:
+				xmin = 4.32
+				xmax = 4.64
+				text = "人質"
+			intervals [13]:
+				xmin = 4.64
+				xmax = 4.72
+				text = ""
+			intervals [14]:
+				xmin = 4.72
+				xmax = 4.88
+				text = "六"
+			intervals [15]:
+				xmin = 4.88
+				xmax = 5.04
+				text = ""
+			intervals [16]:
+				xmin = 5.04
+				xmax = 5.2
+				text = "名"
+			intervals [17]:
+				xmin = 5.2
+				xmax = 5.36
+				text = "が"
+			intervals [18]:
+				xmin = 5.36
+				xmax = 5.52
+				text = ""
+			intervals [19]:
+				xmin = 5.52
+				xmax = 5.92
+				text = "早期"
+			intervals [20]:
+				xmin = 5.92
+				xmax = 6.16
+				text = "に"
+			intervals [21]:
+				xmin = 6.16
+				xmax = 6.72
+				text = ""
+			intervals [22]:
+				xmin = 6.72
+				xmax = 7.2
+				text = "解放"
+			intervals [23]:
+				xmin = 7.2
+				xmax = 7.28
+				text = ""
+			intervals [24]:
+				xmin = 7.28
+				xmax = 7.36
+				text = "さ"
+			intervals [25]:
+				xmin = 7.36
+				xmax = 7.52
+				text = "れ"
+			intervals [26]:
+				xmin = 7.52
+				xmax = 8.0
+				text = ""
+			intervals [27]:
+				xmin = 8.0
+				xmax = 8.08
+				text = "フィリピン"
+			intervals [28]:
+				xmin = 8.08
+				xmax = 8.72
+				text = "人"
+			intervals [29]:
+				xmin = 8.72
+				xmax = 8.88
+				text = ""
+			intervals [30]:
+				xmin = 8.88
+				xmax = 9.28
+				text = "写真"
+			intervals [31]:
+				xmin = 9.28
+				xmax = 9.44
+				text = "家"
+			intervals [32]:
+				xmin = 9.44
+				xmax = 9.68
+				text = "たち"
+			intervals [33]:
+				xmin = 9.68
+				xmax = 9.76
+				text = ""
+			intervals [34]:
+				xmin = 9.76
+				xmax = 9.92
+				text = "も"
+			intervals [35]:
+				xmin = 9.92
+				xmax = 10.32
+				text = "同じく"
+			intervals [36]:
+				xmin = 10.32
+				xmax = 10.4
+				text = ""
+			intervals [37]:
+				xmin = 10.4
+				xmax = 10.72
+				text = "解放"
+			intervals [38]:
+				xmin = 10.72
+				xmax = 10.88
+				text = ""
+			intervals [39]:
+				xmin = 10.88
+				xmax = 11.04
+				text = "され"
+			intervals [40]:
+				xmin = 11.04
+				xmax = 11.12
+				text = ""
+			intervals [41]:
+				xmin = 11.12
+				xmax = 11.52
+				text = "ました"
+			intervals [42]:
+				xmin = 11.52
+				xmax = 12.66
+				text = ""

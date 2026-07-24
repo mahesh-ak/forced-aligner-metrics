@@ -1,0 +1,174 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.9
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.9
+		intervals: size = 40
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.72
+				text = "シンガポール"
+			intervals [3]:
+				xmin = 2.72
+				xmax = 2.8
+				text = "を"
+			intervals [4]:
+				xmin = 2.8
+				xmax = 3.12
+				text = "訪れ"
+			intervals [5]:
+				xmin = 3.12
+				xmax = 3.28
+				text = "た"
+			intervals [6]:
+				xmin = 3.28
+				xmax = 3.44
+				text = "彼"
+			intervals [7]:
+				xmin = 3.44
+				xmax = 3.6
+				text = "は"
+			intervals [8]:
+				xmin = 3.6
+				xmax = 3.76
+				text = ""
+			intervals [9]:
+				xmin = 3.76
+				xmax = 4.0
+				text = "ウォン"
+			intervals [10]:
+				xmin = 4.0
+				xmax = 4.24
+				text = "カン"
+			intervals [11]:
+				xmin = 4.24
+				xmax = 4.4
+				text = "セ"
+			intervals [12]:
+				xmin = 4.4
+				xmax = 4.48
+				text = "ン"
+			intervals [13]:
+				xmin = 4.48
+				xmax = 4.72
+				text = "副"
+			intervals [14]:
+				xmin = 4.72
+				xmax = 5.04
+				text = "首相"
+			intervals [15]:
+				xmin = 5.04
+				xmax = 5.2
+				text = "から"
+			intervals [16]:
+				xmin = 5.2
+				xmax = 5.68
+				text = "出迎え"
+			intervals [17]:
+				xmin = 5.68
+				xmax = 5.76
+				text = "を"
+			intervals [18]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "受け"
+			intervals [19]:
+				xmin = 5.92
+				xmax = 6.56
+				text = "リー"
+			intervals [20]:
+				xmin = 6.56
+				xmax = 6.8
+				text = "シェン"
+			intervals [21]:
+				xmin = 6.8
+				xmax = 6.96
+				text = ""
+			intervals [22]:
+				xmin = 6.96
+				xmax = 7.28
+				text = "ルーン"
+			intervals [23]:
+				xmin = 7.28
+				xmax = 7.44
+				text = ""
+			intervals [24]:
+				xmin = 7.44
+				xmax = 7.76
+				text = "首相"
+			intervals [25]:
+				xmin = 7.76
+				xmax = 7.92
+				text = "と"
+			intervals [26]:
+				xmin = 7.92
+				xmax = 8.08
+				text = ""
+			intervals [27]:
+				xmin = 8.08
+				xmax = 8.48
+				text = "会談"
+			intervals [28]:
+				xmin = 8.48
+				xmax = 8.64
+				text = "で"
+			intervals [29]:
+				xmin = 8.64
+				xmax = 9.04
+				text = "貿易"
+			intervals [30]:
+				xmin = 9.04
+				xmax = 9.12
+				text = ""
+			intervals [31]:
+				xmin = 9.12
+				xmax = 9.2
+				text = "や"
+			intervals [32]:
+				xmin = 9.2
+				xmax = 9.44
+				text = "テロ"
+			intervals [33]:
+				xmin = 9.44
+				xmax = 9.76
+				text = "問題"
+			intervals [34]:
+				xmin = 9.76
+				xmax = 9.84
+				text = "に"
+			intervals [35]:
+				xmin = 9.84
+				xmax = 10.0
+				text = "つい"
+			intervals [36]:
+				xmin = 10.0
+				xmax = 10.08
+				text = "て"
+			intervals [37]:
+				xmin = 10.08
+				xmax = 10.56
+				text = "話し合い"
+			intervals [38]:
+				xmin = 10.56
+				xmax = 10.8
+				text = "まし"
+			intervals [39]:
+				xmin = 10.8
+				xmax = 10.88
+				text = "た"
+			intervals [40]:
+				xmin = 10.88
+				xmax = 12.9
+				text = ""

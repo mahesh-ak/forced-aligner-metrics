@@ -1,0 +1,242 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 17.22
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 17.22
+		intervals: size = 57
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.6
+				text = ""
+			intervals [2]:
+				xmin = 1.6
+				xmax = 2.08
+				text = "中世"
+			intervals [3]:
+				xmin = 2.08
+				xmax = 2.16
+				text = "の"
+			intervals [4]:
+				xmin = 2.16
+				xmax = 2.64
+				text = "終焉"
+			intervals [5]:
+				xmin = 2.64
+				xmax = 2.72
+				text = "に"
+			intervals [6]:
+				xmin = 2.72
+				xmax = 3.04
+				text = "向かっ"
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.2
+				text = "て"
+			intervals [8]:
+				xmin = 3.2
+				xmax = 3.44
+				text = ""
+			intervals [9]:
+				xmin = 3.44
+				xmax = 3.76
+				text = "西"
+			intervals [10]:
+				xmin = 3.76
+				xmax = 4.32
+				text = "ヨーロッパ"
+			intervals [11]:
+				xmin = 4.32
+				xmax = 4.64
+				text = "独自"
+			intervals [12]:
+				xmin = 4.64
+				xmax = 4.72
+				text = "の"
+			intervals [13]:
+				xmin = 4.72
+				xmax = 5.2
+				text = "様式"
+			intervals [14]:
+				xmin = 5.2
+				xmax = 5.28
+				text = "を"
+			intervals [15]:
+				xmin = 5.28
+				xmax = 5.68
+				text = "開発"
+			intervals [16]:
+				xmin = 5.68
+				xmax = 5.76
+				text = "し"
+			intervals [17]:
+				xmin = 5.76
+				xmax = 5.84
+				text = ""
+			intervals [18]:
+				xmin = 5.84
+				xmax = 6.16
+				text = "始め"
+			intervals [19]:
+				xmin = 6.16
+				xmax = 6.56
+				text = "ました"
+			intervals [20]:
+				xmin = 6.56
+				xmax = 7.44
+				text = ""
+			intervals [21]:
+				xmin = 7.44
+				xmax = 7.76
+				text = "十字"
+			intervals [22]:
+				xmin = 7.76
+				xmax = 8.0
+				text = "軍"
+			intervals [23]:
+				xmin = 8.0
+				xmax = 8.08
+				text = "の"
+			intervals [24]:
+				xmin = 8.08
+				xmax = 8.4
+				text = "結果"
+			intervals [25]:
+				xmin = 8.4
+				xmax = 8.48
+				text = "と"
+			intervals [26]:
+				xmin = 8.48
+				xmax = 8.56
+				text = "し"
+			intervals [27]:
+				xmin = 8.56
+				xmax = 8.64
+				text = ""
+			intervals [28]:
+				xmin = 8.64
+				xmax = 8.72
+				text = "て"
+			intervals [29]:
+				xmin = 8.72
+				xmax = 9.04
+				text = "生じ"
+			intervals [30]:
+				xmin = 9.04
+				xmax = 9.12
+				text = "た"
+			intervals [31]:
+				xmin = 9.12
+				xmax = 9.52
+				text = "当時"
+			intervals [32]:
+				xmin = 9.52
+				xmax = 9.6
+				text = "として"
+			intervals [33]:
+				xmin = 9.6
+				xmax = 9.84
+				text = ""
+			intervals [34]:
+				xmin = 9.84
+				xmax = 10.0
+				text = "は"
+			intervals [35]:
+				xmin = 10.0
+				xmax = 10.08
+				text = ""
+			intervals [36]:
+				xmin = 10.08
+				xmax = 10.56
+				text = "最大"
+			intervals [37]:
+				xmin = 10.56
+				xmax = 10.72
+				text = "の"
+			intervals [38]:
+				xmin = 10.72
+				xmax = 11.04
+				text = "進歩"
+			intervals [39]:
+				xmin = 11.04
+				xmax = 11.2
+				text = "の"
+			intervals [40]:
+				xmin = 11.2
+				xmax = 11.52
+				text = "一つ"
+			intervals [41]:
+				xmin = 11.52
+				xmax = 11.6
+				text = "は"
+			intervals [42]:
+				xmin = 11.6
+				xmax = 12.16
+				text = ""
+			intervals [43]:
+				xmin = 12.16
+				xmax = 12.48
+				text = "衣類"
+			intervals [44]:
+				xmin = 12.48
+				xmax = 12.56
+				text = "を"
+			intervals [45]:
+				xmin = 12.56
+				xmax = 12.96
+				text = "閉じる"
+			intervals [46]:
+				xmin = 12.96
+				xmax = 13.2
+				text = "ため"
+			intervals [47]:
+				xmin = 13.2
+				xmax = 13.28
+				text = "に"
+			intervals [48]:
+				xmin = 13.28
+				xmax = 13.6
+				text = "ボタン"
+			intervals [49]:
+				xmin = 13.6
+				xmax = 13.68
+				text = "を"
+			intervals [50]:
+				xmin = 13.68
+				xmax = 13.76
+				text = ""
+			intervals [51]:
+				xmin = 13.76
+				xmax = 14.08
+				text = "使用"
+			intervals [52]:
+				xmin = 14.08
+				xmax = 14.16
+				text = ""
+			intervals [53]:
+				xmin = 14.16
+				xmax = 14.48
+				text = "始め"
+			intervals [54]:
+				xmin = 14.48
+				xmax = 14.56
+				text = "た"
+			intervals [55]:
+				xmin = 14.56
+				xmax = 14.8
+				text = "こと"
+			intervals [56]:
+				xmin = 14.8
+				xmax = 15.12
+				text = "です"
+			intervals [57]:
+				xmin = 15.12
+				xmax = 17.22
+				text = ""

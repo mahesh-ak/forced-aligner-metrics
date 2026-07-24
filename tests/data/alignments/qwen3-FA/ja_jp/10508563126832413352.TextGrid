@@ -1,0 +1,174 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 15.0
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 15.0
+		intervals: size = 40
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.32
+				text = "スンダルバンス"
+			intervals [3]:
+				xmin = 2.32
+				xmax = 2.4
+				text = "は"
+			intervals [4]:
+				xmin = 2.4
+				xmax = 2.8
+				text = "世界"
+			intervals [5]:
+				xmin = 2.8
+				xmax = 3.28
+				text = "最大"
+			intervals [6]:
+				xmin = 3.28
+				xmax = 3.44
+				text = "の"
+			intervals [7]:
+				xmin = 3.44
+				xmax = 3.6
+				text = ""
+			intervals [8]:
+				xmin = 3.6
+				xmax = 4.0
+				text = "沿岸"
+			intervals [9]:
+				xmin = 4.0
+				xmax = 4.32
+				text = "マング"
+			intervals [10]:
+				xmin = 4.32
+				xmax = 4.64
+				text = "ローブ"
+			intervals [11]:
+				xmin = 4.64
+				xmax = 4.96
+				text = "地帯"
+			intervals [12]:
+				xmin = 4.96
+				xmax = 5.04
+				text = "で"
+			intervals [13]:
+				xmin = 5.04
+				xmax = 5.28
+				text = "あり"
+			intervals [14]:
+				xmin = 5.28
+				xmax = 5.76
+				text = ""
+			intervals [15]:
+				xmin = 5.76
+				xmax = 6.16
+				text = "海岸"
+			intervals [16]:
+				xmin = 6.16
+				xmax = 6.4
+				text = "から"
+			intervals [17]:
+				xmin = 6.4
+				xmax = 6.56
+				text = ""
+			intervals [18]:
+				xmin = 6.56
+				xmax = 7.28
+				text = "バングラデシュ"
+			intervals [19]:
+				xmin = 7.28
+				xmax = 7.44
+				text = "と"
+			intervals [20]:
+				xmin = 7.44
+				xmax = 7.6
+				text = ""
+			intervals [21]:
+				xmin = 7.6
+				xmax = 7.92
+				text = "インド"
+			intervals [22]:
+				xmin = 7.92
+				xmax = 8.0
+				text = "の"
+			intervals [23]:
+				xmin = 8.0
+				xmax = 8.4
+				text = "内陸"
+			intervals [24]:
+				xmin = 8.4
+				xmax = 8.48
+				text = ""
+			intervals [25]:
+				xmin = 8.48
+				xmax = 8.8
+				text = "地域"
+			intervals [26]:
+				xmin = 8.8
+				xmax = 9.12
+				text = "まで"
+			intervals [27]:
+				xmin = 9.12
+				xmax = 9.36
+				text = ""
+			intervals [28]:
+				xmin = 9.36
+				xmax = 9.76
+				text = "八十"
+			intervals [29]:
+				xmin = 9.76
+				xmax = 10.08
+				text = "km"
+			intervals [30]:
+				xmin = 10.08
+				xmax = 10.72
+				text = ""
+			intervals [31]:
+				xmin = 10.72
+				xmax = 11.04
+				text = "五十"
+			intervals [32]:
+				xmin = 11.04
+				xmax = 11.36
+				text = "マイル"
+			intervals [33]:
+				xmin = 11.36
+				xmax = 11.44
+				text = "に"
+			intervals [34]:
+				xmin = 11.44
+				xmax = 11.76
+				text = "わたっ"
+			intervals [35]:
+				xmin = 11.76
+				xmax = 11.92
+				text = "て"
+			intervals [36]:
+				xmin = 11.92
+				xmax = 12.32
+				text = "広がっ"
+			intervals [37]:
+				xmin = 12.32
+				xmax = 12.4
+				text = "て"
+			intervals [38]:
+				xmin = 12.4
+				xmax = 12.48
+				text = "い"
+			intervals [39]:
+				xmin = 12.48
+				xmax = 12.8
+				text = "ます"
+			intervals [40]:
+				xmin = 12.8
+				xmax = 15.0
+				text = ""

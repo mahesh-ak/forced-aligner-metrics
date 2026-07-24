@@ -1,0 +1,170 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 17.34
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 17.34
+		intervals: size = 39
+			intervals [1]:
+				xmin = 0.0
+				xmax = 4.4
+				text = ""
+			intervals [2]:
+				xmin = 4.4
+				xmax = 4.8
+				text = "古代"
+			intervals [3]:
+				xmin = 4.8
+				xmax = 5.2
+				text = "中国"
+			intervals [4]:
+				xmin = 5.2
+				xmax = 5.36
+				text = "に"
+			intervals [5]:
+				xmin = 5.36
+				xmax = 5.6
+				text = "は"
+			intervals [6]:
+				xmin = 5.6
+				xmax = 6.0
+				text = "時代"
+			intervals [7]:
+				xmin = 6.0
+				xmax = 6.16
+				text = "差"
+			intervals [8]:
+				xmin = 6.16
+				xmax = 6.24
+				text = "を"
+			intervals [9]:
+				xmin = 6.24
+				xmax = 6.64
+				text = "示す"
+			intervals [10]:
+				xmin = 6.64
+				xmax = 6.96
+				text = "独自"
+			intervals [11]:
+				xmin = 6.96
+				xmax = 7.12
+				text = "の"
+			intervals [12]:
+				xmin = 7.12
+				xmax = 7.6
+				text = "方法"
+			intervals [13]:
+				xmin = 7.6
+				xmax = 7.76
+				text = "が"
+			intervals [14]:
+				xmin = 7.76
+				xmax = 8.0
+				text = "あり"
+			intervals [15]:
+				xmin = 8.0
+				xmax = 8.48
+				text = ""
+			intervals [16]:
+				xmin = 8.48
+				xmax = 8.88
+				text = "中国"
+			intervals [17]:
+				xmin = 8.88
+				xmax = 9.04
+				text = "史"
+			intervals [18]:
+				xmin = 9.04
+				xmax = 9.12
+				text = "に"
+			intervals [19]:
+				xmin = 9.12
+				xmax = 9.36
+				text = "おけ"
+			intervals [20]:
+				xmin = 9.36
+				xmax = 9.44
+				text = "る"
+			intervals [21]:
+				xmin = 9.44
+				xmax = 9.68
+				text = "各"
+			intervals [22]:
+				xmin = 9.68
+				xmax = 10.24
+				text = "段階"
+			intervals [23]:
+				xmin = 10.24
+				xmax = 10.56
+				text = "また"
+			intervals [24]:
+				xmin = 10.56
+				xmax = 10.72
+				text = "は"
+			intervals [25]:
+				xmin = 10.72
+				xmax = 11.28
+				text = "権力"
+			intervals [26]:
+				xmin = 11.28
+				xmax = 11.6
+				text = "握っ"
+			intervals [27]:
+				xmin = 11.6
+				xmax = 11.76
+				text = "て"
+			intervals [28]:
+				xmin = 11.76
+				xmax = 12.0
+				text = "いた"
+			intervals [29]:
+				xmin = 12.0
+				xmax = 12.48
+				text = "一族"
+			intervals [30]:
+				xmin = 12.48
+				xmax = 12.72
+				text = "が"
+			intervals [31]:
+				xmin = 12.72
+				xmax = 12.8
+				text = ""
+			intervals [32]:
+				xmin = 12.8
+				xmax = 13.2
+				text = "特徴"
+			intervals [33]:
+				xmin = 13.2
+				xmax = 13.44
+				text = "的"
+			intervals [34]:
+				xmin = 13.44
+				xmax = 13.6
+				text = "な"
+			intervals [35]:
+				xmin = 13.6
+				xmax = 14.0
+				text = "王朝"
+			intervals [36]:
+				xmin = 14.0
+				xmax = 14.08
+				text = "と"
+			intervals [37]:
+				xmin = 14.08
+				xmax = 14.32
+				text = "なり"
+			intervals [38]:
+				xmin = 14.32
+				xmax = 14.72
+				text = "ました"
+			intervals [39]:
+				xmin = 14.72
+				xmax = 17.34
+				text = ""

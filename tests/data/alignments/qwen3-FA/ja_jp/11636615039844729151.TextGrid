@@ -1,0 +1,134 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 10.92
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 10.92
+		intervals: size = 30
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.44
+				text = ""
+			intervals [2]:
+				xmin = 1.44
+				xmax = 1.76
+				text = "は"
+			intervals [3]:
+				xmin = 1.76
+				xmax = 2.0
+				text = ""
+			intervals [4]:
+				xmin = 2.0
+				xmax = 2.32
+				text = "サヘル"
+			intervals [5]:
+				xmin = 2.32
+				xmax = 2.48
+				text = ""
+			intervals [6]:
+				xmin = 2.48
+				xmax = 2.72
+				text = "と"
+			intervals [7]:
+				xmin = 2.72
+				xmax = 3.12
+				text = ""
+			intervals [8]:
+				xmin = 3.12
+				xmax = 3.52
+				text = "境界"
+			intervals [9]:
+				xmin = 3.52
+				xmax = 3.6
+				text = ""
+			intervals [10]:
+				xmin = 3.6
+				xmax = 3.68
+				text = "を"
+			intervals [11]:
+				xmin = 3.68
+				xmax = 3.92
+				text = "接し"
+			intervals [12]:
+				xmin = 3.92
+				xmax = 4.56
+				text = ""
+			intervals [13]:
+				xmin = 4.56
+				xmax = 4.96
+				text = "南"
+			intervals [14]:
+				xmin = 4.96
+				xmax = 5.2
+				text = "と"
+			intervals [15]:
+				xmin = 5.2
+				xmax = 5.44
+				text = ""
+			intervals [16]:
+				xmin = 5.44
+				xmax = 5.68
+				text = "西"
+			intervals [17]:
+				xmin = 5.68
+				xmax = 5.76
+				text = ""
+			intervals [18]:
+				xmin = 5.76
+				xmax = 5.84
+				text = "は"
+			intervals [19]:
+				xmin = 5.84
+				xmax = 7.2
+				text = ""
+			intervals [20]:
+				xmin = 7.2
+				xmax = 7.36
+				text = "洋"
+			intervals [21]:
+				xmin = 7.36
+				xmax = 7.52
+				text = "に"
+			intervals [22]:
+				xmin = 7.52
+				xmax = 7.76
+				text = ""
+			intervals [23]:
+				xmin = 7.76
+				xmax = 8.0
+				text = "囲ま"
+			intervals [24]:
+				xmin = 8.0
+				xmax = 8.08
+				text = "れ"
+			intervals [25]:
+				xmin = 8.08
+				xmax = 8.24
+				text = "た"
+			intervals [26]:
+				xmin = 8.24
+				xmax = 8.4
+				text = ""
+			intervals [27]:
+				xmin = 8.4
+				xmax = 8.48
+				text = "地域"
+			intervals [28]:
+				xmin = 8.48
+				xmax = 8.8
+				text = ""
+			intervals [29]:
+				xmin = 8.8
+				xmax = 8.96
+				text = "です"
+			intervals [30]:
+				xmin = 8.96
+				xmax = 10.92
+				text = ""

@@ -1,0 +1,110 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.3
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.3
+		intervals: size = 24
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.76
+				text = ""
+			intervals [2]:
+				xmin = 1.76
+				xmax = 2.24
+				text = "ピラミッド"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.4
+				text = "の"
+			intervals [4]:
+				xmin = 2.4
+				xmax = 2.64
+				text = "音"
+			intervals [5]:
+				xmin = 2.64
+				xmax = 2.72
+				text = "と"
+			intervals [6]:
+				xmin = 2.72
+				xmax = 3.04
+				text = "光"
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.12
+				text = "の"
+			intervals [8]:
+				xmin = 3.12
+				xmax = 3.36
+				text = "ショー"
+			intervals [9]:
+				xmin = 3.36
+				xmax = 3.6
+				text = "は"
+			intervals [10]:
+				xmin = 3.6
+				xmax = 3.76
+				text = "この"
+			intervals [11]:
+				xmin = 3.76
+				xmax = 4.16
+				text = "観光"
+			intervals [12]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "地"
+			intervals [13]:
+				xmin = 4.32
+				xmax = 4.48
+				text = "で"
+			intervals [14]:
+				xmin = 4.48
+				xmax = 4.72
+				text = "特に"
+			intervals [15]:
+				xmin = 4.72
+				xmax = 5.04
+				text = "子供"
+			intervals [16]:
+				xmin = 5.04
+				xmax = 5.2
+				text = "たち"
+			intervals [17]:
+				xmin = 5.2
+				xmax = 5.28
+				text = "が"
+			intervals [18]:
+				xmin = 5.28
+				xmax = 5.92
+				text = "楽しめる"
+			intervals [19]:
+				xmin = 5.92
+				xmax = 6.32
+				text = "催し"
+			intervals [20]:
+				xmin = 6.32
+				xmax = 6.4
+				text = "の"
+			intervals [21]:
+				xmin = 6.4
+				xmax = 6.56
+				text = "一"
+			intervals [22]:
+				xmin = 6.56
+				xmax = 6.72
+				text = "つ"
+			intervals [23]:
+				xmin = 6.72
+				xmax = 7.12
+				text = "です"
+			intervals [24]:
+				xmin = 7.12
+				xmax = 9.3
+				text = ""

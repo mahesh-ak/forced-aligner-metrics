@@ -1,0 +1,106 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.9
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.9
+		intervals: size = 23
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.88
+				text = ""
+			intervals [2]:
+				xmin = 2.88
+				xmax = 3.44
+				text = "終戦"
+			intervals [3]:
+				xmin = 3.44
+				xmax = 3.76
+				text = "から"
+			intervals [4]:
+				xmin = 3.76
+				xmax = 3.84
+				text = "二"
+			intervals [5]:
+				xmin = 3.84
+				xmax = 4.08
+				text = "年"
+			intervals [6]:
+				xmin = 4.08
+				xmax = 4.32
+				text = "で"
+			intervals [7]:
+				xmin = 4.32
+				xmax = 4.4
+				text = ""
+			intervals [8]:
+				xmin = 4.4
+				xmax = 4.72
+				text = "かつて"
+			intervals [9]:
+				xmin = 4.72
+				xmax = 4.8
+				text = "の"
+			intervals [10]:
+				xmin = 4.8
+				xmax = 5.2
+				text = "同盟"
+			intervals [11]:
+				xmin = 5.2
+				xmax = 5.44
+				text = "国"
+			intervals [12]:
+				xmin = 5.44
+				xmax = 5.76
+				text = "は"
+			intervals [13]:
+				xmin = 5.76
+				xmax = 6.24
+				text = "敵国"
+			intervals [14]:
+				xmin = 6.24
+				xmax = 6.56
+				text = "同士"
+			intervals [15]:
+				xmin = 6.56
+				xmax = 6.72
+				text = "と"
+			intervals [16]:
+				xmin = 6.72
+				xmax = 7.04
+				text = "なり"
+			intervals [17]:
+				xmin = 7.04
+				xmax = 7.2
+				text = ""
+			intervals [18]:
+				xmin = 7.2
+				xmax = 7.6
+				text = "やがて"
+			intervals [19]:
+				xmin = 7.6
+				xmax = 8.0
+				text = "冷戦"
+			intervals [20]:
+				xmin = 8.0
+				xmax = 8.08
+				text = "が"
+			intervals [21]:
+				xmin = 8.08
+				xmax = 8.56
+				text = "始まり"
+			intervals [22]:
+				xmin = 8.56
+				xmax = 9.04
+				text = "ました"
+			intervals [23]:
+				xmin = 9.04
+				xmax = 12.9
+				text = ""

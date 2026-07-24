@@ -1,0 +1,290 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 22.5
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 22.5
+		intervals: size = 69
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.68
+				text = ""
+			intervals [2]:
+				xmin = 1.68
+				xmax = 2.16
+				text = "メトロ"
+			intervals [3]:
+				xmin = 2.16
+				xmax = 2.32
+				text = "の"
+			intervals [4]:
+				xmin = 2.32
+				xmax = 2.4
+				text = ""
+			intervals [5]:
+				xmin = 2.4
+				xmax = 2.96
+				text = "構内"
+			intervals [6]:
+				xmin = 2.96
+				xmax = 3.04
+				text = "や"
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.68
+				text = ""
+			intervals [8]:
+				xmin = 3.68
+				xmax = 4.0
+				text = "車内"
+			intervals [9]:
+				xmin = 4.0
+				xmax = 4.16
+				text = "の"
+			intervals [10]:
+				xmin = 4.16
+				xmax = 4.32
+				text = ""
+			intervals [11]:
+				xmin = 4.32
+				xmax = 4.72
+				text = "定期"
+			intervals [12]:
+				xmin = 4.72
+				xmax = 4.88
+				text = ""
+			intervals [13]:
+				xmin = 4.88
+				xmax = 5.28
+				text = "アナウンス"
+			intervals [14]:
+				xmin = 5.28
+				xmax = 5.52
+				text = ""
+			intervals [15]:
+				xmin = 5.52
+				xmax = 5.6
+				text = "は"
+			intervals [16]:
+				xmin = 5.6
+				xmax = 6.56
+				text = ""
+			intervals [17]:
+				xmin = 6.56
+				xmax = 7.36
+				text = "カタルーニャ"
+			intervals [18]:
+				xmin = 7.36
+				xmax = 7.92
+				text = ""
+			intervals [19]:
+				xmin = 7.92
+				xmax = 8.08
+				text = "語"
+			intervals [20]:
+				xmin = 8.08
+				xmax = 8.88
+				text = "のみ"
+			intervals [21]:
+				xmin = 8.88
+				xmax = 9.12
+				text = "です"
+			intervals [22]:
+				xmin = 9.12
+				xmax = 9.2
+				text = ""
+			intervals [23]:
+				xmin = 9.2
+				xmax = 9.28
+				text = "が"
+			intervals [24]:
+				xmin = 9.28
+				xmax = 10.16
+				text = ""
+			intervals [25]:
+				xmin = 10.16
+				xmax = 10.56
+				text = "事故"
+			intervals [26]:
+				xmin = 10.56
+				xmax = 10.72
+				text = "に"
+			intervals [27]:
+				xmin = 10.72
+				xmax = 10.88
+				text = "よる"
+			intervals [28]:
+				xmin = 10.88
+				xmax = 11.84
+				text = ""
+			intervals [29]:
+				xmin = 11.84
+				xmax = 12.16
+				text = "遅延"
+			intervals [30]:
+				xmin = 12.16
+				xmax = 12.32
+				text = "など"
+			intervals [31]:
+				xmin = 12.32
+				xmax = 12.48
+				text = ""
+			intervals [32]:
+				xmin = 12.48
+				xmax = 12.72
+				text = "の"
+			intervals [33]:
+				xmin = 12.72
+				xmax = 12.96
+				text = ""
+			intervals [34]:
+				xmin = 12.96
+				xmax = 13.12
+				text = "際"
+			intervals [35]:
+				xmin = 13.12
+				xmax = 13.2
+				text = ""
+			intervals [36]:
+				xmin = 13.2
+				xmax = 13.28
+				text = "に"
+			intervals [37]:
+				xmin = 13.28
+				xmax = 13.44
+				text = "は"
+			intervals [38]:
+				xmin = 13.44
+				xmax = 14.48
+				text = ""
+			intervals [39]:
+				xmin = 14.48
+				xmax = 14.88
+				text = "自動"
+			intervals [40]:
+				xmin = 14.88
+				xmax = 15.04
+				text = ""
+			intervals [41]:
+				xmin = 15.04
+				xmax = 15.52
+				text = "システム"
+			intervals [42]:
+				xmin = 15.52
+				xmax = 15.68
+				text = "に"
+			intervals [43]:
+				xmin = 15.68
+				xmax = 15.76
+				text = "よっ"
+			intervals [44]:
+				xmin = 15.76
+				xmax = 15.92
+				text = ""
+			intervals [45]:
+				xmin = 15.92
+				xmax = 16.0
+				text = "て"
+			intervals [46]:
+				xmin = 16.0
+				xmax = 16.08
+				text = ""
+			intervals [47]:
+				xmin = 16.08
+				xmax = 16.96
+				text = "スペイン"
+			intervals [48]:
+				xmin = 16.96
+				xmax = 17.2
+				text = "語"
+			intervals [49]:
+				xmin = 17.2
+				xmax = 17.68
+				text = ""
+			intervals [50]:
+				xmin = 17.68
+				xmax = 17.92
+				text = "英語"
+			intervals [51]:
+				xmin = 17.92
+				xmax = 18.32
+				text = ""
+			intervals [52]:
+				xmin = 18.32
+				xmax = 18.72
+				text = "フランス"
+			intervals [53]:
+				xmin = 18.72
+				xmax = 18.96
+				text = ""
+			intervals [54]:
+				xmin = 18.96
+				xmax = 19.2
+				text = "語"
+			intervals [55]:
+				xmin = 19.2
+				xmax = 19.44
+				text = ""
+			intervals [56]:
+				xmin = 19.44
+				xmax = 19.92
+				text = "アラビア"
+			intervals [57]:
+				xmin = 19.92
+				xmax = 20.0
+				text = ""
+			intervals [58]:
+				xmin = 20.0
+				xmax = 20.16
+				text = "語"
+			intervals [59]:
+				xmin = 20.16
+				xmax = 20.4
+				text = ""
+			intervals [60]:
+				xmin = 20.4
+				xmax = 20.8
+				text = "日本"
+			intervals [61]:
+				xmin = 20.8
+				xmax = 20.96
+				text = "語"
+			intervals [62]:
+				xmin = 20.96
+				xmax = 21.04
+				text = ""
+			intervals [63]:
+				xmin = 21.04
+				xmax = 21.12
+				text = "と"
+			intervals [64]:
+				xmin = 21.12
+				xmax = 21.28
+				text = "いった"
+			intervals [65]:
+				xmin = 21.28
+				xmax = 22.08
+				text = ""
+			intervals [66]:
+				xmin = 22.08
+				xmax = 22.16
+				text = "各"
+			intervals [67]:
+				xmin = 22.16
+				xmax = 22.4
+				text = ""
+			intervals [68]:
+				xmin = 22.4
+				xmax = 22.48
+				text = "で"
+			intervals [69]:
+				xmin = 22.48
+				xmax = 22.5
+				text = ""

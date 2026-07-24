@@ -1,0 +1,138 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 10.68
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 10.68
+		intervals: size = 31
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.16
+				text = "この"
+			intervals [3]:
+				xmin = 2.16
+				xmax = 2.32
+				text = "よう"
+			intervals [4]:
+				xmin = 2.32
+				xmax = 2.4
+				text = ""
+			intervals [5]:
+				xmin = 2.4
+				xmax = 2.48
+				text = "な"
+			intervals [6]:
+				xmin = 2.48
+				xmax = 2.56
+				text = ""
+			intervals [7]:
+				xmin = 2.56
+				xmax = 2.72
+				text = "ご"
+			intervals [8]:
+				xmin = 2.72
+				xmax = 2.96
+				text = "夫婦"
+			intervals [9]:
+				xmin = 2.96
+				xmax = 3.12
+				text = ""
+			intervals [10]:
+				xmin = 3.12
+				xmax = 3.28
+				text = "は"
+			intervals [11]:
+				xmin = 3.28
+				xmax = 3.52
+				text = ""
+			intervals [12]:
+				xmin = 3.52
+				xmax = 3.76
+				text = "その"
+			intervals [13]:
+				xmin = 3.76
+				xmax = 4.0
+				text = ""
+			intervals [14]:
+				xmin = 4.0
+				xmax = 4.48
+				text = "赤ちゃん"
+			intervals [15]:
+				xmin = 4.48
+				xmax = 4.64
+				text = "の"
+			intervals [16]:
+				xmin = 4.64
+				xmax = 4.96
+				text = "ため"
+			intervals [17]:
+				xmin = 4.96
+				xmax = 5.04
+				text = "に"
+			intervals [18]:
+				xmin = 5.04
+				xmax = 5.6
+				text = ""
+			intervals [19]:
+				xmin = 5.6
+				xmax = 5.92
+				text = "養子"
+			intervals [20]:
+				xmin = 5.92
+				xmax = 6.16
+				text = ""
+			intervals [21]:
+				xmin = 6.16
+				xmax = 6.56
+				text = "縁組"
+			intervals [22]:
+				xmin = 6.56
+				xmax = 6.88
+				text = "制度"
+			intervals [23]:
+				xmin = 6.88
+				xmax = 6.96
+				text = ""
+			intervals [24]:
+				xmin = 6.96
+				xmax = 7.12
+				text = "を"
+			intervals [25]:
+				xmin = 7.12
+				xmax = 7.2
+				text = ""
+			intervals [26]:
+				xmin = 7.2
+				xmax = 7.52
+				text = "利用"
+			intervals [27]:
+				xmin = 7.52
+				xmax = 7.6
+				text = ""
+			intervals [28]:
+				xmin = 7.6
+				xmax = 7.92
+				text = "でき"
+			intervals [29]:
+				xmin = 7.92
+				xmax = 8.24
+				text = ""
+			intervals [30]:
+				xmin = 8.24
+				xmax = 8.4
+				text = "ます"
+			intervals [31]:
+				xmin = 8.4
+				xmax = 10.68
+				text = ""

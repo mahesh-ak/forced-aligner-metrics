@@ -1,0 +1,78 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.72
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.72
+		intervals: size = 16
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.08
+				text = ""
+			intervals [2]:
+				xmin = 2.08
+				xmax = 2.8
+				text = "インターネット"
+			intervals [3]:
+				xmin = 2.8
+				xmax = 2.96
+				text = "は"
+			intervals [4]:
+				xmin = 2.96
+				xmax = 3.2
+				text = "マス"
+			intervals [5]:
+				xmin = 3.2
+				xmax = 3.92
+				text = "コミュニケーション"
+			intervals [6]:
+				xmin = 3.92
+				xmax = 4.16
+				text = "と"
+			intervals [7]:
+				xmin = 4.16
+				xmax = 4.56
+				text = "対人"
+			intervals [8]:
+				xmin = 4.56
+				xmax = 5.52
+				text = "コミュニケーション"
+			intervals [9]:
+				xmin = 5.52
+				xmax = 5.76
+				text = "の"
+			intervals [10]:
+				xmin = 5.76
+				xmax = 6.0
+				text = "両"
+			intervals [11]:
+				xmin = 6.0
+				xmax = 6.32
+				text = "要素"
+			intervals [12]:
+				xmin = 6.32
+				xmax = 6.8
+				text = "兼ね備え"
+			intervals [13]:
+				xmin = 6.8
+				xmax = 6.88
+				text = "た"
+			intervals [14]:
+				xmin = 6.88
+				xmax = 7.28
+				text = "環境"
+			intervals [15]:
+				xmin = 7.28
+				xmax = 7.76
+				text = "です"
+			intervals [16]:
+				xmin = 7.76
+				xmax = 9.72
+				text = ""

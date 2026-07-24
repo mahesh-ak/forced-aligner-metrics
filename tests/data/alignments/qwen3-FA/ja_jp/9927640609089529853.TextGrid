@@ -1,0 +1,134 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.5
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 13.5
+		intervals: size = 30
+			intervals [1]:
+				xmin = 0.0
+				xmax = 3.76
+				text = ""
+			intervals [2]:
+				xmin = 3.76
+				xmax = 4.16
+				text = "砂漠"
+			intervals [3]:
+				xmin = 4.16
+				xmax = 4.24
+				text = "の"
+			intervals [4]:
+				xmin = 4.24
+				xmax = 4.48
+				text = "砂"
+			intervals [5]:
+				xmin = 4.48
+				xmax = 4.56
+				text = "に"
+			intervals [6]:
+				xmin = 4.56
+				xmax = 4.8
+				text = "よる"
+			intervals [7]:
+				xmin = 4.8
+				xmax = 5.12
+				text = "脅威"
+			intervals [8]:
+				xmin = 5.12
+				xmax = 5.28
+				text = "から"
+			intervals [9]:
+				xmin = 5.28
+				xmax = 5.52
+				text = "保護"
+			intervals [10]:
+				xmin = 5.52
+				xmax = 5.76
+				text = "する"
+			intervals [11]:
+				xmin = 5.76
+				xmax = 6.08
+				text = "ため"
+			intervals [12]:
+				xmin = 6.08
+				xmax = 6.16
+				text = ""
+			intervals [13]:
+				xmin = 6.16
+				xmax = 6.48
+				text = "千"
+			intervals [14]:
+				xmin = 6.48
+				xmax = 6.8
+				text = "九百"
+			intervals [15]:
+				xmin = 6.8
+				xmax = 6.88
+				text = ""
+			intervals [16]:
+				xmin = 6.88
+				xmax = 7.36
+				text = "九十"
+			intervals [17]:
+				xmin = 7.36
+				xmax = 7.52
+				text = "年"
+			intervals [18]:
+				xmin = 7.52
+				xmax = 7.6
+				text = "に"
+			intervals [19]:
+				xmin = 7.6
+				xmax = 7.84
+				text = "は"
+			intervals [20]:
+				xmin = 7.84
+				xmax = 8.16
+				text = "危険"
+			intervals [21]:
+				xmin = 8.16
+				xmax = 8.24
+				text = "な"
+			intervals [22]:
+				xmin = 8.24
+				xmax = 8.64
+				text = "世界"
+			intervals [23]:
+				xmin = 8.64
+				xmax = 8.8
+				text = "遺産"
+			intervals [24]:
+				xmin = 8.8
+				xmax = 8.96
+				text = "の"
+			intervals [25]:
+				xmin = 8.96
+				xmax = 9.2
+				text = "リスト"
+			intervals [26]:
+				xmin = 9.2
+				xmax = 9.28
+				text = "に"
+			intervals [27]:
+				xmin = 9.28
+				xmax = 9.6
+				text = "追加"
+			intervals [28]:
+				xmin = 9.6
+				xmax = 9.76
+				text = "され"
+			intervals [29]:
+				xmin = 9.76
+				xmax = 10.16
+				text = "ました"
+			intervals [30]:
+				xmin = 10.16
+				xmax = 13.5
+				text = ""

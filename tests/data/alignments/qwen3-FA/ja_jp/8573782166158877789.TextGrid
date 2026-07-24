@@ -1,0 +1,214 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 18.06
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 18.06
+		intervals: size = 50
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.16
+				text = "ここ"
+			intervals [3]:
+				xmin = 2.16
+				xmax = 2.32
+				text = "に"
+			intervals [4]:
+				xmin = 2.32
+				xmax = 2.56
+				text = "は"
+			intervals [5]:
+				xmin = 2.56
+				xmax = 2.64
+				text = ""
+			intervals [6]:
+				xmin = 2.64
+				xmax = 2.96
+				text = "当時"
+			intervals [7]:
+				xmin = 2.96
+				xmax = 3.12
+				text = "を"
+			intervals [8]:
+				xmin = 3.12
+				xmax = 3.52
+				text = "生き延び"
+			intervals [9]:
+				xmin = 3.52
+				xmax = 3.84
+				text = "た"
+			intervals [10]:
+				xmin = 3.84
+				xmax = 4.0
+				text = ""
+			intervals [11]:
+				xmin = 4.0
+				xmax = 4.32
+				text = "多く"
+			intervals [12]:
+				xmin = 4.32
+				xmax = 4.48
+				text = "の"
+			intervals [13]:
+				xmin = 4.48
+				xmax = 4.8
+				text = "男女"
+			intervals [14]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "が"
+			intervals [15]:
+				xmin = 4.96
+				xmax = 5.28
+				text = "おり"
+			intervals [16]:
+				xmin = 5.28
+				xmax = 5.52
+				text = ""
+			intervals [17]:
+				xmin = 5.52
+				xmax = 5.92
+				text = "ユダヤ"
+			intervals [18]:
+				xmin = 5.92
+				xmax = 6.16
+				text = "人"
+			intervals [19]:
+				xmin = 6.16
+				xmax = 6.24
+				text = "か"
+			intervals [20]:
+				xmin = 6.24
+				xmax = 6.48
+				text = "どう"
+			intervals [21]:
+				xmin = 6.48
+				xmax = 6.64
+				text = "か"
+			intervals [22]:
+				xmin = 6.64
+				xmax = 6.8
+				text = "を"
+			intervals [23]:
+				xmin = 6.8
+				xmax = 7.04
+				text = "問わ"
+			intervals [24]:
+				xmin = 7.04
+				xmax = 7.28
+				text = "ず"
+			intervals [25]:
+				xmin = 7.28
+				xmax = 7.6
+				text = ""
+			intervals [26]:
+				xmin = 7.6
+				xmax = 7.84
+				text = "そこ"
+			intervals [27]:
+				xmin = 7.84
+				xmax = 8.0
+				text = "で"
+			intervals [28]:
+				xmin = 8.0
+				xmax = 8.56
+				text = "大切"
+			intervals [29]:
+				xmin = 8.56
+				xmax = 8.72
+				text = "な"
+			intervals [30]:
+				xmin = 8.72
+				xmax = 8.88
+				text = "人"
+			intervals [31]:
+				xmin = 8.88
+				xmax = 8.96
+				text = "が"
+			intervals [32]:
+				xmin = 8.96
+				xmax = 9.52
+				text = "殺害"
+			intervals [33]:
+				xmin = 9.52
+				xmax = 9.76
+				text = "され"
+			intervals [34]:
+				xmin = 9.76
+				xmax = 10.08
+				text = "たり"
+			intervals [35]:
+				xmin = 10.08
+				xmax = 10.56
+				text = ""
+			intervals [36]:
+				xmin = 10.56
+				xmax = 11.12
+				text = "強制"
+			intervals [37]:
+				xmin = 11.12
+				xmax = 11.52
+				text = "労働"
+			intervals [38]:
+				xmin = 11.52
+				xmax = 11.68
+				text = "さ"
+			intervals [39]:
+				xmin = 11.68
+				xmax = 11.76
+				text = "せ"
+			intervals [40]:
+				xmin = 11.76
+				xmax = 12.0
+				text = "られ"
+			intervals [41]:
+				xmin = 12.0
+				xmax = 12.24
+				text = "たり"
+			intervals [42]:
+				xmin = 12.24
+				xmax = 12.48
+				text = "した"
+			intervals [43]:
+				xmin = 12.48
+				xmax = 12.64
+				text = "人"
+			intervals [44]:
+				xmin = 12.64
+				xmax = 12.96
+				text = "たち"
+			intervals [45]:
+				xmin = 12.96
+				xmax = 13.12
+				text = "も"
+			intervals [46]:
+				xmin = 13.12
+				xmax = 13.36
+				text = ""
+			intervals [47]:
+				xmin = 13.36
+				xmax = 13.76
+				text = "大勢"
+			intervals [48]:
+				xmin = 13.76
+				xmax = 13.92
+				text = "い"
+			intervals [49]:
+				xmin = 13.92
+				xmax = 14.32
+				text = "ます"
+			intervals [50]:
+				xmin = 14.32
+				xmax = 18.06
+				text = ""

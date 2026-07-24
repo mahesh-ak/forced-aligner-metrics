@@ -1,0 +1,210 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 19.2
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 19.2
+		intervals: size = 49
+			intervals [1]:
+				xmin = 0.0
+				xmax = 4.96
+				text = ""
+			intervals [2]:
+				xmin = 4.96
+				xmax = 5.2
+				text = "彼"
+			intervals [3]:
+				xmin = 5.2
+				xmax = 5.28
+				text = "の"
+			intervals [4]:
+				xmin = 5.28
+				xmax = 5.84
+				text = "作品"
+			intervals [5]:
+				xmin = 5.84
+				xmax = 6.0
+				text = "は"
+			intervals [6]:
+				xmin = 6.0
+				xmax = 6.32
+				text = "その"
+			intervals [7]:
+				xmin = 6.32
+				xmax = 6.48
+				text = "質"
+			intervals [8]:
+				xmin = 6.48
+				xmax = 6.64
+				text = "の"
+			intervals [9]:
+				xmin = 6.64
+				xmax = 6.88
+				text = "高"
+			intervals [10]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "さ"
+			intervals [11]:
+				xmin = 7.04
+				xmax = 7.28
+				text = "と"
+			intervals [12]:
+				xmin = 7.28
+				xmax = 7.68
+				text = "詳細"
+			intervals [13]:
+				xmin = 7.68
+				xmax = 7.84
+				text = "さ"
+			intervals [14]:
+				xmin = 7.84
+				xmax = 7.92
+				text = "が"
+			intervals [15]:
+				xmin = 7.92
+				xmax = 8.24
+				text = "評価"
+			intervals [16]:
+				xmin = 8.24
+				xmax = 8.64
+				text = "され"
+			intervals [17]:
+				xmin = 8.64
+				xmax = 8.8
+				text = ""
+			intervals [18]:
+				xmin = 8.8
+				xmax = 9.2
+				text = "切手"
+			intervals [19]:
+				xmin = 9.2
+				xmax = 9.6
+				text = "収集"
+			intervals [20]:
+				xmin = 9.6
+				xmax = 9.68
+				text = "家"
+			intervals [21]:
+				xmin = 9.68
+				xmax = 9.84
+				text = "の"
+			intervals [22]:
+				xmin = 9.84
+				xmax = 10.0
+				text = "中"
+			intervals [23]:
+				xmin = 10.0
+				xmax = 10.08
+				text = "で"
+			intervals [24]:
+				xmin = 10.08
+				xmax = 10.24
+				text = "は"
+			intervals [25]:
+				xmin = 10.24
+				xmax = 10.48
+				text = "数"
+			intervals [26]:
+				xmin = 10.48
+				xmax = 10.88
+				text = "少ない"
+			intervals [27]:
+				xmin = 10.88
+				xmax = 11.28
+				text = "有名"
+			intervals [28]:
+				xmin = 11.28
+				xmax = 11.44
+				text = "人"
+			intervals [29]:
+				xmin = 11.44
+				xmax = 11.52
+				text = "の"
+			intervals [30]:
+				xmin = 11.52
+				xmax = 11.68
+				text = "一"
+			intervals [31]:
+				xmin = 11.68
+				xmax = 11.84
+				text = "人"
+			intervals [32]:
+				xmin = 11.84
+				xmax = 12.16
+				text = "です"
+			intervals [33]:
+				xmin = 12.16
+				xmax = 12.72
+				text = ""
+			intervals [34]:
+				xmin = 12.72
+				xmax = 12.96
+				text = "彼"
+			intervals [35]:
+				xmin = 12.96
+				xmax = 13.04
+				text = "の"
+			intervals [36]:
+				xmin = 13.04
+				xmax = 13.52
+				text = "作品"
+			intervals [37]:
+				xmin = 13.52
+				xmax = 13.76
+				text = "だけ"
+			intervals [38]:
+				xmin = 13.76
+				xmax = 13.84
+				text = "を"
+			intervals [39]:
+				xmin = 13.84
+				xmax = 14.32
+				text = "専門"
+			intervals [40]:
+				xmin = 14.32
+				xmax = 14.4
+				text = "と"
+			intervals [41]:
+				xmin = 14.4
+				xmax = 14.56
+				text = "する"
+			intervals [42]:
+				xmin = 14.56
+				xmax = 15.04
+				text = "収集"
+			intervals [43]:
+				xmin = 15.04
+				xmax = 15.12
+				text = "家"
+			intervals [44]:
+				xmin = 15.12
+				xmax = 15.2
+				text = ""
+			intervals [45]:
+				xmin = 15.2
+				xmax = 15.36
+				text = "も"
+			intervals [46]:
+				xmin = 15.36
+				xmax = 15.52
+				text = "いる"
+			intervals [47]:
+				xmin = 15.52
+				xmax = 15.68
+				text = "ほど"
+			intervals [48]:
+				xmin = 15.68
+				xmax = 16.08
+				text = "です"
+			intervals [49]:
+				xmin = 16.08
+				xmax = 19.2
+				text = ""

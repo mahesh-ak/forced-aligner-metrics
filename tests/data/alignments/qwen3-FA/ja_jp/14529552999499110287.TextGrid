@@ -1,0 +1,166 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 16.98
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 16.98
+		intervals: size = 38
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.0
+				text = ""
+			intervals [2]:
+				xmin = 2.0
+				xmax = 2.32
+				text = "子供"
+			intervals [3]:
+				xmin = 2.32
+				xmax = 2.48
+				text = "たち"
+			intervals [4]:
+				xmin = 2.48
+				xmax = 2.64
+				text = ""
+			intervals [5]:
+				xmin = 2.64
+				xmax = 2.8
+				text = "が"
+			intervals [6]:
+				xmin = 2.8
+				xmax = 4.16
+				text = ""
+			intervals [7]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "里親"
+			intervals [8]:
+				xmin = 4.32
+				xmax = 4.4
+				text = ""
+			intervals [9]:
+				xmin = 4.4
+				xmax = 4.8
+				text = "制度"
+			intervals [10]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "に"
+			intervals [11]:
+				xmin = 4.96
+				xmax = 5.2
+				text = ""
+			intervals [12]:
+				xmin = 5.2
+				xmax = 5.6
+				text = "預け"
+			intervals [13]:
+				xmin = 5.6
+				xmax = 6.08
+				text = "られる"
+			intervals [14]:
+				xmin = 6.08
+				xmax = 6.48
+				text = ""
+			intervals [15]:
+				xmin = 6.48
+				xmax = 6.64
+				text = "理由"
+			intervals [16]:
+				xmin = 6.64
+				xmax = 6.88
+				text = ""
+			intervals [17]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "は"
+			intervals [18]:
+				xmin = 7.04
+				xmax = 9.6
+				text = ""
+			intervals [19]:
+				xmin = 9.6
+				xmax = 9.92
+				text = "育児"
+			intervals [20]:
+				xmin = 9.92
+				xmax = 10.0
+				text = ""
+			intervals [21]:
+				xmin = 10.0
+				xmax = 10.32
+				text = "放棄"
+			intervals [22]:
+				xmin = 10.32
+				xmax = 10.4
+				text = ""
+			intervals [23]:
+				xmin = 10.4
+				xmax = 10.64
+				text = "から"
+			intervals [24]:
+				xmin = 10.64
+				xmax = 10.72
+				text = ""
+			intervals [25]:
+				xmin = 10.72
+				xmax = 11.2
+				text = "虐待"
+			intervals [26]:
+				xmin = 11.2
+				xmax = 11.44
+				text = ""
+			intervals [27]:
+				xmin = 11.44
+				xmax = 11.76
+				text = "さらに"
+			intervals [28]:
+				xmin = 11.76
+				xmax = 11.92
+				text = "は"
+			intervals [29]:
+				xmin = 11.92
+				xmax = 12.72
+				text = ""
+			intervals [30]:
+				xmin = 12.72
+				xmax = 12.96
+				text = "恐喝"
+			intervals [31]:
+				xmin = 12.96
+				xmax = 13.28
+				text = ""
+			intervals [32]:
+				xmin = 13.28
+				xmax = 13.44
+				text = "に"
+			intervals [33]:
+				xmin = 13.44
+				xmax = 13.68
+				text = "至る"
+			intervals [34]:
+				xmin = 13.68
+				xmax = 14.08
+				text = "まで"
+			intervals [35]:
+				xmin = 14.08
+				xmax = 14.24
+				text = ""
+			intervals [36]:
+				xmin = 14.24
+				xmax = 14.72
+				text = "さまざま"
+			intervals [37]:
+				xmin = 14.72
+				xmax = 14.96
+				text = "です"
+			intervals [38]:
+				xmin = 14.96
+				xmax = 16.98
+				text = ""

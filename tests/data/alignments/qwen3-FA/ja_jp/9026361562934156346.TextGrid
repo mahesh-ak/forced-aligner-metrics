@@ -1,0 +1,122 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 14.1
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 14.1
+		intervals: size = 27
+			intervals [1]:
+				xmin = 0.0
+				xmax = 3.2
+				text = ""
+			intervals [2]:
+				xmin = 3.2
+				xmax = 3.68
+				text = "痛み"
+			intervals [3]:
+				xmin = 3.68
+				xmax = 3.76
+				text = "を"
+			intervals [4]:
+				xmin = 3.76
+				xmax = 4.24
+				text = "抑える"
+			intervals [5]:
+				xmin = 4.24
+				xmax = 4.32
+				text = "の"
+			intervals [6]:
+				xmin = 4.32
+				xmax = 4.48
+				text = "に"
+			intervals [7]:
+				xmin = 4.48
+				xmax = 4.88
+				text = "必要"
+			intervals [8]:
+				xmin = 4.88
+				xmax = 5.04
+				text = "な"
+			intervals [9]:
+				xmin = 5.04
+				xmax = 5.36
+				text = "薬"
+			intervals [10]:
+				xmin = 5.36
+				xmax = 5.6
+				text = "が"
+			intervals [11]:
+				xmin = 5.6
+				xmax = 5.84
+				text = "その"
+			intervals [12]:
+				xmin = 5.84
+				xmax = 6.32
+				text = "大会"
+			intervals [13]:
+				xmin = 6.32
+				xmax = 6.48
+				text = "で"
+			intervals [14]:
+				xmin = 6.48
+				xmax = 6.8
+				text = "禁止"
+			intervals [15]:
+				xmin = 6.8
+				xmax = 7.04
+				text = "され"
+			intervals [16]:
+				xmin = 7.04
+				xmax = 7.2
+				text = "て"
+			intervals [17]:
+				xmin = 7.2
+				xmax = 7.36
+				text = "いる"
+			intervals [18]:
+				xmin = 7.36
+				xmax = 7.76
+				text = "ため"
+			intervals [19]:
+				xmin = 7.76
+				xmax = 8.0
+				text = ""
+			intervals [20]:
+				xmin = 8.0
+				xmax = 8.24
+				text = "彼"
+			intervals [21]:
+				xmin = 8.24
+				xmax = 8.4
+				text = "は"
+			intervals [22]:
+				xmin = 8.4
+				xmax = 8.8
+				text = "服用"
+			intervals [23]:
+				xmin = 8.8
+				xmax = 9.04
+				text = "でき"
+			intervals [24]:
+				xmin = 9.04
+				xmax = 9.36
+				text = "ませ"
+			intervals [25]:
+				xmin = 9.36
+				xmax = 9.6
+				text = "でし"
+			intervals [26]:
+				xmin = 9.6
+				xmax = 9.76
+				text = "た"
+			intervals [27]:
+				xmin = 9.76
+				xmax = 14.1
+				text = ""

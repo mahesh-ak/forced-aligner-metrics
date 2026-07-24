@@ -1,0 +1,154 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 16.38
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 16.38
+		intervals: size = 35
+			intervals [1]:
+				xmin = 0.0
+				xmax = 4.08
+				text = ""
+			intervals [2]:
+				xmin = 4.08
+				xmax = 5.2
+				text = "サンクトペテルブルク"
+			intervals [3]:
+				xmin = 5.2
+				xmax = 5.36
+				text = "の"
+			intervals [4]:
+				xmin = 5.36
+				xmax = 5.76
+				text = "クルーズ"
+			intervals [5]:
+				xmin = 5.76
+				xmax = 5.84
+				text = "に"
+			intervals [6]:
+				xmin = 5.84
+				xmax = 6.08
+				text = "は"
+			intervals [7]:
+				xmin = 6.08
+				xmax = 6.32
+				text = "街"
+			intervals [8]:
+				xmin = 6.32
+				xmax = 6.4
+				text = "で"
+			intervals [9]:
+				xmin = 6.4
+				xmax = 6.48
+				text = "の"
+			intervals [10]:
+				xmin = 6.48
+				xmax = 7.04
+				text = "滞在"
+			intervals [11]:
+				xmin = 7.04
+				xmax = 7.36
+				text = "時間"
+			intervals [12]:
+				xmin = 7.36
+				xmax = 7.44
+				text = "が"
+			intervals [13]:
+				xmin = 7.44
+				xmax = 7.76
+				text = "含ま"
+			intervals [14]:
+				xmin = 7.76
+				xmax = 7.84
+				text = "れ"
+			intervals [15]:
+				xmin = 7.84
+				xmax = 7.92
+				text = "て"
+			intervals [16]:
+				xmin = 7.92
+				xmax = 8.0
+				text = "い"
+			intervals [17]:
+				xmin = 8.0
+				xmax = 8.32
+				text = "ます"
+			intervals [18]:
+				xmin = 8.32
+				xmax = 8.56
+				text = ""
+			intervals [19]:
+				xmin = 8.56
+				xmax = 8.96
+				text = "クルーズ"
+			intervals [20]:
+				xmin = 8.96
+				xmax = 9.04
+				text = "の"
+			intervals [21]:
+				xmin = 9.04
+				xmax = 9.44
+				text = "乗客"
+			intervals [22]:
+				xmin = 9.44
+				xmax = 9.6
+				text = "は"
+			intervals [23]:
+				xmin = 9.6
+				xmax = 9.84
+				text = "ビザ"
+			intervals [24]:
+				xmin = 9.84
+				xmax = 10.0
+				text = "が"
+			intervals [25]:
+				xmin = 10.0
+				xmax = 10.24
+				text = "免除"
+			intervals [26]:
+				xmin = 10.24
+				xmax = 10.48
+				text = "され"
+			intervals [27]:
+				xmin = 10.48
+				xmax = 10.8
+				text = "ます"
+			intervals [28]:
+				xmin = 10.8
+				xmax = 11.04
+				text = ""
+			intervals [29]:
+				xmin = 11.04
+				xmax = 11.52
+				text = "条件"
+			intervals [30]:
+				xmin = 11.52
+				xmax = 11.6
+				text = "を"
+			intervals [31]:
+				xmin = 11.6
+				xmax = 11.92
+				text = "確認"
+			intervals [32]:
+				xmin = 11.92
+				xmax = 12.0
+				text = "し"
+			intervals [33]:
+				xmin = 12.0
+				xmax = 12.08
+				text = "て"
+			intervals [34]:
+				xmin = 12.08
+				xmax = 12.56
+				text = "ください"
+			intervals [35]:
+				xmin = 12.56
+				xmax = 16.38
+				text = ""

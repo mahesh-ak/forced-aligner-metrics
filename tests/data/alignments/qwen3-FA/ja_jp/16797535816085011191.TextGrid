@@ -1,0 +1,110 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.72
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.72
+		intervals: size = 24
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.16
+				text = ""
+			intervals [2]:
+				xmin = 2.16
+				xmax = 2.32
+				text = "北"
+			intervals [3]:
+				xmin = 2.32
+				xmax = 2.56
+				text = "は"
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.96
+				text = "サヘル"
+			intervals [5]:
+				xmin = 2.96
+				xmax = 3.04
+				text = "と"
+			intervals [6]:
+				xmin = 3.04
+				xmax = 3.52
+				text = "境界"
+			intervals [7]:
+				xmin = 3.52
+				xmax = 3.6
+				text = "を"
+			intervals [8]:
+				xmin = 3.6
+				xmax = 3.84
+				text = "接し"
+			intervals [9]:
+				xmin = 3.84
+				xmax = 4.56
+				text = ""
+			intervals [10]:
+				xmin = 4.56
+				xmax = 4.8
+				text = "南"
+			intervals [11]:
+				xmin = 4.8
+				xmax = 4.88
+				text = ""
+			intervals [12]:
+				xmin = 4.88
+				xmax = 5.04
+				text = "と"
+			intervals [13]:
+				xmin = 5.04
+				xmax = 5.28
+				text = "西"
+			intervals [14]:
+				xmin = 5.28
+				xmax = 5.36
+				text = "は"
+			intervals [15]:
+				xmin = 5.36
+				xmax = 5.92
+				text = "大西"
+			intervals [16]:
+				xmin = 5.92
+				xmax = 6.0
+				text = "洋"
+			intervals [17]:
+				xmin = 6.0
+				xmax = 6.16
+				text = "に"
+			intervals [18]:
+				xmin = 6.16
+				xmax = 6.48
+				text = "囲ま"
+			intervals [19]:
+				xmin = 6.48
+				xmax = 6.56
+				text = "れ"
+			intervals [20]:
+				xmin = 6.56
+				xmax = 6.72
+				text = "た"
+			intervals [21]:
+				xmin = 6.72
+				xmax = 6.88
+				text = "地域"
+			intervals [22]:
+				xmin = 6.88
+				xmax = 7.04
+				text = ""
+			intervals [23]:
+				xmin = 7.04
+				xmax = 7.28
+				text = "です"
+			intervals [24]:
+				xmin = 7.28
+				xmax = 9.72
+				text = ""

@@ -1,0 +1,98 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 8.7
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 8.7
+		intervals: size = 21
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.76
+				text = ""
+			intervals [2]:
+				xmin = 1.76
+				xmax = 2.0
+				text = "当初"
+			intervals [3]:
+				xmin = 2.0
+				xmax = 2.32
+				text = "彼"
+			intervals [4]:
+				xmin = 2.32
+				xmax = 2.4
+				text = "は"
+			intervals [5]:
+				xmin = 2.4
+				xmax = 2.48
+				text = ""
+			intervals [6]:
+				xmin = 2.48
+				xmax = 2.88
+				text = "グレート"
+			intervals [7]:
+				xmin = 2.88
+				xmax = 3.12
+				text = "ヤー"
+			intervals [8]:
+				xmin = 3.12
+				xmax = 3.36
+				text = "マス"
+			intervals [9]:
+				xmin = 3.36
+				xmax = 3.44
+				text = "に"
+			intervals [10]:
+				xmin = 3.44
+				xmax = 3.6
+				text = "ある"
+			intervals [11]:
+				xmin = 3.6
+				xmax = 3.68
+				text = ""
+			intervals [12]:
+				xmin = 3.68
+				xmax = 4.08
+				text = "ジェームズ"
+			intervals [13]:
+				xmin = 4.08
+				xmax = 4.56
+				text = ""
+			intervals [14]:
+				xmin = 4.56
+				xmax = 5.04
+				text = "パジェット"
+			intervals [15]:
+				xmin = 5.04
+				xmax = 5.28
+				text = "病院"
+			intervals [16]:
+				xmin = 5.28
+				xmax = 5.52
+				text = ""
+			intervals [17]:
+				xmin = 5.52
+				xmax = 5.76
+				text = "入院"
+			intervals [18]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "し"
+			intervals [19]:
+				xmin = 5.92
+				xmax = 6.0
+				text = "て"
+			intervals [20]:
+				xmin = 6.0
+				xmax = 6.32
+				text = "ました"
+			intervals [21]:
+				xmin = 6.32
+				xmax = 8.7
+				text = ""

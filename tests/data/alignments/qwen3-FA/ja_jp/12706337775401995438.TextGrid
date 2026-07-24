@@ -1,0 +1,286 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 19.08
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 19.08
+		intervals: size = 68
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.12
+				text = ""
+			intervals [2]:
+				xmin = 1.12
+				xmax = 1.52
+				text = "芸能"
+			intervals [3]:
+				xmin = 1.52
+				xmax = 1.76
+				text = "ニュース"
+			intervals [4]:
+				xmin = 1.76
+				xmax = 2.16
+				text = "サイト"
+			intervals [5]:
+				xmin = 2.16
+				xmax = 2.24
+				text = ""
+			intervals [6]:
+				xmin = 2.24
+				xmax = 2.96
+				text = "tmz"
+			intervals [7]:
+				xmin = 2.96
+				xmax = 3.04
+				text = "に"
+			intervals [8]:
+				xmin = 3.04
+				xmax = 3.2
+				text = "よる"
+			intervals [9]:
+				xmin = 3.2
+				xmax = 3.44
+				text = "と"
+			intervals [10]:
+				xmin = 3.44
+				xmax = 3.76
+				text = "写真"
+			intervals [11]:
+				xmin = 3.76
+				xmax = 3.92
+				text = "家"
+			intervals [12]:
+				xmin = 3.92
+				xmax = 4.08
+				text = "は"
+			intervals [13]:
+				xmin = 4.08
+				xmax = 4.64
+				text = "セプルベダ"
+			intervals [14]:
+				xmin = 4.64
+				xmax = 5.04
+				text = "大通り"
+			intervals [15]:
+				xmin = 5.04
+				xmax = 5.2
+				text = "の"
+			intervals [16]:
+				xmin = 5.2
+				xmax = 5.52
+				text = "反対"
+			intervals [17]:
+				xmin = 5.52
+				xmax = 5.84
+				text = "車線"
+			intervals [18]:
+				xmin = 5.84
+				xmax = 5.92
+				text = "に"
+			intervals [19]:
+				xmin = 5.92
+				xmax = 6.16
+				text = "車"
+			intervals [20]:
+				xmin = 6.16
+				xmax = 6.24
+				text = "を"
+			intervals [21]:
+				xmin = 6.24
+				xmax = 6.32
+				text = ""
+			intervals [22]:
+				xmin = 6.32
+				xmax = 6.64
+				text = "停め"
+			intervals [23]:
+				xmin = 6.64
+				xmax = 7.04
+				text = "道路"
+			intervals [24]:
+				xmin = 7.04
+				xmax = 7.28
+				text = "渡っ"
+			intervals [25]:
+				xmin = 7.28
+				xmax = 7.44
+				text = "て"
+			intervals [26]:
+				xmin = 7.44
+				xmax = 7.84
+				text = "進む"
+			intervals [27]:
+				xmin = 7.84
+				xmax = 8.0
+				text = "前"
+			intervals [28]:
+				xmin = 8.0
+				xmax = 8.24
+				text = "に"
+			intervals [29]:
+				xmin = 8.24
+				xmax = 8.72
+				text = "警察"
+			intervals [30]:
+				xmin = 8.72
+				xmax = 8.8
+				text = "の"
+			intervals [31]:
+				xmin = 8.8
+				xmax = 9.28
+				text = "検問"
+			intervals [32]:
+				xmin = 9.28
+				xmax = 9.52
+				text = "写真"
+			intervals [33]:
+				xmin = 9.52
+				xmax = 9.6
+				text = "に"
+			intervals [34]:
+				xmin = 9.6
+				xmax = 10.0
+				text = "収めよう"
+			intervals [35]:
+				xmin = 10.0
+				xmax = 10.16
+				text = "と"
+			intervals [36]:
+				xmin = 10.16
+				xmax = 10.32
+				text = "した"
+			intervals [37]:
+				xmin = 10.32
+				xmax = 10.72
+				text = "ため"
+			intervals [38]:
+				xmin = 10.72
+				xmax = 11.04
+				text = ""
+			intervals [39]:
+				xmin = 11.04
+				xmax = 11.44
+				text = "交通"
+			intervals [40]:
+				xmin = 11.44
+				xmax = 11.68
+				text = "規制"
+			intervals [41]:
+				xmin = 11.68
+				xmax = 11.76
+				text = "を"
+			intervals [42]:
+				xmin = 11.76
+				xmax = 11.84
+				text = "し"
+			intervals [43]:
+				xmin = 11.84
+				xmax = 11.92
+				text = "て"
+			intervals [44]:
+				xmin = 11.92
+				xmax = 12.16
+				text = "いた"
+			intervals [45]:
+				xmin = 12.16
+				xmax = 12.24
+				text = ""
+			intervals [46]:
+				xmin = 12.24
+				xmax = 12.8
+				text = "カリフォルニア"
+			intervals [47]:
+				xmin = 12.8
+				xmax = 13.04
+				text = "州"
+			intervals [48]:
+				xmin = 13.04
+				xmax = 13.36
+				text = "ハイウェイ"
+			intervals [49]:
+				xmin = 13.36
+				xmax = 13.84
+				text = "パトロール"
+			intervals [50]:
+				xmin = 13.84
+				xmax = 14.0
+				text = "の"
+			intervals [51]:
+				xmin = 14.0
+				xmax = 14.4
+				text = "警察"
+			intervals [52]:
+				xmin = 14.4
+				xmax = 14.56
+				text = "官"
+			intervals [53]:
+				xmin = 14.56
+				xmax = 14.8
+				text = "が"
+			intervals [54]:
+				xmin = 14.8
+				xmax = 14.88
+				text = ""
+			intervals [55]:
+				xmin = 14.88
+				xmax = 15.2
+				text = "横断"
+			intervals [56]:
+				xmin = 15.2
+				xmax = 15.28
+				text = "し"
+			intervals [57]:
+				xmin = 15.28
+				xmax = 15.36
+				text = "て"
+			intervals [58]:
+				xmin = 15.36
+				xmax = 15.68
+				text = "戻る"
+			intervals [59]:
+				xmin = 15.68
+				xmax = 15.76
+				text = "よう"
+			intervals [60]:
+				xmin = 15.76
+				xmax = 15.84
+				text = "に"
+			intervals [61]:
+				xmin = 15.84
+				xmax = 16.0
+				text = ""
+			intervals [62]:
+				xmin = 16.0
+				xmax = 16.16
+				text = "二回"
+			intervals [63]:
+				xmin = 16.16
+				xmax = 16.32
+				text = "も"
+			intervals [64]:
+				xmin = 16.32
+				xmax = 16.56
+				text = "命じ"
+			intervals [65]:
+				xmin = 16.56
+				xmax = 16.64
+				text = "た"
+			intervals [66]:
+				xmin = 16.64
+				xmax = 16.88
+				text = "そう"
+			intervals [67]:
+				xmin = 16.88
+				xmax = 17.28
+				text = "です"
+			intervals [68]:
+				xmin = 17.28
+				xmax = 19.08
+				text = ""

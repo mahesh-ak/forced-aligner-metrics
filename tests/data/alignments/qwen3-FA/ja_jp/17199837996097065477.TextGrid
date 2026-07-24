@@ -1,0 +1,94 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 8.34
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 8.34
+		intervals: size = 20
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.76
+				text = ""
+			intervals [2]:
+				xmin = 1.76
+				xmax = 2.24
+				text = "現在"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.56
+				text = ""
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.72
+				text = "を"
+			intervals [5]:
+				xmin = 2.72
+				xmax = 3.12
+				text = "折り返す"
+			intervals [6]:
+				xmin = 3.12
+				xmax = 3.28
+				text = "こと"
+			intervals [7]:
+				xmin = 3.28
+				xmax = 3.36
+				text = "が"
+			intervals [8]:
+				xmin = 3.36
+				xmax = 3.44
+				text = ""
+			intervals [9]:
+				xmin = 3.44
+				xmax = 3.52
+				text = "でき"
+			intervals [10]:
+				xmin = 3.52
+				xmax = 3.6
+				text = ""
+			intervals [11]:
+				xmin = 3.6
+				xmax = 3.76
+				text = "ない"
+			intervals [12]:
+				xmin = 3.76
+				xmax = 4.16
+				text = "昆虫"
+			intervals [13]:
+				xmin = 4.16
+				xmax = 4.56
+				text = "は"
+			intervals [14]:
+				xmin = 4.56
+				xmax = 4.88
+				text = "トンボ"
+			intervals [15]:
+				xmin = 4.88
+				xmax = 5.04
+				text = "と"
+			intervals [16]:
+				xmin = 5.04
+				xmax = 5.12
+				text = ""
+			intervals [17]:
+				xmin = 5.12
+				xmax = 5.52
+				text = "カゲロウ"
+			intervals [18]:
+				xmin = 5.52
+				xmax = 5.76
+				text = "のみ"
+			intervals [19]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "です"
+			intervals [20]:
+				xmin = 5.92
+				xmax = 8.34
+				text = ""

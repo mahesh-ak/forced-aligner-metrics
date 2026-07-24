@@ -1,0 +1,110 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 11.22
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 11.22
+		intervals: size = 24
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.32
+				text = ""
+			intervals [2]:
+				xmin = 2.32
+				xmax = 2.64
+				text = "その"
+			intervals [3]:
+				xmin = 2.64
+				xmax = 2.96
+				text = "病院"
+			intervals [4]:
+				xmin = 2.96
+				xmax = 3.04
+				text = "に"
+			intervals [5]:
+				xmin = 3.04
+				xmax = 3.36
+				text = "勤務"
+			intervals [6]:
+				xmin = 3.36
+				xmax = 3.52
+				text = "し"
+			intervals [7]:
+				xmin = 3.52
+				xmax = 3.92
+				text = "ながら"
+			intervals [8]:
+				xmin = 3.92
+				xmax = 4.0
+				text = ""
+			intervals [9]:
+				xmin = 4.0
+				xmax = 4.56
+				text = "リギンズ"
+			intervals [10]:
+				xmin = 4.56
+				xmax = 4.72
+				text = "は"
+			intervals [11]:
+				xmin = 4.72
+				xmax = 4.8
+				text = ""
+			intervals [12]:
+				xmin = 4.8
+				xmax = 5.12
+				text = "余暇"
+			intervals [13]:
+				xmin = 5.12
+				xmax = 5.44
+				text = "利用"
+			intervals [14]:
+				xmin = 5.44
+				xmax = 5.76
+				text = "して"
+			intervals [15]:
+				xmin = 5.76
+				xmax = 6.24
+				text = "早産"
+			intervals [16]:
+				xmin = 6.24
+				xmax = 6.32
+				text = "に"
+			intervals [17]:
+				xmin = 6.32
+				xmax = 6.56
+				text = "つい"
+			intervals [18]:
+				xmin = 6.56
+				xmax = 6.64
+				text = "て"
+			intervals [19]:
+				xmin = 6.64
+				xmax = 6.72
+				text = "の"
+			intervals [20]:
+				xmin = 6.72
+				xmax = 7.12
+				text = "研究"
+			intervals [21]:
+				xmin = 7.12
+				xmax = 7.28
+				text = "を"
+			intervals [22]:
+				xmin = 7.28
+				xmax = 7.6
+				text = "始め"
+			intervals [23]:
+				xmin = 7.6
+				xmax = 7.92
+				text = "ました"
+			intervals [24]:
+				xmin = 7.92
+				xmax = 11.22
+				text = ""

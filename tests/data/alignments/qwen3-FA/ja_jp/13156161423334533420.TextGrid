@@ -1,0 +1,114 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.48
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.48
+		intervals: size = 25
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.24
+				text = ""
+			intervals [2]:
+				xmin = 2.24
+				xmax = 2.48
+				text = "言う"
+			intervals [3]:
+				xmin = 2.48
+				xmax = 2.72
+				text = "まで"
+			intervals [4]:
+				xmin = 2.72
+				xmax = 2.8
+				text = "も"
+			intervals [5]:
+				xmin = 2.8
+				xmax = 2.96
+				text = "ない"
+			intervals [6]:
+				xmin = 2.96
+				xmax = 3.2
+				text = "こと"
+			intervals [7]:
+				xmin = 3.2
+				xmax = 3.36
+				text = "です"
+			intervals [8]:
+				xmin = 3.36
+				xmax = 3.6
+				text = "が"
+			intervals [9]:
+				xmin = 3.6
+				xmax = 4.0
+				text = "ロマンス"
+			intervals [10]:
+				xmin = 4.0
+				xmax = 4.16
+				text = "語"
+			intervals [11]:
+				xmin = 4.16
+				xmax = 4.24
+				text = "の"
+			intervals [12]:
+				xmin = 4.24
+				xmax = 4.48
+				text = "いずれ"
+			intervals [13]:
+				xmin = 4.48
+				xmax = 4.56
+				text = "か"
+			intervals [14]:
+				xmin = 4.56
+				xmax = 4.64
+				text = "を"
+			intervals [15]:
+				xmin = 4.64
+				xmax = 4.8
+				text = "知っ"
+			intervals [16]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "て"
+			intervals [17]:
+				xmin = 4.96
+				xmax = 5.12
+				text = "いれば"
+			intervals [18]:
+				xmin = 5.12
+				xmax = 5.28
+				text = ""
+			intervals [19]:
+				xmin = 5.28
+				xmax = 5.84
+				text = "ポルトガル"
+			intervals [20]:
+				xmin = 5.84
+				xmax = 6.0
+				text = "語"
+			intervals [21]:
+				xmin = 6.0
+				xmax = 6.24
+				text = "学び"
+			intervals [22]:
+				xmin = 6.24
+				xmax = 6.56
+				text = "やすい"
+			intervals [23]:
+				xmin = 6.56
+				xmax = 6.8
+				text = "はず"
+			intervals [24]:
+				xmin = 6.8
+				xmax = 7.2
+				text = "です"
+			intervals [25]:
+				xmin = 7.2
+				xmax = 9.48
+				text = ""

@@ -1,0 +1,94 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.6
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.6
+		intervals: size = 20
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.16
+				text = "ジャンカルロ"
+			intervals [2]:
+				xmin = 2.16
+				xmax = 2.24
+				text = ""
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.72
+				text = "フィジケラ"
+			intervals [4]:
+				xmin = 2.72
+				xmax = 2.88
+				text = ""
+			intervals [5]:
+				xmin = 2.88
+				xmax = 3.28
+				text = "マシン"
+			intervals [6]:
+				xmin = 3.28
+				xmax = 3.36
+				text = "を"
+			intervals [7]:
+				xmin = 3.36
+				xmax = 4.0
+				text = "コントロール"
+			intervals [8]:
+				xmin = 4.0
+				xmax = 4.24
+				text = "でき"
+			intervals [9]:
+				xmin = 4.24
+				xmax = 4.4
+				text = "なく"
+			intervals [10]:
+				xmin = 4.4
+				xmax = 4.64
+				text = "なり"
+			intervals [11]:
+				xmin = 4.64
+				xmax = 4.88
+				text = ""
+			intervals [12]:
+				xmin = 4.88
+				xmax = 5.28
+				text = "スタート"
+			intervals [13]:
+				xmin = 5.28
+				xmax = 5.68
+				text = "直後"
+			intervals [14]:
+				xmin = 5.68
+				xmax = 5.84
+				text = "に"
+			intervals [15]:
+				xmin = 5.84
+				xmax = 6.16
+				text = "レース"
+			intervals [16]:
+				xmin = 6.16
+				xmax = 6.4
+				text = "から"
+			intervals [17]:
+				xmin = 6.4
+				xmax = 6.88
+				text = "脱落"
+			intervals [18]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "し"
+			intervals [19]:
+				xmin = 7.04
+				xmax = 7.36
+				text = "ました"
+			intervals [20]:
+				xmin = 7.36
+				xmax = 9.6
+				text = ""

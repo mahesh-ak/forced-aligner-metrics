@@ -1,0 +1,118 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 16.98
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 16.98
+		intervals: size = 26
+			intervals [1]:
+				xmin = 0.0
+				xmax = 4.88
+				text = ""
+			intervals [2]:
+				xmin = 4.88
+				xmax = 5.44
+				text = "本件"
+			intervals [3]:
+				xmin = 5.44
+				xmax = 5.76
+				text = "は"
+			intervals [4]:
+				xmin = 5.76
+				xmax = 5.84
+				text = ""
+			intervals [5]:
+				xmin = 5.84
+				xmax = 6.24
+				text = "トランプ"
+			intervals [6]:
+				xmin = 6.24
+				xmax = 6.88
+				text = "大統領"
+			intervals [7]:
+				xmin = 6.88
+				xmax = 7.2
+				text = "が"
+			intervals [8]:
+				xmin = 7.2
+				xmax = 7.6
+				text = "トルコ"
+			intervals [9]:
+				xmin = 7.6
+				xmax = 7.84
+				text = "の"
+			intervals [10]:
+				xmin = 7.84
+				xmax = 8.48
+				text = "レセップ"
+			intervals [11]:
+				xmin = 8.48
+				xmax = 8.56
+				text = ""
+			intervals [12]:
+				xmin = 8.56
+				xmax = 9.12
+				text = "タイップ"
+			intervals [13]:
+				xmin = 9.12
+				xmax = 9.2
+				text = ""
+			intervals [14]:
+				xmin = 9.2
+				xmax = 9.44
+				text = "エル"
+			intervals [15]:
+				xmin = 9.44
+				xmax = 9.76
+				text = "ドアン"
+			intervals [16]:
+				xmin = 9.76
+				xmax = 10.4
+				text = "大統領"
+			intervals [17]:
+				xmin = 10.4
+				xmax = 10.64
+				text = "と"
+			intervals [18]:
+				xmin = 10.64
+				xmax = 11.04
+				text = "電話"
+			intervals [19]:
+				xmin = 11.04
+				xmax = 11.44
+				text = "会談"
+			intervals [20]:
+				xmin = 11.44
+				xmax = 11.76
+				text = "した"
+			intervals [21]:
+				xmin = 11.76
+				xmax = 11.92
+				text = "後"
+			intervals [22]:
+				xmin = 11.92
+				xmax = 12.0
+				text = "で"
+			intervals [23]:
+				xmin = 12.0
+				xmax = 12.48
+				text = "発表"
+			intervals [24]:
+				xmin = 12.48
+				xmax = 12.72
+				text = "され"
+			intervals [25]:
+				xmin = 12.72
+				xmax = 13.12
+				text = "ました"
+			intervals [26]:
+				xmin = 13.12
+				xmax = 16.98
+				text = ""

@@ -1,0 +1,138 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.72
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.72
+		intervals: size = 31
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.64
+				text = ""
+			intervals [2]:
+				xmin = 2.64
+				xmax = 2.96
+				text = "豪奢"
+			intervals [3]:
+				xmin = 2.96
+				xmax = 3.12
+				text = "な"
+			intervals [4]:
+				xmin = 3.12
+				xmax = 3.44
+				text = "衣装"
+			intervals [5]:
+				xmin = 3.44
+				xmax = 3.92
+				text = ""
+			intervals [6]:
+				xmin = 3.92
+				xmax = 4.0
+				text = "の"
+			intervals [7]:
+				xmin = 4.0
+				xmax = 4.4
+				text = "中心"
+			intervals [8]:
+				xmin = 4.4
+				xmax = 4.56
+				text = "地"
+			intervals [9]:
+				xmin = 4.56
+				xmax = 4.72
+				text = "して"
+			intervals [10]:
+				xmin = 4.72
+				xmax = 4.8
+				text = "の"
+			intervals [11]:
+				xmin = 4.8
+				xmax = 5.28
+				text = "名声"
+			intervals [12]:
+				xmin = 5.28
+				xmax = 5.44
+				text = "は"
+			intervals [13]:
+				xmin = 5.44
+				xmax = 5.92
+				text = ""
+			intervals [14]:
+				xmin = 5.92
+				xmax = 6.24
+				text = "紀元"
+			intervals [15]:
+				xmin = 6.24
+				xmax = 6.48
+				text = "四百"
+			intervals [16]:
+				xmin = 6.48
+				xmax = 6.8
+				text = ""
+			intervals [17]:
+				xmin = 6.8
+				xmax = 6.96
+				text = "年"
+			intervals [18]:
+				xmin = 6.96
+				xmax = 7.2
+				text = "頃"
+			intervals [19]:
+				xmin = 7.2
+				xmax = 7.36
+				text = "から"
+			intervals [20]:
+				xmin = 7.36
+				xmax = 7.76
+				text = "始まり"
+			intervals [21]:
+				xmin = 7.76
+				xmax = 8.0
+				text = ""
+			intervals [22]:
+				xmin = 8.0
+				xmax = 8.32
+				text = "紀元"
+			intervals [23]:
+				xmin = 8.32
+				xmax = 8.56
+				text = ""
+			intervals [24]:
+				xmin = 8.56
+				xmax = 8.8
+				text = "千"
+			intervals [25]:
+				xmin = 8.8
+				xmax = 9.04
+				text = "百"
+			intervals [26]:
+				xmin = 9.04
+				xmax = 9.2
+				text = "年"
+			intervals [27]:
+				xmin = 9.2
+				xmax = 9.44
+				text = "頃"
+			intervals [28]:
+				xmin = 9.44
+				xmax = 9.68
+				text = "まで"
+			intervals [29]:
+				xmin = 9.68
+				xmax = 10.08
+				text = "続き"
+			intervals [30]:
+				xmin = 10.08
+				xmax = 10.4
+				text = "ました"
+			intervals [31]:
+				xmin = 10.4
+				xmax = 12.72
+				text = ""

@@ -1,0 +1,118 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 14.76
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 14.76
+		intervals: size = 26
+			intervals [1]:
+				xmin = 0.0
+				xmax = 3.76
+				text = ""
+			intervals [2]:
+				xmin = 3.76
+				xmax = 4.32
+				text = "マチュピチュ"
+			intervals [3]:
+				xmin = 4.32
+				xmax = 4.48
+				text = "は"
+			intervals [4]:
+				xmin = 4.48
+				xmax = 4.8
+				text = "千"
+			intervals [5]:
+				xmin = 4.8
+				xmax = 5.2
+				text = "九百"
+			intervals [6]:
+				xmin = 5.2
+				xmax = 5.68
+				text = "七十"
+			intervals [7]:
+				xmin = 5.68
+				xmax = 5.76
+				text = ""
+			intervals [8]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "年"
+			intervals [9]:
+				xmin = 5.92
+				xmax = 6.08
+				text = "の"
+			intervals [10]:
+				xmin = 6.08
+				xmax = 6.4
+				text = "時点"
+			intervals [11]:
+				xmin = 6.4
+				xmax = 6.56
+				text = "で"
+			intervals [12]:
+				xmin = 6.56
+				xmax = 7.04
+				text = "三十"
+			intervals [13]:
+				xmin = 7.04
+				xmax = 7.6
+				text = ""
+			intervals [14]:
+				xmin = 7.6
+				xmax = 7.84
+				text = "まで"
+			intervals [15]:
+				xmin = 7.84
+				xmax = 8.24
+				text = "修復"
+			intervals [16]:
+				xmin = 8.24
+				xmax = 8.64
+				text = "され"
+			intervals [17]:
+				xmin = 8.64
+				xmax = 8.72
+				text = ""
+			intervals [18]:
+				xmin = 8.72
+				xmax = 9.12
+				text = "現在"
+			intervals [19]:
+				xmin = 9.12
+				xmax = 9.28
+				text = "も"
+			intervals [20]:
+				xmin = 9.28
+				xmax = 10.0
+				text = "引き続き"
+			intervals [21]:
+				xmin = 10.0
+				xmax = 10.4
+				text = "修復"
+			intervals [22]:
+				xmin = 10.4
+				xmax = 10.64
+				text = "され"
+			intervals [23]:
+				xmin = 10.64
+				xmax = 10.72
+				text = "て"
+			intervals [24]:
+				xmin = 10.72
+				xmax = 10.8
+				text = "い"
+			intervals [25]:
+				xmin = 10.8
+				xmax = 11.36
+				text = "ます"
+			intervals [26]:
+				xmin = 11.36
+				xmax = 14.76
+				text = ""

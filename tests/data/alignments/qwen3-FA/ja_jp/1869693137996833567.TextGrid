@@ -1,0 +1,118 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 8.7
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 8.7
+		intervals: size = 26
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.76
+				text = ""
+			intervals [2]:
+				xmin = 1.76
+				xmax = 1.84
+				text = "一"
+			intervals [3]:
+				xmin = 1.84
+				xmax = 1.92
+				text = ""
+			intervals [4]:
+				xmin = 1.92
+				xmax = 2.32
+				text = "分間"
+			intervals [5]:
+				xmin = 2.32
+				xmax = 2.4
+				text = "で"
+			intervals [6]:
+				xmin = 2.4
+				xmax = 2.88
+				text = "沸騰"
+			intervals [7]:
+				xmin = 2.88
+				xmax = 3.04
+				text = "する"
+			intervals [8]:
+				xmin = 3.04
+				xmax = 3.12
+				text = ""
+			intervals [9]:
+				xmin = 3.12
+				xmax = 3.44
+				text = "地域"
+			intervals [10]:
+				xmin = 3.44
+				xmax = 3.52
+				text = "も"
+			intervals [11]:
+				xmin = 3.52
+				xmax = 3.68
+				text = "あれ"
+			intervals [12]:
+				xmin = 3.68
+				xmax = 4.0
+				text = "ば"
+			intervals [13]:
+				xmin = 4.0
+				xmax = 4.16
+				text = ""
+			intervals [14]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "沸騰"
+			intervals [15]:
+				xmin = 4.32
+				xmax = 4.56
+				text = "する"
+			intervals [16]:
+				xmin = 4.56
+				xmax = 4.8
+				text = "まで"
+			intervals [17]:
+				xmin = 4.8
+				xmax = 4.88
+				text = ""
+			intervals [18]:
+				xmin = 4.88
+				xmax = 5.04
+				text = "何"
+			intervals [19]:
+				xmin = 5.04
+				xmax = 5.36
+				text = "分"
+			intervals [20]:
+				xmin = 5.36
+				xmax = 5.44
+				text = ""
+			intervals [21]:
+				xmin = 5.44
+				xmax = 5.76
+				text = "かかる"
+			intervals [22]:
+				xmin = 5.76
+				xmax = 6.16
+				text = "地域"
+			intervals [23]:
+				xmin = 6.16
+				xmax = 6.24
+				text = "も"
+			intervals [24]:
+				xmin = 6.24
+				xmax = 6.4
+				text = "あり"
+			intervals [25]:
+				xmin = 6.4
+				xmax = 6.72
+				text = "ます"
+			intervals [26]:
+				xmin = 6.72
+				xmax = 8.7
+				text = ""

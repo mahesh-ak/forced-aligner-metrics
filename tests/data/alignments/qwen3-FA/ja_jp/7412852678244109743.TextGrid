@@ -1,0 +1,98 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 15.54
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 15.54
+		intervals: size = 21
+			intervals [1]:
+				xmin = 0.0
+				xmax = 5.12
+				text = ""
+			intervals [2]:
+				xmin = 5.12
+				xmax = 5.6
+				text = "ほとんど"
+			intervals [3]:
+				xmin = 5.6
+				xmax = 5.76
+				text = "が"
+			intervals [4]:
+				xmin = 5.76
+				xmax = 6.24
+				text = "砂浜"
+			intervals [5]:
+				xmin = 6.24
+				xmax = 6.4
+				text = "で"
+			intervals [6]:
+				xmin = 6.4
+				xmax = 6.8
+				text = "安全"
+			intervals [7]:
+				xmin = 6.8
+				xmax = 6.88
+				text = "に"
+			intervals [8]:
+				xmin = 6.88
+				xmax = 7.2
+				text = "泳ぐ"
+			intervals [9]:
+				xmin = 7.2
+				xmax = 7.44
+				text = "こと"
+			intervals [10]:
+				xmin = 7.44
+				xmax = 7.52
+				text = "が"
+			intervals [11]:
+				xmin = 7.52
+				xmax = 7.84
+				text = "でき"
+			intervals [12]:
+				xmin = 7.84
+				xmax = 8.56
+				text = ""
+			intervals [13]:
+				xmin = 8.56
+				xmax = 9.2
+				text = "ポフツカワ"
+			intervals [14]:
+				xmin = 9.2
+				xmax = 9.36
+				text = "の"
+			intervals [15]:
+				xmin = 9.36
+				xmax = 9.68
+				text = "木陰"
+			intervals [16]:
+				xmin = 9.68
+				xmax = 9.92
+				text = "が"
+			intervals [17]:
+				xmin = 9.92
+				xmax = 10.32
+				text = "日除け"
+			intervals [18]:
+				xmin = 10.32
+				xmax = 10.4
+				text = "に"
+			intervals [19]:
+				xmin = 10.4
+				xmax = 10.64
+				text = "なり"
+			intervals [20]:
+				xmin = 10.64
+				xmax = 11.04
+				text = "ます"
+			intervals [21]:
+				xmin = 11.04
+				xmax = 15.54
+				text = ""

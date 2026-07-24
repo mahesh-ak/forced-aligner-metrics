@@ -1,0 +1,150 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 15.84
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 15.84
+		intervals: size = 34
+			intervals [1]:
+				xmin = 0.0
+				xmax = 4.24
+				text = ""
+			intervals [2]:
+				xmin = 4.24
+				xmax = 4.48
+				text = "生地"
+			intervals [3]:
+				xmin = 4.48
+				xmax = 4.72
+				text = "の"
+			intervals [4]:
+				xmin = 4.72
+				xmax = 5.04
+				text = "温度"
+			intervals [5]:
+				xmin = 5.04
+				xmax = 5.28
+				text = "が"
+			intervals [6]:
+				xmin = 5.28
+				xmax = 5.6
+				text = "上がり"
+			intervals [7]:
+				xmin = 5.6
+				xmax = 5.84
+				text = "すぎ"
+			intervals [8]:
+				xmin = 5.84
+				xmax = 6.08
+				text = "ない"
+			intervals [9]:
+				xmin = 6.08
+				xmax = 6.24
+				text = "よう"
+			intervals [10]:
+				xmin = 6.24
+				xmax = 6.4
+				text = "に"
+			intervals [11]:
+				xmin = 6.4
+				xmax = 6.56
+				text = "気"
+			intervals [12]:
+				xmin = 6.56
+				xmax = 6.64
+				text = "を"
+			intervals [13]:
+				xmin = 6.64
+				xmax = 6.88
+				text = "付け"
+			intervals [14]:
+				xmin = 6.88
+				xmax = 6.96
+				text = "て"
+			intervals [15]:
+				xmin = 6.96
+				xmax = 7.52
+				text = "ください"
+			intervals [16]:
+				xmin = 7.52
+				xmax = 8.0
+				text = ""
+			intervals [17]:
+				xmin = 8.0
+				xmax = 8.4
+				text = "縮み"
+			intervals [18]:
+				xmin = 8.4
+				xmax = 8.56
+				text = "の"
+			intervals [19]:
+				xmin = 8.56
+				xmax = 8.8
+				text = "原因"
+			intervals [20]:
+				xmin = 8.8
+				xmax = 8.96
+				text = "に"
+			intervals [21]:
+				xmin = 8.96
+				xmax = 9.12
+				text = "なっ"
+			intervals [22]:
+				xmin = 9.12
+				xmax = 9.44
+				text = "たり"
+			intervals [23]:
+				xmin = 9.44
+				xmax = 9.52
+				text = ""
+			intervals [24]:
+				xmin = 9.52
+				xmax = 10.0
+				text = "極端"
+			intervals [25]:
+				xmin = 10.0
+				xmax = 10.08
+				text = "な"
+			intervals [26]:
+				xmin = 10.08
+				xmax = 10.4
+				text = "場合"
+			intervals [27]:
+				xmin = 10.4
+				xmax = 10.56
+				text = "は"
+			intervals [28]:
+				xmin = 10.56
+				xmax = 11.12
+				text = "焦げ付き"
+			intervals [29]:
+				xmin = 11.12
+				xmax = 11.28
+				text = "の"
+			intervals [30]:
+				xmin = 11.28
+				xmax = 11.6
+				text = "原因"
+			intervals [31]:
+				xmin = 11.6
+				xmax = 11.68
+				text = "に"
+			intervals [32]:
+				xmin = 11.68
+				xmax = 11.92
+				text = "なり"
+			intervals [33]:
+				xmin = 11.92
+				xmax = 12.32
+				text = "ます"
+			intervals [34]:
+				xmin = 12.32
+				xmax = 15.84
+				text = ""

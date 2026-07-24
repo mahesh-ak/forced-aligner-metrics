@@ -1,0 +1,174 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.18
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.18
+		intervals: size = 40
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.08
+				text = ""
+			intervals [2]:
+				xmin = 2.08
+				xmax = 2.24
+				text = "骨董"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.4
+				text = "品"
+			intervals [4]:
+				xmin = 2.4
+				xmax = 2.56
+				text = "に"
+			intervals [5]:
+				xmin = 2.56
+				xmax = 2.72
+				text = "つい"
+			intervals [6]:
+				xmin = 2.72
+				xmax = 2.88
+				text = "て"
+			intervals [7]:
+				xmin = 2.88
+				xmax = 3.36
+				text = ""
+			intervals [8]:
+				xmin = 3.36
+				xmax = 3.6
+				text = "普遍"
+			intervals [9]:
+				xmin = 3.6
+				xmax = 3.68
+				text = ""
+			intervals [10]:
+				xmin = 3.68
+				xmax = 3.84
+				text = "的"
+			intervals [11]:
+				xmin = 3.84
+				xmax = 4.0
+				text = "な"
+			intervals [12]:
+				xmin = 4.0
+				xmax = 4.32
+				text = "定義"
+			intervals [13]:
+				xmin = 4.32
+				xmax = 4.4
+				text = "は"
+			intervals [14]:
+				xmin = 4.4
+				xmax = 4.56
+				text = "あり"
+			intervals [15]:
+				xmin = 4.56
+				xmax = 4.8
+				text = "ません"
+			intervals [16]:
+				xmin = 4.8
+				xmax = 5.28
+				text = ""
+			intervals [17]:
+				xmin = 5.28
+				xmax = 5.6
+				text = "税務"
+			intervals [18]:
+				xmin = 5.6
+				xmax = 5.76
+				text = "署"
+			intervals [19]:
+				xmin = 5.76
+				xmax = 5.84
+				text = "に"
+			intervals [20]:
+				xmin = 5.84
+				xmax = 5.92
+				text = ""
+			intervals [21]:
+				xmin = 5.92
+				xmax = 6.08
+				text = "よって"
+			intervals [22]:
+				xmin = 6.08
+				xmax = 6.4
+				text = "は"
+			intervals [23]:
+				xmin = 6.4
+				xmax = 6.48
+				text = ""
+			intervals [24]:
+				xmin = 6.48
+				xmax = 6.72
+				text = "百"
+			intervals [25]:
+				xmin = 6.72
+				xmax = 6.96
+				text = "年"
+			intervals [26]:
+				xmin = 6.96
+				xmax = 7.2
+				text = "以上"
+			intervals [27]:
+				xmin = 7.2
+				xmax = 7.44
+				text = "前"
+			intervals [28]:
+				xmin = 7.44
+				xmax = 7.52
+				text = "の"
+			intervals [29]:
+				xmin = 7.52
+				xmax = 7.76
+				text = "もの"
+			intervals [30]:
+				xmin = 7.76
+				xmax = 7.84
+				text = "を"
+			intervals [31]:
+				xmin = 7.84
+				xmax = 8.0
+				text = ""
+			intervals [32]:
+				xmin = 8.0
+				xmax = 8.32
+				text = "骨董"
+			intervals [33]:
+				xmin = 8.32
+				xmax = 8.56
+				text = "品"
+			intervals [34]:
+				xmin = 8.56
+				xmax = 8.64
+				text = "と"
+			intervals [35]:
+				xmin = 8.64
+				xmax = 9.04
+				text = "定義"
+			intervals [36]:
+				xmin = 9.04
+				xmax = 9.12
+				text = "し"
+			intervals [37]:
+				xmin = 9.12
+				xmax = 9.2
+				text = "て"
+			intervals [38]:
+				xmin = 9.2
+				xmax = 9.28
+				text = "い"
+			intervals [39]:
+				xmin = 9.28
+				xmax = 9.6
+				text = "ます"
+			intervals [40]:
+				xmin = 9.6
+				xmax = 12.18
+				text = ""

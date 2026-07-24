@@ -1,0 +1,122 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 10.32
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 10.32
+		intervals: size = 27
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.08
+				text = ""
+			intervals [2]:
+				xmin = 2.08
+				xmax = 2.32
+				text = "それ"
+			intervals [3]:
+				xmin = 2.32
+				xmax = 2.4
+				text = "で"
+			intervals [4]:
+				xmin = 2.4
+				xmax = 2.56
+				text = "も"
+			intervals [5]:
+				xmin = 2.56
+				xmax = 2.96
+				text = "当局"
+			intervals [6]:
+				xmin = 2.96
+				xmax = 3.2
+				text = "から"
+			intervals [7]:
+				xmin = 3.2
+				xmax = 3.28
+				text = "の"
+			intervals [8]:
+				xmin = 3.28
+				xmax = 3.76
+				text = "アドバイス"
+			intervals [9]:
+				xmin = 3.76
+				xmax = 3.84
+				text = "を"
+			intervals [10]:
+				xmin = 3.84
+				xmax = 4.16
+				text = "受け"
+			intervals [11]:
+				xmin = 4.16
+				xmax = 4.48
+				text = "すべて"
+			intervals [12]:
+				xmin = 4.48
+				xmax = 4.64
+				text = "の"
+			intervals [13]:
+				xmin = 4.64
+				xmax = 5.04
+				text = "標識"
+			intervals [14]:
+				xmin = 5.04
+				xmax = 5.12
+				text = "を"
+			intervals [15]:
+				xmin = 5.12
+				xmax = 5.44
+				text = "守り"
+			intervals [16]:
+				xmin = 5.44
+				xmax = 5.76
+				text = "安全"
+			intervals [17]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "上"
+			intervals [18]:
+				xmin = 5.92
+				xmax = 6.08
+				text = "の"
+			intervals [19]:
+				xmin = 6.08
+				xmax = 6.4
+				text = "警告"
+			intervals [20]:
+				xmin = 6.4
+				xmax = 6.48
+				text = "に"
+			intervals [21]:
+				xmin = 6.48
+				xmax = 6.96
+				text = "細心"
+			intervals [22]:
+				xmin = 6.96
+				xmax = 7.04
+				text = "の"
+			intervals [23]:
+				xmin = 7.04
+				xmax = 7.36
+				text = "注意"
+			intervals [24]:
+				xmin = 7.36
+				xmax = 7.44
+				text = "を"
+			intervals [25]:
+				xmin = 7.44
+				xmax = 7.76
+				text = "払い"
+			intervals [26]:
+				xmin = 7.76
+				xmax = 8.08
+				text = "ましょう"
+			intervals [27]:
+				xmin = 8.08
+				xmax = 10.32
+				text = ""

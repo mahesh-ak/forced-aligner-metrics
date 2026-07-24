@@ -1,0 +1,182 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.96
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.96
+		intervals: size = 42
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.08
+				text = ""
+			intervals [2]:
+				xmin = 2.08
+				xmax = 2.56
+				text = "オタワ"
+			intervals [3]:
+				xmin = 2.56
+				xmax = 2.72
+				text = ""
+			intervals [4]:
+				xmin = 2.72
+				xmax = 2.8
+				text = "二"
+			intervals [5]:
+				xmin = 2.8
+				xmax = 2.96
+				text = ""
+			intervals [6]:
+				xmin = 2.96
+				xmax = 3.12
+				text = "か国"
+			intervals [7]:
+				xmin = 3.12
+				xmax = 3.28
+				text = "語"
+			intervals [8]:
+				xmin = 3.28
+				xmax = 3.68
+				text = "が"
+			intervals [9]:
+				xmin = 3.68
+				xmax = 3.84
+				text = ""
+			intervals [10]:
+				xmin = 3.84
+				xmax = 4.16
+				text = "通じる"
+			intervals [11]:
+				xmin = 4.16
+				xmax = 4.32
+				text = ""
+			intervals [12]:
+				xmin = 4.32
+				xmax = 4.64
+				text = "魅力"
+			intervals [13]:
+				xmin = 4.64
+				xmax = 4.8
+				text = "的"
+			intervals [14]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "な"
+			intervals [15]:
+				xmin = 4.96
+				xmax = 5.2
+				text = "カナダ"
+			intervals [16]:
+				xmin = 5.2
+				xmax = 5.44
+				text = "の"
+			intervals [17]:
+				xmin = 5.44
+				xmax = 5.6
+				text = ""
+			intervals [18]:
+				xmin = 5.6
+				xmax = 5.84
+				text = "首都"
+			intervals [19]:
+				xmin = 5.84
+				xmax = 5.92
+				text = "で"
+			intervals [20]:
+				xmin = 5.92
+				xmax = 6.08
+				text = "あり"
+			intervals [21]:
+				xmin = 6.08
+				xmax = 6.64
+				text = ""
+			intervals [22]:
+				xmin = 6.64
+				xmax = 6.96
+				text = "カナダ"
+			intervals [23]:
+				xmin = 6.96
+				xmax = 7.04
+				text = "の"
+			intervals [24]:
+				xmin = 7.04
+				xmax = 7.36
+				text = "過去"
+			intervals [25]:
+				xmin = 7.36
+				xmax = 7.52
+				text = "と"
+			intervals [26]:
+				xmin = 7.52
+				xmax = 7.84
+				text = "現在"
+			intervals [27]:
+				xmin = 7.84
+				xmax = 8.0
+				text = "を"
+			intervals [28]:
+				xmin = 8.0
+				xmax = 8.4
+				text = "紹介"
+			intervals [29]:
+				xmin = 8.4
+				xmax = 8.64
+				text = "する"
+			intervals [30]:
+				xmin = 8.64
+				xmax = 8.88
+				text = "美術"
+			intervals [31]:
+				xmin = 8.88
+				xmax = 9.04
+				text = ""
+			intervals [32]:
+				xmin = 9.04
+				xmax = 9.12
+				text = "館"
+			intervals [33]:
+				xmin = 9.12
+				xmax = 9.28
+				text = "や"
+			intervals [34]:
+				xmin = 9.28
+				xmax = 9.44
+				text = ""
+			intervals [35]:
+				xmin = 9.44
+				xmax = 9.84
+				text = "博物"
+			intervals [36]:
+				xmin = 9.84
+				xmax = 9.92
+				text = ""
+			intervals [37]:
+				xmin = 9.92
+				xmax = 10.0
+				text = "館"
+			intervals [38]:
+				xmin = 10.0
+				xmax = 10.16
+				text = "が"
+			intervals [39]:
+				xmin = 10.16
+				xmax = 10.72
+				text = "数多く"
+			intervals [40]:
+				xmin = 10.72
+				xmax = 10.88
+				text = "あり"
+			intervals [41]:
+				xmin = 10.88
+				xmax = 11.12
+				text = "ます"
+			intervals [42]:
+				xmin = 11.12
+				xmax = 12.96
+				text = ""

@@ -1,0 +1,142 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.72
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.72
+		intervals: size = 32
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.96
+				text = ""
+			intervals [2]:
+				xmin = 2.96
+				xmax = 3.2
+				text = "虎"
+			intervals [3]:
+				xmin = 3.2
+				xmax = 3.36
+				text = "の"
+			intervals [4]:
+				xmin = 3.36
+				xmax = 3.76
+				text = "咆哮"
+			intervals [5]:
+				xmin = 3.76
+				xmax = 4.0
+				text = "は"
+			intervals [6]:
+				xmin = 4.0
+				xmax = 4.4
+				text = "ライオン"
+			intervals [7]:
+				xmin = 4.4
+				xmax = 4.48
+				text = "の"
+			intervals [8]:
+				xmin = 4.48
+				xmax = 4.72
+				text = "よう"
+			intervals [9]:
+				xmin = 4.72
+				xmax = 4.8
+				text = "な"
+			intervals [10]:
+				xmin = 4.8
+				xmax = 5.28
+				text = "雄叫び"
+			intervals [11]:
+				xmin = 5.28
+				xmax = 5.36
+				text = "で"
+			intervals [12]:
+				xmin = 5.36
+				xmax = 5.52
+				text = "は"
+			intervals [13]:
+				xmin = 5.52
+				xmax = 5.84
+				text = "なく"
+			intervals [14]:
+				xmin = 5.84
+				xmax = 5.92
+				text = ""
+			intervals [15]:
+				xmin = 5.92
+				xmax = 6.24
+				text = "どちら"
+			intervals [16]:
+				xmin = 6.24
+				xmax = 6.4
+				text = "か"
+			intervals [17]:
+				xmin = 6.4
+				xmax = 6.48
+				text = "と"
+			intervals [18]:
+				xmin = 6.48
+				xmax = 6.64
+				text = "いう"
+			intervals [19]:
+				xmin = 6.64
+				xmax = 6.88
+				text = "と"
+			intervals [20]:
+				xmin = 6.88
+				xmax = 7.2
+				text = "威圧"
+			intervals [21]:
+				xmin = 7.2
+				xmax = 7.36
+				text = "的"
+			intervals [22]:
+				xmin = 7.36
+				xmax = 7.52
+				text = "な"
+			intervals [23]:
+				xmin = 7.52
+				xmax = 7.76
+				text = "脅し"
+			intervals [24]:
+				xmin = 7.76
+				xmax = 7.84
+				text = ""
+			intervals [25]:
+				xmin = 7.84
+				xmax = 8.08
+				text = "文句"
+			intervals [26]:
+				xmin = 8.08
+				xmax = 8.16
+				text = ""
+			intervals [27]:
+				xmin = 8.16
+				xmax = 8.24
+				text = "の"
+			intervals [28]:
+				xmin = 8.24
+				xmax = 8.48
+				text = "よう"
+			intervals [29]:
+				xmin = 8.48
+				xmax = 8.56
+				text = "な"
+			intervals [30]:
+				xmin = 8.56
+				xmax = 8.96
+				text = "咆哮"
+			intervals [31]:
+				xmin = 8.96
+				xmax = 9.44
+				text = "です"
+			intervals [32]:
+				xmin = 9.44
+				xmax = 12.72
+				text = ""

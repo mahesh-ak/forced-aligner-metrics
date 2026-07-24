@@ -1,0 +1,106 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 7.98
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 7.98
+		intervals: size = 23
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.84
+				text = ""
+			intervals [2]:
+				xmin = 1.84
+				xmax = 2.16
+				text = "テレビ"
+			intervals [3]:
+				xmin = 2.16
+				xmax = 2.24
+				text = "の"
+			intervals [4]:
+				xmin = 2.24
+				xmax = 2.32
+				text = ""
+			intervals [5]:
+				xmin = 2.32
+				xmax = 2.64
+				text = "報道"
+			intervals [6]:
+				xmin = 2.64
+				xmax = 2.8
+				text = "に"
+			intervals [7]:
+				xmin = 2.8
+				xmax = 2.96
+				text = "よる"
+			intervals [8]:
+				xmin = 2.96
+				xmax = 3.04
+				text = ""
+			intervals [9]:
+				xmin = 3.04
+				xmax = 3.36
+				text = "と"
+			intervals [10]:
+				xmin = 3.36
+				xmax = 3.52
+				text = ""
+			intervals [11]:
+				xmin = 3.52
+				xmax = 4.08
+				text = "原発"
+			intervals [12]:
+				xmin = 4.08
+				xmax = 4.32
+				text = ""
+			intervals [13]:
+				xmin = 4.32
+				xmax = 4.56
+				text = "から"
+			intervals [14]:
+				xmin = 4.56
+				xmax = 5.04
+				text = ""
+			intervals [15]:
+				xmin = 5.04
+				xmax = 5.44
+				text = "白煙"
+			intervals [16]:
+				xmin = 5.44
+				xmax = 5.52
+				text = "が"
+			intervals [17]:
+				xmin = 5.52
+				xmax = 5.6
+				text = ""
+			intervals [18]:
+				xmin = 5.6
+				xmax = 5.84
+				text = "上がっ"
+			intervals [19]:
+				xmin = 5.84
+				xmax = 6.0
+				text = ""
+			intervals [20]:
+				xmin = 6.0
+				xmax = 6.08
+				text = "て"
+			intervals [21]:
+				xmin = 6.08
+				xmax = 6.16
+				text = "い"
+			intervals [22]:
+				xmin = 6.16
+				xmax = 6.32
+				text = "ます"
+			intervals [23]:
+				xmin = 6.32
+				xmax = 7.98
+				text = ""

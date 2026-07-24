@@ -1,0 +1,118 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 11.52
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 11.52
+		intervals: size = 26
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.56
+				text = ""
+			intervals [2]:
+				xmin = 2.56
+				xmax = 2.8
+				text = "羽"
+			intervals [3]:
+				xmin = 2.8
+				xmax = 2.88
+				text = ""
+			intervals [4]:
+				xmin = 2.88
+				xmax = 2.96
+				text = "を"
+			intervals [5]:
+				xmin = 2.96
+				xmax = 3.36
+				text = "持ち"
+			intervals [6]:
+				xmin = 3.36
+				xmax = 3.6
+				text = ""
+			intervals [7]:
+				xmin = 3.6
+				xmax = 3.84
+				text = "空"
+			intervals [8]:
+				xmin = 3.84
+				xmax = 3.92
+				text = "を"
+			intervals [9]:
+				xmin = 3.92
+				xmax = 4.32
+				text = "飛べる"
+			intervals [10]:
+				xmin = 4.32
+				xmax = 4.4
+				text = "の"
+			intervals [11]:
+				xmin = 4.4
+				xmax = 4.64
+				text = "で"
+			intervals [12]:
+				xmin = 4.64
+				xmax = 4.8
+				text = ""
+			intervals [13]:
+				xmin = 4.8
+				xmax = 5.28
+				text = "恐竜"
+			intervals [14]:
+				xmin = 5.28
+				xmax = 5.36
+				text = "だ"
+			intervals [15]:
+				xmin = 5.36
+				xmax = 5.52
+				text = "と"
+			intervals [16]:
+				xmin = 5.52
+				xmax = 5.76
+				text = "思っ"
+			intervals [17]:
+				xmin = 5.76
+				xmax = 6.0
+				text = "て"
+			intervals [18]:
+				xmin = 6.0
+				xmax = 6.08
+				text = "い"
+			intervals [19]:
+				xmin = 6.08
+				xmax = 6.24
+				text = "ない"
+			intervals [20]:
+				xmin = 6.24
+				xmax = 6.48
+				text = "人"
+			intervals [21]:
+				xmin = 6.48
+				xmax = 6.72
+				text = "も"
+			intervals [22]:
+				xmin = 6.72
+				xmax = 6.88
+				text = ""
+			intervals [23]:
+				xmin = 6.88
+				xmax = 7.28
+				text = "大勢"
+			intervals [24]:
+				xmin = 7.28
+				xmax = 7.36
+				text = "い"
+			intervals [25]:
+				xmin = 7.36
+				xmax = 7.84
+				text = "ます"
+			intervals [26]:
+				xmin = 7.84
+				xmax = 11.52
+				text = ""

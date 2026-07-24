@@ -1,0 +1,98 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 11.1
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 11.1
+		intervals: size = 21
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.8
+				text = ""
+			intervals [2]:
+				xmin = 2.8
+				xmax = 3.04
+				text = "夜空"
+			intervals [3]:
+				xmin = 3.04
+				xmax = 3.2
+				text = ""
+			intervals [4]:
+				xmin = 3.2
+				xmax = 3.28
+				text = "の"
+			intervals [5]:
+				xmin = 3.28
+				xmax = 3.52
+				text = "下"
+			intervals [6]:
+				xmin = 3.52
+				xmax = 3.68
+				text = "で"
+			intervals [7]:
+				xmin = 3.68
+				xmax = 4.24
+				text = "ピラミッド"
+			intervals [8]:
+				xmin = 4.24
+				xmax = 4.4
+				text = "に"
+			intervals [9]:
+				xmin = 4.4
+				xmax = 4.8
+				text = "映像"
+			intervals [10]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "が"
+			intervals [11]:
+				xmin = 4.96
+				xmax = 5.28
+				text = "浮かび"
+			intervals [12]:
+				xmin = 5.28
+				xmax = 5.92
+				text = "ピラミッド"
+			intervals [13]:
+				xmin = 5.92
+				xmax = 6.08
+				text = "が"
+			intervals [14]:
+				xmin = 6.08
+				xmax = 6.56
+				text = "次々"
+			intervals [15]:
+				xmin = 6.56
+				xmax = 6.64
+				text = "と"
+			intervals [16]:
+				xmin = 6.64
+				xmax = 6.96
+				text = "ライト"
+			intervals [17]:
+				xmin = 6.96
+				xmax = 7.12
+				text = "アップ"
+			intervals [18]:
+				xmin = 7.12
+				xmax = 7.28
+				text = "さ"
+			intervals [19]:
+				xmin = 7.28
+				xmax = 7.36
+				text = "れ"
+			intervals [20]:
+				xmin = 7.36
+				xmax = 7.84
+				text = "ます"
+			intervals [21]:
+				xmin = 7.84
+				xmax = 11.1
+				text = ""

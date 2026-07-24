@@ -1,0 +1,118 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 10.32
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 10.32
+		intervals: size = 26
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.0
+				text = ""
+			intervals [2]:
+				xmin = 2.0
+				xmax = 2.32
+				text = "乾い"
+			intervals [3]:
+				xmin = 2.32
+				xmax = 2.48
+				text = "た"
+			intervals [4]:
+				xmin = 2.48
+				xmax = 2.64
+				text = "粉"
+			intervals [5]:
+				xmin = 2.64
+				xmax = 2.8
+				text = "を"
+			intervals [6]:
+				xmin = 2.8
+				xmax = 3.04
+				text = ""
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.36
+				text = "合わせ"
+			intervals [8]:
+				xmin = 3.36
+				xmax = 3.44
+				text = "て"
+			intervals [9]:
+				xmin = 3.44
+				xmax = 3.84
+				text = "くるくる"
+			intervals [10]:
+				xmin = 3.84
+				xmax = 3.92
+				text = ""
+			intervals [11]:
+				xmin = 3.92
+				xmax = 4.0
+				text = "と"
+			intervals [12]:
+				xmin = 4.0
+				xmax = 4.56
+				text = "こね回し"
+			intervals [13]:
+				xmin = 4.56
+				xmax = 5.2
+				text = ""
+			intervals [14]:
+				xmin = 5.2
+				xmax = 5.6
+				text = "清潔"
+			intervals [15]:
+				xmin = 5.6
+				xmax = 5.76
+				text = "な"
+			intervals [16]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "濡れ"
+			intervals [17]:
+				xmin = 5.92
+				xmax = 6.08
+				text = "た"
+			intervals [18]:
+				xmin = 6.08
+				xmax = 6.16
+				text = "手"
+			intervals [19]:
+				xmin = 6.16
+				xmax = 6.4
+				text = "で"
+			intervals [20]:
+				xmin = 6.4
+				xmax = 6.56
+				text = ""
+			intervals [21]:
+				xmin = 6.56
+				xmax = 6.64
+				text = "ぎゅっ"
+			intervals [22]:
+				xmin = 6.64
+				xmax = 6.88
+				text = "と"
+			intervals [23]:
+				xmin = 6.88
+				xmax = 7.52
+				text = ""
+			intervals [24]:
+				xmin = 7.52
+				xmax = 7.84
+				text = "握り"
+			intervals [25]:
+				xmin = 7.84
+				xmax = 8.16
+				text = "ます"
+			intervals [26]:
+				xmin = 8.16
+				xmax = 10.32
+				text = ""

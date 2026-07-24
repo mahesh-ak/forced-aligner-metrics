@@ -1,0 +1,182 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.84
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.84
+		intervals: size = 42
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.24
+				text = "離島"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.4
+				text = "で"
+			intervals [4]:
+				xmin = 2.4
+				xmax = 2.56
+				text = "は"
+			intervals [5]:
+				xmin = 2.56
+				xmax = 2.72
+				text = ""
+			intervals [6]:
+				xmin = 2.72
+				xmax = 3.04
+				text = "英国"
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.2
+				text = "と"
+			intervals [8]:
+				xmin = 3.2
+				xmax = 3.6
+				text = "米国"
+			intervals [9]:
+				xmin = 3.6
+				xmax = 3.68
+				text = "の"
+			intervals [10]:
+				xmin = 3.68
+				xmax = 4.08
+				text = "通貨"
+			intervals [11]:
+				xmin = 4.08
+				xmax = 4.16
+				text = ""
+			intervals [12]:
+				xmin = 4.16
+				xmax = 4.4
+				text = "使え"
+			intervals [13]:
+				xmin = 4.4
+				xmax = 4.64
+				text = "ます"
+			intervals [14]:
+				xmin = 4.64
+				xmax = 4.8
+				text = "が"
+			intervals [15]:
+				xmin = 4.8
+				xmax = 5.04
+				text = ""
+			intervals [16]:
+				xmin = 5.04
+				xmax = 5.52
+				text = "おそらく"
+			intervals [17]:
+				xmin = 5.52
+				xmax = 5.92
+				text = "クレジット"
+			intervals [18]:
+				xmin = 5.92
+				xmax = 6.24
+				text = "カード"
+			intervals [19]:
+				xmin = 6.24
+				xmax = 6.32
+				text = "は"
+			intervals [20]:
+				xmin = 6.32
+				xmax = 6.56
+				text = "使え"
+			intervals [21]:
+				xmin = 6.56
+				xmax = 6.8
+				text = "ませ"
+			intervals [22]:
+				xmin = 6.8
+				xmax = 6.88
+				text = "ん"
+			intervals [23]:
+				xmin = 6.88
+				xmax = 7.52
+				text = ""
+			intervals [24]:
+				xmin = 7.52
+				xmax = 7.76
+				text = "可能"
+			intervals [25]:
+				xmin = 7.76
+				xmax = 7.92
+				text = "な"
+			intervals [26]:
+				xmin = 7.92
+				xmax = 8.24
+				text = "支払い"
+			intervals [27]:
+				xmin = 8.24
+				xmax = 8.64
+				text = "方法"
+			intervals [28]:
+				xmin = 8.64
+				xmax = 8.72
+				text = "を"
+			intervals [29]:
+				xmin = 8.72
+				xmax = 8.8
+				text = ""
+			intervals [30]:
+				xmin = 8.8
+				xmax = 8.96
+				text = "前"
+			intervals [31]:
+				xmin = 8.96
+				xmax = 9.28
+				text = "もって"
+			intervals [32]:
+				xmin = 9.28
+				xmax = 9.6
+				text = "所有"
+			intervals [33]:
+				xmin = 9.6
+				xmax = 9.76
+				text = "者"
+			intervals [34]:
+				xmin = 9.76
+				xmax = 9.84
+				text = "に"
+			intervals [35]:
+				xmin = 9.84
+				xmax = 9.92
+				text = ""
+			intervals [36]:
+				xmin = 9.92
+				xmax = 10.24
+				text = "確認"
+			intervals [37]:
+				xmin = 10.24
+				xmax = 10.32
+				text = ""
+			intervals [38]:
+				xmin = 10.32
+				xmax = 10.4
+				text = "し"
+			intervals [39]:
+				xmin = 10.4
+				xmax = 10.48
+				text = "て"
+			intervals [40]:
+				xmin = 10.48
+				xmax = 10.64
+				text = "おき"
+			intervals [41]:
+				xmin = 10.64
+				xmax = 10.96
+				text = "ましょう"
+			intervals [42]:
+				xmin = 10.96
+				xmax = 12.84
+				text = ""

@@ -1,0 +1,326 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 21.84
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 21.84
+		intervals: size = 78
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.0
+				text = "米国"
+			intervals [3]:
+				xmin = 2.0
+				xmax = 2.56
+				text = ""
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.8
+				text = "体操"
+			intervals [5]:
+				xmin = 2.8
+				xmax = 3.28
+				text = "連盟"
+			intervals [6]:
+				xmin = 3.28
+				xmax = 3.36
+				text = ""
+			intervals [7]:
+				xmin = 3.36
+				xmax = 3.44
+				text = "と"
+			intervals [8]:
+				xmin = 3.44
+				xmax = 5.12
+				text = ""
+			intervals [9]:
+				xmin = 5.12
+				xmax = 5.2
+				text = "は"
+			intervals [10]:
+				xmin = 5.2
+				xmax = 5.36
+				text = ""
+			intervals [11]:
+				xmin = 5.36
+				xmax = 5.6
+				text = "同じ"
+			intervals [12]:
+				xmin = 5.6
+				xmax = 5.68
+				text = ""
+			intervals [13]:
+				xmin = 5.68
+				xmax = 5.92
+				text = "目標"
+			intervals [14]:
+				xmin = 5.92
+				xmax = 6.16
+				text = ""
+			intervals [15]:
+				xmin = 6.16
+				xmax = 6.4
+				text = "を"
+			intervals [16]:
+				xmin = 6.4
+				xmax = 6.88
+				text = "掲げ"
+			intervals [17]:
+				xmin = 6.88
+				xmax = 6.96
+				text = ""
+			intervals [18]:
+				xmin = 6.96
+				xmax = 7.04
+				text = "てい"
+			intervals [19]:
+				xmin = 7.04
+				xmax = 7.2
+				text = ""
+			intervals [20]:
+				xmin = 7.2
+				xmax = 7.36
+				text = "ます"
+			intervals [21]:
+				xmin = 7.36
+				xmax = 8.8
+				text = ""
+			intervals [22]:
+				xmin = 8.8
+				xmax = 9.2
+				text = "アスリート"
+			intervals [23]:
+				xmin = 9.2
+				xmax = 9.28
+				text = ""
+			intervals [24]:
+				xmin = 9.28
+				xmax = 9.36
+				text = "が"
+			intervals [25]:
+				xmin = 9.36
+				xmax = 9.52
+				text = ""
+			intervals [26]:
+				xmin = 9.52
+				xmax = 10.0
+				text = "安全"
+			intervals [27]:
+				xmin = 10.0
+				xmax = 10.16
+				text = "かつ"
+			intervals [28]:
+				xmin = 10.16
+				xmax = 10.24
+				text = ""
+			intervals [29]:
+				xmin = 10.24
+				xmax = 10.88
+				text = "前向き"
+			intervals [30]:
+				xmin = 10.88
+				xmax = 11.04
+				text = "に"
+			intervals [31]:
+				xmin = 11.04
+				xmax = 11.2
+				text = ""
+			intervals [32]:
+				xmin = 11.2
+				xmax = 11.52
+				text = "力"
+			intervals [33]:
+				xmin = 11.52
+				xmax = 11.76
+				text = ""
+			intervals [34]:
+				xmin = 11.76
+				xmax = 11.84
+				text = "発揮"
+			intervals [35]:
+				xmin = 11.84
+				xmax = 12.24
+				text = "できる"
+			intervals [36]:
+				xmin = 12.24
+				xmax = 12.32
+				text = ""
+			intervals [37]:
+				xmin = 12.32
+				xmax = 12.8
+				text = "環境"
+			intervals [38]:
+				xmin = 12.8
+				xmax = 12.88
+				text = ""
+			intervals [39]:
+				xmin = 12.88
+				xmax = 12.96
+				text = "で"
+			intervals [40]:
+				xmin = 12.96
+				xmax = 13.2
+				text = "夢"
+			intervals [41]:
+				xmin = 13.2
+				xmax = 13.28
+				text = ""
+			intervals [42]:
+				xmin = 13.28
+				xmax = 13.44
+				text = "を"
+			intervals [43]:
+				xmin = 13.44
+				xmax = 13.84
+				text = "追いかけ"
+			intervals [44]:
+				xmin = 13.84
+				xmax = 14.24
+				text = "られる"
+			intervals [45]:
+				xmin = 14.24
+				xmax = 14.32
+				text = ""
+			intervals [46]:
+				xmin = 14.32
+				xmax = 14.4
+				text = "よう"
+			intervals [47]:
+				xmin = 14.4
+				xmax = 14.56
+				text = ""
+			intervals [48]:
+				xmin = 14.56
+				xmax = 14.72
+				text = "に"
+			intervals [49]:
+				xmin = 14.72
+				xmax = 15.36
+				text = ""
+			intervals [50]:
+				xmin = 15.36
+				xmax = 15.68
+				text = "スポーツ"
+			intervals [51]:
+				xmin = 15.68
+				xmax = 15.76
+				text = ""
+			intervals [52]:
+				xmin = 15.76
+				xmax = 15.92
+				text = "として"
+			intervals [53]:
+				xmin = 15.92
+				xmax = 16.08
+				text = ""
+			intervals [54]:
+				xmin = 16.08
+				xmax = 16.32
+				text = "の"
+			intervals [55]:
+				xmin = 16.32
+				xmax = 16.48
+				text = ""
+			intervals [56]:
+				xmin = 16.48
+				xmax = 16.96
+				text = "体操"
+			intervals [57]:
+				xmin = 16.96
+				xmax = 17.04
+				text = "や"
+			intervals [58]:
+				xmin = 17.04
+				xmax = 17.2
+				text = ""
+			intervals [59]:
+				xmin = 17.2
+				xmax = 17.36
+				text = "その"
+			intervals [60]:
+				xmin = 17.36
+				xmax = 17.52
+				text = "他"
+			intervals [61]:
+				xmin = 17.52
+				xmax = 17.6
+				text = "の"
+			intervals [62]:
+				xmin = 17.6
+				xmax = 17.84
+				text = ""
+			intervals [63]:
+				xmin = 17.84
+				xmax = 18.08
+				text = "スポーツ"
+			intervals [64]:
+				xmin = 18.08
+				xmax = 18.24
+				text = ""
+			intervals [65]:
+				xmin = 18.24
+				xmax = 18.32
+				text = "を"
+			intervals [66]:
+				xmin = 18.32
+				xmax = 18.4
+				text = ""
+			intervals [67]:
+				xmin = 18.4
+				xmax = 18.72
+				text = "できる"
+			intervals [68]:
+				xmin = 18.72
+				xmax = 18.96
+				text = "だけ"
+			intervals [69]:
+				xmin = 18.96
+				xmax = 19.04
+				text = "安全"
+			intervals [70]:
+				xmin = 19.04
+				xmax = 19.36
+				text = ""
+			intervals [71]:
+				xmin = 19.36
+				xmax = 19.52
+				text = "な"
+			intervals [72]:
+				xmin = 19.52
+				xmax = 19.76
+				text = "もの"
+			intervals [73]:
+				xmin = 19.76
+				xmax = 19.84
+				text = "に"
+			intervals [74]:
+				xmin = 19.84
+				xmax = 20.0
+				text = ""
+			intervals [75]:
+				xmin = 20.0
+				xmax = 20.16
+				text = "する"
+			intervals [76]:
+				xmin = 20.16
+				xmax = 20.48
+				text = "こと"
+			intervals [77]:
+				xmin = 20.48
+				xmax = 20.64
+				text = "です"
+			intervals [78]:
+				xmin = 20.64
+				xmax = 21.84
+				text = ""

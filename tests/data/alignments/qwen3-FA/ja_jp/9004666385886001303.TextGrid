@@ -1,0 +1,146 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.38
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 13.38
+		intervals: size = 33
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.16
+				text = ""
+			intervals [2]:
+				xmin = 2.16
+				xmax = 2.32
+				text = "の"
+			intervals [3]:
+				xmin = 2.32
+				xmax = 2.56
+				text = "見え"
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.72
+				text = "ない"
+			intervals [5]:
+				xmin = 2.72
+				xmax = 3.04
+				text = "チーム"
+			intervals [6]:
+				xmin = 3.04
+				xmax = 3.36
+				text = ""
+			intervals [7]:
+				xmin = 3.36
+				xmax = 3.68
+				text = "larson"
+			intervals [8]:
+				xmin = 3.68
+				xmax = 4.08
+				text = "and"
+			intervals [9]:
+				xmin = 4.08
+				xmax = 4.32
+				text = ""
+			intervals [10]:
+				xmin = 4.32
+				xmax = 4.72
+				text = "lafasto"
+			intervals [11]:
+				xmin = 4.72
+				xmax = 5.2
+				text = ""
+			intervals [12]:
+				xmin = 5.2
+				xmax = 5.36
+				text = "千"
+			intervals [13]:
+				xmin = 5.36
+				xmax = 5.6
+				text = ""
+			intervals [14]:
+				xmin = 5.6
+				xmax = 5.92
+				text = "八十"
+			intervals [15]:
+				xmin = 5.92
+				xmax = 6.0
+				text = "九"
+			intervals [16]:
+				xmin = 6.0
+				xmax = 6.08
+				text = ""
+			intervals [17]:
+				xmin = 6.08
+				xmax = 6.24
+				text = "p"
+			intervals [18]:
+				xmin = 6.24
+				xmax = 7.52
+				text = ""
+			intervals [19]:
+				xmin = 7.52
+				xmax = 7.6
+				text = "の"
+			intervals [20]:
+				xmin = 7.6
+				xmax = 8.08
+				text = "存在"
+			intervals [21]:
+				xmin = 8.08
+				xmax = 8.16
+				text = "も"
+			intervals [22]:
+				xmin = 8.16
+				xmax = 8.48
+				text = "また"
+			intervals [23]:
+				xmin = 8.48
+				xmax = 8.88
+				text = ""
+			intervals [24]:
+				xmin = 8.88
+				xmax = 9.28
+				text = "バーチャル"
+			intervals [25]:
+				xmin = 9.28
+				xmax = 9.6
+				text = "チーム"
+			intervals [26]:
+				xmin = 9.6
+				xmax = 9.68
+				text = "の"
+			intervals [27]:
+				xmin = 9.68
+				xmax = 9.92
+				text = ""
+			intervals [28]:
+				xmin = 9.92
+				xmax = 10.16
+				text = "独自"
+			intervals [29]:
+				xmin = 10.16
+				xmax = 10.24
+				text = "の"
+			intervals [30]:
+				xmin = 10.24
+				xmax = 10.56
+				text = "要素"
+			intervals [31]:
+				xmin = 10.56
+				xmax = 10.64
+				text = "で"
+			intervals [32]:
+				xmin = 10.64
+				xmax = 10.88
+				text = "ある"
+			intervals [33]:
+				xmin = 10.88
+				xmax = 13.38
+				text = ""

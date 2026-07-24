@@ -1,0 +1,190 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 14.4
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 14.4
+		intervals: size = 44
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.84
+				text = ""
+			intervals [2]:
+				xmin = 1.84
+				xmax = 2.16
+				text = "津波"
+			intervals [3]:
+				xmin = 2.16
+				xmax = 2.56
+				text = "警報"
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.72
+				text = "は"
+			intervals [5]:
+				xmin = 2.72
+				xmax = 3.04
+				text = "発令"
+			intervals [6]:
+				xmin = 3.04
+				xmax = 3.28
+				text = "され"
+			intervals [7]:
+				xmin = 3.28
+				xmax = 3.52
+				text = "ませ"
+			intervals [8]:
+				xmin = 3.52
+				xmax = 3.68
+				text = "でし"
+			intervals [9]:
+				xmin = 3.68
+				xmax = 3.92
+				text = "た"
+			intervals [10]:
+				xmin = 3.92
+				xmax = 4.24
+				text = ""
+			intervals [11]:
+				xmin = 4.24
+				xmax = 4.64
+				text = "ジャカルタ"
+			intervals [12]:
+				xmin = 4.64
+				xmax = 4.8
+				text = "の"
+			intervals [13]:
+				xmin = 4.8
+				xmax = 5.04
+				text = "地球"
+			intervals [14]:
+				xmin = 5.04
+				xmax = 5.36
+				text = "物理"
+			intervals [15]:
+				xmin = 5.36
+				xmax = 5.6
+				text = "学"
+			intervals [16]:
+				xmin = 5.6
+				xmax = 5.84
+				text = "機関"
+			intervals [17]:
+				xmin = 5.84
+				xmax = 5.92
+				text = "に"
+			intervals [18]:
+				xmin = 5.92
+				xmax = 6.08
+				text = "よれ"
+			intervals [19]:
+				xmin = 6.08
+				xmax = 6.32
+				text = "ば"
+			intervals [20]:
+				xmin = 6.32
+				xmax = 6.4
+				text = ""
+			intervals [21]:
+				xmin = 6.4
+				xmax = 6.72
+				text = "地震"
+			intervals [22]:
+				xmin = 6.72
+				xmax = 6.88
+				text = "が"
+			intervals [23]:
+				xmin = 6.88
+				xmax = 7.44
+				text = "マグニチュード"
+			intervals [24]:
+				xmin = 7.44
+				xmax = 7.6
+				text = "六十"
+			intervals [25]:
+				xmin = 7.6
+				xmax = 7.84
+				text = ""
+			intervals [26]:
+				xmin = 7.84
+				xmax = 7.92
+				text = "五"
+			intervals [27]:
+				xmin = 7.92
+				xmax = 8.0
+				text = "の"
+			intervals [28]:
+				xmin = 8.0
+				xmax = 8.4
+				text = "要件"
+			intervals [29]:
+				xmin = 8.4
+				xmax = 8.72
+				text = "満たさ"
+			intervals [30]:
+				xmin = 8.72
+				xmax = 8.8
+				text = ""
+			intervals [31]:
+				xmin = 8.8
+				xmax = 8.96
+				text = "なかっ"
+			intervals [32]:
+				xmin = 8.96
+				xmax = 9.2
+				text = "た"
+			intervals [33]:
+				xmin = 9.2
+				xmax = 9.44
+				text = "で"
+			intervals [34]:
+				xmin = 9.44
+				xmax = 9.92
+				text = "警報"
+			intervals [35]:
+				xmin = 9.92
+				xmax = 10.48
+				text = "発令"
+			intervals [36]:
+				xmin = 10.48
+				xmax = 10.72
+				text = "に"
+			intervals [37]:
+				xmin = 10.72
+				xmax = 11.04
+				text = "至ら"
+			intervals [38]:
+				xmin = 11.04
+				xmax = 11.2
+				text = "なかっ"
+			intervals [39]:
+				xmin = 11.2
+				xmax = 11.36
+				text = "た"
+			intervals [40]:
+				xmin = 11.36
+				xmax = 11.44
+				text = "と"
+			intervals [41]:
+				xmin = 11.44
+				xmax = 11.52
+				text = "いう"
+			intervals [42]:
+				xmin = 11.52
+				xmax = 11.68
+				text = "こと"
+			intervals [43]:
+				xmin = 11.68
+				xmax = 12.08
+				text = "です"
+			intervals [44]:
+				xmin = 12.08
+				xmax = 14.4
+				text = ""

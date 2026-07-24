@@ -1,0 +1,178 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.84
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.84
+		intervals: size = 41
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.76
+				text = ""
+			intervals [2]:
+				xmin = 1.76
+				xmax = 2.24
+				text = "従来"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.48
+				text = "より"
+			intervals [4]:
+				xmin = 2.48
+				xmax = 2.88
+				text = "海軍"
+			intervals [5]:
+				xmin = 2.88
+				xmax = 2.96
+				text = "の"
+			intervals [6]:
+				xmin = 2.96
+				xmax = 3.28
+				text = "仕事"
+			intervals [7]:
+				xmin = 3.28
+				xmax = 3.44
+				text = "は"
+			intervals [8]:
+				xmin = 3.44
+				xmax = 3.84
+				text = "自国"
+			intervals [9]:
+				xmin = 3.84
+				xmax = 4.0
+				text = "民"
+			intervals [10]:
+				xmin = 4.0
+				xmax = 4.08
+				text = "や"
+			intervals [11]:
+				xmin = 4.08
+				xmax = 4.32
+				text = "物資"
+			intervals [12]:
+				xmin = 4.32
+				xmax = 4.4
+				text = "を"
+			intervals [13]:
+				xmin = 4.4
+				xmax = 4.72
+				text = "輸送"
+			intervals [14]:
+				xmin = 4.72
+				xmax = 4.96
+				text = "する"
+			intervals [15]:
+				xmin = 4.96
+				xmax = 5.28
+				text = "能力"
+			intervals [16]:
+				xmin = 5.28
+				xmax = 5.36
+				text = ""
+			intervals [17]:
+				xmin = 5.36
+				xmax = 5.44
+				text = "を"
+			intervals [18]:
+				xmin = 5.44
+				xmax = 5.6
+				text = "維持"
+			intervals [19]:
+				xmin = 5.6
+				xmax = 5.84
+				text = "する"
+			intervals [20]:
+				xmin = 5.84
+				xmax = 5.92
+				text = "と"
+			intervals [21]:
+				xmin = 5.92
+				xmax = 6.24
+				text = "同時"
+			intervals [22]:
+				xmin = 6.24
+				xmax = 6.48
+				text = "に"
+			intervals [23]:
+				xmin = 6.48
+				xmax = 6.72
+				text = ""
+			intervals [24]:
+				xmin = 6.72
+				xmax = 6.96
+				text = "敵"
+			intervals [25]:
+				xmin = 6.96
+				xmax = 7.36
+				text = "国民"
+			intervals [26]:
+				xmin = 7.36
+				xmax = 7.52
+				text = "や"
+			intervals [27]:
+				xmin = 7.52
+				xmax = 7.84
+				text = "物資"
+			intervals [28]:
+				xmin = 7.84
+				xmax = 7.92
+				text = "を"
+			intervals [29]:
+				xmin = 7.92
+				xmax = 8.24
+				text = "輸送"
+			intervals [30]:
+				xmin = 8.24
+				xmax = 8.48
+				text = "する"
+			intervals [31]:
+				xmin = 8.48
+				xmax = 8.8
+				text = "能力"
+			intervals [32]:
+				xmin = 8.8
+				xmax = 8.88
+				text = ""
+			intervals [33]:
+				xmin = 8.88
+				xmax = 8.96
+				text = "を"
+			intervals [34]:
+				xmin = 8.96
+				xmax = 9.44
+				text = "確実"
+			intervals [35]:
+				xmin = 9.44
+				xmax = 9.6
+				text = "に"
+			intervals [36]:
+				xmin = 9.6
+				xmax = 9.92
+				text = "妨害"
+			intervals [37]:
+				xmin = 9.92
+				xmax = 10.16
+				text = "する"
+			intervals [38]:
+				xmin = 10.16
+				xmax = 10.32
+				text = "こと"
+			intervals [39]:
+				xmin = 10.32
+				xmax = 10.56
+				text = "でし"
+			intervals [40]:
+				xmin = 10.56
+				xmax = 10.72
+				text = "た"
+			intervals [41]:
+				xmin = 10.72
+				xmax = 12.84
+				text = ""

@@ -1,0 +1,94 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 7.92
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 7.92
+		intervals: size = 20
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.68
+				text = ""
+			intervals [2]:
+				xmin = 1.68
+				xmax = 2.0
+				text = "同じ"
+			intervals [3]:
+				xmin = 2.0
+				xmax = 2.16
+				text = "よう"
+			intervals [4]:
+				xmin = 2.16
+				xmax = 2.4
+				text = "に"
+			intervals [5]:
+				xmin = 2.4
+				xmax = 2.8
+				text = "男性"
+			intervals [6]:
+				xmin = 2.8
+				xmax = 2.88
+				text = "は"
+			intervals [7]:
+				xmin = 2.88
+				xmax = 3.2
+				text = "膝"
+			intervals [8]:
+				xmin = 3.2
+				xmax = 3.36
+				text = "を"
+			intervals [9]:
+				xmin = 3.36
+				xmax = 3.52
+				text = "覆う"
+			intervals [10]:
+				xmin = 3.52
+				xmax = 3.84
+				text = "ズボン"
+			intervals [11]:
+				xmin = 3.84
+				xmax = 4.08
+				text = "履く"
+			intervals [12]:
+				xmin = 4.08
+				xmax = 4.32
+				text = "こと"
+			intervals [13]:
+				xmin = 4.32
+				xmax = 4.4
+				text = "が"
+			intervals [14]:
+				xmin = 4.4
+				xmax = 4.64
+				text = "義務"
+			intervals [15]:
+				xmin = 4.64
+				xmax = 4.88
+				text = "付け"
+			intervals [16]:
+				xmin = 4.88
+				xmax = 5.04
+				text = "られ"
+			intervals [17]:
+				xmin = 5.04
+				xmax = 5.12
+				text = "て"
+			intervals [18]:
+				xmin = 5.12
+				xmax = 5.2
+				text = "い"
+			intervals [19]:
+				xmin = 5.2
+				xmax = 5.76
+				text = "ます"
+			intervals [20]:
+				xmin = 5.76
+				xmax = 7.92
+				text = ""

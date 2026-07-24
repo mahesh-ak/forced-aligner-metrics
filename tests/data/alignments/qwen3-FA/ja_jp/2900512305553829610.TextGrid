@@ -1,0 +1,166 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.42
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.42
+		intervals: size = 38
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.0
+				text = ""
+			intervals [2]:
+				xmin = 2.0
+				xmax = 2.32
+				text = "特に"
+			intervals [3]:
+				xmin = 2.32
+				xmax = 2.72
+				text = "夏場"
+			intervals [4]:
+				xmin = 2.72
+				xmax = 2.8
+				text = "に"
+			intervals [5]:
+				xmin = 2.8
+				xmax = 2.96
+				text = "は"
+			intervals [6]:
+				xmin = 2.96
+				xmax = 3.2
+				text = ""
+			intervals [7]:
+				xmin = 3.2
+				xmax = 3.52
+				text = "オリーブ"
+			intervals [8]:
+				xmin = 3.52
+				xmax = 3.84
+				text = "オイル"
+			intervals [9]:
+				xmin = 3.84
+				xmax = 4.08
+				text = ""
+			intervals [10]:
+				xmin = 4.08
+				xmax = 4.16
+				text = "た"
+			intervals [11]:
+				xmin = 4.16
+				xmax = 4.48
+				text = "パン"
+			intervals [12]:
+				xmin = 4.48
+				xmax = 4.56
+				text = "に"
+			intervals [13]:
+				xmin = 4.56
+				xmax = 4.64
+				text = ""
+			intervals [14]:
+				xmin = 4.64
+				xmax = 4.96
+				text = "トマト"
+			intervals [15]:
+				xmin = 4.96
+				xmax = 5.04
+				text = "と"
+			intervals [16]:
+				xmin = 5.04
+				xmax = 5.12
+				text = ""
+			intervals [17]:
+				xmin = 5.12
+				xmax = 5.28
+				text = "チーズ"
+			intervals [18]:
+				xmin = 5.28
+				xmax = 5.76
+				text = ""
+			intervals [19]:
+				xmin = 5.76
+				xmax = 6.24
+				text = "チューナ"
+			intervals [20]:
+				xmin = 6.24
+				xmax = 6.56
+				text = "など"
+			intervals [21]:
+				xmin = 6.56
+				xmax = 6.64
+				text = "の"
+			intervals [22]:
+				xmin = 6.64
+				xmax = 7.04
+				text = "調味"
+			intervals [23]:
+				xmin = 7.04
+				xmax = 7.2
+				text = "料"
+			intervals [24]:
+				xmin = 7.2
+				xmax = 7.44
+				text = "加え"
+			intervals [25]:
+				xmin = 7.44
+				xmax = 7.92
+				text = "た"
+			intervals [26]:
+				xmin = 7.92
+				xmax = 8.0
+				text = ""
+			intervals [27]:
+				xmin = 8.0
+				xmax = 8.24
+				text = "パン"
+			intervals [28]:
+				xmin = 8.24
+				xmax = 8.4
+				text = "ボリ"
+			intervals [29]:
+				xmin = 8.4
+				xmax = 8.56
+				text = "と"
+			intervals [30]:
+				xmin = 8.56
+				xmax = 8.72
+				text = "いう"
+			intervals [31]:
+				xmin = 8.72
+				xmax = 9.2
+				text = "シンプル"
+			intervals [32]:
+				xmin = 9.2
+				xmax = 9.28
+				text = "な"
+			intervals [33]:
+				xmin = 9.28
+				xmax = 9.52
+				text = "料理"
+			intervals [34]:
+				xmin = 9.52
+				xmax = 9.6
+				text = "が"
+			intervals [35]:
+				xmin = 9.6
+				xmax = 9.68
+				text = ""
+			intervals [36]:
+				xmin = 9.68
+				xmax = 9.92
+				text = "人気"
+			intervals [37]:
+				xmin = 9.92
+				xmax = 10.24
+				text = "です"
+			intervals [38]:
+				xmin = 10.24
+				xmax = 12.42
+				text = ""

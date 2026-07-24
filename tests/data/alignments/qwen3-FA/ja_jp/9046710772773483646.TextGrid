@@ -1,0 +1,154 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 11.46
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 11.46
+		intervals: size = 35
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.6
+				text = ""
+			intervals [2]:
+				xmin = 1.6
+				xmax = 2.08
+				text = "通常"
+			intervals [3]:
+				xmin = 2.08
+				xmax = 2.32
+				text = "ここ"
+			intervals [4]:
+				xmin = 2.32
+				xmax = 2.4
+				text = "で"
+			intervals [5]:
+				xmin = 2.4
+				xmax = 2.48
+				text = "は"
+			intervals [6]:
+				xmin = 2.48
+				xmax = 2.64
+				text = "いつ"
+			intervals [7]:
+				xmin = 2.64
+				xmax = 2.8
+				text = "も"
+			intervals [8]:
+				xmin = 2.8
+				xmax = 3.2
+				text = "観光"
+			intervals [9]:
+				xmin = 3.2
+				xmax = 3.36
+				text = "客"
+			intervals [10]:
+				xmin = 3.36
+				xmax = 3.52
+				text = "や"
+			intervals [11]:
+				xmin = 3.52
+				xmax = 3.84
+				text = "業者"
+			intervals [12]:
+				xmin = 3.84
+				xmax = 4.0
+				text = "たち"
+			intervals [13]:
+				xmin = 4.0
+				xmax = 4.16
+				text = "が"
+			intervals [14]:
+				xmin = 4.16
+				xmax = 4.48
+				text = "発する"
+			intervals [15]:
+				xmin = 4.48
+				xmax = 4.64
+				text = "音"
+			intervals [16]:
+				xmin = 4.64
+				xmax = 4.72
+				text = "が"
+			intervals [17]:
+				xmin = 4.72
+				xmax = 4.96
+				text = "聞こえ"
+			intervals [18]:
+				xmin = 4.96
+				xmax = 5.12
+				text = ""
+			intervals [19]:
+				xmin = 5.12
+				xmax = 5.2
+				text = "てき"
+			intervals [20]:
+				xmin = 5.2
+				xmax = 5.52
+				text = "ます"
+			intervals [21]:
+				xmin = 5.52
+				xmax = 5.76
+				text = ""
+			intervals [22]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "音"
+			intervals [23]:
+				xmin = 5.92
+				xmax = 6.08
+				text = "と"
+			intervals [24]:
+				xmin = 6.08
+				xmax = 6.32
+				text = "光"
+			intervals [25]:
+				xmin = 6.32
+				xmax = 6.48
+				text = "が"
+			intervals [26]:
+				xmin = 6.48
+				xmax = 6.8
+				text = "織りなす"
+			intervals [27]:
+				xmin = 6.8
+				xmax = 7.28
+				text = "物語"
+			intervals [28]:
+				xmin = 7.28
+				xmax = 7.44
+				text = "は"
+			intervals [29]:
+				xmin = 7.44
+				xmax = 7.76
+				text = "まるで"
+			intervals [30]:
+				xmin = 7.76
+				xmax = 7.84
+				text = ""
+			intervals [31]:
+				xmin = 7.84
+				xmax = 8.08
+				text = "絵本"
+			intervals [32]:
+				xmin = 8.08
+				xmax = 8.16
+				text = "の"
+			intervals [33]:
+				xmin = 8.16
+				xmax = 8.32
+				text = "よう"
+			intervals [34]:
+				xmin = 8.32
+				xmax = 8.72
+				text = "です"
+			intervals [35]:
+				xmin = 8.72
+				xmax = 11.46
+				text = ""

@@ -1,0 +1,142 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.96
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.96
+		intervals: size = 32
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.28
+				text = ""
+			intervals [2]:
+				xmin = 1.28
+				xmax = 1.6
+				text = "再"
+			intervals [3]:
+				xmin = 1.6
+				xmax = 2.16
+				text = "入国"
+			intervals [4]:
+				xmin = 2.16
+				xmax = 2.56
+				text = "ショック"
+			intervals [5]:
+				xmin = 2.56
+				xmax = 2.72
+				text = "は"
+			intervals [6]:
+				xmin = 2.72
+				xmax = 3.12
+				text = ""
+			intervals [7]:
+				xmin = 3.12
+				xmax = 3.68
+				text = "新婚"
+			intervals [8]:
+				xmin = 3.68
+				xmax = 4.0
+				text = "旅行"
+			intervals [9]:
+				xmin = 4.0
+				xmax = 4.16
+				text = "の"
+			intervals [10]:
+				xmin = 4.16
+				xmax = 4.4
+				text = "時期"
+			intervals [11]:
+				xmin = 4.4
+				xmax = 4.56
+				text = "が"
+			intervals [12]:
+				xmin = 4.56
+				xmax = 4.96
+				text = "少ない"
+			intervals [13]:
+				xmin = 4.96
+				xmax = 5.28
+				text = ""
+			intervals [14]:
+				xmin = 5.28
+				xmax = 5.76
+				text = "カルチャー"
+			intervals [15]:
+				xmin = 5.76
+				xmax = 6.16
+				text = "ショック"
+			intervals [16]:
+				xmin = 6.16
+				xmax = 6.32
+				text = "より"
+			intervals [17]:
+				xmin = 6.32
+				xmax = 6.4
+				text = "も"
+			intervals [18]:
+				xmin = 6.4
+				xmax = 6.8
+				text = "早く"
+			intervals [19]:
+				xmin = 6.8
+				xmax = 7.36
+				text = "訪れ"
+			intervals [20]:
+				xmin = 7.36
+				xmax = 7.6
+				text = ""
+			intervals [21]:
+				xmin = 7.6
+				xmax = 8.16
+				text = "長引き"
+			intervals [22]:
+				xmin = 8.16
+				xmax = 8.56
+				text = ""
+			intervals [23]:
+				xmin = 8.56
+				xmax = 8.8
+				text = "より"
+			intervals [24]:
+				xmin = 8.8
+				xmax = 9.28
+				text = "症状"
+			intervals [25]:
+				xmin = 9.28
+				xmax = 9.44
+				text = "が"
+			intervals [26]:
+				xmin = 9.44
+				xmax = 9.68
+				text = "悪化"
+			intervals [27]:
+				xmin = 9.68
+				xmax = 9.92
+				text = "する"
+			intervals [28]:
+				xmin = 9.92
+				xmax = 10.16
+				text = "こと"
+			intervals [29]:
+				xmin = 10.16
+				xmax = 10.32
+				text = "が"
+			intervals [30]:
+				xmin = 10.32
+				xmax = 10.48
+				text = "あり"
+			intervals [31]:
+				xmin = 10.48
+				xmax = 10.8
+				text = "ます"
+			intervals [32]:
+				xmin = 10.8
+				xmax = 12.96
+				text = ""

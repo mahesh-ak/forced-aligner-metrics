@@ -1,0 +1,126 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 11.94
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 11.94
+		intervals: size = 28
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.84
+				text = ""
+			intervals [2]:
+				xmin = 1.84
+				xmax = 2.48
+				text = "フォークランド"
+			intervals [3]:
+				xmin = 2.48
+				xmax = 2.56
+				text = "の"
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.96
+				text = "公式"
+			intervals [5]:
+				xmin = 2.96
+				xmax = 3.28
+				text = "通貨"
+			intervals [6]:
+				xmin = 3.28
+				xmax = 3.44
+				text = "は"
+			intervals [7]:
+				xmin = 3.44
+				xmax = 3.92
+				text = "フォークランド"
+			intervals [8]:
+				xmin = 3.92
+				xmax = 4.32
+				text = "諸島"
+			intervals [9]:
+				xmin = 4.32
+				xmax = 4.72
+				text = "ポンド"
+			intervals [10]:
+				xmin = 4.72
+				xmax = 4.88
+				text = ""
+			intervals [11]:
+				xmin = 4.88
+				xmax = 5.6
+				text = "fkp"
+			intervals [12]:
+				xmin = 5.6
+				xmax = 5.76
+				text = "で"
+			intervals [13]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "一"
+			intervals [14]:
+				xmin = 5.92
+				xmax = 6.24
+				text = "ポンド"
+			intervals [15]:
+				xmin = 6.24
+				xmax = 6.32
+				text = "が"
+			intervals [16]:
+				xmin = 6.32
+				xmax = 6.56
+				text = "一"
+			intervals [17]:
+				xmin = 6.56
+				xmax = 6.72
+				text = "英"
+			intervals [18]:
+				xmin = 6.72
+				xmax = 7.12
+				text = "ポンド"
+			intervals [19]:
+				xmin = 7.12
+				xmax = 7.2
+				text = ""
+			intervals [20]:
+				xmin = 7.2
+				xmax = 7.84
+				text = "gbp"
+			intervals [21]:
+				xmin = 7.84
+				xmax = 7.92
+				text = "と"
+			intervals [22]:
+				xmin = 7.92
+				xmax = 8.24
+				text = "等価"
+			intervals [23]:
+				xmin = 8.24
+				xmax = 8.32
+				text = "に"
+			intervals [24]:
+				xmin = 8.32
+				xmax = 8.64
+				text = "固定"
+			intervals [25]:
+				xmin = 8.64
+				xmax = 8.8
+				text = "され"
+			intervals [26]:
+				xmin = 8.8
+				xmax = 8.96
+				text = "て"
+			intervals [27]:
+				xmin = 8.96
+				xmax = 9.52
+				text = "ます"
+			intervals [28]:
+				xmin = 9.52
+				xmax = 11.94
+				text = ""

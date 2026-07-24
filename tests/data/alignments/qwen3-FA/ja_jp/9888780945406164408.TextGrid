@@ -1,0 +1,174 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.14
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 13.14
+		intervals: size = 40
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.4
+				text = "例えば"
+			intervals [3]:
+				xmin = 2.4
+				xmax = 2.8
+				text = "世界"
+			intervals [4]:
+				xmin = 2.8
+				xmax = 2.88
+				text = "で"
+			intervals [5]:
+				xmin = 2.88
+				xmax = 3.28
+				text = "最も"
+			intervals [6]:
+				xmin = 3.28
+				xmax = 3.52
+				text = "普及"
+			intervals [7]:
+				xmin = 3.52
+				xmax = 3.6
+				text = ""
+			intervals [8]:
+				xmin = 3.6
+				xmax = 3.68
+				text = "し"
+			intervals [9]:
+				xmin = 3.68
+				xmax = 3.76
+				text = "て"
+			intervals [10]:
+				xmin = 3.76
+				xmax = 3.92
+				text = "いる"
+			intervals [11]:
+				xmin = 3.92
+				xmax = 4.32
+				text = "静止"
+			intervals [12]:
+				xmin = 4.32
+				xmax = 4.4
+				text = "画"
+			intervals [13]:
+				xmin = 4.4
+				xmax = 4.72
+				text = "写真"
+			intervals [14]:
+				xmin = 4.72
+				xmax = 4.8
+				text = "の"
+			intervals [15]:
+				xmin = 4.8
+				xmax = 4.88
+				text = ""
+			intervals [16]:
+				xmin = 4.88
+				xmax = 5.2
+				text = "フィルム"
+			intervals [17]:
+				xmin = 5.2
+				xmax = 5.52
+				text = "形式"
+			intervals [18]:
+				xmin = 5.52
+				xmax = 5.6
+				text = ""
+			intervals [19]:
+				xmin = 5.6
+				xmax = 5.68
+				text = "は"
+			intervals [20]:
+				xmin = 5.68
+				xmax = 6.16
+				text = "三十"
+			intervals [21]:
+				xmin = 6.16
+				xmax = 6.24
+				text = "五"
+			intervals [22]:
+				xmin = 6.24
+				xmax = 6.56
+				text = "mm"
+			intervals [23]:
+				xmin = 6.56
+				xmax = 7.04
+				text = ""
+			intervals [24]:
+				xmin = 7.04
+				xmax = 7.2
+				text = "これ"
+			intervals [25]:
+				xmin = 7.2
+				xmax = 7.6
+				text = "は"
+			intervals [26]:
+				xmin = 7.6
+				xmax = 7.92
+				text = "アナログ"
+			intervals [27]:
+				xmin = 7.92
+				xmax = 8.24
+				text = "フィルム"
+			intervals [28]:
+				xmin = 8.24
+				xmax = 8.56
+				text = "時代"
+			intervals [29]:
+				xmin = 8.56
+				xmax = 8.64
+				text = "の"
+			intervals [30]:
+				xmin = 8.64
+				xmax = 9.12
+				text = "終わり頃"
+			intervals [31]:
+				xmin = 9.12
+				xmax = 9.2
+				text = "に"
+			intervals [32]:
+				xmin = 9.2
+				xmax = 9.36
+				text = "は"
+			intervals [33]:
+				xmin = 9.36
+				xmax = 9.68
+				text = "主流"
+			intervals [34]:
+				xmin = 9.68
+				xmax = 9.84
+				text = "の"
+			intervals [35]:
+				xmin = 9.84
+				xmax = 9.92
+				text = ""
+			intervals [36]:
+				xmin = 9.92
+				xmax = 10.16
+				text = "フィルム"
+			intervals [37]:
+				xmin = 10.16
+				xmax = 10.48
+				text = "サイズ"
+			intervals [38]:
+				xmin = 10.48
+				xmax = 10.72
+				text = "でし"
+			intervals [39]:
+				xmin = 10.72
+				xmax = 10.8
+				text = "た"
+			intervals [40]:
+				xmin = 10.8
+				xmax = 13.14
+				text = ""

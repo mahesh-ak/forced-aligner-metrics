@@ -1,0 +1,138 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 10.86
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 10.86
+		intervals: size = 31
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.08
+				text = ""
+			intervals [2]:
+				xmin = 2.08
+				xmax = 2.32
+				text = "今年"
+			intervals [3]:
+				xmin = 2.32
+				xmax = 2.64
+				text = "初め"
+			intervals [4]:
+				xmin = 2.64
+				xmax = 2.8
+				text = "に"
+			intervals [5]:
+				xmin = 2.8
+				xmax = 3.04
+				text = "知事"
+			intervals [6]:
+				xmin = 3.04
+				xmax = 3.28
+				text = "職"
+			intervals [7]:
+				xmin = 3.28
+				xmax = 3.36
+				text = "に"
+			intervals [8]:
+				xmin = 3.36
+				xmax = 3.6
+				text = "就き"
+			intervals [9]:
+				xmin = 3.6
+				xmax = 3.76
+				text = ""
+			intervals [10]:
+				xmin = 3.76
+				xmax = 4.32
+				text = "先月"
+			intervals [11]:
+				xmin = 4.32
+				xmax = 4.48
+				text = ""
+			intervals [12]:
+				xmin = 4.48
+				xmax = 4.8
+				text = "同性"
+			intervals [13]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "婚"
+			intervals [14]:
+				xmin = 4.96
+				xmax = 5.12
+				text = "を"
+			intervals [15]:
+				xmin = 5.12
+				xmax = 5.36
+				text = ""
+			intervals [16]:
+				xmin = 5.36
+				xmax = 5.52
+				text = "合法"
+			intervals [17]:
+				xmin = 5.52
+				xmax = 5.68
+				text = "化"
+			intervals [18]:
+				xmin = 5.68
+				xmax = 5.84
+				text = "する"
+			intervals [19]:
+				xmin = 5.84
+				xmax = 6.08
+				text = "法"
+			intervals [20]:
+				xmin = 6.08
+				xmax = 6.16
+				text = ""
+			intervals [21]:
+				xmin = 6.16
+				xmax = 6.24
+				text = "案"
+			intervals [22]:
+				xmin = 6.24
+				xmax = 6.32
+				text = "に"
+			intervals [23]:
+				xmin = 6.32
+				xmax = 6.64
+				text = "署名"
+			intervals [24]:
+				xmin = 6.64
+				xmax = 6.88
+				text = "した"
+			intervals [25]:
+				xmin = 6.88
+				xmax = 7.2
+				text = "クオモ"
+			intervals [26]:
+				xmin = 7.2
+				xmax = 7.36
+				text = "氏"
+			intervals [27]:
+				xmin = 7.36
+				xmax = 7.6
+				text = ""
+			intervals [28]:
+				xmin = 7.6
+				xmax = 7.92
+				text = "五十"
+			intervals [29]:
+				xmin = 7.92
+				xmax = 8.16
+				text = "三"
+			intervals [30]:
+				xmin = 8.16
+				xmax = 8.4
+				text = "歳"
+			intervals [31]:
+				xmin = 8.4
+				xmax = 10.86
+				text = ""

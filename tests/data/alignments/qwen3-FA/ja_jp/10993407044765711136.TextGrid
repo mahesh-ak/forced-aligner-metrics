@@ -1,0 +1,226 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 16.44
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 16.44
+		intervals: size = 53
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.44
+				text = ""
+			intervals [2]:
+				xmin = 1.44
+				xmax = 2.0
+				text = "香港"
+			intervals [3]:
+				xmin = 2.0
+				xmax = 2.24
+				text = "の"
+			intervals [4]:
+				xmin = 2.24
+				xmax = 3.12
+				text = ""
+			intervals [5]:
+				xmin = 3.12
+				xmax = 3.2
+				text = "地平"
+			intervals [6]:
+				xmin = 3.2
+				xmax = 3.36
+				text = ""
+			intervals [7]:
+				xmin = 3.36
+				xmax = 3.6
+				text = "線"
+			intervals [8]:
+				xmin = 3.6
+				xmax = 3.68
+				text = ""
+			intervals [9]:
+				xmin = 3.68
+				xmax = 3.84
+				text = "を"
+			intervals [10]:
+				xmin = 3.84
+				xmax = 4.24
+				text = ""
+			intervals [11]:
+				xmin = 4.24
+				xmax = 4.56
+				text = "描い"
+			intervals [12]:
+				xmin = 4.56
+				xmax = 4.72
+				text = ""
+			intervals [13]:
+				xmin = 4.72
+				xmax = 4.8
+				text = "て"
+			intervals [14]:
+				xmin = 4.8
+				xmax = 5.6
+				text = "立ち並ぶ"
+			intervals [15]:
+				xmin = 5.6
+				xmax = 5.76
+				text = ""
+			intervals [16]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "ビル"
+			intervals [17]:
+				xmin = 5.92
+				xmax = 6.56
+				text = ""
+			intervals [18]:
+				xmin = 6.56
+				xmax = 6.72
+				text = "群"
+			intervals [19]:
+				xmin = 6.72
+				xmax = 6.88
+				text = ""
+			intervals [20]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "は"
+			intervals [21]:
+				xmin = 7.04
+				xmax = 7.76
+				text = ""
+			intervals [22]:
+				xmin = 7.76
+				xmax = 8.16
+				text = "ビクトリア"
+			intervals [23]:
+				xmin = 8.16
+				xmax = 8.4
+				text = ""
+			intervals [24]:
+				xmin = 8.4
+				xmax = 8.8
+				text = "ハーバー"
+			intervals [25]:
+				xmin = 8.8
+				xmax = 9.12
+				text = ""
+			intervals [26]:
+				xmin = 9.12
+				xmax = 9.36
+				text = "の"
+			intervals [27]:
+				xmin = 9.36
+				xmax = 9.76
+				text = ""
+			intervals [28]:
+				xmin = 9.76
+				xmax = 9.92
+				text = "水"
+			intervals [29]:
+				xmin = 9.92
+				xmax = 10.16
+				text = ""
+			intervals [30]:
+				xmin = 10.16
+				xmax = 10.32
+				text = "の"
+			intervals [31]:
+				xmin = 10.32
+				xmax = 10.72
+				text = ""
+			intervals [32]:
+				xmin = 10.72
+				xmax = 11.12
+				text = "存在"
+			intervals [33]:
+				xmin = 11.12
+				xmax = 11.2
+				text = ""
+			intervals [34]:
+				xmin = 11.2
+				xmax = 11.28
+				text = "に"
+			intervals [35]:
+				xmin = 11.28
+				xmax = 11.44
+				text = "よっ"
+			intervals [36]:
+				xmin = 11.44
+				xmax = 11.52
+				text = ""
+			intervals [37]:
+				xmin = 11.52
+				xmax = 11.68
+				text = "て"
+			intervals [38]:
+				xmin = 11.68
+				xmax = 12.16
+				text = ""
+			intervals [39]:
+				xmin = 12.16
+				xmax = 12.8
+				text = "きらびやか"
+			intervals [40]:
+				xmin = 12.8
+				xmax = 12.88
+				text = ""
+			intervals [41]:
+				xmin = 12.88
+				xmax = 12.96
+				text = "な"
+			intervals [42]:
+				xmin = 12.96
+				xmax = 13.04
+				text = ""
+			intervals [43]:
+				xmin = 13.04
+				xmax = 13.36
+				text = "棒"
+			intervals [44]:
+				xmin = 13.36
+				xmax = 13.44
+				text = ""
+			intervals [45]:
+				xmin = 13.44
+				xmax = 13.6
+				text = "グラフ"
+			intervals [46]:
+				xmin = 13.6
+				xmax = 13.76
+				text = ""
+			intervals [47]:
+				xmin = 13.76
+				xmax = 13.92
+				text = "に"
+			intervals [48]:
+				xmin = 13.92
+				xmax = 14.64
+				text = "例え"
+			intervals [49]:
+				xmin = 14.64
+				xmax = 14.72
+				text = ""
+			intervals [50]:
+				xmin = 14.72
+				xmax = 14.96
+				text = "て"
+			intervals [51]:
+				xmin = 14.96
+				xmax = 15.04
+				text = "い"
+			intervals [52]:
+				xmin = 15.04
+				xmax = 15.2
+				text = "ます"
+			intervals [53]:
+				xmin = 15.2
+				xmax = 16.44
+				text = ""

@@ -1,0 +1,198 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 17.7
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 17.7
+		intervals: size = 46
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.6
+				text = ""
+			intervals [2]:
+				xmin = 1.6
+				xmax = 2.08
+				text = "昨晩"
+			intervals [3]:
+				xmin = 2.08
+				xmax = 2.72
+				text = ""
+			intervals [4]:
+				xmin = 2.72
+				xmax = 3.04
+				text = "ブエノスアイレス"
+			intervals [5]:
+				xmin = 3.04
+				xmax = 3.28
+				text = "から"
+			intervals [6]:
+				xmin = 3.28
+				xmax = 3.52
+				text = "五十"
+			intervals [7]:
+				xmin = 3.52
+				xmax = 3.68
+				text = ""
+			intervals [8]:
+				xmin = 3.68
+				xmax = 3.84
+				text = "キロ"
+			intervals [9]:
+				xmin = 3.84
+				xmax = 4.16
+				text = ""
+			intervals [10]:
+				xmin = 4.16
+				xmax = 4.64
+				text = "三十"
+			intervals [11]:
+				xmin = 4.64
+				xmax = 4.88
+				text = "一"
+			intervals [12]:
+				xmin = 4.88
+				xmax = 5.2
+				text = "マイル"
+			intervals [13]:
+				xmin = 5.2
+				xmax = 5.6
+				text = "離れ"
+			intervals [14]:
+				xmin = 5.6
+				xmax = 5.76
+				text = "た"
+			intervals [15]:
+				xmin = 5.76
+				xmax = 6.08
+				text = ""
+			intervals [16]:
+				xmin = 6.08
+				xmax = 6.48
+				text = "ラプラタ"
+			intervals [17]:
+				xmin = 6.48
+				xmax = 6.64
+				text = "市"
+			intervals [18]:
+				xmin = 6.64
+				xmax = 6.8
+				text = "内"
+			intervals [19]:
+				xmin = 6.8
+				xmax = 6.96
+				text = "で"
+			intervals [20]:
+				xmin = 6.96
+				xmax = 7.52
+				text = ""
+			intervals [21]:
+				xmin = 7.52
+				xmax = 8.0
+				text = "現職"
+			intervals [22]:
+				xmin = 8.0
+				xmax = 8.48
+				text = "上院"
+			intervals [23]:
+				xmin = 8.48
+				xmax = 8.8
+				text = "議員"
+			intervals [24]:
+				xmin = 8.8
+				xmax = 8.88
+				text = "で"
+			intervals [25]:
+				xmin = 8.88
+				xmax = 8.96
+				text = ""
+			intervals [26]:
+				xmin = 8.96
+				xmax = 9.12
+				text = "ある"
+			intervals [27]:
+				xmin = 9.12
+				xmax = 9.76
+				text = ""
+			intervals [28]:
+				xmin = 9.76
+				xmax = 10.16
+				text = "クリスティーナ"
+			intervals [29]:
+				xmin = 10.16
+				xmax = 10.96
+				text = "フェルナンデス"
+			intervals [30]:
+				xmin = 10.96
+				xmax = 11.12
+				text = ""
+			intervals [31]:
+				xmin = 11.12
+				xmax = 11.36
+				text = "デ"
+			intervals [32]:
+				xmin = 11.36
+				xmax = 11.68
+				text = ""
+			intervals [33]:
+				xmin = 11.68
+				xmax = 12.24
+				text = "キルヒナー"
+			intervals [34]:
+				xmin = 12.24
+				xmax = 12.48
+				text = "女史"
+			intervals [35]:
+				xmin = 12.48
+				xmax = 12.64
+				text = "が"
+			intervals [36]:
+				xmin = 12.64
+				xmax = 12.96
+				text = ""
+			intervals [37]:
+				xmin = 12.96
+				xmax = 13.6
+				text = "大統領"
+			intervals [38]:
+				xmin = 13.6
+				xmax = 13.76
+				text = "選"
+			intervals [39]:
+				xmin = 13.76
+				xmax = 13.84
+				text = "へ"
+			intervals [40]:
+				xmin = 13.84
+				xmax = 14.0
+				text = "の"
+			intervals [41]:
+				xmin = 14.0
+				xmax = 14.32
+				text = "出馬"
+			intervals [42]:
+				xmin = 14.32
+				xmax = 14.4
+				text = "を"
+			intervals [43]:
+				xmin = 14.4
+				xmax = 14.88
+				text = "宣言"
+			intervals [44]:
+				xmin = 14.88
+				xmax = 14.96
+				text = "し"
+			intervals [45]:
+				xmin = 14.96
+				xmax = 15.36
+				text = "ました"
+			intervals [46]:
+				xmin = 15.36
+				xmax = 17.7
+				text = ""

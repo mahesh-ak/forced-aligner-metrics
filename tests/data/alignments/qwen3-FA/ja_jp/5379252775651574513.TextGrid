@@ -1,0 +1,158 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 11.7
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 11.7
+		intervals: size = 36
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.08
+				text = ""
+			intervals [2]:
+				xmin = 2.08
+				xmax = 2.16
+				text = "手"
+			intervals [3]:
+				xmin = 2.16
+				xmax = 2.32
+				text = "に"
+			intervals [4]:
+				xmin = 2.32
+				xmax = 2.48
+				text = "つい"
+			intervals [5]:
+				xmin = 2.48
+				xmax = 2.56
+				text = "た"
+			intervals [6]:
+				xmin = 2.56
+				xmax = 3.04
+				text = "水分"
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.2
+				text = "が"
+			intervals [8]:
+				xmin = 3.2
+				xmax = 3.52
+				text = ""
+			intervals [9]:
+				xmin = 3.52
+				xmax = 3.92
+				text = "外側"
+			intervals [10]:
+				xmin = 3.92
+				xmax = 4.0
+				text = "の"
+			intervals [11]:
+				xmin = 4.0
+				xmax = 4.24
+				text = "層"
+			intervals [12]:
+				xmin = 4.24
+				xmax = 4.32
+				text = "と"
+			intervals [13]:
+				xmin = 4.32
+				xmax = 4.72
+				text = "反応"
+			intervals [14]:
+				xmin = 4.72
+				xmax = 4.88
+				text = "し"
+			intervals [15]:
+				xmin = 4.88
+				xmax = 5.2
+				text = ""
+			intervals [16]:
+				xmin = 5.2
+				xmax = 5.36
+				text = "妙"
+			intervals [17]:
+				xmin = 5.36
+				xmax = 5.52
+				text = "な"
+			intervals [18]:
+				xmin = 5.52
+				xmax = 5.92
+				text = "感触"
+			intervals [19]:
+				xmin = 5.92
+				xmax = 6.16
+				text = ""
+			intervals [20]:
+				xmin = 6.16
+				xmax = 6.24
+				text = "に"
+			intervals [21]:
+				xmin = 6.24
+				xmax = 6.32
+				text = ""
+			intervals [22]:
+				xmin = 6.32
+				xmax = 6.48
+				text = "なり"
+			intervals [23]:
+				xmin = 6.48
+				xmax = 7.04
+				text = ""
+			intervals [24]:
+				xmin = 7.04
+				xmax = 7.28
+				text = "一種"
+			intervals [25]:
+				xmin = 7.28
+				xmax = 7.36
+				text = "の"
+			intervals [26]:
+				xmin = 7.36
+				xmax = 7.6
+				text = "殻"
+			intervals [27]:
+				xmin = 7.6
+				xmax = 7.76
+				text = "の"
+			intervals [28]:
+				xmin = 7.76
+				xmax = 7.92
+				text = "よう"
+			intervals [29]:
+				xmin = 7.92
+				xmax = 8.0
+				text = "な"
+			intervals [30]:
+				xmin = 8.0
+				xmax = 8.16
+				text = "もの"
+			intervals [31]:
+				xmin = 8.16
+				xmax = 8.32
+				text = "を"
+			intervals [32]:
+				xmin = 8.32
+				xmax = 8.72
+				text = "形成"
+			intervals [33]:
+				xmin = 8.72
+				xmax = 8.8
+				text = "し"
+			intervals [34]:
+				xmin = 8.8
+				xmax = 8.88
+				text = ""
+			intervals [35]:
+				xmin = 8.88
+				xmax = 9.12
+				text = "ます"
+			intervals [36]:
+				xmin = 9.12
+				xmax = 11.7
+				text = ""

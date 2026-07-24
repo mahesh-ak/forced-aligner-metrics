@@ -1,0 +1,190 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.32
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 13.32
+		intervals: size = 44
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.76
+				text = ""
+			intervals [2]:
+				xmin = 1.76
+				xmax = 2.0
+				text = "統治"
+			intervals [3]:
+				xmin = 2.0
+				xmax = 2.16
+				text = "者"
+			intervals [4]:
+				xmin = 2.16
+				xmax = 2.32
+				text = "は"
+			intervals [5]:
+				xmin = 2.32
+				xmax = 2.72
+				text = "ビシー"
+			intervals [6]:
+				xmin = 2.72
+				xmax = 2.8
+				text = "の"
+			intervals [7]:
+				xmin = 2.8
+				xmax = 3.2
+				text = "フランス"
+			intervals [8]:
+				xmin = 3.2
+				xmax = 3.44
+				text = "人"
+			intervals [9]:
+				xmin = 3.44
+				xmax = 3.6
+				text = "たち"
+			intervals [10]:
+				xmin = 3.6
+				xmax = 3.84
+				text = "でし"
+			intervals [11]:
+				xmin = 3.84
+				xmax = 4.0
+				text = "た"
+			intervals [12]:
+				xmin = 4.0
+				xmax = 4.16
+				text = ""
+			intervals [13]:
+				xmin = 4.16
+				xmax = 4.4
+				text = "彼"
+			intervals [14]:
+				xmin = 4.4
+				xmax = 4.48
+				text = "ら"
+			intervals [15]:
+				xmin = 4.48
+				xmax = 4.64
+				text = "は"
+			intervals [16]:
+				xmin = 4.64
+				xmax = 4.96
+				text = "千"
+			intervals [17]:
+				xmin = 4.96
+				xmax = 5.28
+				text = "九百"
+			intervals [18]:
+				xmin = 5.28
+				xmax = 5.68
+				text = "四十"
+			intervals [19]:
+				xmin = 5.68
+				xmax = 5.84
+				text = "年"
+			intervals [20]:
+				xmin = 5.84
+				xmax = 6.08
+				text = "に"
+			intervals [21]:
+				xmin = 6.08
+				xmax = 6.4
+				text = "ドイツ"
+			intervals [22]:
+				xmin = 6.4
+				xmax = 6.64
+				text = "軍"
+			intervals [23]:
+				xmin = 6.64
+				xmax = 6.72
+				text = "と"
+			intervals [24]:
+				xmin = 6.72
+				xmax = 7.12
+				text = "和平"
+			intervals [25]:
+				xmin = 7.12
+				xmax = 7.2
+				text = "を"
+			intervals [26]:
+				xmin = 7.2
+				xmax = 7.6
+				text = "結び"
+			intervals [27]:
+				xmin = 7.6
+				xmax = 8.08
+				text = "侵略"
+			intervals [28]:
+				xmin = 8.08
+				xmax = 8.16
+				text = "者"
+			intervals [29]:
+				xmin = 8.16
+				xmax = 8.32
+				text = "と"
+			intervals [30]:
+				xmin = 8.32
+				xmax = 8.72
+				text = "戦う"
+			intervals [31]:
+				xmin = 8.72
+				xmax = 8.8
+				text = "の"
+			intervals [32]:
+				xmin = 8.8
+				xmax = 8.88
+				text = "で"
+			intervals [33]:
+				xmin = 8.88
+				xmax = 8.96
+				text = "は"
+			intervals [34]:
+				xmin = 8.96
+				xmax = 9.28
+				text = "なく"
+			intervals [35]:
+				xmin = 9.28
+				xmax = 9.76
+				text = "侵略"
+			intervals [36]:
+				xmin = 9.76
+				xmax = 9.84
+				text = "者"
+			intervals [37]:
+				xmin = 9.84
+				xmax = 10.0
+				text = "に"
+			intervals [38]:
+				xmin = 10.0
+				xmax = 10.32
+				text = "協力"
+			intervals [39]:
+				xmin = 10.32
+				xmax = 10.48
+				text = "した"
+			intervals [40]:
+				xmin = 10.48
+				xmax = 10.88
+				text = "フランス"
+			intervals [41]:
+				xmin = 10.88
+				xmax = 11.04
+				text = "人"
+			intervals [42]:
+				xmin = 11.04
+				xmax = 11.28
+				text = "たち"
+			intervals [43]:
+				xmin = 11.28
+				xmax = 11.68
+				text = "です"
+			intervals [44]:
+				xmin = 11.68
+				xmax = 13.32
+				text = ""

@@ -1,0 +1,174 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.6
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.6
+		intervals: size = 40
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.4
+				text = "ヨーロッパ"
+			intervals [3]:
+				xmin = 2.4
+				xmax = 2.56
+				text = "史"
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.64
+				text = ""
+			intervals [5]:
+				xmin = 2.64
+				xmax = 2.88
+				text = "おい"
+			intervals [6]:
+				xmin = 2.88
+				xmax = 2.96
+				text = "て"
+			intervals [7]:
+				xmin = 2.96
+				xmax = 3.2
+				text = ""
+			intervals [8]:
+				xmin = 3.2
+				xmax = 3.6
+				text = "経済"
+			intervals [9]:
+				xmin = 3.6
+				xmax = 3.76
+				text = "的"
+			intervals [10]:
+				xmin = 3.76
+				xmax = 3.92
+				text = "に"
+			intervals [11]:
+				xmin = 3.92
+				xmax = 4.16
+				text = "豊か"
+			intervals [12]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "で"
+			intervals [13]:
+				xmin = 4.32
+				xmax = 4.72
+				text = "強大"
+			intervals [14]:
+				xmin = 4.72
+				xmax = 4.8
+				text = "な"
+			intervals [15]:
+				xmin = 4.8
+				xmax = 5.12
+				text = "力"
+			intervals [16]:
+				xmin = 5.12
+				xmax = 5.36
+				text = "持つ"
+			intervals [17]:
+				xmin = 5.36
+				xmax = 5.44
+				text = "よう"
+			intervals [18]:
+				xmin = 5.44
+				xmax = 5.52
+				text = "に"
+			intervals [19]:
+				xmin = 5.52
+				xmax = 5.68
+				text = ""
+			intervals [20]:
+				xmin = 5.68
+				xmax = 6.0
+				text = "なった"
+			intervals [21]:
+				xmin = 6.0
+				xmax = 6.16
+				text = ""
+			intervals [22]:
+				xmin = 6.16
+				xmax = 6.72
+				text = "カトリック"
+			intervals [23]:
+				xmin = 6.72
+				xmax = 7.04
+				text = "教会"
+			intervals [24]:
+				xmin = 7.04
+				xmax = 7.12
+				text = "に"
+			intervals [25]:
+				xmin = 7.12
+				xmax = 7.6
+				text = ""
+			intervals [26]:
+				xmin = 7.6
+				xmax = 7.84
+				text = "この"
+			intervals [27]:
+				xmin = 7.84
+				xmax = 8.08
+				text = "時代"
+			intervals [28]:
+				xmin = 8.08
+				xmax = 8.16
+				text = "に"
+			intervals [29]:
+				xmin = 8.16
+				xmax = 8.24
+				text = "は"
+			intervals [30]:
+				xmin = 8.24
+				xmax = 8.72
+				text = "厳しい"
+			intervals [31]:
+				xmin = 8.72
+				xmax = 8.88
+				text = "目"
+			intervals [32]:
+				xmin = 8.88
+				xmax = 8.96
+				text = "が"
+			intervals [33]:
+				xmin = 8.96
+				xmax = 9.2
+				text = "向け"
+			intervals [34]:
+				xmin = 9.2
+				xmax = 9.52
+				text = "られる"
+			intervals [35]:
+				xmin = 9.52
+				xmax = 9.76
+				text = "よう"
+			intervals [36]:
+				xmin = 9.76
+				xmax = 9.84
+				text = "に"
+			intervals [37]:
+				xmin = 9.84
+				xmax = 10.0
+				text = "なっ"
+			intervals [38]:
+				xmin = 10.0
+				xmax = 10.16
+				text = "て"
+			intervals [39]:
+				xmin = 10.16
+				xmax = 10.48
+				text = "ました"
+			intervals [40]:
+				xmin = 10.48
+				xmax = 12.6
+				text = ""

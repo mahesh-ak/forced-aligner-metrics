@@ -1,0 +1,150 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 11.94
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 11.94
+		intervals: size = 34
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.84
+				text = ""
+			intervals [2]:
+				xmin = 1.84
+				xmax = 2.24
+				text = "残念"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.56
+				text = "ながら"
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.72
+				text = ""
+			intervals [5]:
+				xmin = 2.72
+				xmax = 3.12
+				text = "運転"
+			intervals [6]:
+				xmin = 3.12
+				xmax = 3.2
+				text = "手"
+			intervals [7]:
+				xmin = 3.2
+				xmax = 3.28
+				text = "の"
+			intervals [8]:
+				xmin = 3.28
+				xmax = 3.84
+				text = "行動"
+			intervals [9]:
+				xmin = 3.84
+				xmax = 4.24
+				text = "百"
+			intervals [10]:
+				xmin = 4.24
+				xmax = 4.8
+				text = ""
+			intervals [11]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "の"
+			intervals [12]:
+				xmin = 4.96
+				xmax = 5.36
+				text = "確率"
+			intervals [13]:
+				xmin = 5.36
+				xmax = 5.52
+				text = "で"
+			intervals [14]:
+				xmin = 5.52
+				xmax = 5.84
+				text = "予測"
+			intervals [15]:
+				xmin = 5.84
+				xmax = 6.08
+				text = "する"
+			intervals [16]:
+				xmin = 6.08
+				xmax = 6.24
+				text = "こと"
+			intervals [17]:
+				xmin = 6.24
+				xmax = 6.32
+				text = "は"
+			intervals [18]:
+				xmin = 6.32
+				xmax = 6.56
+				text = "でき"
+			intervals [19]:
+				xmin = 6.56
+				xmax = 6.72
+				text = "ない"
+			intervals [20]:
+				xmin = 6.72
+				xmax = 6.88
+				text = "の"
+			intervals [21]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "で"
+			intervals [22]:
+				xmin = 7.04
+				xmax = 7.36
+				text = ""
+			intervals [23]:
+				xmin = 7.36
+				xmax = 7.76
+				text = "交通"
+			intervals [24]:
+				xmin = 7.76
+				xmax = 7.84
+				text = "の"
+			intervals [25]:
+				xmin = 7.84
+				xmax = 8.16
+				text = "流れ"
+			intervals [26]:
+				xmin = 8.16
+				xmax = 8.24
+				text = ""
+			intervals [27]:
+				xmin = 8.24
+				xmax = 8.32
+				text = "を"
+			intervals [28]:
+				xmin = 8.32
+				xmax = 8.72
+				text = "研究"
+			intervals [29]:
+				xmin = 8.72
+				xmax = 8.96
+				text = "する"
+			intervals [30]:
+				xmin = 8.96
+				xmax = 9.12
+				text = "こと"
+			intervals [31]:
+				xmin = 9.12
+				xmax = 9.28
+				text = "は"
+			intervals [32]:
+				xmin = 9.28
+				xmax = 9.76
+				text = "困難"
+			intervals [33]:
+				xmin = 9.76
+				xmax = 9.92
+				text = "です"
+			intervals [34]:
+				xmin = 9.92
+				xmax = 11.94
+				text = ""

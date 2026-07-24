@@ -1,0 +1,166 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.44
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 13.44
+		intervals: size = 38
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.52
+				text = ""
+			intervals [2]:
+				xmin = 1.52
+				xmax = 1.84
+				text = "その"
+			intervals [3]:
+				xmin = 1.84
+				xmax = 2.24
+				text = "大学"
+			intervals [4]:
+				xmin = 2.24
+				xmax = 2.32
+				text = "の"
+			intervals [5]:
+				xmin = 2.32
+				xmax = 2.88
+				text = "研究"
+			intervals [6]:
+				xmin = 2.88
+				xmax = 3.04
+				text = "者"
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.28
+				text = "たち"
+			intervals [8]:
+				xmin = 3.28
+				xmax = 3.36
+				text = "に"
+			intervals [9]:
+				xmin = 3.36
+				xmax = 3.6
+				text = "よれ"
+			intervals [10]:
+				xmin = 3.6
+				xmax = 3.76
+				text = "ば"
+			intervals [11]:
+				xmin = 3.76
+				xmax = 4.32
+				text = ""
+			intervals [12]:
+				xmin = 4.32
+				xmax = 4.48
+				text = "この"
+			intervals [13]:
+				xmin = 4.48
+				xmax = 4.72
+				text = ""
+			intervals [14]:
+				xmin = 4.72
+				xmax = 4.8
+				text = "二つ"
+			intervals [15]:
+				xmin = 4.8
+				xmax = 4.88
+				text = "の"
+			intervals [16]:
+				xmin = 4.88
+				xmax = 5.28
+				text = "化合"
+			intervals [17]:
+				xmin = 5.28
+				xmax = 5.6
+				text = "物"
+			intervals [18]:
+				xmin = 5.6
+				xmax = 5.68
+				text = "は"
+			intervals [19]:
+				xmin = 5.68
+				xmax = 5.92
+				text = ""
+			intervals [20]:
+				xmin = 5.92
+				xmax = 6.32
+				text = "互い"
+			intervals [21]:
+				xmin = 6.32
+				xmax = 6.4
+				text = "に"
+			intervals [22]:
+				xmin = 6.4
+				xmax = 6.88
+				text = "反応"
+			intervals [23]:
+				xmin = 6.88
+				xmax = 7.2
+				text = "して"
+			intervals [24]:
+				xmin = 7.2
+				xmax = 7.84
+				text = ""
+			intervals [25]:
+				xmin = 7.84
+				xmax = 8.32
+				text = "腎臓"
+			intervals [26]:
+				xmin = 8.32
+				xmax = 8.4
+				text = "の"
+			intervals [27]:
+				xmin = 8.4
+				xmax = 8.8
+				text = "機能"
+			intervals [28]:
+				xmin = 8.8
+				xmax = 8.88
+				text = "を"
+			intervals [29]:
+				xmin = 8.88
+				xmax = 9.28
+				text = "阻害"
+			intervals [30]:
+				xmin = 9.28
+				xmax = 9.44
+				text = "し"
+			intervals [31]:
+				xmin = 9.44
+				xmax = 9.6
+				text = "うる"
+			intervals [32]:
+				xmin = 9.6
+				xmax = 9.68
+				text = ""
+			intervals [33]:
+				xmin = 9.68
+				xmax = 10.24
+				text = "結晶"
+			intervals [34]:
+				xmin = 10.24
+				xmax = 10.32
+				text = ""
+			intervals [35]:
+				xmin = 10.32
+				xmax = 10.8
+				text = "形成"
+			intervals [36]:
+				xmin = 10.8
+				xmax = 10.88
+				text = "し"
+			intervals [37]:
+				xmin = 10.88
+				xmax = 11.28
+				text = "ます"
+			intervals [38]:
+				xmin = 11.28
+				xmax = 13.44
+				text = ""

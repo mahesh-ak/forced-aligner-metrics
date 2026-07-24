@@ -1,0 +1,242 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 21.6
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 21.6
+		intervals: size = 57
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.72
+				text = ""
+			intervals [2]:
+				xmin = 2.72
+				xmax = 3.12
+				text = "また"
+			intervals [3]:
+				xmin = 3.12
+				xmax = 3.52
+				text = "各"
+			intervals [4]:
+				xmin = 3.52
+				xmax = 3.84
+				text = "王朝"
+			intervals [5]:
+				xmin = 3.84
+				xmax = 4.0
+				text = "の"
+			intervals [6]:
+				xmin = 4.0
+				xmax = 4.32
+				text = "間"
+			intervals [7]:
+				xmin = 4.32
+				xmax = 4.4
+				text = "に"
+			intervals [8]:
+				xmin = 4.4
+				xmax = 4.64
+				text = "は"
+			intervals [9]:
+				xmin = 4.64
+				xmax = 4.72
+				text = ""
+			intervals [10]:
+				xmin = 4.72
+				xmax = 5.2
+				text = "分断"
+			intervals [11]:
+				xmin = 5.2
+				xmax = 5.44
+				text = "され"
+			intervals [12]:
+				xmin = 5.44
+				xmax = 5.6
+				text = "た"
+			intervals [13]:
+				xmin = 5.6
+				xmax = 6.0
+				text = "地方"
+			intervals [14]:
+				xmin = 6.0
+				xmax = 6.24
+				text = "の"
+			intervals [15]:
+				xmin = 6.24
+				xmax = 6.4
+				text = "不"
+			intervals [16]:
+				xmin = 6.4
+				xmax = 6.8
+				text = "安定"
+			intervals [17]:
+				xmin = 6.8
+				xmax = 6.88
+				text = "な"
+			intervals [18]:
+				xmin = 6.88
+				xmax = 7.2
+				text = "時代"
+			intervals [19]:
+				xmin = 7.2
+				xmax = 7.36
+				text = "が"
+			intervals [20]:
+				xmin = 7.36
+				xmax = 7.52
+				text = "あり"
+			intervals [21]:
+				xmin = 7.52
+				xmax = 7.92
+				text = "ました"
+			intervals [22]:
+				xmin = 7.92
+				xmax = 8.72
+				text = ""
+			intervals [23]:
+				xmin = 8.72
+				xmax = 8.96
+				text = "これ"
+			intervals [24]:
+				xmin = 8.96
+				xmax = 9.12
+				text = "ら"
+			intervals [25]:
+				xmin = 9.12
+				xmax = 9.2
+				text = "の"
+			intervals [26]:
+				xmin = 9.2
+				xmax = 9.6
+				text = "時代"
+			intervals [27]:
+				xmin = 9.6
+				xmax = 9.68
+				text = "の"
+			intervals [28]:
+				xmin = 9.68
+				xmax = 10.08
+				text = "うち"
+			intervals [29]:
+				xmin = 10.08
+				xmax = 10.56
+				text = "最も"
+			intervals [30]:
+				xmin = 10.56
+				xmax = 10.8
+				text = "よく"
+			intervals [31]:
+				xmin = 10.8
+				xmax = 11.04
+				text = "知ら"
+			intervals [32]:
+				xmin = 11.04
+				xmax = 11.2
+				text = "れ"
+			intervals [33]:
+				xmin = 11.2
+				xmax = 11.36
+				text = "て"
+			intervals [34]:
+				xmin = 11.36
+				xmax = 11.52
+				text = "いる"
+			intervals [35]:
+				xmin = 11.52
+				xmax = 11.68
+				text = "の"
+			intervals [36]:
+				xmin = 11.68
+				xmax = 11.92
+				text = "は"
+			intervals [37]:
+				xmin = 11.92
+				xmax = 12.24
+				text = ""
+			intervals [38]:
+				xmin = 12.24
+				xmax = 12.48
+				text = "漢"
+			intervals [39]:
+				xmin = 12.48
+				xmax = 12.64
+				text = "と"
+			intervals [40]:
+				xmin = 12.64
+				xmax = 12.88
+				text = "晋"
+			intervals [41]:
+				xmin = 12.88
+				xmax = 13.04
+				text = "の"
+			intervals [42]:
+				xmin = 13.04
+				xmax = 13.28
+				text = "時代"
+			intervals [43]:
+				xmin = 13.28
+				xmax = 13.44
+				text = "に"
+			intervals [44]:
+				xmin = 13.44
+				xmax = 14.0
+				text = "挟まれ"
+			intervals [45]:
+				xmin = 14.0
+				xmax = 14.08
+				text = ""
+			intervals [46]:
+				xmin = 14.08
+				xmax = 14.56
+				text = "六十"
+			intervals [47]:
+				xmin = 14.56
+				xmax = 14.96
+				text = "年間"
+			intervals [48]:
+				xmin = 14.96
+				xmax = 15.04
+				text = ""
+			intervals [49]:
+				xmin = 15.04
+				xmax = 15.36
+				text = "わたっ"
+			intervals [50]:
+				xmin = 15.36
+				xmax = 15.52
+				text = "て"
+			intervals [51]:
+				xmin = 15.52
+				xmax = 15.92
+				text = "続い"
+			intervals [52]:
+				xmin = 15.92
+				xmax = 16.16
+				text = "た"
+			intervals [53]:
+				xmin = 16.16
+				xmax = 16.48
+				text = "三"
+			intervals [54]:
+				xmin = 16.48
+				xmax = 16.72
+				text = "国"
+			intervals [55]:
+				xmin = 16.72
+				xmax = 17.04
+				text = "時代"
+			intervals [56]:
+				xmin = 17.04
+				xmax = 17.44
+				text = "です"
+			intervals [57]:
+				xmin = 17.44
+				xmax = 21.6
+				text = ""

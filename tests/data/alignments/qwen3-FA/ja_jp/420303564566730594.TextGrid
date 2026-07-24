@@ -1,0 +1,230 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 15.6
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 15.6
+		intervals: size = 54
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.0
+				text = ""
+			intervals [2]:
+				xmin = 2.0
+				xmax = 2.24
+				text = "バス"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.4
+				text = "は"
+			intervals [4]:
+				xmin = 2.4
+				xmax = 2.64
+				text = "一"
+			intervals [5]:
+				xmin = 2.64
+				xmax = 2.8
+				text = "日"
+			intervals [6]:
+				xmin = 2.8
+				xmax = 3.12
+				text = "中"
+			intervals [7]:
+				xmin = 3.12
+				xmax = 3.36
+				text = "地区"
+			intervals [8]:
+				xmin = 3.36
+				xmax = 3.6
+				text = "間"
+			intervals [9]:
+				xmin = 3.6
+				xmax = 3.68
+				text = ""
+			intervals [10]:
+				xmin = 3.68
+				xmax = 3.92
+				text = "バス"
+			intervals [11]:
+				xmin = 3.92
+				xmax = 4.48
+				text = "ステーション"
+			intervals [12]:
+				xmin = 4.48
+				xmax = 4.8
+				text = "川"
+			intervals [13]:
+				xmin = 4.8
+				xmax = 4.88
+				text = "を"
+			intervals [14]:
+				xmin = 4.88
+				xmax = 5.04
+				text = "渡っ"
+			intervals [15]:
+				xmin = 5.04
+				xmax = 5.2
+				text = "て"
+			intervals [16]:
+				xmin = 5.2
+				xmax = 5.28
+				text = "を"
+			intervals [17]:
+				xmin = 5.28
+				xmax = 5.6
+				text = "出発"
+			intervals [18]:
+				xmin = 5.6
+				xmax = 5.76
+				text = "し"
+			intervals [19]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "ます"
+			intervals [20]:
+				xmin = 5.92
+				xmax = 6.16
+				text = "が"
+			intervals [21]:
+				xmin = 6.16
+				xmax = 6.24
+				text = ""
+			intervals [22]:
+				xmin = 6.24
+				xmax = 6.64
+				text = "ほとんど"
+			intervals [23]:
+				xmin = 6.64
+				xmax = 6.72
+				text = "の"
+			intervals [24]:
+				xmin = 6.72
+				xmax = 7.04
+				text = "バス"
+			intervals [25]:
+				xmin = 7.04
+				xmax = 7.36
+				text = "特に"
+			intervals [26]:
+				xmin = 7.36
+				xmax = 7.68
+				text = "東"
+			intervals [27]:
+				xmin = 7.68
+				xmax = 7.84
+				text = "に"
+			intervals [28]:
+				xmin = 7.84
+				xmax = 8.16
+				text = "向かう"
+			intervals [29]:
+				xmin = 8.16
+				xmax = 8.4
+				text = "バス"
+			intervals [30]:
+				xmin = 8.4
+				xmax = 8.64
+				text = "と"
+			intervals [31]:
+				xmin = 8.64
+				xmax = 9.2
+				text = "ジャカール"
+			intervals [32]:
+				xmin = 9.2
+				xmax = 9.28
+				text = ""
+			intervals [33]:
+				xmin = 9.28
+				xmax = 9.6
+				text = "ブムタン"
+			intervals [34]:
+				xmin = 9.6
+				xmax = 9.68
+				text = "に"
+			intervals [35]:
+				xmin = 9.68
+				xmax = 10.0
+				text = "向かう"
+			intervals [36]:
+				xmin = 10.0
+				xmax = 10.24
+				text = "もの"
+			intervals [37]:
+				xmin = 10.24
+				xmax = 10.4
+				text = "は"
+			intervals [38]:
+				xmin = 10.4
+				xmax = 10.48
+				text = ""
+			intervals [39]:
+				xmin = 10.48
+				xmax = 10.72
+				text = "午前"
+			intervals [40]:
+				xmin = 10.72
+				xmax = 10.96
+				text = "六"
+			intervals [41]:
+				xmin = 10.96
+				xmax = 11.04
+				text = "時"
+			intervals [42]:
+				xmin = 11.04
+				xmax = 11.28
+				text = "三十"
+			intervals [43]:
+				xmin = 11.28
+				xmax = 11.36
+				text = "分"
+			intervals [44]:
+				xmin = 11.36
+				xmax = 11.6
+				text = "から"
+			intervals [45]:
+				xmin = 11.6
+				xmax = 11.84
+				text = "午前"
+			intervals [46]:
+				xmin = 11.84
+				xmax = 12.0
+				text = "七"
+			intervals [47]:
+				xmin = 12.0
+				xmax = 12.08
+				text = "時"
+			intervals [48]:
+				xmin = 12.08
+				xmax = 12.32
+				text = "三十"
+			intervals [49]:
+				xmin = 12.32
+				xmax = 12.4
+				text = "の"
+			intervals [50]:
+				xmin = 12.4
+				xmax = 12.64
+				text = "間"
+			intervals [51]:
+				xmin = 12.64
+				xmax = 12.96
+				text = "出発"
+			intervals [52]:
+				xmin = 12.96
+				xmax = 13.12
+				text = "し"
+			intervals [53]:
+				xmin = 13.12
+				xmax = 13.52
+				text = "ます"
+			intervals [54]:
+				xmin = 13.52
+				xmax = 15.6
+				text = ""

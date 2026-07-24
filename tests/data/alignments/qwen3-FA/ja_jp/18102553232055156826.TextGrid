@@ -1,0 +1,134 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.5
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 13.5
+		intervals: size = 30
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.96
+				text = ""
+			intervals [2]:
+				xmin = 2.96
+				xmax = 3.2
+				text = "馬車"
+			intervals [3]:
+				xmin = 3.2
+				xmax = 3.28
+				text = "に"
+			intervals [4]:
+				xmin = 3.28
+				xmax = 3.6
+				text = "乗った"
+			intervals [5]:
+				xmin = 3.6
+				xmax = 3.84
+				text = "彼"
+			intervals [6]:
+				xmin = 3.84
+				xmax = 3.92
+				text = "ら"
+			intervals [7]:
+				xmin = 3.92
+				xmax = 4.16
+				text = "は"
+			intervals [8]:
+				xmin = 4.16
+				xmax = 4.56
+				text = "国王"
+			intervals [9]:
+				xmin = 4.56
+				xmax = 4.8
+				text = "と"
+			intervals [10]:
+				xmin = 4.8
+				xmax = 4.88
+				text = ""
+			intervals [11]:
+				xmin = 4.88
+				xmax = 5.04
+				text = "王妃"
+			intervals [12]:
+				xmin = 5.04
+				xmax = 5.12
+				text = "に"
+			intervals [13]:
+				xmin = 5.12
+				xmax = 5.36
+				text = "向かっ"
+			intervals [14]:
+				xmin = 5.36
+				xmax = 5.52
+				text = "て"
+			intervals [15]:
+				xmin = 5.52
+				xmax = 5.92
+				text = "叫び"
+			intervals [16]:
+				xmin = 5.92
+				xmax = 6.32
+				text = "脅し"
+			intervals [17]:
+				xmin = 6.32
+				xmax = 6.4
+				text = "の"
+			intervals [18]:
+				xmin = 6.4
+				xmax = 6.8
+				text = "言葉"
+			intervals [19]:
+				xmin = 6.8
+				xmax = 6.88
+				text = "を"
+			intervals [20]:
+				xmin = 6.88
+				xmax = 7.2
+				text = "浴びせる"
+			intervals [21]:
+				xmin = 7.2
+				xmax = 7.44
+				text = "暴徒"
+			intervals [22]:
+				xmin = 7.44
+				xmax = 7.52
+				text = "に"
+			intervals [23]:
+				xmin = 7.52
+				xmax = 7.92
+				text = "囲ま"
+			intervals [24]:
+				xmin = 7.92
+				xmax = 8.0
+				text = "れ"
+			intervals [25]:
+				xmin = 8.0
+				xmax = 8.24
+				text = "て"
+			intervals [26]:
+				xmin = 8.24
+				xmax = 8.48
+				text = "パリ"
+			intervals [27]:
+				xmin = 8.48
+				xmax = 8.64
+				text = "に"
+			intervals [28]:
+				xmin = 8.64
+				xmax = 8.96
+				text = "戻り"
+			intervals [29]:
+				xmin = 8.96
+				xmax = 9.28
+				text = "ました"
+			intervals [30]:
+				xmin = 9.28
+				xmax = 13.5
+				text = ""

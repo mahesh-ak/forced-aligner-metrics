@@ -1,0 +1,102 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.72
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.72
+		intervals: size = 22
+			intervals [1]:
+				xmin = 0.0
+				xmax = 3.2
+				text = ""
+			intervals [2]:
+				xmin = 3.2
+				xmax = 3.44
+				text = "この"
+			intervals [3]:
+				xmin = 3.44
+				xmax = 3.68
+				text = "よう"
+			intervals [4]:
+				xmin = 3.68
+				xmax = 3.76
+				text = "な"
+			intervals [5]:
+				xmin = 3.76
+				xmax = 3.92
+				text = "ご"
+			intervals [6]:
+				xmin = 3.92
+				xmax = 4.32
+				text = "夫婦"
+			intervals [7]:
+				xmin = 4.32
+				xmax = 4.56
+				text = "は"
+			intervals [8]:
+				xmin = 4.56
+				xmax = 4.72
+				text = ""
+			intervals [9]:
+				xmin = 4.72
+				xmax = 5.04
+				text = "その"
+			intervals [10]:
+				xmin = 5.04
+				xmax = 5.52
+				text = "赤ちゃん"
+			intervals [11]:
+				xmin = 5.52
+				xmax = 5.6
+				text = "の"
+			intervals [12]:
+				xmin = 5.6
+				xmax = 5.92
+				text = "ため"
+			intervals [13]:
+				xmin = 5.92
+				xmax = 6.16
+				text = "に"
+			intervals [14]:
+				xmin = 6.16
+				xmax = 6.72
+				text = ""
+			intervals [15]:
+				xmin = 6.72
+				xmax = 7.12
+				text = "養子"
+			intervals [16]:
+				xmin = 7.12
+				xmax = 7.6
+				text = "縁組"
+			intervals [17]:
+				xmin = 7.6
+				xmax = 8.08
+				text = "制度"
+			intervals [18]:
+				xmin = 8.08
+				xmax = 8.24
+				text = "を"
+			intervals [19]:
+				xmin = 8.24
+				xmax = 8.56
+				text = "利用"
+			intervals [20]:
+				xmin = 8.56
+				xmax = 8.8
+				text = "でき"
+			intervals [21]:
+				xmin = 8.8
+				xmax = 9.2
+				text = "ます"
+			intervals [22]:
+				xmin = 9.2
+				xmax = 12.72
+				text = ""

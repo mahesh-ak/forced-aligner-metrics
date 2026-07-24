@@ -1,0 +1,138 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.26
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 13.26
+		intervals: size = 31
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.48
+				text = ""
+			intervals [2]:
+				xmin = 2.48
+				xmax = 3.04
+				text = "船舶"
+			intervals [3]:
+				xmin = 3.04
+				xmax = 3.2
+				text = "で"
+			intervals [4]:
+				xmin = 3.2
+				xmax = 3.52
+				text = "物資"
+			intervals [5]:
+				xmin = 3.52
+				xmax = 3.6
+				text = ""
+			intervals [6]:
+				xmin = 3.6
+				xmax = 3.68
+				text = "を"
+			intervals [7]:
+				xmin = 3.68
+				xmax = 4.0
+				text = "輸送"
+			intervals [8]:
+				xmin = 4.0
+				xmax = 4.24
+				text = "する"
+			intervals [9]:
+				xmin = 4.24
+				xmax = 4.4
+				text = "の"
+			intervals [10]:
+				xmin = 4.4
+				xmax = 4.64
+				text = "は"
+			intervals [11]:
+				xmin = 4.64
+				xmax = 4.8
+				text = ""
+			intervals [12]:
+				xmin = 4.8
+				xmax = 5.04
+				text = "海"
+			intervals [13]:
+				xmin = 5.04
+				xmax = 5.12
+				text = "を"
+			intervals [14]:
+				xmin = 5.12
+				xmax = 5.36
+				text = "越え"
+			intervals [15]:
+				xmin = 5.36
+				xmax = 5.6
+				text = "て"
+			intervals [16]:
+				xmin = 5.6
+				xmax = 5.84
+				text = "人"
+			intervals [17]:
+				xmin = 5.84
+				xmax = 5.92
+				text = "や"
+			intervals [18]:
+				xmin = 5.92
+				xmax = 6.24
+				text = "物資"
+			intervals [19]:
+				xmin = 6.24
+				xmax = 6.32
+				text = ""
+			intervals [20]:
+				xmin = 6.32
+				xmax = 6.4
+				text = "を"
+			intervals [21]:
+				xmin = 6.4
+				xmax = 6.88
+				text = "大量"
+			intervals [22]:
+				xmin = 6.88
+				xmax = 7.2
+				text = "輸送"
+			intervals [23]:
+				xmin = 7.2
+				xmax = 7.52
+				text = "する"
+			intervals [24]:
+				xmin = 7.52
+				xmax = 8.0
+				text = "最も"
+			intervals [25]:
+				xmin = 8.0
+				xmax = 8.4
+				text = "効率"
+			intervals [26]:
+				xmin = 8.4
+				xmax = 8.64
+				text = "的"
+			intervals [27]:
+				xmin = 8.64
+				xmax = 8.72
+				text = "な"
+			intervals [28]:
+				xmin = 8.72
+				xmax = 9.12
+				text = "方法"
+			intervals [29]:
+				xmin = 9.12
+				xmax = 9.2
+				text = ""
+			intervals [30]:
+				xmin = 9.2
+				xmax = 9.76
+				text = "です"
+			intervals [31]:
+				xmin = 9.76
+				xmax = 13.26
+				text = ""

@@ -1,0 +1,114 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.66
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.66
+		intervals: size = 25
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.52
+				text = ""
+			intervals [2]:
+				xmin = 1.52
+				xmax = 2.0
+				text = "香港"
+			intervals [3]:
+				xmin = 2.0
+				xmax = 2.08
+				text = "の"
+			intervals [4]:
+				xmin = 2.08
+				xmax = 2.56
+				text = "最高"
+			intervals [5]:
+				xmin = 2.56
+				xmax = 2.64
+				text = "の"
+			intervals [6]:
+				xmin = 2.64
+				xmax = 3.04
+				text = "景色"
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.12
+				text = "を"
+			intervals [8]:
+				xmin = 3.12
+				xmax = 3.36
+				text = "見る"
+			intervals [9]:
+				xmin = 3.36
+				xmax = 3.44
+				text = "に"
+			intervals [10]:
+				xmin = 3.44
+				xmax = 3.6
+				text = "は"
+			intervals [11]:
+				xmin = 3.6
+				xmax = 3.92
+				text = ""
+			intervals [12]:
+				xmin = 3.92
+				xmax = 4.24
+				text = "島"
+			intervals [13]:
+				xmin = 4.24
+				xmax = 4.48
+				text = "から"
+			intervals [14]:
+				xmin = 4.48
+				xmax = 4.56
+				text = "出"
+			intervals [15]:
+				xmin = 4.56
+				xmax = 4.72
+				text = "て"
+			intervals [16]:
+				xmin = 4.72
+				xmax = 5.28
+				text = ""
+			intervals [17]:
+				xmin = 5.28
+				xmax = 5.44
+				text = "九"
+			intervals [18]:
+				xmin = 5.44
+				xmax = 5.6
+				text = "龍"
+			intervals [19]:
+				xmin = 5.6
+				xmax = 5.92
+				text = "の"
+			intervals [20]:
+				xmin = 5.92
+				xmax = 6.24
+				text = "ウォーター"
+			intervals [21]:
+				xmin = 6.24
+				xmax = 6.64
+				text = "フロント"
+			intervals [22]:
+				xmin = 6.64
+				xmax = 6.8
+				text = "に"
+			intervals [23]:
+				xmin = 6.8
+				xmax = 7.12
+				text = "向かい"
+			intervals [24]:
+				xmin = 7.12
+				xmax = 7.52
+				text = "ましょう"
+			intervals [25]:
+				xmin = 7.52
+				xmax = 9.66
+				text = ""

@@ -1,0 +1,122 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.3
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.3
+		intervals: size = 27
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.44
+				text = ""
+			intervals [2]:
+				xmin = 1.44
+				xmax = 1.84
+				text = "プレイヤー"
+			intervals [3]:
+				xmin = 1.84
+				xmax = 2.0
+				text = "は"
+			intervals [4]:
+				xmin = 2.0
+				xmax = 2.4
+				text = "空中"
+			intervals [5]:
+				xmin = 2.4
+				xmax = 2.48
+				text = "で"
+			intervals [6]:
+				xmin = 2.48
+				xmax = 2.88
+				text = "端末"
+			intervals [7]:
+				xmin = 2.88
+				xmax = 2.96
+				text = ""
+			intervals [8]:
+				xmin = 2.96
+				xmax = 3.04
+				text = "を"
+			intervals [9]:
+				xmin = 3.04
+				xmax = 3.28
+				text = "動かす"
+			intervals [10]:
+				xmin = 3.28
+				xmax = 3.52
+				text = "こと"
+			intervals [11]:
+				xmin = 3.52
+				xmax = 3.68
+				text = "で"
+			intervals [12]:
+				xmin = 3.68
+				xmax = 3.76
+				text = ""
+			intervals [13]:
+				xmin = 3.76
+				xmax = 4.0
+				text = "ビデオ"
+			intervals [14]:
+				xmin = 4.0
+				xmax = 4.32
+				text = "ゲーム"
+			intervals [15]:
+				xmin = 4.32
+				xmax = 4.4
+				text = "で"
+			intervals [16]:
+				xmin = 4.4
+				xmax = 4.8
+				text = "アクション"
+			intervals [17]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "や"
+			intervals [18]:
+				xmin = 4.96
+				xmax = 5.2
+				text = "動き"
+			intervals [19]:
+				xmin = 5.2
+				xmax = 5.28
+				text = ""
+			intervals [20]:
+				xmin = 5.28
+				xmax = 5.84
+				text = "コントロール"
+			intervals [21]:
+				xmin = 5.84
+				xmax = 6.16
+				text = "できる"
+			intervals [22]:
+				xmin = 6.16
+				xmax = 6.32
+				text = "よう"
+			intervals [23]:
+				xmin = 6.32
+				xmax = 6.4
+				text = "に"
+			intervals [24]:
+				xmin = 6.4
+				xmax = 6.48
+				text = ""
+			intervals [25]:
+				xmin = 6.48
+				xmax = 6.64
+				text = "なり"
+			intervals [26]:
+				xmin = 6.64
+				xmax = 7.12
+				text = "ます"
+			intervals [27]:
+				xmin = 7.12
+				xmax = 9.3
+				text = ""

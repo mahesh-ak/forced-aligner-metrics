@@ -1,0 +1,218 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 19.38
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 19.38
+		intervals: size = 51
+			intervals [1]:
+				xmin = 0.0
+				xmax = 4.0
+				text = ""
+			intervals [2]:
+				xmin = 4.0
+				xmax = 4.32
+				text = "これ"
+			intervals [3]:
+				xmin = 4.32
+				xmax = 4.4
+				text = "に"
+			intervals [4]:
+				xmin = 4.4
+				xmax = 4.8
+				text = "より"
+			intervals [5]:
+				xmin = 4.8
+				xmax = 5.04
+				text = "基地"
+			intervals [6]:
+				xmin = 5.04
+				xmax = 5.28
+				text = "局"
+			intervals [7]:
+				xmin = 5.28
+				xmax = 5.52
+				text = "が"
+			intervals [8]:
+				xmin = 5.52
+				xmax = 5.92
+				text = "デュアル"
+			intervals [9]:
+				xmin = 5.92
+				xmax = 6.24
+				text = "バンド"
+			intervals [10]:
+				xmin = 6.24
+				xmax = 6.56
+				text = "無線"
+			intervals [11]:
+				xmin = 6.56
+				xmax = 6.64
+				text = "を"
+			intervals [12]:
+				xmin = 6.64
+				xmax = 7.12
+				text = "搭載"
+			intervals [13]:
+				xmin = 7.12
+				xmax = 7.36
+				text = "して"
+			intervals [14]:
+				xmin = 7.36
+				xmax = 7.52
+				text = "いれ"
+			intervals [15]:
+				xmin = 7.52
+				xmax = 7.84
+				text = "ば"
+			intervals [16]:
+				xmin = 7.84
+				xmax = 7.92
+				text = ""
+			intervals [17]:
+				xmin = 7.92
+				xmax = 8.4
+				text = "八万"
+			intervals [18]:
+				xmin = 8.4
+				xmax = 8.8
+				text = ""
+			intervals [19]:
+				xmin = 8.8
+				xmax = 9.12
+				text = "十"
+			intervals [20]:
+				xmin = 9.12
+				xmax = 9.36
+				text = "一"
+			intervals [21]:
+				xmin = 9.36
+				xmax = 9.44
+				text = ""
+			intervals [22]:
+				xmin = 9.44
+				xmax = 9.6
+				text = "a"
+			intervals [23]:
+				xmin = 9.6
+				xmax = 10.0
+				text = ""
+			intervals [24]:
+				xmin = 10.0
+				xmax = 10.4
+				text = "八万"
+			intervals [25]:
+				xmin = 10.4
+				xmax = 10.48
+				text = ""
+			intervals [26]:
+				xmin = 10.48
+				xmax = 10.72
+				text = "二百"
+			intervals [27]:
+				xmin = 10.72
+				xmax = 10.8
+				text = ""
+			intervals [28]:
+				xmin = 10.8
+				xmax = 11.04
+				text = "十"
+			intervals [29]:
+				xmin = 11.04
+				xmax = 11.28
+				text = "一"
+			intervals [30]:
+				xmin = 11.28
+				xmax = 11.52
+				text = "b"
+			intervals [31]:
+				xmin = 11.52
+				xmax = 12.0
+				text = ""
+			intervals [32]:
+				xmin = 12.0
+				xmax = 12.32
+				text = "八万"
+			intervals [33]:
+				xmin = 12.32
+				xmax = 12.72
+				text = "二百"
+			intervals [34]:
+				xmin = 12.72
+				xmax = 12.8
+				text = ""
+			intervals [35]:
+				xmin = 12.8
+				xmax = 12.96
+				text = "十"
+			intervals [36]:
+				xmin = 12.96
+				xmax = 13.2
+				text = "一"
+			intervals [37]:
+				xmin = 13.2
+				xmax = 13.52
+				text = "g"
+			intervals [38]:
+				xmin = 13.52
+				xmax = 13.6
+				text = "と"
+			intervals [39]:
+				xmin = 13.6
+				xmax = 13.84
+				text = "の"
+			intervals [40]:
+				xmin = 13.84
+				xmax = 13.92
+				text = ""
+			intervals [41]:
+				xmin = 13.92
+				xmax = 14.16
+				text = "下位"
+			intervals [42]:
+				xmin = 14.16
+				xmax = 14.48
+				text = "互換"
+			intervals [43]:
+				xmin = 14.48
+				xmax = 14.8
+				text = "性"
+			intervals [44]:
+				xmin = 14.8
+				xmax = 14.96
+				text = "を"
+			intervals [45]:
+				xmin = 14.96
+				xmax = 15.36
+				text = "確保"
+			intervals [46]:
+				xmin = 15.36
+				xmax = 15.6
+				text = "する"
+			intervals [47]:
+				xmin = 15.6
+				xmax = 15.76
+				text = "こと"
+			intervals [48]:
+				xmin = 15.76
+				xmax = 15.92
+				text = "が"
+			intervals [49]:
+				xmin = 15.92
+				xmax = 16.08
+				text = "でき"
+			intervals [50]:
+				xmin = 16.08
+				xmax = 16.56
+				text = "ます"
+			intervals [51]:
+				xmin = 16.56
+				xmax = 19.38
+				text = ""

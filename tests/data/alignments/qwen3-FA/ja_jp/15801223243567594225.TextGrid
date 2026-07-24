@@ -1,0 +1,126 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.72
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.72
+		intervals: size = 28
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.76
+				text = ""
+			intervals [2]:
+				xmin = 1.76
+				xmax = 2.08
+				text = "ローマ"
+			intervals [3]:
+				xmin = 2.08
+				xmax = 2.24
+				text = "の"
+			intervals [4]:
+				xmin = 2.24
+				xmax = 2.56
+				text = "各所"
+			intervals [5]:
+				xmin = 2.56
+				xmax = 2.64
+				text = "に"
+			intervals [6]:
+				xmin = 2.64
+				xmax = 2.88
+				text = "は"
+			intervals [7]:
+				xmin = 2.88
+				xmax = 3.12
+				text = ""
+			intervals [8]:
+				xmin = 3.12
+				xmax = 3.52
+				text = "人々"
+			intervals [9]:
+				xmin = 3.52
+				xmax = 3.6
+				text = "に"
+			intervals [10]:
+				xmin = 3.6
+				xmax = 4.08
+				text = "式典"
+			intervals [11]:
+				xmin = 4.08
+				xmax = 4.16
+				text = "を"
+			intervals [12]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "見"
+			intervals [13]:
+				xmin = 4.32
+				xmax = 4.4
+				text = "て"
+			intervals [14]:
+				xmin = 4.4
+				xmax = 4.8
+				text = "もらおう"
+			intervals [15]:
+				xmin = 4.8
+				xmax = 4.88
+				text = "と"
+			intervals [16]:
+				xmin = 4.88
+				xmax = 5.04
+				text = ""
+			intervals [17]:
+				xmin = 5.04
+				xmax = 5.44
+				text = "大型"
+			intervals [18]:
+				xmin = 5.44
+				xmax = 5.76
+				text = "テレビ"
+			intervals [19]:
+				xmin = 5.76
+				xmax = 6.08
+				text = "画面"
+			intervals [20]:
+				xmin = 6.08
+				xmax = 6.16
+				text = "が"
+			intervals [21]:
+				xmin = 6.16
+				xmax = 6.32
+				text = "いく"
+			intervals [22]:
+				xmin = 6.32
+				xmax = 6.4
+				text = "つ"
+			intervals [23]:
+				xmin = 6.4
+				xmax = 6.56
+				text = "も"
+			intervals [24]:
+				xmin = 6.56
+				xmax = 6.8
+				text = "設置"
+			intervals [25]:
+				xmin = 6.8
+				xmax = 7.04
+				text = "され"
+			intervals [26]:
+				xmin = 7.04
+				xmax = 7.2
+				text = "て"
+			intervals [27]:
+				xmin = 7.2
+				xmax = 7.6
+				text = "ました"
+			intervals [28]:
+				xmin = 7.6
+				xmax = 9.72
+				text = ""

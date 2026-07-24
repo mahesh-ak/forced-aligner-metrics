@@ -1,0 +1,122 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 15.9
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 15.9
+		intervals: size = 27
+			intervals [1]:
+				xmin = 0.0
+				xmax = 4.4
+				text = ""
+			intervals [2]:
+				xmin = 4.4
+				xmax = 4.96
+				text = "中軸"
+			intervals [3]:
+				xmin = 4.96
+				xmax = 5.2
+				text = "の"
+			intervals [4]:
+				xmin = 5.2
+				xmax = 5.6
+				text = "バッツ"
+			intervals [5]:
+				xmin = 5.6
+				xmax = 5.84
+				text = "マン"
+			intervals [6]:
+				xmin = 5.84
+				xmax = 6.08
+				text = ""
+			intervals [7]:
+				xmin = 6.08
+				xmax = 6.56
+				text = "サチン"
+			intervals [8]:
+				xmin = 6.56
+				xmax = 7.04
+				text = "テンドル"
+			intervals [9]:
+				xmin = 7.04
+				xmax = 7.44
+				text = "カール"
+			intervals [10]:
+				xmin = 7.44
+				xmax = 7.68
+				text = ""
+			intervals [11]:
+				xmin = 7.68
+				xmax = 8.08
+				text = "ラホール"
+			intervals [12]:
+				xmin = 8.08
+				xmax = 8.64
+				text = "ドラヴィッド"
+			intervals [13]:
+				xmin = 8.64
+				xmax = 8.8
+				text = "が"
+			intervals [14]:
+				xmin = 8.8
+				xmax = 9.12
+				text = "連携"
+			intervals [15]:
+				xmin = 9.12
+				xmax = 9.28
+				text = "し"
+			intervals [16]:
+				xmin = 9.28
+				xmax = 9.44
+				text = "て"
+			intervals [17]:
+				xmin = 9.44
+				xmax = 9.68
+				text = "うまく"
+			intervals [18]:
+				xmin = 9.68
+				xmax = 10.08
+				text = "試合"
+			intervals [19]:
+				xmin = 10.08
+				xmax = 10.16
+				text = "を"
+			intervals [20]:
+				xmin = 10.16
+				xmax = 10.64
+				text = "運び"
+			intervals [21]:
+				xmin = 10.64
+				xmax = 10.96
+				text = "百"
+			intervals [22]:
+				xmin = 10.96
+				xmax = 11.2
+				text = "ラン"
+			intervals [23]:
+				xmin = 11.2
+				xmax = 11.28
+				text = "を"
+			intervals [24]:
+				xmin = 11.28
+				xmax = 11.68
+				text = "達成"
+			intervals [25]:
+				xmin = 11.68
+				xmax = 11.84
+				text = "し"
+			intervals [26]:
+				xmin = 11.84
+				xmax = 12.16
+				text = "ました"
+			intervals [27]:
+				xmin = 12.16
+				xmax = 15.9
+				text = ""

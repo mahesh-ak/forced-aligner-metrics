@@ -1,0 +1,102 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.48
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.48
+		intervals: size = 22
+			intervals [1]:
+				xmin = 0.0
+				xmax = 3.76
+				text = ""
+			intervals [2]:
+				xmin = 3.76
+				xmax = 4.16
+				text = "地殻"
+			intervals [3]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "の"
+			intervals [4]:
+				xmin = 4.32
+				xmax = 4.4
+				text = "厚"
+			intervals [5]:
+				xmin = 4.4
+				xmax = 4.56
+				text = "さ"
+			intervals [6]:
+				xmin = 4.56
+				xmax = 4.8
+				text = "は"
+			intervals [7]:
+				xmin = 4.8
+				xmax = 4.88
+				text = ""
+			intervals [8]:
+				xmin = 4.88
+				xmax = 5.28
+				text = "手前"
+			intervals [9]:
+				xmin = 5.28
+				xmax = 5.44
+				text = "側"
+			intervals [10]:
+				xmin = 5.44
+				xmax = 5.6
+				text = "が"
+			intervals [11]:
+				xmin = 5.6
+				xmax = 5.76
+				text = "約"
+			intervals [12]:
+				xmin = 5.76
+				xmax = 6.16
+				text = "七十"
+			intervals [13]:
+				xmin = 6.16
+				xmax = 6.48
+				text = "km"
+			intervals [14]:
+				xmin = 6.48
+				xmax = 7.12
+				text = ""
+			intervals [15]:
+				xmin = 7.12
+				xmax = 7.52
+				text = "奥側"
+			intervals [16]:
+				xmin = 7.52
+				xmax = 7.76
+				text = "が"
+			intervals [17]:
+				xmin = 7.76
+				xmax = 7.92
+				text = "約"
+			intervals [18]:
+				xmin = 7.92
+				xmax = 8.16
+				text = "百"
+			intervals [19]:
+				xmin = 8.16
+				xmax = 8.72
+				text = "km"
+			intervals [20]:
+				xmin = 8.72
+				xmax = 8.8
+				text = ""
+			intervals [21]:
+				xmin = 8.8
+				xmax = 9.2
+				text = "です"
+			intervals [22]:
+				xmin = 9.2
+				xmax = 12.48
+				text = ""

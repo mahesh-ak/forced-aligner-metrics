@@ -1,0 +1,158 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 14.7
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 14.7
+		intervals: size = 36
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.84
+				text = ""
+			intervals [2]:
+				xmin = 1.84
+				xmax = 2.32
+				text = "八万"
+			intervals [3]:
+				xmin = 2.32
+				xmax = 2.72
+				text = ""
+			intervals [4]:
+				xmin = 2.72
+				xmax = 2.88
+				text = "n"
+			intervals [5]:
+				xmin = 2.88
+				xmax = 3.04
+				text = ""
+			intervals [6]:
+				xmin = 3.04
+				xmax = 4.08
+				text = "規格"
+			intervals [7]:
+				xmin = 4.08
+				xmax = 4.16
+				text = "に"
+			intervals [8]:
+				xmin = 4.16
+				xmax = 4.48
+				text = ""
+			intervals [9]:
+				xmin = 4.48
+				xmax = 4.88
+				text = "準拠"
+			intervals [10]:
+				xmin = 4.88
+				xmax = 5.04
+				text = "し"
+			intervals [11]:
+				xmin = 5.04
+				xmax = 5.12
+				text = "て"
+			intervals [12]:
+				xmin = 5.12
+				xmax = 5.28
+				text = "いれ"
+			intervals [13]:
+				xmin = 5.28
+				xmax = 5.44
+				text = "ば"
+			intervals [14]:
+				xmin = 5.44
+				xmax = 6.0
+				text = ""
+			intervals [15]:
+				xmin = 6.0
+				xmax = 6.4
+				text = "二十"
+			intervals [16]:
+				xmin = 6.4
+				xmax = 6.72
+				text = "四"
+			intervals [17]:
+				xmin = 6.72
+				xmax = 7.36
+				text = "ghz"
+			intervals [18]:
+				xmin = 7.36
+				xmax = 7.6
+				text = ""
+			intervals [19]:
+				xmin = 7.6
+				xmax = 7.84
+				text = "また"
+			intervals [20]:
+				xmin = 7.84
+				xmax = 8.08
+				text = "は"
+			intervals [21]:
+				xmin = 8.08
+				xmax = 8.16
+				text = ""
+			intervals [22]:
+				xmin = 8.16
+				xmax = 8.48
+				text = "五十"
+			intervals [23]:
+				xmin = 8.48
+				xmax = 8.56
+				text = ""
+			intervals [24]:
+				xmin = 8.56
+				xmax = 8.8
+				text = "ghz"
+			intervals [25]:
+				xmin = 8.8
+				xmax = 8.88
+				text = ""
+			intervals [26]:
+				xmin = 8.88
+				xmax = 10.0
+				text = "どちら"
+			intervals [27]:
+				xmin = 10.0
+				xmax = 10.16
+				text = "の"
+			intervals [28]:
+				xmin = 10.16
+				xmax = 10.56
+				text = "周波"
+			intervals [29]:
+				xmin = 10.56
+				xmax = 10.72
+				text = "数"
+			intervals [30]:
+				xmin = 10.72
+				xmax = 10.88
+				text = "で"
+			intervals [31]:
+				xmin = 10.88
+				xmax = 11.04
+				text = "も"
+			intervals [32]:
+				xmin = 11.04
+				xmax = 11.12
+				text = ""
+			intervals [33]:
+				xmin = 11.12
+				xmax = 11.6
+				text = "通信"
+			intervals [34]:
+				xmin = 11.6
+				xmax = 12.0
+				text = "可能"
+			intervals [35]:
+				xmin = 12.0
+				xmax = 12.24
+				text = "です"
+			intervals [36]:
+				xmin = 12.24
+				xmax = 14.7
+				text = ""

@@ -1,0 +1,122 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.24
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.24
+		intervals: size = 27
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.36
+				text = ""
+			intervals [2]:
+				xmin = 1.36
+				xmax = 1.52
+				text = "地殻"
+			intervals [3]:
+				xmin = 1.52
+				xmax = 1.68
+				text = ""
+			intervals [4]:
+				xmin = 1.68
+				xmax = 1.92
+				text = "の"
+			intervals [5]:
+				xmin = 1.92
+				xmax = 2.08
+				text = "厚"
+			intervals [6]:
+				xmin = 2.08
+				xmax = 2.24
+				text = ""
+			intervals [7]:
+				xmin = 2.24
+				xmax = 2.32
+				text = "さ"
+			intervals [8]:
+				xmin = 2.32
+				xmax = 2.56
+				text = "は"
+			intervals [9]:
+				xmin = 2.56
+				xmax = 3.36
+				text = ""
+			intervals [10]:
+				xmin = 3.36
+				xmax = 3.84
+				text = "手前"
+			intervals [11]:
+				xmin = 3.84
+				xmax = 4.16
+				text = "側"
+			intervals [12]:
+				xmin = 4.16
+				xmax = 4.24
+				text = "が"
+			intervals [13]:
+				xmin = 4.24
+				xmax = 4.56
+				text = "約"
+			intervals [14]:
+				xmin = 4.56
+				xmax = 4.64
+				text = "七十"
+			intervals [15]:
+				xmin = 4.64
+				xmax = 5.28
+				text = ""
+			intervals [16]:
+				xmin = 5.28
+				xmax = 5.44
+				text = "km"
+			intervals [17]:
+				xmin = 5.44
+				xmax = 5.84
+				text = ""
+			intervals [18]:
+				xmin = 5.84
+				xmax = 6.4
+				text = "奥側"
+			intervals [19]:
+				xmin = 6.4
+				xmax = 6.72
+				text = ""
+			intervals [20]:
+				xmin = 6.72
+				xmax = 6.88
+				text = "約"
+			intervals [21]:
+				xmin = 6.88
+				xmax = 7.12
+				text = ""
+			intervals [22]:
+				xmin = 7.12
+				xmax = 7.28
+				text = "百"
+			intervals [23]:
+				xmin = 7.28
+				xmax = 7.52
+				text = ""
+			intervals [24]:
+				xmin = 7.52
+				xmax = 7.68
+				text = "km"
+			intervals [25]:
+				xmin = 7.68
+				xmax = 7.76
+				text = ""
+			intervals [26]:
+				xmin = 7.76
+				xmax = 7.92
+				text = "です"
+			intervals [27]:
+				xmin = 7.92
+				xmax = 9.24
+				text = ""

@@ -1,0 +1,106 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 7.92
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 7.92
+		intervals: size = 23
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.96
+				text = ""
+			intervals [2]:
+				xmin = 0.96
+				xmax = 1.44
+				text = "列車"
+			intervals [3]:
+				xmin = 1.44
+				xmax = 2.16
+				text = ""
+			intervals [4]:
+				xmin = 2.16
+				xmax = 2.4
+				text = "その"
+			intervals [5]:
+				xmin = 2.4
+				xmax = 2.48
+				text = ""
+			intervals [6]:
+				xmin = 2.48
+				xmax = 2.56
+				text = "他"
+			intervals [7]:
+				xmin = 2.56
+				xmax = 2.72
+				text = "の"
+			intervals [8]:
+				xmin = 2.72
+				xmax = 2.96
+				text = ""
+			intervals [9]:
+				xmin = 2.96
+				xmax = 3.2
+				text = "多く"
+			intervals [10]:
+				xmin = 3.2
+				xmax = 3.36
+				text = "の"
+			intervals [11]:
+				xmin = 3.36
+				xmax = 3.44
+				text = ""
+			intervals [12]:
+				xmin = 3.44
+				xmax = 3.68
+				text = "交通"
+			intervals [13]:
+				xmin = 3.68
+				xmax = 4.0
+				text = ""
+			intervals [14]:
+				xmin = 4.0
+				xmax = 4.24
+				text = "手段"
+			intervals [15]:
+				xmin = 4.24
+				xmax = 4.48
+				text = "が"
+			intervals [16]:
+				xmin = 4.48
+				xmax = 4.64
+				text = ""
+			intervals [17]:
+				xmin = 4.64
+				xmax = 4.72
+				text = "そこ"
+			intervals [18]:
+				xmin = 4.72
+				xmax = 4.96
+				text = ""
+			intervals [19]:
+				xmin = 4.96
+				xmax = 5.12
+				text = "から"
+			intervals [20]:
+				xmin = 5.12
+				xmax = 5.2
+				text = ""
+			intervals [21]:
+				xmin = 5.2
+				xmax = 5.6
+				text = "生まれ"
+			intervals [22]:
+				xmin = 5.6
+				xmax = 6.0
+				text = "ました"
+			intervals [23]:
+				xmin = 6.0
+				xmax = 7.92
+				text = ""

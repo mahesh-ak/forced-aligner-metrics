@@ -1,0 +1,154 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 15.96
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 15.96
+		intervals: size = 35
+			intervals [1]:
+				xmin = 0.0
+				xmax = 3.76
+				text = ""
+			intervals [2]:
+				xmin = 3.76
+				xmax = 4.16
+				text = "イタリア"
+			intervals [3]:
+				xmin = 4.16
+				xmax = 4.56
+				text = "国内"
+			intervals [4]:
+				xmin = 4.56
+				xmax = 4.72
+				text = "の"
+			intervals [5]:
+				xmin = 4.72
+				xmax = 5.04
+				text = "他"
+			intervals [6]:
+				xmin = 5.04
+				xmax = 5.2
+				text = "の"
+			intervals [7]:
+				xmin = 5.2
+				xmax = 5.36
+				text = "多く"
+			intervals [8]:
+				xmin = 5.36
+				xmax = 5.44
+				text = "の"
+			intervals [9]:
+				xmin = 5.44
+				xmax = 5.76
+				text = "都市"
+			intervals [10]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "や"
+			intervals [11]:
+				xmin = 5.92
+				xmax = 6.24
+				text = "世界"
+			intervals [12]:
+				xmin = 6.24
+				xmax = 6.32
+				text = "の"
+			intervals [13]:
+				xmin = 6.32
+				xmax = 6.56
+				text = "他"
+			intervals [14]:
+				xmin = 6.56
+				xmax = 6.64
+				text = "の"
+			intervals [15]:
+				xmin = 6.64
+				xmax = 7.12
+				text = "地域"
+			intervals [16]:
+				xmin = 7.12
+				xmax = 7.2
+				text = ""
+			intervals [17]:
+				xmin = 7.2
+				xmax = 7.6
+				text = "特に"
+			intervals [18]:
+				xmin = 7.6
+				xmax = 8.08
+				text = "ポーランド"
+			intervals [19]:
+				xmin = 8.08
+				xmax = 8.32
+				text = "で"
+			intervals [20]:
+				xmin = 8.32
+				xmax = 8.4
+				text = ""
+			intervals [21]:
+				xmin = 8.4
+				xmax = 8.72
+				text = "同じ"
+			intervals [22]:
+				xmin = 8.72
+				xmax = 8.88
+				text = "よう"
+			intervals [23]:
+				xmin = 8.88
+				xmax = 8.96
+				text = "に"
+			intervals [24]:
+				xmin = 8.96
+				xmax = 9.28
+				text = "設置"
+			intervals [25]:
+				xmin = 9.28
+				xmax = 9.36
+				text = "が"
+			intervals [26]:
+				xmin = 9.36
+				xmax = 9.68
+				text = "され"
+			intervals [27]:
+				xmin = 9.68
+				xmax = 9.76
+				text = ""
+			intervals [28]:
+				xmin = 9.76
+				xmax = 10.08
+				text = "多く"
+			intervals [29]:
+				xmin = 10.08
+				xmax = 10.16
+				text = "の"
+			intervals [30]:
+				xmin = 10.16
+				xmax = 10.56
+				text = "人々"
+			intervals [31]:
+				xmin = 10.56
+				xmax = 10.72
+				text = "が"
+			intervals [32]:
+				xmin = 10.72
+				xmax = 11.04
+				text = "視聴"
+			intervals [33]:
+				xmin = 11.04
+				xmax = 11.12
+				text = "し"
+			intervals [34]:
+				xmin = 11.12
+				xmax = 11.52
+				text = "ました"
+			intervals [35]:
+				xmin = 11.52
+				xmax = 15.96
+				text = ""

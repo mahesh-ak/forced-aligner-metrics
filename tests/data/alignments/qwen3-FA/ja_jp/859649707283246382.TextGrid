@@ -1,0 +1,170 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 14.4
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 14.4
+		intervals: size = 39
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.32
+				text = ""
+			intervals [2]:
+				xmin = 2.32
+				xmax = 2.8
+				text = "アルペン"
+			intervals [3]:
+				xmin = 2.8
+				xmax = 3.2
+				text = "スタイル"
+			intervals [4]:
+				xmin = 3.2
+				xmax = 3.28
+				text = "の"
+			intervals [5]:
+				xmin = 3.28
+				xmax = 3.6
+				text = "クロス"
+			intervals [6]:
+				xmin = 3.6
+				xmax = 4.0
+				text = "カントリー"
+			intervals [7]:
+				xmin = 4.0
+				xmax = 4.4
+				text = "スキー"
+			intervals [8]:
+				xmin = 4.4
+				xmax = 4.56
+				text = "や"
+			intervals [9]:
+				xmin = 4.56
+				xmax = 4.88
+				text = "登山"
+			intervals [10]:
+				xmin = 4.88
+				xmax = 4.96
+				text = "に"
+			intervals [11]:
+				xmin = 4.96
+				xmax = 5.36
+				text = "関連"
+			intervals [12]:
+				xmin = 5.36
+				xmax = 5.6
+				text = "する"
+			intervals [13]:
+				xmin = 5.6
+				xmax = 5.76
+				text = "もの"
+			intervals [14]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "です"
+			intervals [15]:
+				xmin = 5.92
+				xmax = 6.16
+				text = "が"
+			intervals [16]:
+				xmin = 6.16
+				xmax = 6.24
+				text = ""
+			intervals [17]:
+				xmin = 6.24
+				xmax = 6.64
+				text = "通常"
+			intervals [18]:
+				xmin = 6.64
+				xmax = 6.8
+				text = "は"
+			intervals [19]:
+				xmin = 6.8
+				xmax = 7.12
+				text = "含まれ"
+			intervals [20]:
+				xmin = 7.12
+				xmax = 7.28
+				text = "ず"
+			intervals [21]:
+				xmin = 7.28
+				xmax = 7.6
+				text = ""
+			intervals [22]:
+				xmin = 7.6
+				xmax = 7.92
+				text = "後者"
+			intervals [23]:
+				xmin = 7.92
+				xmax = 8.08
+				text = "は"
+			intervals [24]:
+				xmin = 8.08
+				xmax = 8.48
+				text = "急峻"
+			intervals [25]:
+				xmin = 8.48
+				xmax = 8.64
+				text = "な"
+			intervals [26]:
+				xmin = 8.64
+				xmax = 9.04
+				text = "地形"
+			intervals [27]:
+				xmin = 9.04
+				xmax = 9.12
+				text = "を"
+			intervals [28]:
+				xmin = 9.12
+				xmax = 9.6
+				text = "上り下り"
+			intervals [29]:
+				xmin = 9.6
+				xmax = 9.68
+				text = "に"
+			intervals [30]:
+				xmin = 9.68
+				xmax = 10.0
+				text = "より"
+			intervals [31]:
+				xmin = 10.0
+				xmax = 10.4
+				text = "頑丈"
+			intervals [32]:
+				xmin = 10.4
+				xmax = 10.48
+				text = "な"
+			intervals [33]:
+				xmin = 10.48
+				xmax = 10.88
+				text = "スキー"
+			intervals [34]:
+				xmin = 10.88
+				xmax = 10.96
+				text = "と"
+			intervals [35]:
+				xmin = 10.96
+				xmax = 11.2
+				text = "ブーツ"
+			intervals [36]:
+				xmin = 11.2
+				xmax = 11.36
+				text = "が"
+			intervals [37]:
+				xmin = 11.36
+				xmax = 11.68
+				text = "必要"
+			intervals [38]:
+				xmin = 11.68
+				xmax = 12.16
+				text = "です"
+			intervals [39]:
+				xmin = 12.16
+				xmax = 14.4
+				text = ""

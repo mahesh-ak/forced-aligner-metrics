@@ -1,0 +1,314 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 22.5
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 22.5
+		intervals: size = 75
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.0
+				text = ""
+			intervals [2]:
+				xmin = 2.0
+				xmax = 2.16
+				text = "米国"
+			intervals [3]:
+				xmin = 2.16
+				xmax = 2.24
+				text = ""
+			intervals [4]:
+				xmin = 2.24
+				xmax = 2.4
+				text = "の"
+			intervals [5]:
+				xmin = 2.4
+				xmax = 3.04
+				text = "プリンストン"
+			intervals [6]:
+				xmin = 3.04
+				xmax = 3.36
+				text = "大学"
+			intervals [7]:
+				xmin = 3.36
+				xmax = 3.52
+				text = "と"
+			intervals [8]:
+				xmin = 3.52
+				xmax = 3.6
+				text = ""
+			intervals [9]:
+				xmin = 3.6
+				xmax = 4.24
+				text = "スウェーデン"
+			intervals [10]:
+				xmin = 4.24
+				xmax = 4.48
+				text = "の"
+			intervals [11]:
+				xmin = 4.48
+				xmax = 4.56
+				text = ""
+			intervals [12]:
+				xmin = 4.56
+				xmax = 4.8
+				text = "ウプサラ"
+			intervals [13]:
+				xmin = 4.8
+				xmax = 5.2
+				text = "大学"
+			intervals [14]:
+				xmin = 5.2
+				xmax = 5.28
+				text = "の"
+			intervals [15]:
+				xmin = 5.28
+				xmax = 5.68
+				text = "研究"
+			intervals [16]:
+				xmin = 5.68
+				xmax = 5.76
+				text = ""
+			intervals [17]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "者ら"
+			intervals [18]:
+				xmin = 5.92
+				xmax = 6.08
+				text = "は"
+			intervals [19]:
+				xmin = 6.08
+				xmax = 6.56
+				text = ""
+			intervals [20]:
+				xmin = 6.56
+				xmax = 6.72
+				text = "この"
+			intervals [21]:
+				xmin = 6.72
+				xmax = 7.12
+				text = "新種"
+			intervals [22]:
+				xmin = 7.12
+				xmax = 7.28
+				text = "が"
+			intervals [23]:
+				xmin = 7.28
+				xmax = 7.68
+				text = "わずか"
+			intervals [24]:
+				xmin = 7.68
+				xmax = 7.84
+				text = "二"
+			intervals [25]:
+				xmin = 7.84
+				xmax = 8.24
+				text = "世代"
+			intervals [26]:
+				xmin = 8.24
+				xmax = 8.32
+				text = "で"
+			intervals [27]:
+				xmin = 8.32
+				xmax = 8.72
+				text = "進化"
+			intervals [28]:
+				xmin = 8.72
+				xmax = 8.88
+				text = "した"
+			intervals [29]:
+				xmin = 8.88
+				xmax = 9.12
+				text = "こと"
+			intervals [30]:
+				xmin = 9.12
+				xmax = 9.2
+				text = "を"
+			intervals [31]:
+				xmin = 9.2
+				xmax = 9.6
+				text = "報告"
+			intervals [32]:
+				xmin = 9.6
+				xmax = 9.68
+				text = "し"
+			intervals [33]:
+				xmin = 9.68
+				xmax = 10.0
+				text = "ました"
+			intervals [34]:
+				xmin = 10.0
+				xmax = 10.08
+				text = ""
+			intervals [35]:
+				xmin = 10.08
+				xmax = 10.64
+				text = "が"
+			intervals [36]:
+				xmin = 10.64
+				xmax = 10.8
+				text = "この"
+			intervals [37]:
+				xmin = 10.8
+				xmax = 11.2
+				text = "過程"
+			intervals [38]:
+				xmin = 11.2
+				xmax = 11.36
+				text = "は"
+			intervals [39]:
+				xmin = 11.36
+				xmax = 11.76
+				text = ""
+			intervals [40]:
+				xmin = 11.76
+				xmax = 12.0
+				text = "固有"
+			intervals [41]:
+				xmin = 12.0
+				xmax = 12.16
+				text = "種"
+			intervals [42]:
+				xmin = 12.16
+				xmax = 12.24
+				text = "の"
+			intervals [43]:
+				xmin = 12.24
+				xmax = 12.8
+				text = "ガラパゴス"
+			intervals [44]:
+				xmin = 12.8
+				xmax = 13.12
+				text = "フィンチ"
+			intervals [45]:
+				xmin = 13.12
+				xmax = 13.28
+				text = "と"
+			intervals [46]:
+				xmin = 13.28
+				xmax = 13.52
+				text = ""
+			intervals [47]:
+				xmin = 13.52
+				xmax = 13.76
+				text = "移入"
+			intervals [48]:
+				xmin = 13.76
+				xmax = 13.92
+				text = "種"
+			intervals [49]:
+				xmin = 13.92
+				xmax = 14.08
+				text = "の"
+			intervals [50]:
+				xmin = 14.08
+				xmax = 14.32
+				text = ""
+			intervals [51]:
+				xmin = 14.32
+				xmax = 14.48
+				text = "オオ"
+			intervals [52]:
+				xmin = 14.48
+				xmax = 15.04
+				text = "サボテン"
+			intervals [53]:
+				xmin = 15.04
+				xmax = 15.36
+				text = "フィンチ"
+			intervals [54]:
+				xmin = 15.36
+				xmax = 15.44
+				text = "が"
+			intervals [55]:
+				xmin = 15.44
+				xmax = 15.92
+				text = "交配"
+			intervals [56]:
+				xmin = 15.92
+				xmax = 16.16
+				text = "した"
+			intervals [57]:
+				xmin = 16.16
+				xmax = 17.12
+				text = ""
+			intervals [58]:
+				xmin = 17.12
+				xmax = 17.52
+				text = "繁殖"
+			intervals [59]:
+				xmin = 17.52
+				xmax = 17.6
+				text = "で"
+			intervals [60]:
+				xmin = 17.6
+				xmax = 17.76
+				text = "ある"
+			intervals [61]:
+				xmin = 17.76
+				xmax = 18.0
+				text = "ため"
+			intervals [62]:
+				xmin = 18.0
+				xmax = 18.24
+				text = ""
+			intervals [63]:
+				xmin = 18.24
+				xmax = 18.48
+				text = "もっと"
+			intervals [64]:
+				xmin = 18.48
+				xmax = 18.8
+				text = "長い"
+			intervals [65]:
+				xmin = 18.8
+				xmax = 19.12
+				text = "時間"
+			intervals [66]:
+				xmin = 19.12
+				xmax = 19.2
+				text = "が"
+			intervals [67]:
+				xmin = 19.2
+				xmax = 19.6
+				text = "かかる"
+			intervals [68]:
+				xmin = 19.6
+				xmax = 19.68
+				text = "と"
+			intervals [69]:
+				xmin = 19.68
+				xmax = 20.08
+				text = "考え"
+			intervals [70]:
+				xmin = 20.08
+				xmax = 20.16
+				text = "られ"
+			intervals [71]:
+				xmin = 20.16
+				xmax = 20.24
+				text = ""
+			intervals [72]:
+				xmin = 20.24
+				xmax = 20.32
+				text = "て"
+			intervals [73]:
+				xmin = 20.32
+				xmax = 20.4
+				text = "い"
+			intervals [74]:
+				xmin = 20.4
+				xmax = 20.72
+				text = "ました"
+			intervals [75]:
+				xmin = 20.72
+				xmax = 22.5
+				text = ""

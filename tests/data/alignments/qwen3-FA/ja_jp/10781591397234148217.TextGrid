@@ -1,0 +1,174 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 15.18
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 15.18
+		intervals: size = 40
+			intervals [1]:
+				xmin = 0.0
+				xmax = 3.52
+				text = ""
+			intervals [2]:
+				xmin = 3.52
+				xmax = 3.76
+				text = "女子"
+			intervals [3]:
+				xmin = 3.76
+				xmax = 4.24
+				text = "シッティング"
+			intervals [4]:
+				xmin = 4.24
+				xmax = 4.64
+				text = "グループ"
+			intervals [5]:
+				xmin = 4.64
+				xmax = 4.72
+				text = "で"
+			intervals [6]:
+				xmin = 4.72
+				xmax = 4.88
+				text = "は"
+			intervals [7]:
+				xmin = 4.88
+				xmax = 5.04
+				text = "四"
+			intervals [8]:
+				xmin = 5.04
+				xmax = 5.28
+				text = "人"
+			intervals [9]:
+				xmin = 5.28
+				xmax = 5.36
+				text = "の"
+			intervals [10]:
+				xmin = 5.36
+				xmax = 5.84
+				text = "スキーヤー"
+			intervals [11]:
+				xmin = 5.84
+				xmax = 5.92
+				text = "が"
+			intervals [12]:
+				xmin = 5.92
+				xmax = 6.24
+				text = "滑走"
+			intervals [13]:
+				xmin = 6.24
+				xmax = 6.4
+				text = "を"
+			intervals [14]:
+				xmin = 6.4
+				xmax = 6.56
+				text = "終え"
+			intervals [15]:
+				xmin = 6.56
+				xmax = 6.72
+				text = "られ"
+			intervals [16]:
+				xmin = 6.72
+				xmax = 6.8
+				text = ""
+			intervals [17]:
+				xmin = 6.8
+				xmax = 7.04
+				text = "ず"
+			intervals [18]:
+				xmin = 7.04
+				xmax = 7.12
+				text = ""
+			intervals [19]:
+				xmin = 7.12
+				xmax = 7.68
+				text = "ジャイアント"
+			intervals [20]:
+				xmin = 7.68
+				xmax = 8.16
+				text = "スラローム"
+			intervals [21]:
+				xmin = 8.16
+				xmax = 8.32
+				text = "で"
+			intervals [22]:
+				xmin = 8.32
+				xmax = 8.56
+				text = "は"
+			intervals [23]:
+				xmin = 8.56
+				xmax = 8.8
+				text = "全"
+			intervals [24]:
+				xmin = 8.8
+				xmax = 8.88
+				text = ""
+			intervals [25]:
+				xmin = 8.88
+				xmax = 9.12
+				text = "百"
+			intervals [26]:
+				xmin = 9.12
+				xmax = 9.28
+				text = "十"
+			intervals [27]:
+				xmin = 9.28
+				xmax = 9.52
+				text = "七"
+			intervals [28]:
+				xmin = 9.52
+				xmax = 9.68
+				text = "人"
+			intervals [29]:
+				xmin = 9.68
+				xmax = 9.92
+				text = "中"
+			intervals [30]:
+				xmin = 9.92
+				xmax = 10.32
+				text = "四十"
+			intervals [31]:
+				xmin = 10.32
+				xmax = 10.48
+				text = "五"
+			intervals [32]:
+				xmin = 10.48
+				xmax = 10.64
+				text = "人"
+			intervals [33]:
+				xmin = 10.64
+				xmax = 10.8
+				text = "が"
+			intervals [34]:
+				xmin = 10.8
+				xmax = 11.04
+				text = "ランク"
+			intervals [35]:
+				xmin = 11.04
+				xmax = 11.12
+				text = ""
+			intervals [36]:
+				xmin = 11.12
+				xmax = 11.28
+				text = "イン"
+			intervals [37]:
+				xmin = 11.28
+				xmax = 11.52
+				text = "でき"
+			intervals [38]:
+				xmin = 11.52
+				xmax = 11.76
+				text = "なかっ"
+			intervals [39]:
+				xmin = 11.76
+				xmax = 12.0
+				text = "た"
+			intervals [40]:
+				xmin = 12.0
+				xmax = 15.18
+				text = ""

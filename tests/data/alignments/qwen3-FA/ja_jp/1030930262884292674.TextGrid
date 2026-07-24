@@ -1,0 +1,186 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 14.04
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 14.04
+		intervals: size = 43
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.36
+				text = ""
+			intervals [2]:
+				xmin = 1.36
+				xmax = 1.6
+				text = "都市"
+			intervals [3]:
+				xmin = 1.6
+				xmax = 1.76
+				text = "は"
+			intervals [4]:
+				xmin = 1.76
+				xmax = 1.84
+				text = ""
+			intervals [5]:
+				xmin = 1.84
+				xmax = 2.32
+				text = "モロッコ"
+			intervals [6]:
+				xmin = 2.32
+				xmax = 2.4
+				text = "の"
+			intervals [7]:
+				xmin = 2.4
+				xmax = 2.96
+				text = "スルタン"
+			intervals [8]:
+				xmin = 2.96
+				xmax = 3.04
+				text = "に"
+			intervals [9]:
+				xmin = 3.04
+				xmax = 3.2
+				text = "よっ"
+			intervals [10]:
+				xmin = 3.2
+				xmax = 3.44
+				text = "て"
+			intervals [11]:
+				xmin = 3.44
+				xmax = 3.84
+				text = ""
+			intervals [12]:
+				xmin = 3.84
+				xmax = 4.16
+				text = "ダル"
+			intervals [13]:
+				xmin = 4.16
+				xmax = 4.24
+				text = "ル"
+			intervals [14]:
+				xmin = 4.24
+				xmax = 4.56
+				text = "バディ"
+			intervals [15]:
+				xmin = 4.56
+				xmax = 4.64
+				text = "ア"
+			intervals [16]:
+				xmin = 4.64
+				xmax = 4.72
+				text = "と"
+			intervals [17]:
+				xmin = 4.72
+				xmax = 4.88
+				text = "して"
+			intervals [18]:
+				xmin = 4.88
+				xmax = 5.36
+				text = "再建"
+			intervals [19]:
+				xmin = 5.36
+				xmax = 5.68
+				text = "され"
+			intervals [20]:
+				xmin = 5.68
+				xmax = 6.24
+				text = ""
+			intervals [21]:
+				xmin = 6.24
+				xmax = 6.56
+				text = "貿易"
+			intervals [22]:
+				xmin = 6.56
+				xmax = 6.72
+				text = ""
+			intervals [23]:
+				xmin = 6.72
+				xmax = 7.04
+				text = "拠点"
+			intervals [24]:
+				xmin = 7.04
+				xmax = 7.12
+				text = "を"
+			intervals [25]:
+				xmin = 7.12
+				xmax = 7.76
+				text = "設立"
+			intervals [26]:
+				xmin = 7.76
+				xmax = 8.0
+				text = "した"
+			intervals [27]:
+				xmin = 8.0
+				xmax = 8.16
+				text = ""
+			intervals [28]:
+				xmin = 8.16
+				xmax = 8.64
+				text = "スペイン"
+			intervals [29]:
+				xmin = 8.64
+				xmax = 8.88
+				text = "人"
+			intervals [30]:
+				xmin = 8.88
+				xmax = 9.28
+				text = "貿易"
+			intervals [31]:
+				xmin = 9.28
+				xmax = 9.52
+				text = "商"
+			intervals [32]:
+				xmin = 9.52
+				xmax = 9.6
+				text = "に"
+			intervals [33]:
+				xmin = 9.6
+				xmax = 9.76
+				text = "よっ"
+			intervals [34]:
+				xmin = 9.76
+				xmax = 9.84
+				text = ""
+			intervals [35]:
+				xmin = 9.84
+				xmax = 10.0
+				text = "て"
+			intervals [36]:
+				xmin = 10.0
+				xmax = 10.24
+				text = ""
+			intervals [37]:
+				xmin = 10.24
+				xmax = 10.88
+				text = "カサブランカ"
+			intervals [38]:
+				xmin = 10.88
+				xmax = 11.04
+				text = "と"
+			intervals [39]:
+				xmin = 11.04
+				xmax = 11.36
+				text = "名付け"
+			intervals [40]:
+				xmin = 11.36
+				xmax = 11.6
+				text = "られ"
+			intervals [41]:
+				xmin = 11.6
+				xmax = 11.84
+				text = "まし"
+			intervals [42]:
+				xmin = 11.84
+				xmax = 12.0
+				text = "た"
+			intervals [43]:
+				xmin = 12.0
+				xmax = 14.04
+				text = ""

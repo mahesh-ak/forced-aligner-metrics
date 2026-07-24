@@ -1,0 +1,138 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 11.7
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 11.7
+		intervals: size = 31
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.68
+				text = ""
+			intervals [2]:
+				xmin = 1.68
+				xmax = 2.08
+				text = "文明"
+			intervals [3]:
+				xmin = 2.08
+				xmax = 2.32
+				text = "と"
+			intervals [4]:
+				xmin = 2.32
+				xmax = 2.48
+				text = "は"
+			intervals [5]:
+				xmin = 2.48
+				xmax = 2.56
+				text = ""
+			intervals [6]:
+				xmin = 2.56
+				xmax = 3.04
+				text = "共同"
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.28
+				text = "で"
+			intervals [8]:
+				xmin = 3.28
+				xmax = 3.76
+				text = "生活"
+			intervals [9]:
+				xmin = 3.76
+				xmax = 3.84
+				text = "や"
+			intervals [10]:
+				xmin = 3.84
+				xmax = 4.24
+				text = "仕事"
+			intervals [11]:
+				xmin = 4.24
+				xmax = 4.32
+				text = "を"
+			intervals [12]:
+				xmin = 4.32
+				xmax = 4.72
+				text = "営む"
+			intervals [13]:
+				xmin = 4.72
+				xmax = 5.12
+				text = "人々"
+			intervals [14]:
+				xmin = 5.12
+				xmax = 5.28
+				text = "の"
+			intervals [15]:
+				xmin = 5.28
+				xmax = 5.44
+				text = "大"
+			intervals [16]:
+				xmin = 5.44
+				xmax = 5.92
+				text = "集団"
+			intervals [17]:
+				xmin = 5.92
+				xmax = 6.0
+				text = "が"
+			intervals [18]:
+				xmin = 6.0
+				xmax = 6.48
+				text = "共有"
+			intervals [19]:
+				xmin = 6.48
+				xmax = 6.72
+				text = "する"
+			intervals [20]:
+				xmin = 6.72
+				xmax = 6.88
+				text = "一"
+			intervals [21]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "つ"
+			intervals [22]:
+				xmin = 7.04
+				xmax = 7.12
+				text = "の"
+			intervals [23]:
+				xmin = 7.12
+				xmax = 7.52
+				text = "文化"
+			intervals [24]:
+				xmin = 7.52
+				xmax = 8.0
+				text = ""
+			intervals [25]:
+				xmin = 8.0
+				xmax = 8.32
+				text = "つまり"
+			intervals [26]:
+				xmin = 8.32
+				xmax = 8.48
+				text = ""
+			intervals [27]:
+				xmin = 8.48
+				xmax = 8.88
+				text = "社会"
+			intervals [28]:
+				xmin = 8.88
+				xmax = 8.96
+				text = "の"
+			intervals [29]:
+				xmin = 8.96
+				xmax = 9.2
+				text = "こと"
+			intervals [30]:
+				xmin = 9.2
+				xmax = 9.52
+				text = "です"
+			intervals [31]:
+				xmin = 9.52
+				xmax = 11.7
+				text = ""

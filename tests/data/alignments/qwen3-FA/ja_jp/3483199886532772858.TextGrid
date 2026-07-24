@@ -1,0 +1,154 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 14.58
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 14.58
+		intervals: size = 35
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.56
+				text = "合金"
+			intervals [3]:
+				xmin = 2.56
+				xmax = 2.72
+				text = "と"
+			intervals [4]:
+				xmin = 2.72
+				xmax = 2.88
+				text = "は"
+			intervals [5]:
+				xmin = 2.88
+				xmax = 3.04
+				text = ""
+			intervals [6]:
+				xmin = 3.04
+				xmax = 3.44
+				text = "基本"
+			intervals [7]:
+				xmin = 3.44
+				xmax = 3.68
+				text = "的"
+			intervals [8]:
+				xmin = 3.68
+				xmax = 3.76
+				text = "に"
+			intervals [9]:
+				xmin = 3.76
+				xmax = 3.92
+				text = "は"
+			intervals [10]:
+				xmin = 3.92
+				xmax = 4.08
+				text = "二"
+			intervals [11]:
+				xmin = 4.08
+				xmax = 4.48
+				text = "種類"
+			intervals [12]:
+				xmin = 4.48
+				xmax = 4.8
+				text = "以上"
+			intervals [13]:
+				xmin = 4.8
+				xmax = 4.88
+				text = "の"
+			intervals [14]:
+				xmin = 4.88
+				xmax = 5.36
+				text = "金属"
+			intervals [15]:
+				xmin = 5.36
+				xmax = 5.52
+				text = "の"
+			intervals [16]:
+				xmin = 5.52
+				xmax = 5.92
+				text = "混合"
+			intervals [17]:
+				xmin = 5.92
+				xmax = 6.0
+				text = ""
+			intervals [18]:
+				xmin = 6.0
+				xmax = 6.24
+				text = "物"
+			intervals [19]:
+				xmin = 6.24
+				xmax = 6.64
+				text = "です"
+			intervals [20]:
+				xmin = 6.64
+				xmax = 7.44
+				text = ""
+			intervals [21]:
+				xmin = 7.44
+				xmax = 7.84
+				text = "周期"
+			intervals [22]:
+				xmin = 7.84
+				xmax = 8.08
+				text = "表"
+			intervals [23]:
+				xmin = 8.08
+				xmax = 8.16
+				text = "に"
+			intervals [24]:
+				xmin = 8.16
+				xmax = 8.24
+				text = ""
+			intervals [25]:
+				xmin = 8.24
+				xmax = 8.32
+				text = "載っ"
+			intervals [26]:
+				xmin = 8.32
+				xmax = 8.64
+				text = "て"
+			intervals [27]:
+				xmin = 8.64
+				xmax = 8.8
+				text = "いる"
+			intervals [28]:
+				xmin = 8.8
+				xmax = 9.2
+				text = "たくさん"
+			intervals [29]:
+				xmin = 9.2
+				xmax = 9.28
+				text = "の"
+			intervals [30]:
+				xmin = 9.28
+				xmax = 9.76
+				text = "元素"
+			intervals [31]:
+				xmin = 9.76
+				xmax = 9.84
+				text = "を"
+			intervals [32]:
+				xmin = 9.84
+				xmax = 10.4
+				text = "思い出し"
+			intervals [33]:
+				xmin = 10.4
+				xmax = 10.48
+				text = "て"
+			intervals [34]:
+				xmin = 10.48
+				xmax = 11.04
+				text = "ください"
+			intervals [35]:
+				xmin = 11.04
+				xmax = 14.58
+				text = ""

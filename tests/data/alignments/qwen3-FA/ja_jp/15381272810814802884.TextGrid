@@ -1,0 +1,170 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 14.58
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 14.58
+		intervals: size = 39
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.64
+				text = "北マリアナ"
+			intervals [3]:
+				xmin = 2.64
+				xmax = 3.04
+				text = "諸島"
+			intervals [4]:
+				xmin = 3.04
+				xmax = 3.12
+				text = ""
+			intervals [5]:
+				xmin = 3.12
+				xmax = 3.2
+				text = "の"
+			intervals [6]:
+				xmin = 3.2
+				xmax = 3.6
+				text = ""
+			intervals [7]:
+				xmin = 3.6
+				xmax = 3.68
+				text = "危機"
+			intervals [8]:
+				xmin = 3.68
+				xmax = 3.84
+				text = ""
+			intervals [9]:
+				xmin = 3.84
+				xmax = 4.16
+				text = "管理"
+			intervals [10]:
+				xmin = 4.16
+				xmax = 4.24
+				text = ""
+			intervals [11]:
+				xmin = 4.24
+				xmax = 4.32
+				text = "室"
+			intervals [12]:
+				xmin = 4.32
+				xmax = 5.92
+				text = ""
+			intervals [13]:
+				xmin = 5.92
+				xmax = 6.56
+				text = "emo"
+			intervals [14]:
+				xmin = 6.56
+				xmax = 6.72
+				text = "に"
+			intervals [15]:
+				xmin = 6.72
+				xmax = 6.96
+				text = "よる"
+			intervals [16]:
+				xmin = 6.96
+				xmax = 7.04
+				text = ""
+			intervals [17]:
+				xmin = 7.04
+				xmax = 7.28
+				text = "と"
+			intervals [18]:
+				xmin = 7.28
+				xmax = 8.48
+				text = ""
+			intervals [19]:
+				xmin = 8.48
+				xmax = 9.12
+				text = "全国"
+			intervals [20]:
+				xmin = 9.12
+				xmax = 9.44
+				text = "的"
+			intervals [21]:
+				xmin = 9.44
+				xmax = 9.68
+				text = "に"
+			intervals [22]:
+				xmin = 9.68
+				xmax = 10.16
+				text = ""
+			intervals [23]:
+				xmin = 10.16
+				xmax = 10.4
+				text = "被害"
+			intervals [24]:
+				xmin = 10.4
+				xmax = 10.56
+				text = "は"
+			intervals [25]:
+				xmin = 10.56
+				xmax = 10.72
+				text = ""
+			intervals [26]:
+				xmin = 10.72
+				xmax = 11.2
+				text = "報告"
+			intervals [27]:
+				xmin = 11.2
+				xmax = 11.44
+				text = ""
+			intervals [28]:
+				xmin = 11.44
+				xmax = 11.68
+				text = "され"
+			intervals [29]:
+				xmin = 11.68
+				xmax = 12.0
+				text = "て"
+			intervals [30]:
+				xmin = 12.0
+				xmax = 12.32
+				text = ""
+			intervals [31]:
+				xmin = 12.32
+				xmax = 12.4
+				text = "い"
+			intervals [32]:
+				xmin = 12.4
+				xmax = 12.72
+				text = "ない"
+			intervals [33]:
+				xmin = 12.72
+				xmax = 12.8
+				text = ""
+			intervals [34]:
+				xmin = 12.8
+				xmax = 12.96
+				text = "と"
+			intervals [35]:
+				xmin = 12.96
+				xmax = 13.12
+				text = "の"
+			intervals [36]:
+				xmin = 13.12
+				xmax = 13.2
+				text = ""
+			intervals [37]:
+				xmin = 13.2
+				xmax = 13.44
+				text = "こと"
+			intervals [38]:
+				xmin = 13.44
+				xmax = 13.6
+				text = "です"
+			intervals [39]:
+				xmin = 13.6
+				xmax = 14.58
+				text = ""

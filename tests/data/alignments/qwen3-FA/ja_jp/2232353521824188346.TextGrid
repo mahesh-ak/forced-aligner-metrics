@@ -1,0 +1,258 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 22.5
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 22.5
+		intervals: size = 61
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.56
+				text = ""
+			intervals [2]:
+				xmin = 2.56
+				xmax = 2.72
+				text = "実"
+			intervals [3]:
+				xmin = 2.72
+				xmax = 2.88
+				text = ""
+			intervals [4]:
+				xmin = 2.88
+				xmax = 3.12
+				text = "に"
+			intervals [5]:
+				xmin = 3.12
+				xmax = 3.76
+				text = ""
+			intervals [6]:
+				xmin = 3.76
+				xmax = 4.4
+				text = "均整"
+			intervals [7]:
+				xmin = 4.4
+				xmax = 4.56
+				text = "の"
+			intervals [8]:
+				xmin = 4.56
+				xmax = 4.8
+				text = "取れ"
+			intervals [9]:
+				xmin = 4.8
+				xmax = 4.88
+				text = ""
+			intervals [10]:
+				xmin = 4.88
+				xmax = 5.04
+				text = "た"
+			intervals [11]:
+				xmin = 5.04
+				xmax = 5.12
+				text = ""
+			intervals [12]:
+				xmin = 5.12
+				xmax = 5.36
+				text = "体"
+			intervals [13]:
+				xmin = 5.36
+				xmax = 5.52
+				text = ""
+			intervals [14]:
+				xmin = 5.52
+				xmax = 5.76
+				text = "で"
+			intervals [15]:
+				xmin = 5.76
+				xmax = 7.04
+				text = ""
+			intervals [16]:
+				xmin = 7.04
+				xmax = 7.44
+				text = "運動"
+			intervals [17]:
+				xmin = 7.44
+				xmax = 7.84
+				text = "能力"
+			intervals [18]:
+				xmin = 7.84
+				xmax = 8.0
+				text = "の"
+			intervals [19]:
+				xmin = 8.0
+				xmax = 8.32
+				text = "高い"
+			intervals [20]:
+				xmin = 8.32
+				xmax = 8.4
+				text = ""
+			intervals [21]:
+				xmin = 8.4
+				xmax = 8.64
+				text = "虎"
+			intervals [22]:
+				xmin = 8.64
+				xmax = 8.88
+				text = "は"
+			intervals [23]:
+				xmin = 8.88
+				xmax = 10.16
+				text = ""
+			intervals [24]:
+				xmin = 10.16
+				xmax = 11.52
+				text = "うまく"
+			intervals [25]:
+				xmin = 11.52
+				xmax = 11.6
+				text = ""
+			intervals [26]:
+				xmin = 11.6
+				xmax = 11.76
+				text = "は"
+			intervals [27]:
+				xmin = 11.76
+				xmax = 11.84
+				text = ""
+			intervals [28]:
+				xmin = 11.84
+				xmax = 12.08
+				text = "ない"
+			intervals [29]:
+				xmin = 12.08
+				xmax = 12.4
+				text = "もの"
+			intervals [30]:
+				xmin = 12.4
+				xmax = 12.56
+				text = "の"
+			intervals [31]:
+				xmin = 12.56
+				xmax = 13.68
+				text = ""
+			intervals [32]:
+				xmin = 13.68
+				xmax = 13.92
+				text = "登っ"
+			intervals [33]:
+				xmin = 13.92
+				xmax = 14.08
+				text = ""
+			intervals [34]:
+				xmin = 14.08
+				xmax = 14.32
+				text = "たり"
+			intervals [35]:
+				xmin = 14.32
+				xmax = 14.72
+				text = "泳い"
+			intervals [36]:
+				xmin = 14.72
+				xmax = 15.04
+				text = "だり"
+			intervals [37]:
+				xmin = 15.04
+				xmax = 16.16
+				text = ""
+			intervals [38]:
+				xmin = 16.16
+				xmax = 16.56
+				text = "長い"
+			intervals [39]:
+				xmin = 16.56
+				xmax = 16.72
+				text = ""
+			intervals [40]:
+				xmin = 16.72
+				xmax = 16.96
+				text = "距離"
+			intervals [41]:
+				xmin = 16.96
+				xmax = 17.04
+				text = ""
+			intervals [42]:
+				xmin = 17.04
+				xmax = 17.2
+				text = "を"
+			intervals [43]:
+				xmin = 17.2
+				xmax = 17.6
+				text = ""
+			intervals [44]:
+				xmin = 17.6
+				xmax = 17.92
+				text = "跳ん"
+			intervals [45]:
+				xmin = 17.92
+				xmax = 18.24
+				text = "だり"
+			intervals [46]:
+				xmin = 18.24
+				xmax = 18.88
+				text = ""
+			intervals [47]:
+				xmin = 18.88
+				xmax = 19.44
+				text = "たくましい"
+			intervals [48]:
+				xmin = 19.44
+				xmax = 20.0
+				text = "人間"
+			intervals [49]:
+				xmin = 20.0
+				xmax = 20.16
+				text = "の"
+			intervals [50]:
+				xmin = 20.16
+				xmax = 20.32
+				text = "五"
+			intervals [51]:
+				xmin = 20.32
+				xmax = 20.48
+				text = "倍"
+			intervals [52]:
+				xmin = 20.48
+				xmax = 20.64
+				text = "の"
+			intervals [53]:
+				xmin = 20.64
+				xmax = 20.8
+				text = ""
+			intervals [54]:
+				xmin = 20.8
+				xmax = 21.04
+				text = "力"
+			intervals [55]:
+				xmin = 21.04
+				xmax = 21.12
+				text = ""
+			intervals [56]:
+				xmin = 21.12
+				xmax = 21.28
+				text = "で"
+			intervals [57]:
+				xmin = 21.28
+				xmax = 22.08
+				text = ""
+			intervals [58]:
+				xmin = 22.08
+				xmax = 22.16
+				text = "引っ張っ"
+			intervals [59]:
+				xmin = 22.16
+				xmax = 22.4
+				text = ""
+			intervals [60]:
+				xmin = 22.4
+				xmax = 22.48
+				text = "たり"
+			intervals [61]:
+				xmin = 22.48
+				xmax = 22.5
+				text = ""

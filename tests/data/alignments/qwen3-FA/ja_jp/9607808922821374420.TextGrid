@@ -1,0 +1,102 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.78
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.78
+		intervals: size = 22
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.08
+				text = ""
+			intervals [2]:
+				xmin = 2.08
+				xmax = 2.48
+				text = "敵対"
+			intervals [3]:
+				xmin = 2.48
+				xmax = 2.8
+				text = "行為"
+			intervals [4]:
+				xmin = 2.8
+				xmax = 2.88
+				text = "が"
+			intervals [5]:
+				xmin = 2.88
+				xmax = 3.28
+				text = "始まっ"
+			intervals [6]:
+				xmin = 3.28
+				xmax = 3.44
+				text = ""
+			intervals [7]:
+				xmin = 3.44
+				xmax = 3.6
+				text = "てま"
+			intervals [8]:
+				xmin = 3.6
+				xmax = 3.68
+				text = "も"
+			intervals [9]:
+				xmin = 3.68
+				xmax = 4.0
+				text = "なく"
+			intervals [10]:
+				xmin = 4.0
+				xmax = 4.24
+				text = ""
+			intervals [11]:
+				xmin = 4.24
+				xmax = 4.64
+				text = "イギリス"
+			intervals [12]:
+				xmin = 4.64
+				xmax = 4.8
+				text = "は"
+			intervals [13]:
+				xmin = 4.8
+				xmax = 5.2
+				text = "ドイツ"
+			intervals [14]:
+				xmin = 5.2
+				xmax = 5.28
+				text = "に"
+			intervals [15]:
+				xmin = 5.28
+				xmax = 5.76
+				text = "対する"
+			intervals [16]:
+				xmin = 5.76
+				xmax = 6.24
+				text = "海上"
+			intervals [17]:
+				xmin = 6.24
+				xmax = 6.56
+				text = "封鎖"
+			intervals [18]:
+				xmin = 6.56
+				xmax = 6.64
+				text = "を"
+			intervals [19]:
+				xmin = 6.64
+				xmax = 7.04
+				text = "開始"
+			intervals [20]:
+				xmin = 7.04
+				xmax = 7.12
+				text = "し"
+			intervals [21]:
+				xmin = 7.12
+				xmax = 7.52
+				text = "ました"
+			intervals [22]:
+				xmin = 7.52
+				xmax = 9.78
+				text = ""

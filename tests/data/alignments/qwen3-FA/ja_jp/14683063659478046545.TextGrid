@@ -1,0 +1,166 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.18
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.18
+		intervals: size = 38
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.16
+				text = ""
+			intervals [2]:
+				xmin = 2.16
+				xmax = 2.56
+				text = "ライオン"
+			intervals [3]:
+				xmin = 2.56
+				xmax = 2.64
+				text = "は"
+			intervals [4]:
+				xmin = 2.64
+				xmax = 3.2
+				text = "最も"
+			intervals [5]:
+				xmin = 3.2
+				xmax = 3.36
+				text = ""
+			intervals [6]:
+				xmin = 3.36
+				xmax = 3.84
+				text = "社交"
+			intervals [7]:
+				xmin = 3.84
+				xmax = 4.08
+				text = "的"
+			intervals [8]:
+				xmin = 4.08
+				xmax = 4.16
+				text = "な"
+			intervals [9]:
+				xmin = 4.16
+				xmax = 4.48
+				text = "ネコ"
+			intervals [10]:
+				xmin = 4.48
+				xmax = 4.56
+				text = ""
+			intervals [11]:
+				xmin = 4.56
+				xmax = 4.64
+				text = "科"
+			intervals [12]:
+				xmin = 4.64
+				xmax = 4.8
+				text = "の"
+			intervals [13]:
+				xmin = 4.8
+				xmax = 4.88
+				text = ""
+			intervals [14]:
+				xmin = 4.88
+				xmax = 5.28
+				text = "動物"
+			intervals [15]:
+				xmin = 5.28
+				xmax = 5.36
+				text = ""
+			intervals [16]:
+				xmin = 5.36
+				xmax = 5.44
+				text = "で"
+			intervals [17]:
+				xmin = 5.44
+				xmax = 5.6
+				text = "あり"
+			intervals [18]:
+				xmin = 5.6
+				xmax = 6.0
+				text = ""
+			intervals [19]:
+				xmin = 6.0
+				xmax = 6.48
+				text = "プライド"
+			intervals [20]:
+				xmin = 6.48
+				xmax = 6.56
+				text = ""
+			intervals [21]:
+				xmin = 6.56
+				xmax = 6.72
+				text = "と"
+			intervals [22]:
+				xmin = 6.72
+				xmax = 6.8
+				text = ""
+			intervals [23]:
+				xmin = 6.8
+				xmax = 7.12
+				text = "呼ば"
+			intervals [24]:
+				xmin = 7.12
+				xmax = 7.2
+				text = "れる"
+			intervals [25]:
+				xmin = 7.2
+				xmax = 8.48
+				text = ""
+			intervals [26]:
+				xmin = 8.48
+				xmax = 8.64
+				text = "大"
+			intervals [27]:
+				xmin = 8.64
+				xmax = 8.88
+				text = ""
+			intervals [28]:
+				xmin = 8.88
+				xmax = 9.36
+				text = "集団"
+			intervals [29]:
+				xmin = 9.36
+				xmax = 9.52
+				text = ""
+			intervals [30]:
+				xmin = 9.52
+				xmax = 9.6
+				text = "で"
+			intervals [31]:
+				xmin = 9.6
+				xmax = 9.68
+				text = ""
+			intervals [32]:
+				xmin = 9.68
+				xmax = 10.16
+				text = "生活"
+			intervals [33]:
+				xmin = 10.16
+				xmax = 10.32
+				text = ""
+			intervals [34]:
+				xmin = 10.32
+				xmax = 10.4
+				text = "て"
+			intervals [35]:
+				xmin = 10.4
+				xmax = 10.48
+				text = "い"
+			intervals [36]:
+				xmin = 10.48
+				xmax = 10.56
+				text = ""
+			intervals [37]:
+				xmin = 10.56
+				xmax = 10.64
+				text = "ます"
+			intervals [38]:
+				xmin = 10.64
+				xmax = 12.18
+				text = ""

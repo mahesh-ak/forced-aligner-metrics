@@ -1,0 +1,118 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.36
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.36
+		intervals: size = 26
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.0
+				text = ""
+			intervals [2]:
+				xmin = 2.0
+				xmax = 2.48
+				text = "棲み分け"
+			intervals [3]:
+				xmin = 2.48
+				xmax = 2.56
+				text = "と"
+			intervals [4]:
+				xmin = 2.56
+				xmax = 3.04
+				text = "組み換え"
+			intervals [5]:
+				xmin = 3.04
+				xmax = 3.2
+				text = "は"
+			intervals [6]:
+				xmin = 3.2
+				xmax = 3.52
+				text = "世代"
+			intervals [7]:
+				xmin = 3.52
+				xmax = 3.68
+				text = "ごと"
+			intervals [8]:
+				xmin = 3.68
+				xmax = 3.84
+				text = "に"
+			intervals [9]:
+				xmin = 3.84
+				xmax = 4.0
+				text = ""
+			intervals [10]:
+				xmin = 4.0
+				xmax = 4.08
+				text = "二つ"
+			intervals [11]:
+				xmin = 4.08
+				xmax = 4.16
+				text = ""
+			intervals [12]:
+				xmin = 4.16
+				xmax = 4.24
+				text = "の"
+			intervals [13]:
+				xmin = 4.24
+				xmax = 4.56
+				text = "プール"
+			intervals [14]:
+				xmin = 4.56
+				xmax = 4.64
+				text = "の"
+			intervals [15]:
+				xmin = 4.64
+				xmax = 4.88
+				text = "間"
+			intervals [16]:
+				xmin = 4.88
+				xmax = 4.96
+				text = "を"
+			intervals [17]:
+				xmin = 4.96
+				xmax = 5.2
+				text = "行き来"
+			intervals [18]:
+				xmin = 5.2
+				xmax = 5.28
+				text = "し"
+			intervals [19]:
+				xmin = 5.28
+				xmax = 5.6
+				text = "ながら"
+			intervals [20]:
+				xmin = 5.6
+				xmax = 5.92
+				text = "変異"
+			intervals [21]:
+				xmin = 5.92
+				xmax = 6.0
+				text = ""
+			intervals [22]:
+				xmin = 6.0
+				xmax = 6.08
+				text = "を"
+			intervals [23]:
+				xmin = 6.08
+				xmax = 6.4
+				text = "シャッフル"
+			intervals [24]:
+				xmin = 6.4
+				xmax = 6.56
+				text = "し"
+			intervals [25]:
+				xmin = 6.56
+				xmax = 7.04
+				text = "ます"
+			intervals [26]:
+				xmin = 7.04
+				xmax = 9.36
+				text = ""

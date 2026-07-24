@@ -1,0 +1,98 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.12
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.12
+		intervals: size = 21
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.32
+				text = ""
+			intervals [2]:
+				xmin = 2.32
+				xmax = 2.64
+				text = "さらに"
+			intervals [3]:
+				xmin = 2.64
+				xmax = 2.72
+				text = ""
+			intervals [4]:
+				xmin = 2.72
+				xmax = 3.12
+				text = "新しい"
+			intervals [5]:
+				xmin = 3.12
+				xmax = 3.36
+				text = "もの"
+			intervals [6]:
+				xmin = 3.36
+				xmax = 3.44
+				text = "が"
+			intervals [7]:
+				xmin = 3.44
+				xmax = 3.76
+				text = "登場"
+			intervals [8]:
+				xmin = 3.76
+				xmax = 3.84
+				text = "し"
+			intervals [9]:
+				xmin = 3.84
+				xmax = 4.08
+				text = "たら"
+			intervals [10]:
+				xmin = 4.08
+				xmax = 4.64
+				text = "キーボード"
+			intervals [11]:
+				xmin = 4.64
+				xmax = 4.8
+				text = "は"
+			intervals [12]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "どう"
+			intervals [13]:
+				xmin = 4.96
+				xmax = 5.28
+				text = "なる"
+			intervals [14]:
+				xmin = 5.28
+				xmax = 5.52
+				text = "だろう"
+			intervals [15]:
+				xmin = 5.52
+				xmax = 5.6
+				text = "か"
+			intervals [16]:
+				xmin = 5.6
+				xmax = 5.76
+				text = "と"
+			intervals [17]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "思っ"
+			intervals [18]:
+				xmin = 5.92
+				xmax = 6.0
+				text = "て"
+			intervals [19]:
+				xmin = 6.0
+				xmax = 6.32
+				text = "しまい"
+			intervals [20]:
+				xmin = 6.32
+				xmax = 6.72
+				text = "ます"
+			intervals [21]:
+				xmin = 6.72
+				xmax = 9.12
+				text = ""

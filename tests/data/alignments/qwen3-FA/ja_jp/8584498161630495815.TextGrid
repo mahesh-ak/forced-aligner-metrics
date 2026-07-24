@@ -1,0 +1,118 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.18
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.18
+		intervals: size = 26
+			intervals [1]:
+				xmin = 0.0
+				xmax = 3.68
+				text = ""
+			intervals [2]:
+				xmin = 3.68
+				xmax = 4.0
+				text = "一"
+			intervals [3]:
+				xmin = 4.0
+				xmax = 4.16
+				text = "晩"
+			intervals [4]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "で"
+			intervals [5]:
+				xmin = 4.32
+				xmax = 4.56
+				text = "百"
+			intervals [6]:
+				xmin = 4.56
+				xmax = 4.88
+				text = "五十"
+			intervals [7]:
+				xmin = 4.88
+				xmax = 5.44
+				text = "二百"
+			intervals [8]:
+				xmin = 5.44
+				xmax = 5.6
+				text = "枚"
+			intervals [9]:
+				xmin = 5.6
+				xmax = 5.68
+				text = "が"
+			intervals [10]:
+				xmin = 5.68
+				xmax = 6.0
+				text = "複製"
+			intervals [11]:
+				xmin = 6.0
+				xmax = 6.32
+				text = "され"
+			intervals [12]:
+				xmin = 6.32
+				xmax = 6.4
+				text = ""
+			intervals [13]:
+				xmin = 6.4
+				xmax = 6.8
+				text = "現在"
+			intervals [14]:
+				xmin = 6.8
+				xmax = 6.88
+				text = "で"
+			intervals [15]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "は"
+			intervals [16]:
+				xmin = 7.04
+				xmax = 7.28
+				text = "ダン"
+			intervals [17]:
+				xmin = 7.28
+				xmax = 7.6
+				text = "ラップ"
+			intervals [18]:
+				xmin = 7.6
+				xmax = 7.92
+				text = "ブロード"
+			intervals [19]:
+				xmin = 7.92
+				xmax = 8.24
+				text = "サイド"
+			intervals [20]:
+				xmin = 8.24
+				xmax = 8.32
+				text = "と"
+			intervals [21]:
+				xmin = 8.32
+				xmax = 8.56
+				text = "呼ば"
+			intervals [22]:
+				xmin = 8.56
+				xmax = 8.64
+				text = "れ"
+			intervals [23]:
+				xmin = 8.64
+				xmax = 8.72
+				text = "て"
+			intervals [24]:
+				xmin = 8.72
+				xmax = 8.8
+				text = "い"
+			intervals [25]:
+				xmin = 8.8
+				xmax = 9.28
+				text = "ます"
+			intervals [26]:
+				xmin = 9.28
+				xmax = 12.18
+				text = ""

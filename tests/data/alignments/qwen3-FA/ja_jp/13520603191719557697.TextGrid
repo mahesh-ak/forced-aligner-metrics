@@ -1,0 +1,110 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.0
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.0
+		intervals: size = 24
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.0
+				text = ""
+			intervals [2]:
+				xmin = 2.0
+				xmax = 2.32
+				text = "地球"
+			intervals [3]:
+				xmin = 2.32
+				xmax = 2.48
+				text = "上"
+			intervals [4]:
+				xmin = 2.48
+				xmax = 2.64
+				text = "の"
+			intervals [5]:
+				xmin = 2.64
+				xmax = 2.88
+				text = "川"
+			intervals [6]:
+				xmin = 2.88
+				xmax = 3.04
+				text = "から"
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.28
+				text = "海"
+			intervals [8]:
+				xmin = 3.28
+				xmax = 3.36
+				text = "に"
+			intervals [9]:
+				xmin = 3.36
+				xmax = 3.76
+				text = "注ぐ"
+			intervals [10]:
+				xmin = 3.76
+				xmax = 4.0
+				text = "水"
+			intervals [11]:
+				xmin = 4.0
+				xmax = 4.08
+				text = "の"
+			intervals [12]:
+				xmin = 4.08
+				xmax = 4.32
+				text = "二十"
+			intervals [13]:
+				xmin = 4.32
+				xmax = 4.4
+				text = ""
+			intervals [14]:
+				xmin = 4.4
+				xmax = 4.96
+				text = "は"
+			intervals [15]:
+				xmin = 4.96
+				xmax = 5.2
+				text = ""
+			intervals [16]:
+				xmin = 5.2
+				xmax = 5.6
+				text = "アマゾン"
+			intervals [17]:
+				xmin = 5.6
+				xmax = 5.76
+				text = "川"
+			intervals [18]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "から"
+			intervals [19]:
+				xmin = 5.92
+				xmax = 6.0
+				text = ""
+			intervals [20]:
+				xmin = 6.0
+				xmax = 6.4
+				text = "流れ出"
+			intervals [21]:
+				xmin = 6.4
+				xmax = 6.48
+				text = "て"
+			intervals [22]:
+				xmin = 6.48
+				xmax = 6.56
+				text = "い"
+			intervals [23]:
+				xmin = 6.56
+				xmax = 6.88
+				text = "ます"
+			intervals [24]:
+				xmin = 6.88
+				xmax = 9.0
+				text = ""

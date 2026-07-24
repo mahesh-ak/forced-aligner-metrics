@@ -1,0 +1,154 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.38
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 13.38
+		intervals: size = 35
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.4
+				text = ""
+			intervals [2]:
+				xmin = 2.4
+				xmax = 2.8
+				text = "ワイルド"
+			intervals [3]:
+				xmin = 2.8
+				xmax = 3.12
+				text = "カード"
+			intervals [4]:
+				xmin = 3.12
+				xmax = 3.2
+				text = "を"
+			intervals [5]:
+				xmin = 3.2
+				xmax = 3.52
+				text = "購入"
+			intervals [6]:
+				xmin = 3.52
+				xmax = 3.6
+				text = ""
+			intervals [7]:
+				xmin = 3.6
+				xmax = 3.84
+				text = "する"
+			intervals [8]:
+				xmin = 3.84
+				xmax = 4.0
+				text = "と"
+			intervals [9]:
+				xmin = 4.0
+				xmax = 4.08
+				text = "お"
+			intervals [10]:
+				xmin = 4.08
+				xmax = 4.32
+				text = "得"
+			intervals [11]:
+				xmin = 4.32
+				xmax = 4.4
+				text = "な"
+			intervals [12]:
+				xmin = 4.4
+				xmax = 4.64
+				text = "場合"
+			intervals [13]:
+				xmin = 4.64
+				xmax = 4.8
+				text = "が"
+			intervals [14]:
+				xmin = 4.8
+				xmax = 4.88
+				text = "あり"
+			intervals [15]:
+				xmin = 4.88
+				xmax = 5.12
+				text = "ます"
+			intervals [16]:
+				xmin = 5.12
+				xmax = 5.84
+				text = ""
+			intervals [17]:
+				xmin = 5.84
+				xmax = 6.56
+				text = "南アフリカ"
+			intervals [18]:
+				xmin = 6.56
+				xmax = 6.72
+				text = "の"
+			intervals [19]:
+				xmin = 6.72
+				xmax = 6.96
+				text = "主な"
+			intervals [20]:
+				xmin = 6.96
+				xmax = 7.28
+				text = "公園"
+			intervals [21]:
+				xmin = 7.28
+				xmax = 7.52
+				text = ""
+			intervals [22]:
+				xmin = 7.52
+				xmax = 7.76
+				text = "また"
+			intervals [23]:
+				xmin = 7.76
+				xmax = 7.84
+				text = "は"
+			intervals [24]:
+				xmin = 7.84
+				xmax = 8.56
+				text = "南アフリカ"
+			intervals [25]:
+				xmin = 8.56
+				xmax = 8.64
+				text = "の"
+			intervals [26]:
+				xmin = 8.64
+				xmax = 8.96
+				text = "すべて"
+			intervals [27]:
+				xmin = 8.96
+				xmax = 9.04
+				text = "の"
+			intervals [28]:
+				xmin = 9.04
+				xmax = 9.6
+				text = "国立"
+			intervals [29]:
+				xmin = 9.6
+				xmax = 9.84
+				text = "公園"
+			intervals [30]:
+				xmin = 9.84
+				xmax = 9.92
+				text = "に"
+			intervals [31]:
+				xmin = 9.92
+				xmax = 10.08
+				text = ""
+			intervals [32]:
+				xmin = 10.08
+				xmax = 10.4
+				text = "入場"
+			intervals [33]:
+				xmin = 10.4
+				xmax = 10.56
+				text = "でき"
+			intervals [34]:
+				xmin = 10.56
+				xmax = 10.88
+				text = "ます"
+			intervals [35]:
+				xmin = 10.88
+				xmax = 13.38
+				text = ""

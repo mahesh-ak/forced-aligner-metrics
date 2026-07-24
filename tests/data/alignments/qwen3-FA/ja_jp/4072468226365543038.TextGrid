@@ -1,0 +1,90 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 8.4
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 8.4
+		intervals: size = 19
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.24
+				text = ""
+			intervals [2]:
+				xmin = 2.24
+				xmax = 2.48
+				text = "室"
+			intervals [3]:
+				xmin = 2.48
+				xmax = 2.56
+				text = "の"
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.88
+				text = "報道"
+			intervals [5]:
+				xmin = 2.88
+				xmax = 3.04
+				text = "に"
+			intervals [6]:
+				xmin = 3.04
+				xmax = 3.2
+				text = "よれ"
+			intervals [7]:
+				xmin = 3.2
+				xmax = 3.52
+				text = "ば"
+			intervals [8]:
+				xmin = 3.52
+				xmax = 3.92
+				text = "負傷"
+			intervals [9]:
+				xmin = 3.92
+				xmax = 4.08
+				text = "の"
+			intervals [10]:
+				xmin = 4.08
+				xmax = 4.32
+				text = "うち"
+			intervals [11]:
+				xmin = 4.32
+				xmax = 4.48
+				text = "十"
+			intervals [12]:
+				xmin = 4.48
+				xmax = 4.72
+				text = "九"
+			intervals [13]:
+				xmin = 4.72
+				xmax = 4.88
+				text = "人"
+			intervals [14]:
+				xmin = 4.88
+				xmax = 4.96
+				text = "は"
+			intervals [15]:
+				xmin = 4.96
+				xmax = 5.04
+				text = ""
+			intervals [16]:
+				xmin = 5.04
+				xmax = 5.44
+				text = "警官"
+			intervals [17]:
+				xmin = 5.44
+				xmax = 5.68
+				text = "でし"
+			intervals [18]:
+				xmin = 5.68
+				xmax = 5.76
+				text = "た"
+			intervals [19]:
+				xmin = 5.76
+				xmax = 8.4
+				text = ""

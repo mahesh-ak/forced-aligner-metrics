@@ -1,0 +1,110 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.78
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.78
+		intervals: size = 24
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.32
+				text = ""
+			intervals [2]:
+				xmin = 2.32
+				xmax = 2.72
+				text = "水曜"
+			intervals [3]:
+				xmin = 2.72
+				xmax = 2.88
+				text = "日"
+			intervals [4]:
+				xmin = 2.88
+				xmax = 2.96
+				text = "の"
+			intervals [5]:
+				xmin = 2.96
+				xmax = 3.36
+				text = "イベント"
+			intervals [6]:
+				xmin = 3.36
+				xmax = 3.52
+				text = "の"
+			intervals [7]:
+				xmin = 3.52
+				xmax = 3.68
+				text = "後"
+			intervals [8]:
+				xmin = 3.68
+				xmax = 4.32
+				text = ""
+			intervals [9]:
+				xmin = 4.32
+				xmax = 4.88
+				text = "カルパネド"
+			intervals [10]:
+				xmin = 4.88
+				xmax = 5.12
+				text = "は"
+			intervals [11]:
+				xmin = 5.12
+				xmax = 5.44
+				text = "選手"
+			intervals [12]:
+				xmin = 5.44
+				xmax = 5.68
+				text = "権"
+			intervals [13]:
+				xmin = 5.68
+				xmax = 5.76
+				text = "で"
+			intervals [14]:
+				xmin = 5.76
+				xmax = 5.92
+				text = ""
+			intervals [15]:
+				xmin = 5.92
+				xmax = 6.08
+				text = "二つ"
+			intervals [16]:
+				xmin = 6.08
+				xmax = 6.16
+				text = "の"
+			intervals [17]:
+				xmin = 6.16
+				xmax = 6.48
+				text = "個人"
+			intervals [18]:
+				xmin = 6.48
+				xmax = 6.56
+				text = ""
+			intervals [19]:
+				xmin = 6.56
+				xmax = 6.8
+				text = "レース"
+			intervals [20]:
+				xmin = 6.8
+				xmax = 6.88
+				text = "に"
+			intervals [21]:
+				xmin = 6.88
+				xmax = 7.28
+				text = "出場"
+			intervals [22]:
+				xmin = 7.28
+				xmax = 7.44
+				text = "し"
+			intervals [23]:
+				xmin = 7.44
+				xmax = 7.76
+				text = "ました"
+			intervals [24]:
+				xmin = 7.76
+				xmax = 9.78
+				text = ""

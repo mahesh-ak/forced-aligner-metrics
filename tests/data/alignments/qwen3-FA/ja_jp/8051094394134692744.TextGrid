@@ -1,0 +1,142 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 14.22
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 14.22
+		intervals: size = 32
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.0
+				text = ""
+			intervals [2]:
+				xmin = 2.0
+				xmax = 2.32
+				text = "人気"
+			intervals [3]:
+				xmin = 2.32
+				xmax = 2.4
+				text = "の"
+			intervals [4]:
+				xmin = 2.4
+				xmax = 2.88
+				text = "スポーツ"
+			intervals [5]:
+				xmin = 2.88
+				xmax = 3.04
+				text = "は"
+			intervals [6]:
+				xmin = 3.04
+				xmax = 3.68
+				text = "サッカー"
+			intervals [7]:
+				xmin = 3.68
+				xmax = 3.76
+				text = ""
+			intervals [8]:
+				xmin = 3.76
+				xmax = 4.64
+				text = "バスケットボール"
+			intervals [9]:
+				xmin = 4.64
+				xmax = 4.88
+				text = ""
+			intervals [10]:
+				xmin = 4.88
+				xmax = 5.44
+				text = "バレーボール"
+			intervals [11]:
+				xmin = 5.44
+				xmax = 5.6
+				text = ""
+			intervals [12]:
+				xmin = 5.6
+				xmax = 6.24
+				text = "水球"
+			intervals [13]:
+				xmin = 6.24
+				xmax = 6.4
+				text = ""
+			intervals [14]:
+				xmin = 6.4
+				xmax = 6.88
+				text = "フェンシング"
+			intervals [15]:
+				xmin = 6.88
+				xmax = 7.2
+				text = ""
+			intervals [16]:
+				xmin = 7.2
+				xmax = 7.52
+				text = "ラグビー"
+			intervals [17]:
+				xmin = 7.52
+				xmax = 7.84
+				text = ""
+			intervals [18]:
+				xmin = 7.84
+				xmax = 8.48
+				text = "サイクリング"
+			intervals [19]:
+				xmin = 8.48
+				xmax = 8.96
+				text = ""
+			intervals [20]:
+				xmin = 8.96
+				xmax = 9.2
+				text = "アイス"
+			intervals [21]:
+				xmin = 9.2
+				xmax = 9.52
+				text = "ホッケー"
+			intervals [22]:
+				xmin = 9.52
+				xmax = 9.84
+				text = ""
+			intervals [23]:
+				xmin = 9.84
+				xmax = 10.24
+				text = "ローラー"
+			intervals [24]:
+				xmin = 10.24
+				xmax = 10.64
+				text = "ホッケー"
+			intervals [25]:
+				xmin = 10.64
+				xmax = 10.88
+				text = ""
+			intervals [26]:
+				xmin = 10.88
+				xmax = 10.96
+				text = "一"
+			intervals [27]:
+				xmin = 10.96
+				xmax = 11.2
+				text = ""
+			intervals [28]:
+				xmin = 11.2
+				xmax = 11.6
+				text = "モーター"
+			intervals [29]:
+				xmin = 11.6
+				xmax = 11.92
+				text = "レース"
+			intervals [30]:
+				xmin = 11.92
+				xmax = 12.16
+				text = "など"
+			intervals [31]:
+				xmin = 12.16
+				xmax = 12.32
+				text = "です"
+			intervals [32]:
+				xmin = 12.32
+				xmax = 14.22
+				text = ""

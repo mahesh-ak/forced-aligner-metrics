@@ -1,0 +1,178 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.36
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.36
+		intervals: size = 41
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.88
+				text = ""
+			intervals [2]:
+				xmin = 0.88
+				xmax = 1.2
+				text = "マダ"
+			intervals [3]:
+				xmin = 1.2
+				xmax = 1.6
+				text = ""
+			intervals [4]:
+				xmin = 1.6
+				xmax = 1.76
+				text = "ガスカル"
+			intervals [5]:
+				xmin = 1.76
+				xmax = 1.92
+				text = ""
+			intervals [6]:
+				xmin = 1.92
+				xmax = 2.08
+				text = "は"
+			intervals [7]:
+				xmin = 2.08
+				xmax = 2.4
+				text = ""
+			intervals [8]:
+				xmin = 2.4
+				xmax = 2.48
+				text = "群"
+			intervals [9]:
+				xmin = 2.48
+				xmax = 2.64
+				text = ""
+			intervals [10]:
+				xmin = 2.64
+				xmax = 2.8
+				text = "を"
+			intervals [11]:
+				xmin = 2.8
+				xmax = 3.04
+				text = "抜い"
+			intervals [12]:
+				xmin = 3.04
+				xmax = 3.12
+				text = ""
+			intervals [13]:
+				xmin = 3.12
+				xmax = 3.2
+				text = "て"
+			intervals [14]:
+				xmin = 3.2
+				xmax = 3.92
+				text = ""
+			intervals [15]:
+				xmin = 3.92
+				xmax = 4.4
+				text = "最大"
+			intervals [16]:
+				xmin = 4.4
+				xmax = 4.56
+				text = "の"
+			intervals [17]:
+				xmin = 4.56
+				xmax = 4.88
+				text = "島"
+			intervals [18]:
+				xmin = 4.88
+				xmax = 4.96
+				text = "で"
+			intervals [19]:
+				xmin = 4.96
+				xmax = 5.12
+				text = "あり"
+			intervals [20]:
+				xmin = 5.12
+				xmax = 5.76
+				text = ""
+			intervals [21]:
+				xmin = 5.76
+				xmax = 6.24
+				text = "野生"
+			intervals [22]:
+				xmin = 6.24
+				xmax = 6.32
+				text = ""
+			intervals [23]:
+				xmin = 6.32
+				xmax = 6.72
+				text = "生物"
+			intervals [24]:
+				xmin = 6.72
+				xmax = 6.8
+				text = ""
+			intervals [25]:
+				xmin = 6.8
+				xmax = 6.96
+				text = "の"
+			intervals [26]:
+				xmin = 6.96
+				xmax = 7.04
+				text = ""
+			intervals [27]:
+				xmin = 7.04
+				xmax = 7.2
+				text = "生息"
+			intervals [28]:
+				xmin = 7.2
+				xmax = 7.36
+				text = "地"
+			intervals [29]:
+				xmin = 7.36
+				xmax = 7.44
+				text = "と"
+			intervals [30]:
+				xmin = 7.44
+				xmax = 8.16
+				text = ""
+			intervals [31]:
+				xmin = 8.16
+				xmax = 8.24
+				text = "して"
+			intervals [32]:
+				xmin = 8.24
+				xmax = 8.48
+				text = "は"
+			intervals [33]:
+				xmin = 8.48
+				xmax = 9.12
+				text = ""
+			intervals [34]:
+				xmin = 9.12
+				xmax = 9.52
+				text = "独自"
+			intervals [35]:
+				xmin = 9.52
+				xmax = 9.68
+				text = ""
+			intervals [36]:
+				xmin = 9.68
+				xmax = 9.84
+				text = "の"
+			intervals [37]:
+				xmin = 9.84
+				xmax = 10.0
+				text = ""
+			intervals [38]:
+				xmin = 10.0
+				xmax = 10.4
+				text = "大陸"
+			intervals [39]:
+				xmin = 10.4
+				xmax = 10.56
+				text = ""
+			intervals [40]:
+				xmin = 10.56
+				xmax = 10.72
+				text = "です"
+			intervals [41]:
+				xmin = 10.72
+				xmax = 12.36
+				text = ""

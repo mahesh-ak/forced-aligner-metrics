@@ -1,0 +1,166 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.84
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.84
+		intervals: size = 38
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.4
+				text = "最新"
+			intervals [3]:
+				xmin = 2.4
+				xmax = 2.56
+				text = "式"
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.64
+				text = ""
+			intervals [5]:
+				xmin = 2.64
+				xmax = 2.72
+				text = "の"
+			intervals [6]:
+				xmin = 2.72
+				xmax = 3.04
+				text = "研究"
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.2
+				text = ""
+			intervals [8]:
+				xmin = 3.2
+				xmax = 3.36
+				text = "用"
+			intervals [9]:
+				xmin = 3.36
+				xmax = 3.76
+				text = "望遠"
+			intervals [10]:
+				xmin = 3.76
+				xmax = 4.0
+				text = "鏡"
+			intervals [11]:
+				xmin = 4.0
+				xmax = 4.08
+				text = "の"
+			intervals [12]:
+				xmin = 4.08
+				xmax = 4.32
+				text = "多く"
+			intervals [13]:
+				xmin = 4.32
+				xmax = 4.8
+				text = ""
+			intervals [14]:
+				xmin = 4.8
+				xmax = 5.2
+				text = "良好"
+			intervals [15]:
+				xmin = 5.2
+				xmax = 5.36
+				text = "な"
+			intervals [16]:
+				xmin = 5.36
+				xmax = 5.76
+				text = "大気"
+			intervals [17]:
+				xmin = 5.76
+				xmax = 6.16
+				text = "条件"
+			intervals [18]:
+				xmin = 6.16
+				xmax = 6.32
+				text = "下"
+			intervals [19]:
+				xmin = 6.32
+				xmax = 6.4
+				text = "で"
+			intervals [20]:
+				xmin = 6.4
+				xmax = 6.56
+				text = ""
+			intervals [21]:
+				xmin = 6.56
+				xmax = 6.96
+				text = "観測"
+			intervals [22]:
+				xmin = 6.96
+				xmax = 7.2
+				text = "できる"
+			intervals [23]:
+				xmin = 7.2
+				xmax = 7.28
+				text = ""
+			intervals [24]:
+				xmin = 7.28
+				xmax = 7.36
+				text = "よう"
+			intervals [25]:
+				xmin = 7.36
+				xmax = 7.52
+				text = "に"
+			intervals [26]:
+				xmin = 7.52
+				xmax = 8.08
+				text = ""
+			intervals [27]:
+				xmin = 8.08
+				xmax = 8.4
+				text = "遠隔"
+			intervals [28]:
+				xmin = 8.4
+				xmax = 8.56
+				text = "地"
+			intervals [29]:
+				xmin = 8.56
+				xmax = 8.72
+				text = "の"
+			intervals [30]:
+				xmin = 8.72
+				xmax = 9.04
+				text = "巨大"
+			intervals [31]:
+				xmin = 9.04
+				xmax = 9.2
+				text = "な"
+			intervals [32]:
+				xmin = 9.2
+				xmax = 9.52
+				text = "施設"
+			intervals [33]:
+				xmin = 9.52
+				xmax = 9.6
+				text = "に"
+			intervals [34]:
+				xmin = 9.6
+				xmax = 10.08
+				text = "設置"
+			intervals [35]:
+				xmin = 10.08
+				xmax = 10.16
+				text = "て"
+			intervals [36]:
+				xmin = 10.16
+				xmax = 10.24
+				text = "い"
+			intervals [37]:
+				xmin = 10.24
+				xmax = 10.48
+				text = "ます"
+			intervals [38]:
+				xmin = 10.48
+				xmax = 12.84
+				text = ""

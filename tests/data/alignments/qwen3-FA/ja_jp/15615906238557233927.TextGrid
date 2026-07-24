@@ -1,0 +1,206 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 15.12
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 15.12
+		intervals: size = 48
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.08
+				text = ""
+			intervals [2]:
+				xmin = 2.08
+				xmax = 2.32
+				text = "この"
+			intervals [3]:
+				xmin = 2.32
+				xmax = 2.56
+				text = "議論"
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.8
+				text = "は"
+			intervals [5]:
+				xmin = 2.8
+				xmax = 3.28
+				text = "ハリケーン"
+			intervals [6]:
+				xmin = 3.28
+				xmax = 3.76
+				text = "カトリーナ"
+			intervals [7]:
+				xmin = 3.76
+				xmax = 3.84
+				text = "の"
+			intervals [8]:
+				xmin = 3.84
+				xmax = 4.16
+				text = "去った"
+			intervals [9]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "後"
+			intervals [10]:
+				xmin = 4.32
+				xmax = 4.48
+				text = "の"
+			intervals [11]:
+				xmin = 4.48
+				xmax = 4.96
+				text = "救済"
+			intervals [12]:
+				xmin = 4.96
+				xmax = 5.12
+				text = "と"
+			intervals [13]:
+				xmin = 5.12
+				xmax = 5.52
+				text = "復興"
+			intervals [14]:
+				xmin = 5.52
+				xmax = 5.6
+				text = "に"
+			intervals [15]:
+				xmin = 5.6
+				xmax = 5.92
+				text = "かかる"
+			intervals [16]:
+				xmin = 5.92
+				xmax = 6.24
+				text = "支出"
+			intervals [17]:
+				xmin = 6.24
+				xmax = 6.32
+				text = "を"
+			intervals [18]:
+				xmin = 6.32
+				xmax = 6.64
+				text = "めぐる"
+			intervals [19]:
+				xmin = 6.64
+				xmax = 7.04
+				text = "論争"
+			intervals [20]:
+				xmin = 7.04
+				xmax = 7.12
+				text = "に"
+			intervals [21]:
+				xmin = 7.12
+				xmax = 7.36
+				text = "端"
+			intervals [22]:
+				xmin = 7.36
+				xmax = 7.44
+				text = "を"
+			intervals [23]:
+				xmin = 7.44
+				xmax = 7.68
+				text = "発し"
+			intervals [24]:
+				xmin = 7.68
+				xmax = 7.84
+				text = "てい"
+			intervals [25]:
+				xmin = 7.84
+				xmax = 8.24
+				text = "ました"
+			intervals [26]:
+				xmin = 8.24
+				xmax = 8.72
+				text = ""
+			intervals [27]:
+				xmin = 8.72
+				xmax = 9.04
+				text = "一部"
+			intervals [28]:
+				xmin = 9.04
+				xmax = 9.12
+				text = "の"
+			intervals [29]:
+				xmin = 9.12
+				xmax = 9.44
+				text = "財政"
+			intervals [30]:
+				xmin = 9.44
+				xmax = 9.68
+				text = "保守"
+			intervals [31]:
+				xmin = 9.68
+				xmax = 9.76
+				text = "派"
+			intervals [32]:
+				xmin = 9.76
+				xmax = 9.92
+				text = "は"
+			intervals [33]:
+				xmin = 9.92
+				xmax = 10.32
+				text = "ユーモア"
+			intervals [34]:
+				xmin = 10.32
+				xmax = 10.56
+				text = "込め"
+			intervals [35]:
+				xmin = 10.56
+				xmax = 10.72
+				text = "て"
+			intervals [36]:
+				xmin = 10.72
+				xmax = 10.96
+				text = "これ"
+			intervals [37]:
+				xmin = 10.96
+				xmax = 11.04
+				text = ""
+			intervals [38]:
+				xmin = 11.04
+				xmax = 11.12
+				text = "を"
+			intervals [39]:
+				xmin = 11.12
+				xmax = 11.36
+				text = "ブッシュ"
+			intervals [40]:
+				xmin = 11.36
+				xmax = 11.52
+				text = "の"
+			intervals [41]:
+				xmin = 11.52
+				xmax = 12.08
+				text = "ニューオリンズ"
+			intervals [42]:
+				xmin = 12.08
+				xmax = 12.4
+				text = "政策"
+			intervals [43]:
+				xmin = 12.4
+				xmax = 12.56
+				text = "と"
+			intervals [44]:
+				xmin = 12.56
+				xmax = 12.72
+				text = "呼ん"
+			intervals [45]:
+				xmin = 12.72
+				xmax = 12.8
+				text = "で"
+			intervals [46]:
+				xmin = 12.8
+				xmax = 12.88
+				text = ""
+			intervals [47]:
+				xmin = 12.88
+				xmax = 13.36
+				text = "ます"
+			intervals [48]:
+				xmin = 13.36
+				xmax = 15.12
+				text = ""

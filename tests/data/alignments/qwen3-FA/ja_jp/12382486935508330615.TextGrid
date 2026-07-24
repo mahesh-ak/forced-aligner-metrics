@@ -1,0 +1,278 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 22.5
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 22.5
+		intervals: size = 66
+			intervals [1]:
+				xmin = 0.0
+				xmax = 6.0
+				text = ""
+			intervals [2]:
+				xmin = 6.0
+				xmax = 6.48
+				text = "文明"
+			intervals [3]:
+				xmin = 6.48
+				xmax = 6.56
+				text = ""
+			intervals [4]:
+				xmin = 6.56
+				xmax = 6.64
+				text = "と"
+			intervals [5]:
+				xmin = 6.64
+				xmax = 6.8
+				text = "いう"
+			intervals [6]:
+				xmin = 6.8
+				xmax = 7.2
+				text = "言葉"
+			intervals [7]:
+				xmin = 7.2
+				xmax = 7.44
+				text = "は"
+			intervals [8]:
+				xmin = 7.44
+				xmax = 7.92
+				text = "市民"
+			intervals [9]:
+				xmin = 7.92
+				xmax = 8.0
+				text = "を"
+			intervals [10]:
+				xmin = 8.0
+				xmax = 8.16
+				text = "意味"
+			intervals [11]:
+				xmin = 8.16
+				xmax = 8.4
+				text = "する"
+			intervals [12]:
+				xmin = 8.4
+				xmax = 8.88
+				text = "ラテン"
+			intervals [13]:
+				xmin = 8.88
+				xmax = 9.04
+				text = "語"
+			intervals [14]:
+				xmin = 9.04
+				xmax = 9.12
+				text = "の"
+			intervals [15]:
+				xmin = 9.12
+				xmax = 9.68
+				text = "形容"
+			intervals [16]:
+				xmin = 9.68
+				xmax = 10.0
+				text = "詞"
+			intervals [17]:
+				xmin = 10.0
+				xmax = 10.16
+				text = ""
+			intervals [18]:
+				xmin = 10.16
+				xmax = 10.72
+				text = "civilis"
+			intervals [19]:
+				xmin = 10.72
+				xmax = 10.96
+				text = "から"
+			intervals [20]:
+				xmin = 10.96
+				xmax = 11.04
+				text = "来"
+			intervals [21]:
+				xmin = 11.04
+				xmax = 11.2
+				text = "て"
+			intervals [22]:
+				xmin = 11.2
+				xmax = 11.52
+				text = "おり"
+			intervals [23]:
+				xmin = 11.52
+				xmax = 11.92
+				text = ""
+			intervals [24]:
+				xmin = 11.92
+				xmax = 12.4
+				text = "市民"
+			intervals [25]:
+				xmin = 12.4
+				xmax = 12.48
+				text = ""
+			intervals [26]:
+				xmin = 12.48
+				xmax = 12.56
+				text = "を"
+			intervals [27]:
+				xmin = 12.56
+				xmax = 12.72
+				text = "意味"
+			intervals [28]:
+				xmin = 12.72
+				xmax = 12.96
+				text = "する"
+			intervals [29]:
+				xmin = 12.96
+				xmax = 13.28
+				text = "ラテン"
+			intervals [30]:
+				xmin = 13.28
+				xmax = 13.44
+				text = "語"
+			intervals [31]:
+				xmin = 13.44
+				xmax = 13.6
+				text = "の"
+			intervals [32]:
+				xmin = 13.6
+				xmax = 14.08
+				text = "名詞"
+			intervals [33]:
+				xmin = 14.08
+				xmax = 14.72
+				text = "civis"
+			intervals [34]:
+				xmin = 14.72
+				xmax = 15.2
+				text = ""
+			intervals [35]:
+				xmin = 15.2
+				xmax = 15.52
+				text = "都市"
+			intervals [36]:
+				xmin = 15.52
+				xmax = 15.68
+				text = "や"
+			intervals [37]:
+				xmin = 15.68
+				xmax = 15.76
+				text = ""
+			intervals [38]:
+				xmin = 15.76
+				xmax = 16.0
+				text = "都市"
+			intervals [39]:
+				xmin = 16.0
+				xmax = 16.4
+				text = "国家"
+			intervals [40]:
+				xmin = 16.4
+				xmax = 16.48
+				text = "を"
+			intervals [41]:
+				xmin = 16.48
+				xmax = 16.64
+				text = "意味"
+			intervals [42]:
+				xmin = 16.64
+				xmax = 16.88
+				text = "し"
+			intervals [43]:
+				xmin = 16.88
+				xmax = 17.12
+				text = "何"
+			intervals [44]:
+				xmin = 17.12
+				xmax = 17.28
+				text = "ら"
+			intervals [45]:
+				xmin = 17.28
+				xmax = 17.36
+				text = "か"
+			intervals [46]:
+				xmin = 17.36
+				xmax = 17.52
+				text = "の"
+			intervals [47]:
+				xmin = 17.52
+				xmax = 17.84
+				text = "形"
+			intervals [48]:
+				xmin = 17.84
+				xmax = 18.08
+				text = "で"
+			intervals [49]:
+				xmin = 18.08
+				xmax = 18.48
+				text = "社会"
+			intervals [50]:
+				xmin = 18.48
+				xmax = 18.64
+				text = "の"
+			intervals [51]:
+				xmin = 18.64
+				xmax = 18.88
+				text = "規模"
+			intervals [52]:
+				xmin = 18.88
+				xmax = 18.96
+				text = "を"
+			intervals [53]:
+				xmin = 18.96
+				xmax = 19.36
+				text = "定義"
+			intervals [54]:
+				xmin = 19.36
+				xmax = 19.68
+				text = "する"
+			intervals [55]:
+				xmin = 19.68
+				xmax = 19.76
+				text = ""
+			intervals [56]:
+				xmin = 19.76
+				xmax = 20.48
+				text = "civitas"
+			intervals [57]:
+				xmin = 20.48
+				xmax = 20.56
+				text = "と"
+			intervals [58]:
+				xmin = 20.56
+				xmax = 20.72
+				text = "いう"
+			intervals [59]:
+				xmin = 20.72
+				xmax = 21.04
+				text = "名詞"
+			intervals [60]:
+				xmin = 21.04
+				xmax = 21.2
+				text = "に"
+			intervals [61]:
+				xmin = 21.2
+				xmax = 21.68
+				text = "関係"
+			intervals [62]:
+				xmin = 21.68
+				xmax = 21.76
+				text = "し"
+			intervals [63]:
+				xmin = 21.76
+				xmax = 21.92
+				text = "て"
+			intervals [64]:
+				xmin = 21.92
+				xmax = 22.0
+				text = "い"
+			intervals [65]:
+				xmin = 22.0
+				xmax = 22.4
+				text = "ます"
+			intervals [66]:
+				xmin = 22.4
+				xmax = 22.5
+				text = ""

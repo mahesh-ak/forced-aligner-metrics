@@ -1,0 +1,150 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 11.88
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 11.88
+		intervals: size = 34
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.24
+				text = "ヤギ"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.32
+				text = "の"
+			intervals [4]:
+				xmin = 2.32
+				xmax = 2.8
+				text = "家畜"
+			intervals [5]:
+				xmin = 2.8
+				xmax = 3.12
+				text = "化"
+			intervals [6]:
+				xmin = 3.12
+				xmax = 3.28
+				text = "は"
+			intervals [7]:
+				xmin = 3.28
+				xmax = 3.52
+				text = "約"
+			intervals [8]:
+				xmin = 3.52
+				xmax = 3.68
+				text = "一"
+			intervals [9]:
+				xmin = 3.68
+				xmax = 3.84
+				text = ""
+			intervals [10]:
+				xmin = 3.84
+				xmax = 4.24
+				text = "万"
+			intervals [11]:
+				xmin = 4.24
+				xmax = 4.32
+				text = "年"
+			intervals [12]:
+				xmin = 4.32
+				xmax = 4.48
+				text = "前"
+			intervals [13]:
+				xmin = 4.48
+				xmax = 4.56
+				text = "に"
+			intervals [14]:
+				xmin = 4.56
+				xmax = 5.04
+				text = "始まり"
+			intervals [15]:
+				xmin = 5.04
+				xmax = 5.28
+				text = ""
+			intervals [16]:
+				xmin = 5.28
+				xmax = 5.52
+				text = "その"
+			intervals [17]:
+				xmin = 5.52
+				xmax = 6.08
+				text = "中心"
+			intervals [18]:
+				xmin = 6.08
+				xmax = 6.56
+				text = "は"
+			intervals [19]:
+				xmin = 6.56
+				xmax = 6.64
+				text = ""
+			intervals [20]:
+				xmin = 6.64
+				xmax = 6.88
+				text = "イラン"
+			intervals [21]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "の"
+			intervals [22]:
+				xmin = 7.04
+				xmax = 7.12
+				text = ""
+			intervals [23]:
+				xmin = 7.12
+				xmax = 7.52
+				text = "ザグロス"
+			intervals [24]:
+				xmin = 7.52
+				xmax = 7.92
+				text = "山脈"
+			intervals [25]:
+				xmin = 7.92
+				xmax = 8.32
+				text = "西部"
+			intervals [26]:
+				xmin = 8.32
+				xmax = 8.4
+				text = "で"
+			intervals [27]:
+				xmin = 8.4
+				xmax = 8.64
+				text = "あった"
+			intervals [28]:
+				xmin = 8.64
+				xmax = 8.8
+				text = "と"
+			intervals [29]:
+				xmin = 8.8
+				xmax = 8.96
+				text = "され"
+			intervals [30]:
+				xmin = 8.96
+				xmax = 9.04
+				text = ""
+			intervals [31]:
+				xmin = 9.04
+				xmax = 9.12
+				text = "て"
+			intervals [32]:
+				xmin = 9.12
+				xmax = 9.2
+				text = "い"
+			intervals [33]:
+				xmin = 9.2
+				xmax = 9.52
+				text = "ます"
+			intervals [34]:
+				xmin = 9.52
+				xmax = 11.88
+				text = ""

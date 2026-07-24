@@ -1,0 +1,118 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.6
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.6
+		intervals: size = 26
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.24
+				text = "警察"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.32
+				text = ""
+			intervals [4]:
+				xmin = 2.32
+				xmax = 2.48
+				text = "の"
+			intervals [5]:
+				xmin = 2.48
+				xmax = 2.96
+				text = "チャンドラ"
+			intervals [6]:
+				xmin = 2.96
+				xmax = 3.04
+				text = "シェ"
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.36
+				text = "カール"
+			intervals [8]:
+				xmin = 3.36
+				xmax = 3.76
+				text = "ソランキ"
+			intervals [9]:
+				xmin = 3.76
+				xmax = 4.24
+				text = "総監"
+			intervals [10]:
+				xmin = 4.24
+				xmax = 4.32
+				text = "に"
+			intervals [11]:
+				xmin = 4.32
+				xmax = 4.48
+				text = "よれ"
+			intervals [12]:
+				xmin = 4.48
+				xmax = 4.72
+				text = "ば"
+			intervals [13]:
+				xmin = 4.72
+				xmax = 5.04
+				text = "被告"
+			intervals [14]:
+				xmin = 5.04
+				xmax = 5.2
+				text = "人"
+			intervals [15]:
+				xmin = 5.2
+				xmax = 5.28
+				text = "は"
+			intervals [16]:
+				xmin = 5.28
+				xmax = 5.52
+				text = "顔"
+			intervals [17]:
+				xmin = 5.52
+				xmax = 5.6
+				text = "を"
+			intervals [18]:
+				xmin = 5.6
+				xmax = 6.0
+				text = "隠し"
+			intervals [19]:
+				xmin = 6.0
+				xmax = 6.08
+				text = "て"
+			intervals [20]:
+				xmin = 6.08
+				xmax = 6.48
+				text = "法廷"
+			intervals [21]:
+				xmin = 6.48
+				xmax = 6.56
+				text = "に"
+			intervals [22]:
+				xmin = 6.56
+				xmax = 6.88
+				text = "出頭"
+			intervals [23]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "した"
+			intervals [24]:
+				xmin = 7.04
+				xmax = 7.2
+				text = "そう"
+			intervals [25]:
+				xmin = 7.2
+				xmax = 7.76
+				text = "です"
+			intervals [26]:
+				xmin = 7.76
+				xmax = 9.6
+				text = ""

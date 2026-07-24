@@ -1,0 +1,130 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 11.22
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 11.22
+		intervals: size = 29
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.84
+				text = ""
+			intervals [2]:
+				xmin = 1.84
+				xmax = 2.32
+				text = "先週"
+			intervals [3]:
+				xmin = 2.32
+				xmax = 2.72
+				text = "経済"
+			intervals [4]:
+				xmin = 2.72
+				xmax = 3.12
+				text = "産業"
+			intervals [5]:
+				xmin = 3.12
+				xmax = 3.36
+				text = "省"
+			intervals [6]:
+				xmin = 3.36
+				xmax = 3.68
+				text = "は"
+			intervals [7]:
+				xmin = 3.68
+				xmax = 4.0
+				text = "apple"
+			intervals [8]:
+				xmin = 4.0
+				xmax = 4.08
+				text = "が"
+			intervals [9]:
+				xmin = 4.08
+				xmax = 4.56
+				text = "深刻"
+			intervals [10]:
+				xmin = 4.56
+				xmax = 4.64
+				text = "で"
+			intervals [11]:
+				xmin = 4.64
+				xmax = 4.72
+				text = "は"
+			intervals [12]:
+				xmin = 4.72
+				xmax = 4.96
+				text = "ない"
+			intervals [13]:
+				xmin = 4.96
+				xmax = 5.04
+				text = "と"
+			intervals [14]:
+				xmin = 5.04
+				xmax = 5.28
+				text = "する"
+			intervals [15]:
+				xmin = 5.28
+				xmax = 5.6
+				text = "過熱"
+			intervals [16]:
+				xmin = 5.6
+				xmax = 5.84
+				text = "事故"
+			intervals [17]:
+				xmin = 5.84
+				xmax = 5.92
+				text = "を"
+			intervals [18]:
+				xmin = 5.92
+				xmax = 6.24
+				text = "追加"
+			intervals [19]:
+				xmin = 6.24
+				xmax = 6.32
+				text = "で"
+			intervals [20]:
+				xmin = 6.32
+				xmax = 6.72
+				text = "三十"
+			intervals [21]:
+				xmin = 6.72
+				xmax = 6.96
+				text = "四"
+			intervals [22]:
+				xmin = 6.96
+				xmax = 7.2
+				text = "件"
+			intervals [23]:
+				xmin = 7.2
+				xmax = 7.6
+				text = "報告"
+			intervals [24]:
+				xmin = 7.6
+				xmax = 7.68
+				text = "した"
+			intervals [25]:
+				xmin = 7.68
+				xmax = 7.84
+				text = "と"
+			intervals [26]:
+				xmin = 7.84
+				xmax = 8.16
+				text = "発表"
+			intervals [27]:
+				xmin = 8.16
+				xmax = 8.24
+				text = "し"
+			intervals [28]:
+				xmin = 8.24
+				xmax = 8.64
+				text = "ました"
+			intervals [29]:
+				xmin = 8.64
+				xmax = 11.22
+				text = ""

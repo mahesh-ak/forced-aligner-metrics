@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61", "setuptools-scm>=8", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "forced-aligner-metrics"
+dynamic = ["version"]
+authors = [{name = "Mahesh Akavarapu", email = "mahesh.akavarapu@gmail.com"},]
+description = "Reference-free forced alignment evaluation metrics"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+dependencies = [
+  "transformers>=4.22.0",
+  "scikit-learn>=1.1.0",
+  "scipy>=1.7.2",
+  "fastdtw>=0.3.4",
+]
+
+[project.optional-dependencies]
+test = [
+  "torch",
+  "pytest>=7",
+  "datasets<=3.6.0",
+  "praat-parselmouth>=0.4.7",
+  "librosa>=0.11.0",
+  "soundfile>=0.13.1",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools_scm]
+# Version is derived from the latest git tag (e.g. tag v0.2.0 -> version 0.2.0).
+# fallback_version is used only when no git metadata is available (e.g. building
+# from a source snapshot that isn't a git checkout).
+fallback_version = "0.0.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+  "integration: end-to-end tests that load models and datasets",
+  "slow: tests that are slow to run",
+]

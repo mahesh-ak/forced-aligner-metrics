@@ -1,0 +1,114 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.54
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.54
+		intervals: size = 25
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.0
+				text = ""
+			intervals [2]:
+				xmin = 2.0
+				xmax = 2.32
+				text = "ラッカ"
+			intervals [3]:
+				xmin = 2.32
+				xmax = 2.56
+				text = "シン"
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.72
+				text = "が"
+			intervals [5]:
+				xmin = 2.72
+				xmax = 2.8
+				text = ""
+			intervals [6]:
+				xmin = 2.8
+				xmax = 3.04
+				text = "チャッ"
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.28
+				text = "パン"
+			intervals [8]:
+				xmin = 3.28
+				xmax = 3.52
+				text = "ボグ"
+			intervals [9]:
+				xmin = 3.52
+				xmax = 3.84
+				text = "バジャン"
+			intervals [10]:
+				xmin = 3.84
+				xmax = 3.92
+				text = "を"
+			intervals [11]:
+				xmin = 3.92
+				xmax = 4.24
+				text = "披露"
+			intervals [12]:
+				xmin = 4.24
+				xmax = 4.32
+				text = "し"
+			intervals [13]:
+				xmin = 4.32
+				xmax = 4.64
+				text = ""
+			intervals [14]:
+				xmin = 4.64
+				xmax = 4.96
+				text = "歌手"
+			intervals [15]:
+				xmin = 4.96
+				xmax = 5.04
+				text = "の"
+			intervals [16]:
+				xmin = 5.04
+				xmax = 5.2
+				text = ""
+			intervals [17]:
+				xmin = 5.2
+				xmax = 5.44
+				text = "ラジュ"
+			intervals [18]:
+				xmin = 5.44
+				xmax = 5.6
+				text = ""
+			intervals [19]:
+				xmin = 5.6
+				xmax = 6.24
+				text = "カンデルワル"
+			intervals [20]:
+				xmin = 6.24
+				xmax = 6.4
+				text = "が"
+			intervals [21]:
+				xmin = 6.4
+				xmax = 6.48
+				text = ""
+			intervals [22]:
+				xmin = 6.48
+				xmax = 6.8
+				text = "共演"
+			intervals [23]:
+				xmin = 6.8
+				xmax = 6.96
+				text = "し"
+			intervals [24]:
+				xmin = 6.96
+				xmax = 7.28
+				text = "ました"
+			intervals [25]:
+				xmin = 7.28
+				xmax = 9.54
+				text = ""

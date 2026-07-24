@@ -1,0 +1,150 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 10.62
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 10.62
+		intervals: size = 34
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.76
+				text = ""
+			intervals [2]:
+				xmin = 1.76
+				xmax = 2.16
+				text = "田舎道"
+			intervals [3]:
+				xmin = 2.16
+				xmax = 2.32
+				text = ""
+			intervals [4]:
+				xmin = 2.32
+				xmax = 2.56
+				text = "の"
+			intervals [5]:
+				xmin = 2.56
+				xmax = 2.72
+				text = "運転"
+			intervals [6]:
+				xmin = 2.72
+				xmax = 2.88
+				text = "に"
+			intervals [7]:
+				xmin = 2.88
+				xmax = 3.12
+				text = "慣れ"
+			intervals [8]:
+				xmin = 3.12
+				xmax = 3.2
+				text = "て"
+			intervals [9]:
+				xmin = 3.2
+				xmax = 3.28
+				text = "い"
+			intervals [10]:
+				xmin = 3.28
+				xmax = 3.52
+				text = "ない"
+			intervals [11]:
+				xmin = 3.52
+				xmax = 3.76
+				text = "方"
+			intervals [12]:
+				xmin = 3.76
+				xmax = 4.16
+				text = "は"
+			intervals [13]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "急"
+			intervals [14]:
+				xmin = 4.32
+				xmax = 4.8
+				text = "勾配"
+			intervals [15]:
+				xmin = 4.8
+				xmax = 4.96
+				text = ""
+			intervals [16]:
+				xmin = 4.96
+				xmax = 5.36
+				text = "狭い"
+			intervals [17]:
+				xmin = 5.36
+				xmax = 5.76
+				text = "車線"
+			intervals [18]:
+				xmin = 5.76
+				xmax = 6.0
+				text = ""
+			intervals [19]:
+				xmin = 6.0
+				xmax = 6.16
+				text = "急"
+			intervals [20]:
+				xmin = 6.16
+				xmax = 6.48
+				text = "カーブ"
+			intervals [21]:
+				xmin = 6.48
+				xmax = 6.56
+				text = ""
+			intervals [22]:
+				xmin = 6.56
+				xmax = 6.64
+				text = "に"
+			intervals [23]:
+				xmin = 6.64
+				xmax = 6.88
+				text = "注意"
+			intervals [24]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "し"
+			intervals [25]:
+				xmin = 7.04
+				xmax = 7.28
+				text = ""
+			intervals [26]:
+				xmin = 7.28
+				xmax = 7.36
+				text = "気"
+			intervals [27]:
+				xmin = 7.36
+				xmax = 7.52
+				text = "を"
+			intervals [28]:
+				xmin = 7.52
+				xmax = 7.6
+				text = "抜"
+			intervals [29]:
+				xmin = 7.6
+				xmax = 7.68
+				text = "か"
+			intervals [30]:
+				xmin = 7.68
+				xmax = 7.76
+				text = ""
+			intervals [31]:
+				xmin = 7.76
+				xmax = 7.84
+				text = "ない"
+			intervals [32]:
+				xmin = 7.84
+				xmax = 8.0
+				text = "で"
+			intervals [33]:
+				xmin = 8.0
+				xmax = 8.4
+				text = "ください"
+			intervals [34]:
+				xmin = 8.4
+				xmax = 10.62
+				text = ""

@@ -1,0 +1,106 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.48
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.48
+		intervals: size = 23
+			intervals [1]:
+				xmin = 0.0
+				xmax = 3.2
+				text = ""
+			intervals [2]:
+				xmin = 3.2
+				xmax = 3.6
+				text = "受け入れ"
+			intervals [3]:
+				xmin = 3.6
+				xmax = 3.76
+				text = "られ"
+			intervals [4]:
+				xmin = 3.76
+				xmax = 3.92
+				text = "た"
+			intervals [5]:
+				xmin = 3.92
+				xmax = 4.0
+				text = "の"
+			intervals [6]:
+				xmin = 4.0
+				xmax = 4.24
+				text = "は"
+			intervals [7]:
+				xmin = 4.24
+				xmax = 4.56
+				text = "心理"
+			intervals [8]:
+				xmin = 4.56
+				xmax = 4.8
+				text = "学"
+			intervals [9]:
+				xmin = 4.8
+				xmax = 4.88
+				text = "を"
+			intervals [10]:
+				xmin = 4.88
+				xmax = 5.28
+				text = "含む"
+			intervals [11]:
+				xmin = 5.28
+				xmax = 5.68
+				text = "科学"
+			intervals [12]:
+				xmin = 5.68
+				xmax = 5.84
+				text = "の"
+			intervals [13]:
+				xmin = 5.84
+				xmax = 6.16
+				text = "あらゆる"
+			intervals [14]:
+				xmin = 6.16
+				xmax = 6.48
+				text = "事項"
+			intervals [15]:
+				xmin = 6.48
+				xmax = 6.64
+				text = "に"
+			intervals [16]:
+				xmin = 6.64
+				xmax = 7.12
+				text = "関する"
+			intervals [17]:
+				xmin = 7.12
+				xmax = 7.52
+				text = "アリスト"
+			intervals [18]:
+				xmin = 7.52
+				xmax = 7.84
+				text = "テレス"
+			intervals [19]:
+				xmin = 7.84
+				xmax = 7.92
+				text = "の"
+			intervals [20]:
+				xmin = 7.92
+				xmax = 8.32
+				text = "見解"
+			intervals [21]:
+				xmin = 8.32
+				xmax = 8.48
+				text = "でし"
+			intervals [22]:
+				xmin = 8.48
+				xmax = 8.72
+				text = "た"
+			intervals [23]:
+				xmin = 8.72
+				xmax = 12.48
+				text = ""

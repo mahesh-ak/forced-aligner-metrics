@@ -1,0 +1,186 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 14.4
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 14.4
+		intervals: size = 43
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.12
+				text = ""
+			intervals [2]:
+				xmin = 1.12
+				xmax = 1.52
+				text = "カジノ"
+			intervals [3]:
+				xmin = 1.52
+				xmax = 1.68
+				text = "で"
+			intervals [4]:
+				xmin = 1.68
+				xmax = 1.84
+				text = "は"
+			intervals [5]:
+				xmin = 1.84
+				xmax = 2.32
+				text = ""
+			intervals [6]:
+				xmin = 2.32
+				xmax = 2.8
+				text = "通常"
+			intervals [7]:
+				xmin = 2.8
+				xmax = 2.88
+				text = ""
+			intervals [8]:
+				xmin = 2.88
+				xmax = 3.28
+				text = "特別"
+			intervals [9]:
+				xmin = 3.28
+				xmax = 3.36
+				text = ""
+			intervals [10]:
+				xmin = 3.36
+				xmax = 3.52
+				text = "な"
+			intervals [11]:
+				xmin = 3.52
+				xmax = 4.32
+				text = ""
+			intervals [12]:
+				xmin = 4.32
+				xmax = 4.8
+				text = "飲食"
+			intervals [13]:
+				xmin = 4.8
+				xmax = 4.88
+				text = ""
+			intervals [14]:
+				xmin = 4.88
+				xmax = 4.96
+				text = "や"
+			intervals [15]:
+				xmin = 4.96
+				xmax = 6.0
+				text = ""
+			intervals [16]:
+				xmin = 6.0
+				xmax = 6.56
+				text = "エンターテイメント"
+			intervals [17]:
+				xmin = 6.56
+				xmax = 6.64
+				text = "を"
+			intervals [18]:
+				xmin = 6.64
+				xmax = 6.96
+				text = "用意"
+			intervals [19]:
+				xmin = 6.96
+				xmax = 7.12
+				text = "し"
+			intervals [20]:
+				xmin = 7.12
+				xmax = 7.2
+				text = "て"
+			intervals [21]:
+				xmin = 7.2
+				xmax = 7.28
+				text = "い"
+			intervals [22]:
+				xmin = 7.28
+				xmax = 7.52
+				text = "ます"
+			intervals [23]:
+				xmin = 7.52
+				xmax = 8.56
+				text = ""
+			intervals [24]:
+				xmin = 8.56
+				xmax = 8.88
+				text = "ゲスト"
+			intervals [25]:
+				xmin = 8.88
+				xmax = 9.04
+				text = "が"
+			intervals [26]:
+				xmin = 9.04
+				xmax = 9.12
+				text = ""
+			intervals [27]:
+				xmin = 9.12
+				xmax = 9.44
+				text = "気分"
+			intervals [28]:
+				xmin = 9.44
+				xmax = 9.76
+				text = "良く"
+			intervals [29]:
+				xmin = 9.76
+				xmax = 10.8
+				text = ""
+			intervals [30]:
+				xmin = 10.8
+				xmax = 11.04
+				text = "施設"
+			intervals [31]:
+				xmin = 11.04
+				xmax = 11.12
+				text = ""
+			intervals [32]:
+				xmin = 11.12
+				xmax = 11.36
+				text = "内"
+			intervals [33]:
+				xmin = 11.36
+				xmax = 11.44
+				text = "に"
+			intervals [34]:
+				xmin = 11.44
+				xmax = 12.0
+				text = "留まる"
+			intervals [35]:
+				xmin = 12.0
+				xmax = 12.16
+				text = "よう"
+			intervals [36]:
+				xmin = 12.16
+				xmax = 12.32
+				text = ""
+			intervals [37]:
+				xmin = 12.32
+				xmax = 12.48
+				text = "に"
+			intervals [38]:
+				xmin = 12.48
+				xmax = 12.64
+				text = ""
+			intervals [39]:
+				xmin = 12.64
+				xmax = 12.8
+				text = "する"
+			intervals [40]:
+				xmin = 12.8
+				xmax = 13.04
+				text = "ため"
+			intervals [41]:
+				xmin = 13.04
+				xmax = 13.12
+				text = ""
+			intervals [42]:
+				xmin = 13.12
+				xmax = 13.52
+				text = "です"
+			intervals [43]:
+				xmin = 13.52
+				xmax = 14.4
+				text = ""

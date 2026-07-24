@@ -1,0 +1,170 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.74
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 13.74
+		intervals: size = 39
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.24
+				text = ""
+			intervals [2]:
+				xmin = 2.24
+				xmax = 2.56
+				text = "同じ"
+			intervals [3]:
+				xmin = 2.56
+				xmax = 2.72
+				text = "よう"
+			intervals [4]:
+				xmin = 2.72
+				xmax = 2.88
+				text = "に"
+			intervals [5]:
+				xmin = 2.88
+				xmax = 3.36
+				text = "シェンゲン"
+			intervals [6]:
+				xmin = 3.36
+				xmax = 3.52
+				text = "ビザ"
+			intervals [7]:
+				xmin = 3.52
+				xmax = 3.68
+				text = "さえ"
+			intervals [8]:
+				xmin = 3.68
+				xmax = 4.0
+				text = "取得"
+			intervals [9]:
+				xmin = 4.0
+				xmax = 4.16
+				text = "すれ"
+			intervals [10]:
+				xmin = 4.16
+				xmax = 4.4
+				text = "ば"
+			intervals [11]:
+				xmin = 4.4
+				xmax = 4.48
+				text = ""
+			intervals [12]:
+				xmin = 4.48
+				xmax = 4.96
+				text = "シェンゲン"
+			intervals [13]:
+				xmin = 4.96
+				xmax = 5.28
+				text = "加盟"
+			intervals [14]:
+				xmin = 5.28
+				xmax = 5.6
+				text = "国"
+			intervals [15]:
+				xmin = 5.6
+				xmax = 5.76
+				text = "ビザ"
+			intervals [16]:
+				xmin = 5.76
+				xmax = 5.84
+				text = ""
+			intervals [17]:
+				xmin = 5.84
+				xmax = 5.92
+				text = "を"
+			intervals [18]:
+				xmin = 5.92
+				xmax = 6.24
+				text = "個別"
+			intervals [19]:
+				xmin = 6.24
+				xmax = 6.32
+				text = "に"
+			intervals [20]:
+				xmin = 6.32
+				xmax = 6.72
+				text = "申請"
+			intervals [21]:
+				xmin = 6.72
+				xmax = 6.96
+				text = "する"
+			intervals [22]:
+				xmin = 6.96
+				xmax = 7.28
+				text = "必要"
+			intervals [23]:
+				xmin = 7.28
+				xmax = 7.36
+				text = "が"
+			intervals [24]:
+				xmin = 7.36
+				xmax = 7.84
+				text = "なくなり"
+			intervals [25]:
+				xmin = 7.84
+				xmax = 8.0
+				text = ""
+			intervals [26]:
+				xmin = 8.0
+				xmax = 8.4
+				text = "時間"
+			intervals [27]:
+				xmin = 8.4
+				xmax = 8.64
+				text = ""
+			intervals [28]:
+				xmin = 8.64
+				xmax = 9.04
+				text = "費用"
+			intervals [29]:
+				xmin = 9.04
+				xmax = 9.12
+				text = ""
+			intervals [30]:
+				xmin = 9.12
+				xmax = 9.44
+				text = "事務"
+			intervals [31]:
+				xmin = 9.44
+				xmax = 9.6
+				text = "処理"
+			intervals [32]:
+				xmin = 9.6
+				xmax = 9.76
+				text = "の"
+			intervals [33]:
+				xmin = 9.76
+				xmax = 9.92
+				text = "手間"
+			intervals [34]:
+				xmin = 9.92
+				xmax = 10.0
+				text = "が"
+			intervals [35]:
+				xmin = 10.0
+				xmax = 10.4
+				text = "相当"
+			intervals [36]:
+				xmin = 10.4
+				xmax = 10.48
+				text = "に"
+			intervals [37]:
+				xmin = 10.48
+				xmax = 10.88
+				text = "省け"
+			intervals [38]:
+				xmin = 10.88
+				xmax = 11.28
+				text = "ます"
+			intervals [39]:
+				xmin = 11.28
+				xmax = 13.74
+				text = ""

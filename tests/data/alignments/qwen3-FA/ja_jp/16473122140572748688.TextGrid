@@ -1,0 +1,262 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 22.5
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 22.5
+		intervals: size = 62
+			intervals [1]:
+				xmin = 0.0
+				xmax = 3.04
+				text = ""
+			intervals [2]:
+				xmin = 3.04
+				xmax = 3.28
+				text = "バス"
+			intervals [3]:
+				xmin = 3.28
+				xmax = 3.52
+				text = "は"
+			intervals [4]:
+				xmin = 3.52
+				xmax = 3.76
+				text = "一"
+			intervals [5]:
+				xmin = 3.76
+				xmax = 4.08
+				text = "日"
+			intervals [6]:
+				xmin = 4.08
+				xmax = 4.32
+				text = "中"
+			intervals [7]:
+				xmin = 4.32
+				xmax = 4.4
+				text = ""
+			intervals [8]:
+				xmin = 4.4
+				xmax = 4.64
+				text = "地区"
+			intervals [9]:
+				xmin = 4.64
+				xmax = 5.04
+				text = "間"
+			intervals [10]:
+				xmin = 5.04
+				xmax = 5.36
+				text = "バス"
+			intervals [11]:
+				xmin = 5.36
+				xmax = 5.92
+				text = "ステーション"
+			intervals [12]:
+				xmin = 5.92
+				xmax = 6.24
+				text = ""
+			intervals [13]:
+				xmin = 6.24
+				xmax = 6.48
+				text = "川"
+			intervals [14]:
+				xmin = 6.48
+				xmax = 6.56
+				text = "を"
+			intervals [15]:
+				xmin = 6.56
+				xmax = 6.88
+				text = "渡っ"
+			intervals [16]:
+				xmin = 6.88
+				xmax = 7.28
+				text = "て"
+			intervals [17]:
+				xmin = 7.28
+				xmax = 7.44
+				text = ""
+			intervals [18]:
+				xmin = 7.44
+				xmax = 7.52
+				text = "を"
+			intervals [19]:
+				xmin = 7.52
+				xmax = 7.6
+				text = ""
+			intervals [20]:
+				xmin = 7.6
+				xmax = 8.0
+				text = "出発"
+			intervals [21]:
+				xmin = 8.0
+				xmax = 8.16
+				text = "し"
+			intervals [22]:
+				xmin = 8.16
+				xmax = 8.48
+				text = "ます"
+			intervals [23]:
+				xmin = 8.48
+				xmax = 8.64
+				text = "が"
+			intervals [24]:
+				xmin = 8.64
+				xmax = 9.36
+				text = ""
+			intervals [25]:
+				xmin = 9.36
+				xmax = 9.84
+				text = "ほとんど"
+			intervals [26]:
+				xmin = 9.84
+				xmax = 10.0
+				text = "の"
+			intervals [27]:
+				xmin = 10.0
+				xmax = 10.48
+				text = "バス"
+			intervals [28]:
+				xmin = 10.48
+				xmax = 10.56
+				text = ""
+			intervals [29]:
+				xmin = 10.56
+				xmax = 10.96
+				text = "特に"
+			intervals [30]:
+				xmin = 10.96
+				xmax = 11.28
+				text = "東"
+			intervals [31]:
+				xmin = 11.28
+				xmax = 11.44
+				text = "に"
+			intervals [32]:
+				xmin = 11.44
+				xmax = 11.84
+				text = "向かう"
+			intervals [33]:
+				xmin = 11.84
+				xmax = 12.08
+				text = "バス"
+			intervals [34]:
+				xmin = 12.08
+				xmax = 12.32
+				text = "と"
+			intervals [35]:
+				xmin = 12.32
+				xmax = 12.48
+				text = ""
+			intervals [36]:
+				xmin = 12.48
+				xmax = 13.12
+				text = "ジャカール"
+			intervals [37]:
+				xmin = 13.12
+				xmax = 13.28
+				text = ""
+			intervals [38]:
+				xmin = 13.28
+				xmax = 13.92
+				text = "ブムタン"
+			intervals [39]:
+				xmin = 13.92
+				xmax = 14.56
+				text = ""
+			intervals [40]:
+				xmin = 14.56
+				xmax = 14.64
+				text = "に"
+			intervals [41]:
+				xmin = 14.64
+				xmax = 15.04
+				text = "向かう"
+			intervals [42]:
+				xmin = 15.04
+				xmax = 15.36
+				text = "もの"
+			intervals [43]:
+				xmin = 15.36
+				xmax = 15.6
+				text = "は"
+			intervals [44]:
+				xmin = 15.6
+				xmax = 15.76
+				text = ""
+			intervals [45]:
+				xmin = 15.76
+				xmax = 16.16
+				text = "午前"
+			intervals [46]:
+				xmin = 16.16
+				xmax = 16.32
+				text = "六"
+			intervals [47]:
+				xmin = 16.32
+				xmax = 16.48
+				text = "時"
+			intervals [48]:
+				xmin = 16.48
+				xmax = 16.8
+				text = "三十"
+			intervals [49]:
+				xmin = 16.8
+				xmax = 17.12
+				text = "から"
+			intervals [50]:
+				xmin = 17.12
+				xmax = 17.52
+				text = ""
+			intervals [51]:
+				xmin = 17.52
+				xmax = 17.76
+				text = "午前"
+			intervals [52]:
+				xmin = 17.76
+				xmax = 17.84
+				text = ""
+			intervals [53]:
+				xmin = 17.84
+				xmax = 18.0
+				text = "七"
+			intervals [54]:
+				xmin = 18.0
+				xmax = 18.08
+				text = "時"
+			intervals [55]:
+				xmin = 18.08
+				xmax = 18.4
+				text = "三十"
+			intervals [56]:
+				xmin = 18.4
+				xmax = 18.56
+				text = "の"
+			intervals [57]:
+				xmin = 18.56
+				xmax = 18.8
+				text = "間"
+			intervals [58]:
+				xmin = 18.8
+				xmax = 18.96
+				text = "に"
+			intervals [59]:
+				xmin = 18.96
+				xmax = 19.44
+				text = "出発"
+			intervals [60]:
+				xmin = 19.44
+				xmax = 19.6
+				text = "し"
+			intervals [61]:
+				xmin = 19.6
+				xmax = 20.08
+				text = "ます"
+			intervals [62]:
+				xmin = 20.08
+				xmax = 22.5
+				text = ""

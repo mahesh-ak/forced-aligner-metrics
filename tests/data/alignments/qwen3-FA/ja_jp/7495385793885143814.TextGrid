@@ -1,0 +1,118 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 8.64
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 8.64
+		intervals: size = 26
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.16
+				text = ""
+			intervals [2]:
+				xmin = 2.16
+				xmax = 2.4
+				text = "月面"
+			intervals [3]:
+				xmin = 2.4
+				xmax = 2.56
+				text = "は"
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.64
+				text = ""
+			intervals [5]:
+				xmin = 2.64
+				xmax = 2.96
+				text = "岩石"
+			intervals [6]:
+				xmin = 2.96
+				xmax = 3.04
+				text = ""
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.2
+				text = "と"
+			intervals [8]:
+				xmin = 3.2
+				xmax = 3.44
+				text = "塵"
+			intervals [9]:
+				xmin = 3.44
+				xmax = 3.6
+				text = "で"
+			intervals [10]:
+				xmin = 3.6
+				xmax = 3.68
+				text = ""
+			intervals [11]:
+				xmin = 3.68
+				xmax = 3.84
+				text = "でき"
+			intervals [12]:
+				xmin = 3.84
+				xmax = 4.0
+				text = "て"
+			intervals [13]:
+				xmin = 4.0
+				xmax = 4.24
+				text = "ます"
+			intervals [14]:
+				xmin = 4.24
+				xmax = 4.64
+				text = ""
+			intervals [15]:
+				xmin = 4.64
+				xmax = 4.8
+				text = "月"
+			intervals [16]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "の"
+			intervals [17]:
+				xmin = 4.96
+				xmax = 5.44
+				text = "外層"
+			intervals [18]:
+				xmin = 5.44
+				xmax = 5.6
+				text = "は"
+			intervals [19]:
+				xmin = 5.6
+				xmax = 5.84
+				text = "地殻"
+			intervals [20]:
+				xmin = 5.84
+				xmax = 6.0
+				text = "と"
+			intervals [21]:
+				xmin = 6.0
+				xmax = 6.24
+				text = "呼ば"
+			intervals [22]:
+				xmin = 6.24
+				xmax = 6.32
+				text = "れ"
+			intervals [23]:
+				xmin = 6.32
+				xmax = 6.4
+				text = "て"
+			intervals [24]:
+				xmin = 6.4
+				xmax = 6.48
+				text = "い"
+			intervals [25]:
+				xmin = 6.48
+				xmax = 6.72
+				text = "ます"
+			intervals [26]:
+				xmin = 6.72
+				xmax = 8.64
+				text = ""

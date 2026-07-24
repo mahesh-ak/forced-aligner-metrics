@@ -1,0 +1,158 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 11.22
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 11.22
+		intervals: size = 36
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.32
+				text = "橋下"
+			intervals [3]:
+				xmin = 2.32
+				xmax = 2.48
+				text = "の"
+			intervals [4]:
+				xmin = 2.48
+				xmax = 2.88
+				text = "上方"
+			intervals [5]:
+				xmin = 2.88
+				xmax = 3.28
+				text = "空間"
+			intervals [6]:
+				xmin = 3.28
+				xmax = 3.44
+				text = "は"
+			intervals [7]:
+				xmin = 3.44
+				xmax = 3.68
+				text = "十"
+			intervals [8]:
+				xmin = 3.68
+				xmax = 3.76
+				text = "五"
+			intervals [9]:
+				xmin = 3.76
+				xmax = 4.08
+				text = "メートル"
+			intervals [10]:
+				xmin = 4.08
+				xmax = 4.48
+				text = "です"
+			intervals [11]:
+				xmin = 4.48
+				xmax = 4.64
+				text = ""
+			intervals [12]:
+				xmin = 4.64
+				xmax = 4.88
+				text = "二千"
+			intervals [13]:
+				xmin = 4.88
+				xmax = 5.04
+				text = "十"
+			intervals [14]:
+				xmin = 5.04
+				xmax = 5.2
+				text = "一"
+			intervals [15]:
+				xmin = 5.2
+				xmax = 5.28
+				text = "年"
+			intervals [16]:
+				xmin = 5.28
+				xmax = 5.68
+				text = "八月"
+			intervals [17]:
+				xmin = 5.68
+				xmax = 5.76
+				text = "に"
+			intervals [18]:
+				xmin = 5.76
+				xmax = 6.24
+				text = "竣工"
+			intervals [19]:
+				xmin = 6.24
+				xmax = 6.48
+				text = "し"
+			intervals [20]:
+				xmin = 6.48
+				xmax = 6.64
+				text = ""
+			intervals [21]:
+				xmin = 6.64
+				xmax = 6.88
+				text = "二千"
+			intervals [22]:
+				xmin = 6.88
+				xmax = 7.12
+				text = "十"
+			intervals [23]:
+				xmin = 7.12
+				xmax = 7.28
+				text = "七"
+			intervals [24]:
+				xmin = 7.28
+				xmax = 7.36
+				text = "年"
+			intervals [25]:
+				xmin = 7.36
+				xmax = 7.6
+				text = "三"
+			intervals [26]:
+				xmin = 7.6
+				xmax = 7.68
+				text = ""
+			intervals [27]:
+				xmin = 7.68
+				xmax = 7.76
+				text = "月"
+			intervals [28]:
+				xmin = 7.76
+				xmax = 7.84
+				text = ""
+			intervals [29]:
+				xmin = 7.84
+				xmax = 8.0
+				text = "まで"
+			intervals [30]:
+				xmin = 8.0
+				xmax = 8.4
+				text = "開通"
+			intervals [31]:
+				xmin = 8.4
+				xmax = 8.56
+				text = "し"
+			intervals [32]:
+				xmin = 8.56
+				xmax = 8.8
+				text = "ませ"
+			intervals [33]:
+				xmin = 8.8
+				xmax = 8.88
+				text = "ん"
+			intervals [34]:
+				xmin = 8.88
+				xmax = 9.04
+				text = "でし"
+			intervals [35]:
+				xmin = 9.04
+				xmax = 9.2
+				text = "た"
+			intervals [36]:
+				xmin = 9.2
+				xmax = 11.22
+				text = ""

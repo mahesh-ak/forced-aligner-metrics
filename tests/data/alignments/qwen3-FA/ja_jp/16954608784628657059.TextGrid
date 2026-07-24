@@ -1,0 +1,146 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 16.8
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 16.8
+		intervals: size = 33
+			intervals [1]:
+				xmin = 0.0
+				xmax = 4.16
+				text = ""
+			intervals [2]:
+				xmin = 4.16
+				xmax = 4.48
+				text = "その"
+			intervals [3]:
+				xmin = 4.48
+				xmax = 4.96
+				text = "結果"
+			intervals [4]:
+				xmin = 4.96
+				xmax = 5.36
+				text = "組織"
+			intervals [5]:
+				xmin = 5.36
+				xmax = 5.44
+				text = "が"
+			intervals [6]:
+				xmin = 5.44
+				xmax = 5.92
+				text = "協力"
+			intervals [7]:
+				xmin = 5.92
+				xmax = 6.24
+				text = "して"
+			intervals [8]:
+				xmin = 6.24
+				xmax = 6.8
+				text = "障害"
+			intervals [9]:
+				xmin = 6.8
+				xmax = 7.2
+				text = "克服"
+			intervals [10]:
+				xmin = 7.2
+				xmax = 7.44
+				text = "する"
+			intervals [11]:
+				xmin = 7.44
+				xmax = 7.92
+				text = "プロセス"
+			intervals [12]:
+				xmin = 7.92
+				xmax = 8.16
+				text = "は"
+			intervals [13]:
+				xmin = 8.16
+				xmax = 8.24
+				text = ""
+			intervals [14]:
+				xmin = 8.24
+				xmax = 8.64
+				text = "顧客"
+			intervals [15]:
+				xmin = 8.64
+				xmax = 8.72
+				text = "の"
+			intervals [16]:
+				xmin = 8.72
+				xmax = 9.04
+				text = "ニーズ"
+			intervals [17]:
+				xmin = 9.04
+				xmax = 9.12
+				text = "に"
+			intervals [18]:
+				xmin = 9.12
+				xmax = 9.52
+				text = "応える"
+			intervals [19]:
+				xmin = 9.52
+				xmax = 9.76
+				text = "ため"
+			intervals [20]:
+				xmin = 9.76
+				xmax = 10.0
+				text = "の"
+			intervals [21]:
+				xmin = 10.0
+				xmax = 10.56
+				text = "新しい"
+			intervals [22]:
+				xmin = 10.56
+				xmax = 10.96
+				text = "革新"
+			intervals [23]:
+				xmin = 10.96
+				xmax = 11.2
+				text = "的"
+			intervals [24]:
+				xmin = 11.2
+				xmax = 11.36
+				text = "な"
+			intervals [25]:
+				xmin = 11.36
+				xmax = 11.76
+				text = "プロセス"
+			intervals [26]:
+				xmin = 11.76
+				xmax = 11.92
+				text = "に"
+			intervals [27]:
+				xmin = 11.92
+				xmax = 12.32
+				text = "つながる"
+			intervals [28]:
+				xmin = 12.32
+				xmax = 12.56
+				text = "可能"
+			intervals [29]:
+				xmin = 12.56
+				xmax = 12.8
+				text = "性"
+			intervals [30]:
+				xmin = 12.8
+				xmax = 12.96
+				text = "が"
+			intervals [31]:
+				xmin = 12.96
+				xmax = 13.12
+				text = "あり"
+			intervals [32]:
+				xmin = 13.12
+				xmax = 13.52
+				text = "ます"
+			intervals [33]:
+				xmin = 13.52
+				xmax = 16.8
+				text = ""

@@ -1,0 +1,154 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.48
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.48
+		intervals: size = 35
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.76
+				text = ""
+			intervals [2]:
+				xmin = 1.76
+				xmax = 2.16
+				text = "睡眠"
+			intervals [3]:
+				xmin = 2.16
+				xmax = 2.32
+				text = "の"
+			intervals [4]:
+				xmin = 2.32
+				xmax = 2.72
+				text = "中断"
+			intervals [5]:
+				xmin = 2.72
+				xmax = 2.88
+				text = "と"
+			intervals [6]:
+				xmin = 2.88
+				xmax = 2.96
+				text = "は"
+			intervals [7]:
+				xmin = 2.96
+				xmax = 3.12
+				text = ""
+			intervals [8]:
+				xmin = 3.12
+				xmax = 3.52
+				text = "通常"
+			intervals [9]:
+				xmin = 3.52
+				xmax = 3.68
+				text = "の"
+			intervals [10]:
+				xmin = 3.68
+				xmax = 4.16
+				text = "睡眠"
+			intervals [11]:
+				xmin = 4.16
+				xmax = 4.48
+				text = "時間"
+			intervals [12]:
+				xmin = 4.48
+				xmax = 4.64
+				text = "中"
+			intervals [13]:
+				xmin = 4.64
+				xmax = 4.8
+				text = "に"
+			intervals [14]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "意図"
+			intervals [15]:
+				xmin = 4.96
+				xmax = 5.2
+				text = "的"
+			intervals [16]:
+				xmin = 5.2
+				xmax = 5.28
+				text = "に"
+			intervals [17]:
+				xmin = 5.28
+				xmax = 5.44
+				text = "目"
+			intervals [18]:
+				xmin = 5.44
+				xmax = 5.52
+				text = "を"
+			intervals [19]:
+				xmin = 5.52
+				xmax = 5.92
+				text = "覚まし"
+			intervals [20]:
+				xmin = 5.92
+				xmax = 6.08
+				text = ""
+			intervals [21]:
+				xmin = 6.08
+				xmax = 6.56
+				text = "しばらく"
+			intervals [22]:
+				xmin = 6.56
+				xmax = 7.04
+				text = ""
+			intervals [23]:
+				xmin = 7.04
+				xmax = 7.28
+				text = "十"
+			intervals [24]:
+				xmin = 7.28
+				xmax = 7.52
+				text = "分"
+			intervals [25]:
+				xmin = 7.52
+				xmax = 8.16
+				text = ""
+			intervals [26]:
+				xmin = 8.16
+				xmax = 8.24
+				text = "し"
+			intervals [27]:
+				xmin = 8.24
+				xmax = 8.32
+				text = "て"
+			intervals [28]:
+				xmin = 8.32
+				xmax = 8.56
+				text = "から"
+			intervals [29]:
+				xmin = 8.56
+				xmax = 8.96
+				text = "眠り"
+			intervals [30]:
+				xmin = 8.96
+				xmax = 9.04
+				text = "に"
+			intervals [31]:
+				xmin = 9.04
+				xmax = 9.36
+				text = "落ちる"
+			intervals [32]:
+				xmin = 9.36
+				xmax = 9.92
+				text = "プロセス"
+			intervals [33]:
+				xmin = 9.92
+				xmax = 10.0
+				text = ""
+			intervals [34]:
+				xmin = 10.0
+				xmax = 10.24
+				text = "です"
+			intervals [35]:
+				xmin = 10.24
+				xmax = 12.48
+				text = ""

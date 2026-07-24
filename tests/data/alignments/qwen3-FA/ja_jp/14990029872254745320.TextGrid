@@ -1,0 +1,118 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.3
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.3
+		intervals: size = 26
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.68
+				text = ""
+			intervals [2]:
+				xmin = 1.68
+				xmax = 2.24
+				text = "シントラ"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.4
+				text = "行き"
+			intervals [4]:
+				xmin = 2.4
+				xmax = 2.64
+				text = "の"
+			intervals [5]:
+				xmin = 2.64
+				xmax = 3.28
+				text = "スコッターブ"
+			intervals [6]:
+				xmin = 3.28
+				xmax = 3.52
+				text = "バス"
+			intervals [7]:
+				xmin = 3.52
+				xmax = 3.92
+				text = "四百"
+			intervals [8]:
+				xmin = 3.92
+				xmax = 4.16
+				text = "三"
+			intervals [9]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "が"
+			intervals [10]:
+				xmin = 4.32
+				xmax = 4.56
+				text = "定期"
+			intervals [11]:
+				xmin = 4.56
+				xmax = 4.8
+				text = "的"
+			intervals [12]:
+				xmin = 4.8
+				xmax = 4.88
+				text = "に"
+			intervals [13]:
+				xmin = 4.88
+				xmax = 5.2
+				text = "運行"
+			intervals [14]:
+				xmin = 5.2
+				xmax = 5.36
+				text = "し"
+			intervals [15]:
+				xmin = 5.36
+				xmax = 5.44
+				text = "て"
+			intervals [16]:
+				xmin = 5.44
+				xmax = 5.68
+				text = "おり"
+			intervals [17]:
+				xmin = 5.68
+				xmax = 5.76
+				text = ""
+			intervals [18]:
+				xmin = 5.76
+				xmax = 6.08
+				text = "カボ"
+			intervals [19]:
+				xmin = 6.08
+				xmax = 6.32
+				text = "ダ"
+			intervals [20]:
+				xmin = 6.32
+				xmax = 6.4
+				text = ""
+			intervals [21]:
+				xmin = 6.4
+				xmax = 6.64
+				text = "ロカ"
+			intervals [22]:
+				xmin = 6.64
+				xmax = 6.72
+				text = "に"
+			intervals [23]:
+				xmin = 6.72
+				xmax = 7.04
+				text = "停車"
+			intervals [24]:
+				xmin = 7.04
+				xmax = 7.12
+				text = "し"
+			intervals [25]:
+				xmin = 7.12
+				xmax = 7.52
+				text = "ます"
+			intervals [26]:
+				xmin = 7.52
+				xmax = 9.3
+				text = ""

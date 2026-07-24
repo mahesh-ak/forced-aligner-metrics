@@ -1,0 +1,114 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 8.04
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 8.04
+		intervals: size = 25
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.28
+				text = ""
+			intervals [2]:
+				xmin = 1.28
+				xmax = 1.6
+				text = "しかし"
+			intervals [3]:
+				xmin = 1.6
+				xmax = 2.0
+				text = "現在"
+			intervals [4]:
+				xmin = 2.0
+				xmax = 2.16
+				text = "も"
+			intervals [5]:
+				xmin = 2.16
+				xmax = 2.24
+				text = ""
+			intervals [6]:
+				xmin = 2.24
+				xmax = 2.4
+				text = "鳥"
+			intervals [7]:
+				xmin = 2.4
+				xmax = 2.96
+				text = ""
+			intervals [8]:
+				xmin = 2.96
+				xmax = 3.2
+				text = "の"
+			intervals [9]:
+				xmin = 3.2
+				xmax = 3.36
+				text = ""
+			intervals [10]:
+				xmin = 3.36
+				xmax = 3.76
+				text = "外観"
+			intervals [11]:
+				xmin = 3.76
+				xmax = 4.0
+				text = "は"
+			intervals [12]:
+				xmin = 4.0
+				xmax = 4.32
+				text = "多く"
+			intervals [13]:
+				xmin = 4.32
+				xmax = 4.48
+				text = "の"
+			intervals [14]:
+				xmin = 4.48
+				xmax = 4.56
+				text = ""
+			intervals [15]:
+				xmin = 4.56
+				xmax = 4.64
+				text = "点"
+			intervals [16]:
+				xmin = 4.64
+				xmax = 4.8
+				text = ""
+			intervals [17]:
+				xmin = 4.8
+				xmax = 4.88
+				text = "で"
+			intervals [18]:
+				xmin = 4.88
+				xmax = 5.2
+				text = ""
+			intervals [19]:
+				xmin = 5.2
+				xmax = 5.76
+				text = "恐竜"
+			intervals [20]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "に"
+			intervals [21]:
+				xmin = 5.92
+				xmax = 6.16
+				text = ""
+			intervals [22]:
+				xmin = 6.16
+				xmax = 6.24
+				text = "て"
+			intervals [23]:
+				xmin = 6.24
+				xmax = 6.4
+				text = "い"
+			intervals [24]:
+				xmin = 6.4
+				xmax = 6.56
+				text = "ます"
+			intervals [25]:
+				xmin = 6.56
+				xmax = 8.04
+				text = ""

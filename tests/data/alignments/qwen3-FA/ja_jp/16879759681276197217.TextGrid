@@ -1,0 +1,118 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.3
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.3
+		intervals: size = 26
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.48
+				text = ""
+			intervals [2]:
+				xmin = 2.48
+				xmax = 2.8
+				text = "鱗"
+			intervals [3]:
+				xmin = 2.8
+				xmax = 2.88
+				text = "と"
+			intervals [4]:
+				xmin = 2.88
+				xmax = 3.2
+				text = "爪"
+			intervals [5]:
+				xmin = 3.2
+				xmax = 3.28
+				text = "の"
+			intervals [6]:
+				xmin = 3.28
+				xmax = 3.68
+				text = "ついた"
+			intervals [7]:
+				xmin = 3.68
+				xmax = 3.92
+				text = "足"
+			intervals [8]:
+				xmin = 3.92
+				xmax = 4.0
+				text = "を"
+			intervals [9]:
+				xmin = 4.0
+				xmax = 4.4
+				text = "持ち"
+			intervals [10]:
+				xmin = 4.4
+				xmax = 5.44
+				text = ""
+			intervals [11]:
+				xmin = 5.44
+				xmax = 5.68
+				text = "卵"
+			intervals [12]:
+				xmin = 5.68
+				xmax = 6.16
+				text = "胎生"
+			intervals [13]:
+				xmin = 6.16
+				xmax = 6.32
+				text = "で"
+			intervals [14]:
+				xmin = 6.32
+				xmax = 6.56
+				text = "あり"
+			intervals [15]:
+				xmin = 6.56
+				xmax = 6.72
+				text = ""
+			intervals [16]:
+				xmin = 6.72
+				xmax = 7.52
+				text = "ティラノサウルス"
+			intervals [17]:
+				xmin = 7.52
+				xmax = 7.6
+				text = "の"
+			intervals [18]:
+				xmin = 7.6
+				xmax = 7.84
+				text = "よう"
+			intervals [19]:
+				xmin = 7.84
+				xmax = 8.0
+				text = "に"
+			intervals [20]:
+				xmin = 8.0
+				xmax = 8.16
+				text = ""
+			intervals [21]:
+				xmin = 8.16
+				xmax = 8.8
+				text = "後ろ脚"
+			intervals [22]:
+				xmin = 8.8
+				xmax = 9.12
+				text = "二本"
+			intervals [23]:
+				xmin = 9.12
+				xmax = 9.2
+				text = "で"
+			intervals [24]:
+				xmin = 9.2
+				xmax = 9.44
+				text = "歩き"
+			intervals [25]:
+				xmin = 9.44
+				xmax = 9.84
+				text = "ます"
+			intervals [26]:
+				xmin = 9.84
+				xmax = 12.3
+				text = ""

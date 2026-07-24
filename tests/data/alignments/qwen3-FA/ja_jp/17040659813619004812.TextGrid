@@ -1,0 +1,210 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.96
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.96
+		intervals: size = 49
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.0
+				text = ""
+			intervals [2]:
+				xmin = 2.0
+				xmax = 2.16
+				text = "彼"
+			intervals [3]:
+				xmin = 2.16
+				xmax = 2.24
+				text = "の"
+			intervals [4]:
+				xmin = 2.24
+				xmax = 2.48
+				text = "説"
+			intervals [5]:
+				xmin = 2.48
+				xmax = 2.56
+				text = "を"
+			intervals [6]:
+				xmin = 2.56
+				xmax = 2.88
+				text = "正しい"
+			intervals [7]:
+				xmin = 2.88
+				xmax = 2.96
+				text = ""
+			intervals [8]:
+				xmin = 2.96
+				xmax = 3.04
+				text = "と"
+			intervals [9]:
+				xmin = 3.04
+				xmax = 3.36
+				text = "認める"
+			intervals [10]:
+				xmin = 3.36
+				xmax = 3.52
+				text = "人"
+			intervals [11]:
+				xmin = 3.52
+				xmax = 3.68
+				text = ""
+			intervals [12]:
+				xmin = 3.68
+				xmax = 3.76
+				text = "もい"
+			intervals [13]:
+				xmin = 3.76
+				xmax = 4.0
+				text = "ました"
+			intervals [14]:
+				xmin = 4.0
+				xmax = 4.32
+				text = "が"
+			intervals [15]:
+				xmin = 4.32
+				xmax = 4.64
+				text = "多く"
+			intervals [16]:
+				xmin = 4.64
+				xmax = 4.72
+				text = "の"
+			intervals [17]:
+				xmin = 4.72
+				xmax = 4.8
+				text = "人"
+			intervals [18]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "は"
+			intervals [19]:
+				xmin = 4.96
+				xmax = 5.12
+				text = "その"
+			intervals [20]:
+				xmin = 5.12
+				xmax = 5.36
+				text = "逆"
+			intervals [21]:
+				xmin = 5.36
+				xmax = 5.6
+				text = "で"
+			intervals [22]:
+				xmin = 5.6
+				xmax = 5.68
+				text = ""
+			intervals [23]:
+				xmin = 5.68
+				xmax = 6.0
+				text = "太陽"
+			intervals [24]:
+				xmin = 6.0
+				xmax = 6.24
+				text = "系"
+			intervals [25]:
+				xmin = 6.24
+				xmax = 6.32
+				text = "で"
+			intervals [26]:
+				xmin = 6.32
+				xmax = 6.4
+				text = "は"
+			intervals [27]:
+				xmin = 6.4
+				xmax = 6.88
+				text = "太陽"
+			intervals [28]:
+				xmin = 6.88
+				xmax = 6.96
+				text = ""
+			intervals [29]:
+				xmin = 6.96
+				xmax = 7.12
+				text = "と"
+			intervals [30]:
+				xmin = 7.12
+				xmax = 7.36
+				text = "その"
+			intervals [31]:
+				xmin = 7.36
+				xmax = 7.44
+				text = "他"
+			intervals [32]:
+				xmin = 7.44
+				xmax = 7.52
+				text = "の"
+			intervals [33]:
+				xmin = 7.52
+				xmax = 7.6
+				text = ""
+			intervals [34]:
+				xmin = 7.6
+				xmax = 7.84
+				text = "星"
+			intervals [35]:
+				xmin = 7.84
+				xmax = 8.0
+				text = "が"
+			intervals [36]:
+				xmin = 8.0
+				xmax = 8.32
+				text = "地球"
+			intervals [37]:
+				xmin = 8.32
+				xmax = 8.48
+				text = "の"
+			intervals [38]:
+				xmin = 8.48
+				xmax = 8.72
+				text = "周り"
+			intervals [39]:
+				xmin = 8.72
+				xmax = 8.8
+				text = "を"
+			intervals [40]:
+				xmin = 8.8
+				xmax = 9.12
+				text = "移動"
+			intervals [41]:
+				xmin = 9.12
+				xmax = 9.2
+				text = "し"
+			intervals [42]:
+				xmin = 9.2
+				xmax = 9.28
+				text = "て"
+			intervals [43]:
+				xmin = 9.28
+				xmax = 9.44
+				text = "いる"
+			intervals [44]:
+				xmin = 9.44
+				xmax = 9.6
+				text = "と"
+			intervals [45]:
+				xmin = 9.6
+				xmax = 9.92
+				text = "信じ"
+			intervals [46]:
+				xmin = 9.92
+				xmax = 10.0
+				text = "て"
+			intervals [47]:
+				xmin = 10.0
+				xmax = 10.08
+				text = "い"
+			intervals [48]:
+				xmin = 10.08
+				xmax = 10.4
+				text = "ました"
+			intervals [49]:
+				xmin = 10.4
+				xmax = 12.96
+				text = ""

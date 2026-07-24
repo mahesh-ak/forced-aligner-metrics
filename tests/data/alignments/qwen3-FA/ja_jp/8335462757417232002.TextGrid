@@ -1,0 +1,190 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 14.7
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 14.7
+		intervals: size = 44
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.24
+				text = ""
+			intervals [2]:
+				xmin = 2.24
+				xmax = 2.88
+				text = "ワイルド"
+			intervals [3]:
+				xmin = 2.88
+				xmax = 3.36
+				text = "カード"
+			intervals [4]:
+				xmin = 3.36
+				xmax = 3.44
+				text = "を"
+			intervals [5]:
+				xmin = 3.44
+				xmax = 3.84
+				text = "購入"
+			intervals [6]:
+				xmin = 3.84
+				xmax = 3.92
+				text = ""
+			intervals [7]:
+				xmin = 3.92
+				xmax = 4.16
+				text = "する"
+			intervals [8]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "と"
+			intervals [9]:
+				xmin = 4.32
+				xmax = 4.56
+				text = ""
+			intervals [10]:
+				xmin = 4.56
+				xmax = 4.72
+				text = "得"
+			intervals [11]:
+				xmin = 4.72
+				xmax = 4.88
+				text = ""
+			intervals [12]:
+				xmin = 4.88
+				xmax = 4.96
+				text = "な"
+			intervals [13]:
+				xmin = 4.96
+				xmax = 5.28
+				text = "場合"
+			intervals [14]:
+				xmin = 5.28
+				xmax = 5.44
+				text = "が"
+			intervals [15]:
+				xmin = 5.44
+				xmax = 5.6
+				text = "あり"
+			intervals [16]:
+				xmin = 5.6
+				xmax = 5.76
+				text = "ます"
+			intervals [17]:
+				xmin = 5.76
+				xmax = 6.4
+				text = ""
+			intervals [18]:
+				xmin = 6.4
+				xmax = 7.44
+				text = "南アフリカ"
+			intervals [19]:
+				xmin = 7.44
+				xmax = 7.6
+				text = "の"
+			intervals [20]:
+				xmin = 7.6
+				xmax = 7.68
+				text = ""
+			intervals [21]:
+				xmin = 7.68
+				xmax = 8.0
+				text = "主な"
+			intervals [22]:
+				xmin = 8.0
+				xmax = 8.24
+				text = ""
+			intervals [23]:
+				xmin = 8.24
+				xmax = 8.64
+				text = "公園"
+			intervals [24]:
+				xmin = 8.64
+				xmax = 8.72
+				text = ""
+			intervals [25]:
+				xmin = 8.72
+				xmax = 8.96
+				text = "また"
+			intervals [26]:
+				xmin = 8.96
+				xmax = 9.12
+				text = "は"
+			intervals [27]:
+				xmin = 9.12
+				xmax = 10.0
+				text = "南アフリカ"
+			intervals [28]:
+				xmin = 10.0
+				xmax = 10.08
+				text = "の"
+			intervals [29]:
+				xmin = 10.08
+				xmax = 10.24
+				text = ""
+			intervals [30]:
+				xmin = 10.24
+				xmax = 10.56
+				text = "すべて"
+			intervals [31]:
+				xmin = 10.56
+				xmax = 10.72
+				text = "の"
+			intervals [32]:
+				xmin = 10.72
+				xmax = 11.12
+				text = ""
+			intervals [33]:
+				xmin = 11.12
+				xmax = 11.68
+				text = "国立"
+			intervals [34]:
+				xmin = 11.68
+				xmax = 11.92
+				text = ""
+			intervals [35]:
+				xmin = 11.92
+				xmax = 12.24
+				text = "公園"
+			intervals [36]:
+				xmin = 12.24
+				xmax = 12.32
+				text = ""
+			intervals [37]:
+				xmin = 12.32
+				xmax = 12.4
+				text = "に"
+			intervals [38]:
+				xmin = 12.4
+				xmax = 12.8
+				text = ""
+			intervals [39]:
+				xmin = 12.8
+				xmax = 13.04
+				text = "入場"
+			intervals [40]:
+				xmin = 13.04
+				xmax = 13.12
+				text = ""
+			intervals [41]:
+				xmin = 13.12
+				xmax = 13.36
+				text = "でき"
+			intervals [42]:
+				xmin = 13.36
+				xmax = 13.44
+				text = ""
+			intervals [43]:
+				xmin = 13.44
+				xmax = 13.6
+				text = "ます"
+			intervals [44]:
+				xmin = 13.6
+				xmax = 14.7
+				text = ""

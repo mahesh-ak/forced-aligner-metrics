@@ -1,0 +1,134 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.62
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 13.62
+		intervals: size = 30
+			intervals [1]:
+				xmin = 0.0
+				xmax = 3.04
+				text = ""
+			intervals [2]:
+				xmin = 3.04
+				xmax = 3.2
+				text = "悪"
+			intervals [3]:
+				xmin = 3.2
+				xmax = 3.6
+				text = "天候"
+			intervals [4]:
+				xmin = 3.6
+				xmax = 3.68
+				text = "と"
+			intervals [5]:
+				xmin = 3.68
+				xmax = 3.84
+				text = "は"
+			intervals [6]:
+				xmin = 3.84
+				xmax = 4.24
+				text = "物理"
+			intervals [7]:
+				xmin = 4.24
+				xmax = 4.4
+				text = "的"
+			intervals [8]:
+				xmin = 4.4
+				xmax = 4.72
+				text = "被害"
+			intervals [9]:
+				xmin = 4.72
+				xmax = 5.2
+				text = "深刻"
+			intervals [10]:
+				xmin = 5.2
+				xmax = 5.28
+				text = "な"
+			intervals [11]:
+				xmin = 5.28
+				xmax = 5.68
+				text = "社会"
+			intervals [12]:
+				xmin = 5.68
+				xmax = 5.92
+				text = "的"
+			intervals [13]:
+				xmin = 5.92
+				xmax = 6.16
+				text = "混乱"
+			intervals [14]:
+				xmin = 6.16
+				xmax = 6.48
+				text = ""
+			intervals [15]:
+				xmin = 6.48
+				xmax = 6.88
+				text = "人命"
+			intervals [16]:
+				xmin = 6.88
+				xmax = 6.96
+				text = "に"
+			intervals [17]:
+				xmin = 6.96
+				xmax = 7.36
+				text = "関わる"
+			intervals [18]:
+				xmin = 7.36
+				xmax = 7.68
+				text = "被害"
+			intervals [19]:
+				xmin = 7.68
+				xmax = 7.84
+				text = "に"
+			intervals [20]:
+				xmin = 7.84
+				xmax = 8.16
+				text = ""
+			intervals [21]:
+				xmin = 8.16
+				xmax = 8.56
+				text = "つながり"
+			intervals [22]:
+				xmin = 8.56
+				xmax = 8.72
+				text = "うる"
+			intervals [23]:
+				xmin = 8.72
+				xmax = 9.12
+				text = "危険"
+			intervals [24]:
+				xmin = 9.12
+				xmax = 9.2
+				text = "な"
+			intervals [25]:
+				xmin = 9.2
+				xmax = 9.52
+				text = "気象"
+			intervals [26]:
+				xmin = 9.52
+				xmax = 9.84
+				text = "現象"
+			intervals [27]:
+				xmin = 9.84
+				xmax = 9.92
+				text = "の"
+			intervals [28]:
+				xmin = 9.92
+				xmax = 10.4
+				text = "総称"
+			intervals [29]:
+				xmin = 10.4
+				xmax = 10.8
+				text = "です"
+			intervals [30]:
+				xmin = 10.8
+				xmax = 13.62
+				text = ""

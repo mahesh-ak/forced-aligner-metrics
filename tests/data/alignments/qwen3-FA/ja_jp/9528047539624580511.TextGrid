@@ -1,0 +1,114 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 14.7
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 14.7
+		intervals: size = 25
+			intervals [1]:
+				xmin = 0.0
+				xmax = 4.0
+				text = ""
+			intervals [2]:
+				xmin = 4.0
+				xmax = 4.24
+				text = "今"
+			intervals [3]:
+				xmin = 4.24
+				xmax = 4.32
+				text = "で"
+			intervals [4]:
+				xmin = 4.32
+				xmax = 4.56
+				text = "は"
+			intervals [5]:
+				xmin = 4.56
+				xmax = 5.04
+				text = "パソコン"
+			intervals [6]:
+				xmin = 5.04
+				xmax = 5.12
+				text = "の"
+			intervals [7]:
+				xmin = 5.12
+				xmax = 5.44
+				text = "画面"
+			intervals [8]:
+				xmin = 5.44
+				xmax = 5.68
+				text = "に"
+			intervals [9]:
+				xmin = 5.68
+				xmax = 6.24
+				text = "メッセージ"
+			intervals [10]:
+				xmin = 6.24
+				xmax = 6.32
+				text = ""
+			intervals [11]:
+				xmin = 6.32
+				xmax = 6.4
+				text = "を"
+			intervals [12]:
+				xmin = 6.4
+				xmax = 6.88
+				text = "入力"
+			intervals [13]:
+				xmin = 6.88
+				xmax = 7.12
+				text = "する"
+			intervals [14]:
+				xmin = 7.12
+				xmax = 7.36
+				text = "人"
+			intervals [15]:
+				xmin = 7.36
+				xmax = 7.52
+				text = "が"
+			intervals [16]:
+				xmin = 7.52
+				xmax = 7.84
+				text = "増え"
+			intervals [17]:
+				xmin = 7.84
+				xmax = 8.08
+				text = ""
+			intervals [18]:
+				xmin = 8.08
+				xmax = 8.56
+				text = "鉛筆"
+			intervals [19]:
+				xmin = 8.56
+				xmax = 8.96
+				text = "削り"
+			intervals [20]:
+				xmin = 8.96
+				xmax = 9.04
+				text = "は"
+			intervals [21]:
+				xmin = 9.04
+				xmax = 9.52
+				text = "必要"
+			intervals [22]:
+				xmin = 9.52
+				xmax = 9.76
+				text = "なく"
+			intervals [23]:
+				xmin = 9.76
+				xmax = 10.0
+				text = "なり"
+			intervals [24]:
+				xmin = 10.0
+				xmax = 10.4
+				text = "ました"
+			intervals [25]:
+				xmin = 10.4
+				xmax = 14.7
+				text = ""

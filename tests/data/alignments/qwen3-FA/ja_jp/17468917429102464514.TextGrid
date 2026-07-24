@@ -1,0 +1,170 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.36
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.36
+		intervals: size = 39
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.2
+				text = ""
+			intervals [2]:
+				xmin = 1.2
+				xmax = 1.36
+				text = "この"
+			intervals [3]:
+				xmin = 1.36
+				xmax = 1.84
+				text = "サービス"
+			intervals [4]:
+				xmin = 1.84
+				xmax = 2.0
+				text = "は"
+			intervals [5]:
+				xmin = 2.0
+				xmax = 2.48
+				text = ""
+			intervals [6]:
+				xmin = 2.48
+				xmax = 2.72
+				text = "娯楽"
+			intervals [7]:
+				xmin = 2.72
+				xmax = 2.96
+				text = "船"
+			intervals [8]:
+				xmin = 2.96
+				xmax = 3.04
+				text = "を"
+			intervals [9]:
+				xmin = 3.04
+				xmax = 3.36
+				text = "はじめ"
+			intervals [10]:
+				xmin = 3.36
+				xmax = 3.44
+				text = "と"
+			intervals [11]:
+				xmin = 3.44
+				xmax = 3.68
+				text = "する"
+			intervals [12]:
+				xmin = 3.68
+				xmax = 4.16
+				text = "船舶"
+			intervals [13]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "や"
+			intervals [14]:
+				xmin = 4.32
+				xmax = 4.8
+				text = ""
+			intervals [15]:
+				xmin = 4.8
+				xmax = 5.2
+				text = "遠隔"
+			intervals [16]:
+				xmin = 5.2
+				xmax = 5.36
+				text = "地"
+			intervals [17]:
+				xmin = 5.36
+				xmax = 5.52
+				text = "で"
+			intervals [18]:
+				xmin = 5.52
+				xmax = 5.76
+				text = ""
+			intervals [19]:
+				xmin = 5.76
+				xmax = 6.08
+				text = "データ"
+			intervals [20]:
+				xmin = 6.08
+				xmax = 6.24
+				text = "や"
+			intervals [21]:
+				xmin = 6.24
+				xmax = 6.64
+				text = "音声"
+			intervals [22]:
+				xmin = 6.64
+				xmax = 6.72
+				text = "を"
+			intervals [23]:
+				xmin = 6.72
+				xmax = 7.04
+				text = "必要"
+			intervals [24]:
+				xmin = 7.04
+				xmax = 7.2
+				text = "と"
+			intervals [25]:
+				xmin = 7.2
+				xmax = 7.44
+				text = "する"
+			intervals [26]:
+				xmin = 7.44
+				xmax = 7.92
+				text = "探検"
+			intervals [27]:
+				xmin = 7.92
+				xmax = 8.0
+				text = ""
+			intervals [28]:
+				xmin = 8.0
+				xmax = 8.16
+				text = "隊"
+			intervals [29]:
+				xmin = 8.16
+				xmax = 8.32
+				text = "に"
+			intervals [30]:
+				xmin = 8.32
+				xmax = 8.48
+				text = ""
+			intervals [31]:
+				xmin = 8.48
+				xmax = 8.96
+				text = "頻繁"
+			intervals [32]:
+				xmin = 8.96
+				xmax = 9.12
+				text = "に"
+			intervals [33]:
+				xmin = 9.12
+				xmax = 9.36
+				text = "利用"
+			intervals [34]:
+				xmin = 9.36
+				xmax = 9.44
+				text = ""
+			intervals [35]:
+				xmin = 9.44
+				xmax = 9.68
+				text = "され"
+			intervals [36]:
+				xmin = 9.68
+				xmax = 9.76
+				text = "て"
+			intervals [37]:
+				xmin = 9.76
+				xmax = 9.84
+				text = "い"
+			intervals [38]:
+				xmin = 9.84
+				xmax = 10.16
+				text = "ます"
+			intervals [39]:
+				xmin = 10.16
+				xmax = 12.36
+				text = ""

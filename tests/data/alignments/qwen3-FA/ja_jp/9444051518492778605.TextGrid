@@ -1,0 +1,190 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.74
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 13.74
+		intervals: size = 44
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.0
+				text = ""
+			intervals [2]:
+				xmin = 2.0
+				xmax = 2.4
+				text = "しかし"
+			intervals [3]:
+				xmin = 2.4
+				xmax = 2.48
+				text = ""
+			intervals [4]:
+				xmin = 2.48
+				xmax = 2.8
+				text = "結核"
+			intervals [5]:
+				xmin = 2.8
+				xmax = 3.04
+				text = "患者"
+			intervals [6]:
+				xmin = 3.04
+				xmax = 3.36
+				text = "全体"
+			intervals [7]:
+				xmin = 3.36
+				xmax = 3.44
+				text = "に"
+			intervals [8]:
+				xmin = 3.44
+				xmax = 3.84
+				text = "占める"
+			intervals [9]:
+				xmin = 3.84
+				xmax = 5.04
+				text = "xdrtb"
+			intervals [10]:
+				xmin = 5.04
+				xmax = 5.12
+				text = "の"
+			intervals [11]:
+				xmin = 5.12
+				xmax = 5.44
+				text = "割合"
+			intervals [12]:
+				xmin = 5.44
+				xmax = 5.6
+				text = "まだ"
+			intervals [13]:
+				xmin = 5.6
+				xmax = 5.68
+				text = ""
+			intervals [14]:
+				xmin = 5.68
+				xmax = 5.92
+				text = "低い"
+			intervals [15]:
+				xmin = 5.92
+				xmax = 6.16
+				text = "よう"
+			intervals [16]:
+				xmin = 6.16
+				xmax = 6.32
+				text = "で"
+			intervals [17]:
+				xmin = 6.32
+				xmax = 6.48
+				text = ""
+			intervals [18]:
+				xmin = 6.48
+				xmax = 6.64
+				text = "こう"
+			intervals [19]:
+				xmin = 6.64
+				xmax = 6.72
+				text = "し"
+			intervals [20]:
+				xmin = 6.72
+				xmax = 6.88
+				text = "て"
+			intervals [21]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "いる"
+			intervals [22]:
+				xmin = 7.04
+				xmax = 7.2
+				text = "間"
+			intervals [23]:
+				xmin = 7.2
+				xmax = 7.28
+				text = "に"
+			intervals [24]:
+				xmin = 7.28
+				xmax = 7.52
+				text = "も"
+			intervals [25]:
+				xmin = 7.52
+				xmax = 7.6
+				text = ""
+			intervals [26]:
+				xmin = 7.6
+				xmax = 8.24
+				text = "南アフリカ"
+			intervals [27]:
+				xmin = 8.24
+				xmax = 8.32
+				text = "で"
+			intervals [28]:
+				xmin = 8.32
+				xmax = 8.48
+				text = "は"
+			intervals [29]:
+				xmin = 8.48
+				xmax = 8.8
+				text = "三十"
+			intervals [30]:
+				xmin = 8.8
+				xmax = 8.88
+				text = ""
+			intervals [31]:
+				xmin = 8.88
+				xmax = 9.12
+				text = "三"
+			intervals [32]:
+				xmin = 9.12
+				xmax = 9.28
+				text = "万"
+			intervals [33]:
+				xmin = 9.28
+				xmax = 9.44
+				text = "人"
+			intervals [34]:
+				xmin = 9.44
+				xmax = 9.6
+				text = "の"
+			intervals [35]:
+				xmin = 9.6
+				xmax = 9.84
+				text = "うち"
+			intervals [36]:
+				xmin = 9.84
+				xmax = 9.92
+				text = ""
+			intervals [37]:
+				xmin = 9.92
+				xmax = 10.24
+				text = "六千"
+			intervals [38]:
+				xmin = 10.24
+				xmax = 10.4
+				text = "人"
+			intervals [39]:
+				xmin = 10.4
+				xmax = 10.56
+				text = "が"
+			intervals [40]:
+				xmin = 10.56
+				xmax = 10.88
+				text = "感染"
+			intervals [41]:
+				xmin = 10.88
+				xmax = 10.96
+				text = "し"
+			intervals [42]:
+				xmin = 10.96
+				xmax = 11.04
+				text = "て"
+			intervals [43]:
+				xmin = 11.04
+				xmax = 11.36
+				text = "いる"
+			intervals [44]:
+				xmin = 11.36
+				xmax = 13.74
+				text = ""

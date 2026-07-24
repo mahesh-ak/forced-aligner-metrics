@@ -1,0 +1,166 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.36
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.36
+		intervals: size = 38
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.16
+				text = ""
+			intervals [2]:
+				xmin = 2.16
+				xmax = 2.32
+				text = "この"
+			intervals [3]:
+				xmin = 2.32
+				xmax = 2.64
+				text = "委員"
+			intervals [4]:
+				xmin = 2.64
+				xmax = 2.8
+				text = "会"
+			intervals [5]:
+				xmin = 2.8
+				xmax = 2.88
+				text = "は"
+			intervals [6]:
+				xmin = 2.88
+				xmax = 3.12
+				text = ""
+			intervals [7]:
+				xmin = 3.12
+				xmax = 3.28
+				text = "十"
+			intervals [8]:
+				xmin = 3.28
+				xmax = 3.44
+				text = "月"
+			intervals [9]:
+				xmin = 3.44
+				xmax = 3.6
+				text = "から"
+			intervals [10]:
+				xmin = 3.6
+				xmax = 4.16
+				text = "始まった"
+			intervals [11]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "反"
+			intervals [12]:
+				xmin = 4.32
+				xmax = 4.4
+				text = ""
+			intervals [13]:
+				xmin = 4.4
+				xmax = 4.8
+				text = "体制"
+			intervals [14]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "派"
+			intervals [15]:
+				xmin = 4.96
+				xmax = 5.04
+				text = "の"
+			intervals [16]:
+				xmin = 5.04
+				xmax = 5.36
+				text = "抗議"
+			intervals [17]:
+				xmin = 5.36
+				xmax = 5.52
+				text = "が"
+			intervals [18]:
+				xmin = 5.52
+				xmax = 5.76
+				text = "広"
+			intervals [19]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "範囲"
+			intervals [20]:
+				xmin = 5.92
+				xmax = 6.08
+				text = "に"
+			intervals [21]:
+				xmin = 6.08
+				xmax = 6.4
+				text = "広がっ"
+			intervals [22]:
+				xmin = 6.4
+				xmax = 6.48
+				text = "た"
+			intervals [23]:
+				xmin = 6.48
+				xmax = 6.56
+				text = ""
+			intervals [24]:
+				xmin = 6.56
+				xmax = 6.88
+				text = "こと"
+			intervals [25]:
+				xmin = 6.88
+				xmax = 6.96
+				text = ""
+			intervals [26]:
+				xmin = 6.96
+				xmax = 7.28
+				text = "対し"
+			intervals [27]:
+				xmin = 7.28
+				xmax = 7.36
+				text = "て"
+			intervals [28]:
+				xmin = 7.36
+				xmax = 7.76
+				text = ""
+			intervals [29]:
+				xmin = 7.76
+				xmax = 7.92
+				text = "マル"
+			intervals [30]:
+				xmin = 7.92
+				xmax = 8.24
+				text = "テリー"
+			intervals [31]:
+				xmin = 8.24
+				xmax = 8.8
+				text = "大統領"
+			intervals [32]:
+				xmin = 8.8
+				xmax = 8.88
+				text = "が"
+			intervals [33]:
+				xmin = 8.88
+				xmax = 9.04
+				text = "打っ"
+			intervals [34]:
+				xmin = 9.04
+				xmax = 9.12
+				text = "た"
+			intervals [35]:
+				xmin = 9.12
+				xmax = 9.52
+				text = "対策"
+			intervals [36]:
+				xmin = 9.52
+				xmax = 9.76
+				text = "でし"
+			intervals [37]:
+				xmin = 9.76
+				xmax = 9.84
+				text = "た"
+			intervals [38]:
+				xmin = 9.84
+				xmax = 12.36
+				text = ""

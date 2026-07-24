@@ -1,0 +1,102 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.3
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.3
+		intervals: size = 22
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.08
+				text = ""
+			intervals [2]:
+				xmin = 2.08
+				xmax = 2.48
+				text = "アピア"
+			intervals [3]:
+				xmin = 2.48
+				xmax = 2.64
+				text = "は"
+			intervals [4]:
+				xmin = 2.64
+				xmax = 3.04
+				text = "サモア"
+			intervals [5]:
+				xmin = 3.04
+				xmax = 3.12
+				text = "の"
+			intervals [6]:
+				xmin = 3.12
+				xmax = 3.36
+				text = "首都"
+			intervals [7]:
+				xmin = 3.36
+				xmax = 3.68
+				text = "です"
+			intervals [8]:
+				xmin = 3.68
+				xmax = 3.92
+				text = "この"
+			intervals [9]:
+				xmin = 3.92
+				xmax = 4.16
+				text = "町"
+			intervals [10]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "は"
+			intervals [11]:
+				xmin = 4.32
+				xmax = 4.64
+				text = "ウポル"
+			intervals [12]:
+				xmin = 4.64
+				xmax = 4.8
+				text = "島"
+			intervals [13]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "に"
+			intervals [14]:
+				xmin = 4.96
+				xmax = 5.2
+				text = "あり"
+			intervals [15]:
+				xmin = 5.2
+				xmax = 5.76
+				text = "人口"
+			intervals [16]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "は"
+			intervals [17]:
+				xmin = 5.92
+				xmax = 6.08
+				text = "四"
+			intervals [18]:
+				xmin = 6.08
+				xmax = 6.32
+				text = "万"
+			intervals [19]:
+				xmin = 6.32
+				xmax = 6.48
+				text = "人"
+			intervals [20]:
+				xmin = 6.48
+				xmax = 6.72
+				text = "弱"
+			intervals [21]:
+				xmin = 6.72
+				xmax = 7.2
+				text = "です"
+			intervals [22]:
+				xmin = 7.2
+				xmax = 9.3
+				text = ""

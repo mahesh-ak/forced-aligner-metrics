@@ -1,0 +1,110 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.06
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.06
+		intervals: size = 24
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.0
+				text = ""
+			intervals [2]:
+				xmin = 2.0
+				xmax = 2.48
+				text = "植物"
+			intervals [3]:
+				xmin = 2.48
+				xmax = 2.56
+				text = "は"
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.88
+				text = "光"
+			intervals [5]:
+				xmin = 2.88
+				xmax = 3.2
+				text = "合成"
+			intervals [6]:
+				xmin = 3.2
+				xmax = 3.28
+				text = "に"
+			intervals [7]:
+				xmin = 3.28
+				xmax = 3.36
+				text = "よっ"
+			intervals [8]:
+				xmin = 3.36
+				xmax = 3.52
+				text = "て"
+			intervals [9]:
+				xmin = 3.52
+				xmax = 3.84
+				text = "太陽"
+			intervals [10]:
+				xmin = 3.84
+				xmax = 3.92
+				text = ""
+			intervals [11]:
+				xmin = 3.92
+				xmax = 4.08
+				text = "から"
+			intervals [12]:
+				xmin = 4.08
+				xmax = 4.48
+				text = "養分"
+			intervals [13]:
+				xmin = 4.48
+				xmax = 4.56
+				text = "を"
+			intervals [14]:
+				xmin = 4.56
+				xmax = 4.88
+				text = ""
+			intervals [15]:
+				xmin = 4.88
+				xmax = 5.12
+				text = "作りだし"
+			intervals [16]:
+				xmin = 5.12
+				xmax = 5.28
+				text = "ます"
+			intervals [17]:
+				xmin = 5.28
+				xmax = 5.68
+				text = ""
+			intervals [18]:
+				xmin = 5.68
+				xmax = 6.0
+				text = "日陰"
+			intervals [19]:
+				xmin = 6.0
+				xmax = 6.08
+				text = "も"
+			intervals [20]:
+				xmin = 6.08
+				xmax = 6.32
+				text = "作っ"
+			intervals [21]:
+				xmin = 6.32
+				xmax = 6.48
+				text = "て"
+			intervals [22]:
+				xmin = 6.48
+				xmax = 6.64
+				text = "くれ"
+			intervals [23]:
+				xmin = 6.64
+				xmax = 6.96
+				text = "ます"
+			intervals [24]:
+				xmin = 6.96
+				xmax = 9.06
+				text = ""

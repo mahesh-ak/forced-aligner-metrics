@@ -1,0 +1,86 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 7.92
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 7.92
+		intervals: size = 18
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.24
+				text = "カレー"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.4
+				text = "は"
+			intervals [4]:
+				xmin = 2.4
+				xmax = 2.8
+				text = "ハーブ"
+			intervals [5]:
+				xmin = 2.8
+				xmax = 2.88
+				text = "や"
+			intervals [6]:
+				xmin = 2.88
+				xmax = 3.36
+				text = "スパイス"
+			intervals [7]:
+				xmin = 3.36
+				xmax = 3.44
+				text = "を"
+			intervals [8]:
+				xmin = 3.44
+				xmax = 3.76
+				text = "ベース"
+			intervals [9]:
+				xmin = 3.76
+				xmax = 4.0
+				text = "に"
+			intervals [10]:
+				xmin = 4.0
+				xmax = 4.16
+				text = "肉"
+			intervals [11]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "や"
+			intervals [12]:
+				xmin = 4.32
+				xmax = 4.64
+				text = "野菜"
+			intervals [13]:
+				xmin = 4.64
+				xmax = 4.72
+				text = ""
+			intervals [14]:
+				xmin = 4.72
+				xmax = 4.8
+				text = "を"
+			intervals [15]:
+				xmin = 4.8
+				xmax = 5.12
+				text = "煮込む"
+			intervals [16]:
+				xmin = 5.12
+				xmax = 5.36
+				text = "料理"
+			intervals [17]:
+				xmin = 5.36
+				xmax = 5.84
+				text = "です"
+			intervals [18]:
+				xmin = 5.84
+				xmax = 7.92
+				text = ""

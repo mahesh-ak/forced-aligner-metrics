@@ -1,0 +1,102 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 6.36
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 6.36
+		intervals: size = 22
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.8
+				text = ""
+			intervals [2]:
+				xmin = 0.8
+				xmax = 1.36
+				text = "群島"
+			intervals [3]:
+				xmin = 1.36
+				xmax = 1.44
+				text = "や"
+			intervals [4]:
+				xmin = 1.44
+				xmax = 1.52
+				text = ""
+			intervals [5]:
+				xmin = 1.52
+				xmax = 1.68
+				text = "湖"
+			intervals [6]:
+				xmin = 1.68
+				xmax = 2.0
+				text = ""
+			intervals [7]:
+				xmin = 2.0
+				xmax = 2.16
+				text = "で"
+			intervals [8]:
+				xmin = 2.16
+				xmax = 2.24
+				text = "は"
+			intervals [9]:
+				xmin = 2.24
+				xmax = 2.4
+				text = ""
+			intervals [10]:
+				xmin = 2.4
+				xmax = 2.64
+				text = "必ず"
+			intervals [11]:
+				xmin = 2.64
+				xmax = 3.04
+				text = ""
+			intervals [12]:
+				xmin = 3.04
+				xmax = 3.28
+				text = "しも"
+			intervals [13]:
+				xmin = 3.28
+				xmax = 3.52
+				text = "ヨット"
+			intervals [14]:
+				xmin = 3.52
+				xmax = 3.68
+				text = ""
+			intervals [15]:
+				xmin = 3.68
+				xmax = 3.84
+				text = "は"
+			intervals [16]:
+				xmin = 3.84
+				xmax = 4.16
+				text = ""
+			intervals [17]:
+				xmin = 4.16
+				xmax = 4.48
+				text = "必要"
+			intervals [18]:
+				xmin = 4.48
+				xmax = 4.64
+				text = ""
+			intervals [19]:
+				xmin = 4.64
+				xmax = 4.72
+				text = "あり"
+			intervals [20]:
+				xmin = 4.72
+				xmax = 5.12
+				text = "ませ"
+			intervals [21]:
+				xmin = 5.12
+				xmax = 5.2
+				text = "ん"
+			intervals [22]:
+				xmin = 5.2
+				xmax = 6.36
+				text = ""

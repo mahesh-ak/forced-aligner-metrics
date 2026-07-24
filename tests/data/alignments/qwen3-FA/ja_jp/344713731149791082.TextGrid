@@ -1,0 +1,162 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.24
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.24
+		intervals: size = 37
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.76
+				text = ""
+			intervals [2]:
+				xmin = 1.76
+				xmax = 1.92
+				text = "彼"
+			intervals [3]:
+				xmin = 1.92
+				xmax = 2.0
+				text = "ら"
+			intervals [4]:
+				xmin = 2.0
+				xmax = 2.16
+				text = "の"
+			intervals [5]:
+				xmin = 2.16
+				xmax = 2.4
+				text = "規律"
+			intervals [6]:
+				xmin = 2.4
+				xmax = 2.48
+				text = ""
+			intervals [7]:
+				xmin = 2.48
+				xmax = 2.72
+				text = "ある"
+			intervals [8]:
+				xmin = 2.72
+				xmax = 3.28
+				text = "ディフェンス"
+			intervals [9]:
+				xmin = 3.28
+				xmax = 3.52
+				text = ""
+			intervals [10]:
+				xmin = 3.52
+				xmax = 3.76
+				text = "ボール"
+			intervals [11]:
+				xmin = 3.76
+				xmax = 4.32
+				text = "ハンドリング"
+			intervals [12]:
+				xmin = 4.32
+				xmax = 4.48
+				text = "の"
+			intervals [13]:
+				xmin = 4.48
+				xmax = 4.8
+				text = "スキル"
+			intervals [14]:
+				xmin = 4.8
+				xmax = 5.04
+				text = ""
+			intervals [15]:
+				xmin = 5.04
+				xmax = 5.36
+				text = "そして"
+			intervals [16]:
+				xmin = 5.36
+				xmax = 5.84
+				text = "優れた"
+			intervals [17]:
+				xmin = 5.84
+				xmax = 6.48
+				text = "チームワーク"
+			intervals [18]:
+				xmin = 6.48
+				xmax = 6.56
+				text = "は"
+			intervals [19]:
+				xmin = 6.56
+				xmax = 6.64
+				text = ""
+			intervals [20]:
+				xmin = 6.64
+				xmax = 6.96
+				text = "傑出"
+			intervals [21]:
+				xmin = 6.96
+				xmax = 7.12
+				text = "し"
+			intervals [22]:
+				xmin = 7.12
+				xmax = 7.2
+				text = "て"
+			intervals [23]:
+				xmin = 7.2
+				xmax = 7.36
+				text = "おり"
+			intervals [24]:
+				xmin = 7.36
+				xmax = 7.84
+				text = ""
+			intervals [25]:
+				xmin = 7.84
+				xmax = 8.08
+				text = "この"
+			intervals [26]:
+				xmin = 8.08
+				xmax = 8.4
+				text = "チーム"
+			intervals [27]:
+				xmin = 8.4
+				xmax = 8.56
+				text = "が"
+			intervals [28]:
+				xmin = 8.56
+				xmax = 8.88
+				text = "勝者"
+			intervals [29]:
+				xmin = 8.88
+				xmax = 8.96
+				text = "で"
+			intervals [30]:
+				xmin = 8.96
+				xmax = 9.12
+				text = "ある"
+			intervals [31]:
+				xmin = 9.12
+				xmax = 9.36
+				text = "こと"
+			intervals [32]:
+				xmin = 9.36
+				xmax = 9.44
+				text = "は"
+			intervals [33]:
+				xmin = 9.44
+				xmax = 9.76
+				text = "明らか"
+			intervals [34]:
+				xmin = 9.76
+				xmax = 9.92
+				text = "だっ"
+			intervals [35]:
+				xmin = 9.92
+				xmax = 11.52
+				text = ""
+			intervals [36]:
+				xmin = 11.52
+				xmax = 11.84
+				text = "た"
+			intervals [37]:
+				xmin = 11.84
+				xmax = 12.24
+				text = ""

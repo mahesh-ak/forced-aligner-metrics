@@ -1,0 +1,146 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.48
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.48
+		intervals: size = 33
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.24
+				text = ""
+			intervals [2]:
+				xmin = 2.24
+				xmax = 2.4
+				text = "千"
+			intervals [3]:
+				xmin = 2.4
+				xmax = 2.48
+				text = ""
+			intervals [4]:
+				xmin = 2.48
+				xmax = 2.64
+				text = "九百"
+			intervals [5]:
+				xmin = 2.64
+				xmax = 2.88
+				text = ""
+			intervals [6]:
+				xmin = 2.88
+				xmax = 3.12
+				text = "四十"
+			intervals [7]:
+				xmin = 3.12
+				xmax = 3.2
+				text = "年"
+			intervals [8]:
+				xmin = 3.2
+				xmax = 3.68
+				text = "八月"
+			intervals [9]:
+				xmin = 3.68
+				xmax = 3.76
+				text = "十"
+			intervals [10]:
+				xmin = 3.76
+				xmax = 4.08
+				text = ""
+			intervals [11]:
+				xmin = 4.08
+				xmax = 4.32
+				text = "五日"
+			intervals [12]:
+				xmin = 4.32
+				xmax = 4.64
+				text = ""
+			intervals [13]:
+				xmin = 4.64
+				xmax = 4.96
+				text = "連合"
+			intervals [14]:
+				xmin = 4.96
+				xmax = 5.12
+				text = "国"
+			intervals [15]:
+				xmin = 5.12
+				xmax = 5.2
+				text = ""
+			intervals [16]:
+				xmin = 5.2
+				xmax = 5.28
+				text = "は"
+			intervals [17]:
+				xmin = 5.28
+				xmax = 5.6
+				text = "南"
+			intervals [18]:
+				xmin = 5.6
+				xmax = 6.0
+				text = "フランス"
+			intervals [19]:
+				xmin = 6.0
+				xmax = 6.08
+				text = "に"
+			intervals [20]:
+				xmin = 6.08
+				xmax = 6.16
+				text = ""
+			intervals [21]:
+				xmin = 6.16
+				xmax = 6.56
+				text = "侵攻"
+			intervals [22]:
+				xmin = 6.56
+				xmax = 6.72
+				text = "し"
+			intervals [23]:
+				xmin = 6.72
+				xmax = 7.12
+				text = ""
+			intervals [24]:
+				xmin = 7.12
+				xmax = 7.28
+				text = "その"
+			intervals [25]:
+				xmin = 7.28
+				xmax = 7.84
+				text = "侵攻"
+			intervals [26]:
+				xmin = 7.84
+				xmax = 8.32
+				text = "は"
+			intervals [27]:
+				xmin = 8.32
+				xmax = 8.8
+				text = "ドラグーン"
+			intervals [28]:
+				xmin = 8.8
+				xmax = 9.28
+				text = "作戦"
+			intervals [29]:
+				xmin = 9.28
+				xmax = 9.36
+				text = "と"
+			intervals [30]:
+				xmin = 9.36
+				xmax = 9.52
+				text = "呼ば"
+			intervals [31]:
+				xmin = 9.52
+				xmax = 9.6
+				text = "れ"
+			intervals [32]:
+				xmin = 9.6
+				xmax = 10.0
+				text = "ました"
+			intervals [33]:
+				xmin = 10.0
+				xmax = 12.48
+				text = ""

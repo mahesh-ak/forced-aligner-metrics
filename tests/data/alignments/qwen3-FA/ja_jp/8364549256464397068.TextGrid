@@ -1,0 +1,194 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.68
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 13.68
+		intervals: size = 45
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.6
+				text = ""
+			intervals [2]:
+				xmin = 1.6
+				xmax = 1.92
+				text = "千"
+			intervals [3]:
+				xmin = 1.92
+				xmax = 2.16
+				text = "九百"
+			intervals [4]:
+				xmin = 2.16
+				xmax = 2.4
+				text = ""
+			intervals [5]:
+				xmin = 2.4
+				xmax = 2.64
+				text = "六十"
+			intervals [6]:
+				xmin = 2.64
+				xmax = 2.72
+				text = "六"
+			intervals [7]:
+				xmin = 2.72
+				xmax = 2.88
+				text = ""
+			intervals [8]:
+				xmin = 2.88
+				xmax = 3.04
+				text = "年"
+			intervals [9]:
+				xmin = 3.04
+				xmax = 3.28
+				text = "から"
+			intervals [10]:
+				xmin = 3.28
+				xmax = 4.0
+				text = "スンダルバンス"
+			intervals [11]:
+				xmin = 4.0
+				xmax = 4.16
+				text = "は"
+			intervals [12]:
+				xmin = 4.16
+				xmax = 4.48
+				text = "野生"
+			intervals [13]:
+				xmin = 4.48
+				xmax = 4.88
+				text = "動物"
+			intervals [14]:
+				xmin = 4.88
+				xmax = 5.04
+				text = "保護"
+			intervals [15]:
+				xmin = 5.04
+				xmax = 5.12
+				text = "区"
+			intervals [16]:
+				xmin = 5.12
+				xmax = 5.2
+				text = "と"
+			intervals [17]:
+				xmin = 5.2
+				xmax = 5.52
+				text = "なり"
+			intervals [18]:
+				xmin = 5.52
+				xmax = 5.68
+				text = ""
+			intervals [19]:
+				xmin = 5.68
+				xmax = 6.08
+				text = "現在"
+			intervals [20]:
+				xmin = 6.08
+				xmax = 6.16
+				text = "で"
+			intervals [21]:
+				xmin = 6.16
+				xmax = 6.24
+				text = "は"
+			intervals [22]:
+				xmin = 6.24
+				xmax = 6.64
+				text = "推定"
+			intervals [23]:
+				xmin = 6.64
+				xmax = 6.88
+				text = "で"
+			intervals [24]:
+				xmin = 6.88
+				xmax = 7.28
+				text = "四百"
+			intervals [25]:
+				xmin = 7.28
+				xmax = 7.52
+				text = "頭"
+			intervals [26]:
+				xmin = 7.52
+				xmax = 7.6
+				text = "の"
+			intervals [27]:
+				xmin = 7.6
+				xmax = 7.92
+				text = "ロイヤル"
+			intervals [28]:
+				xmin = 7.92
+				xmax = 8.24
+				text = "ベンガル"
+			intervals [29]:
+				xmin = 8.24
+				xmax = 8.48
+				text = ""
+			intervals [30]:
+				xmin = 8.48
+				xmax = 8.72
+				text = "と"
+			intervals [31]:
+				xmin = 8.72
+				xmax = 8.96
+				text = ""
+			intervals [32]:
+				xmin = 8.96
+				xmax = 9.12
+				text = "約"
+			intervals [33]:
+				xmin = 9.12
+				xmax = 9.44
+				text = "三"
+			intervals [34]:
+				xmin = 9.44
+				xmax = 9.6
+				text = "万"
+			intervals [35]:
+				xmin = 9.6
+				xmax = 9.76
+				text = "頭"
+			intervals [36]:
+				xmin = 9.76
+				xmax = 10.0
+				text = "の"
+			intervals [37]:
+				xmin = 10.0
+				xmax = 10.4
+				text = "アクシス"
+			intervals [38]:
+				xmin = 10.4
+				xmax = 10.56
+				text = "ジカ"
+			intervals [39]:
+				xmin = 10.56
+				xmax = 10.72
+				text = "が"
+			intervals [40]:
+				xmin = 10.72
+				xmax = 11.12
+				text = "生息"
+			intervals [41]:
+				xmin = 11.12
+				xmax = 11.2
+				text = "し"
+			intervals [42]:
+				xmin = 11.2
+				xmax = 11.28
+				text = "て"
+			intervals [43]:
+				xmin = 11.28
+				xmax = 11.36
+				text = "い"
+			intervals [44]:
+				xmin = 11.36
+				xmax = 11.76
+				text = "ます"
+			intervals [45]:
+				xmin = 11.76
+				xmax = 13.68
+				text = ""

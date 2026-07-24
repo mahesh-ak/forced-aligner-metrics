@@ -1,0 +1,162 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 15.06
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 15.06
+		intervals: size = 37
+			intervals [1]:
+				xmin = 0.0
+				xmax = 3.44
+				text = ""
+			intervals [2]:
+				xmin = 3.44
+				xmax = 3.84
+				text = "病院"
+			intervals [3]:
+				xmin = 3.84
+				xmax = 4.0
+				text = "で"
+			intervals [4]:
+				xmin = 4.0
+				xmax = 4.16
+				text = "は"
+			intervals [5]:
+				xmin = 4.16
+				xmax = 4.72
+				text = "感染"
+			intervals [6]:
+				xmin = 4.72
+				xmax = 5.04
+				text = "管理"
+			intervals [7]:
+				xmin = 5.04
+				xmax = 5.36
+				text = "手順"
+			intervals [8]:
+				xmin = 5.36
+				xmax = 5.52
+				text = "書"
+			intervals [9]:
+				xmin = 5.52
+				xmax = 5.68
+				text = "に"
+			intervals [10]:
+				xmin = 5.68
+				xmax = 6.24
+				text = "従い"
+			intervals [11]:
+				xmin = 6.24
+				xmax = 6.32
+				text = ""
+			intervals [12]:
+				xmin = 6.32
+				xmax = 6.64
+				text = "他人"
+			intervals [13]:
+				xmin = 6.64
+				xmax = 6.8
+				text = "へ"
+			intervals [14]:
+				xmin = 6.8
+				xmax = 6.88
+				text = "の"
+			intervals [15]:
+				xmin = 6.88
+				xmax = 7.36
+				text = "感染"
+			intervals [16]:
+				xmin = 7.36
+				xmax = 7.44
+				text = "の"
+			intervals [17]:
+				xmin = 7.44
+				xmax = 7.76
+				text = "可能"
+			intervals [18]:
+				xmin = 7.76
+				xmax = 7.92
+				text = "性"
+			intervals [19]:
+				xmin = 7.92
+				xmax = 8.0
+				text = "を"
+			intervals [20]:
+				xmin = 8.0
+				xmax = 8.24
+				text = "防ぐ"
+			intervals [21]:
+				xmin = 8.24
+				xmax = 8.48
+				text = "ため"
+			intervals [22]:
+				xmin = 8.48
+				xmax = 8.64
+				text = "に"
+			intervals [23]:
+				xmin = 8.64
+				xmax = 8.8
+				text = ""
+			intervals [24]:
+				xmin = 8.8
+				xmax = 9.12
+				text = "患者"
+			intervals [25]:
+				xmin = 9.12
+				xmax = 9.2
+				text = "を"
+			intervals [26]:
+				xmin = 9.2
+				xmax = 9.44
+				text = "隔離"
+			intervals [27]:
+				xmin = 9.44
+				xmax = 9.68
+				text = "する"
+			intervals [28]:
+				xmin = 9.68
+				xmax = 9.76
+				text = ""
+			intervals [29]:
+				xmin = 9.76
+				xmax = 9.92
+				text = "など"
+			intervals [30]:
+				xmin = 9.92
+				xmax = 10.0
+				text = "の"
+			intervals [31]:
+				xmin = 10.0
+				xmax = 10.32
+				text = "措置"
+			intervals [32]:
+				xmin = 10.32
+				xmax = 10.4
+				text = "を"
+			intervals [33]:
+				xmin = 10.4
+				xmax = 10.56
+				text = "とっ"
+			intervals [34]:
+				xmin = 10.56
+				xmax = 10.72
+				text = "て"
+			intervals [35]:
+				xmin = 10.72
+				xmax = 10.8
+				text = "い"
+			intervals [36]:
+				xmin = 10.8
+				xmax = 11.28
+				text = "ます"
+			intervals [37]:
+				xmin = 11.28
+				xmax = 15.06
+				text = ""

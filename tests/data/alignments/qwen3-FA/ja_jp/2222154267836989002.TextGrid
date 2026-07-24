@@ -1,0 +1,114 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.72
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.72
+		intervals: size = 25
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.76
+				text = ""
+			intervals [2]:
+				xmin = 1.76
+				xmax = 2.08
+				text = "実地"
+			intervals [3]:
+				xmin = 2.08
+				xmax = 2.24
+				text = "に"
+			intervals [4]:
+				xmin = 2.24
+				xmax = 2.64
+				text = "体験"
+			intervals [5]:
+				xmin = 2.64
+				xmax = 3.04
+				text = "たけれ"
+			intervals [6]:
+				xmin = 3.04
+				xmax = 3.2
+				text = "ば"
+			intervals [7]:
+				xmin = 3.2
+				xmax = 3.52
+				text = "早め"
+			intervals [8]:
+				xmin = 3.52
+				xmax = 3.6
+				text = ""
+			intervals [9]:
+				xmin = 3.6
+				xmax = 3.68
+				text = "に"
+			intervals [10]:
+				xmin = 3.68
+				xmax = 4.08
+				text = "到着"
+			intervals [11]:
+				xmin = 4.08
+				xmax = 4.16
+				text = "し"
+			intervals [12]:
+				xmin = 4.16
+				xmax = 4.48
+				text = "て"
+			intervals [13]:
+				xmin = 4.48
+				xmax = 4.72
+				text = "演奏"
+			intervals [14]:
+				xmin = 4.72
+				xmax = 4.8
+				text = "が"
+			intervals [15]:
+				xmin = 4.8
+				xmax = 5.12
+				text = "聞こえ"
+			intervals [16]:
+				xmin = 5.12
+				xmax = 5.44
+				text = "やすい"
+			intervals [17]:
+				xmin = 5.44
+				xmax = 5.76
+				text = "キャンプ"
+			intervals [18]:
+				xmin = 5.76
+				xmax = 6.0
+				text = "場"
+			intervals [19]:
+				xmin = 6.0
+				xmax = 6.32
+				text = "確保"
+			intervals [20]:
+				xmin = 6.32
+				xmax = 6.4
+				text = ""
+			intervals [21]:
+				xmin = 6.4
+				xmax = 6.72
+				text = "なけれ"
+			intervals [22]:
+				xmin = 6.72
+				xmax = 7.04
+				text = "ばなり"
+			intervals [23]:
+				xmin = 7.04
+				xmax = 7.28
+				text = "ませ"
+			intervals [24]:
+				xmin = 7.28
+				xmax = 7.36
+				text = "ん"
+			intervals [25]:
+				xmin = 7.36
+				xmax = 9.72
+				text = ""

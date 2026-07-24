@@ -1,0 +1,130 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 11.94
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 11.94
+		intervals: size = 29
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.88
+				text = ""
+			intervals [2]:
+				xmin = 2.88
+				xmax = 3.2
+				text = "この"
+			intervals [3]:
+				xmin = 3.2
+				xmax = 3.6
+				text = "現象"
+			intervals [4]:
+				xmin = 3.6
+				xmax = 3.68
+				text = "に"
+			intervals [5]:
+				xmin = 3.68
+				xmax = 3.84
+				text = "よっ"
+			intervals [6]:
+				xmin = 3.84
+				xmax = 4.08
+				text = "て"
+			intervals [7]:
+				xmin = 4.08
+				xmax = 4.32
+				text = "ほぼ"
+			intervals [8]:
+				xmin = 4.32
+				xmax = 4.56
+				text = "二十"
+			intervals [9]:
+				xmin = 4.56
+				xmax = 4.72
+				text = "四"
+			intervals [10]:
+				xmin = 4.72
+				xmax = 5.04
+				text = "時間"
+			intervals [11]:
+				xmin = 5.04
+				xmax = 5.28
+				text = "空"
+			intervals [12]:
+				xmin = 5.28
+				xmax = 5.36
+				text = "が"
+			intervals [13]:
+				xmin = 5.36
+				xmax = 5.76
+				text = "暗く"
+			intervals [14]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "なる"
+			intervals [15]:
+				xmin = 5.92
+				xmax = 6.0
+				text = "の"
+			intervals [16]:
+				xmin = 6.0
+				xmax = 6.24
+				text = "で"
+			intervals [17]:
+				xmin = 6.24
+				xmax = 6.32
+				text = ""
+			intervals [18]:
+				xmin = 6.32
+				xmax = 6.64
+				text = "オーロラ"
+			intervals [19]:
+				xmin = 6.64
+				xmax = 6.72
+				text = ""
+			intervals [20]:
+				xmin = 6.72
+				xmax = 6.8
+				text = "を"
+			intervals [21]:
+				xmin = 6.8
+				xmax = 7.04
+				text = "見る"
+			intervals [22]:
+				xmin = 7.04
+				xmax = 7.12
+				text = "に"
+			intervals [23]:
+				xmin = 7.12
+				xmax = 7.28
+				text = "は"
+			intervals [24]:
+				xmin = 7.28
+				xmax = 7.44
+				text = "良い"
+			intervals [25]:
+				xmin = 7.44
+				xmax = 7.76
+				text = "機会"
+			intervals [26]:
+				xmin = 7.76
+				xmax = 7.84
+				text = "と"
+			intervals [27]:
+				xmin = 7.84
+				xmax = 8.08
+				text = "なり"
+			intervals [28]:
+				xmin = 8.08
+				xmax = 8.48
+				text = "ます"
+			intervals [29]:
+				xmin = 8.48
+				xmax = 11.94
+				text = ""

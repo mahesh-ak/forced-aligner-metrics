@@ -1,0 +1,114 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 8.76
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 8.76
+		intervals: size = 25
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.68
+				text = ""
+			intervals [2]:
+				xmin = 1.68
+				xmax = 2.08
+				text = "中東"
+			intervals [3]:
+				xmin = 2.08
+				xmax = 2.32
+				text = "の"
+			intervals [4]:
+				xmin = 2.32
+				xmax = 2.64
+				text = "温暖"
+			intervals [5]:
+				xmin = 2.64
+				xmax = 2.72
+				text = "な"
+			intervals [6]:
+				xmin = 2.72
+				xmax = 3.04
+				text = "気候"
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.12
+				text = "に"
+			intervals [8]:
+				xmin = 3.12
+				xmax = 3.44
+				text = "暮らす"
+			intervals [9]:
+				xmin = 3.44
+				xmax = 3.68
+				text = "人々"
+			intervals [10]:
+				xmin = 3.68
+				xmax = 3.84
+				text = ""
+			intervals [11]:
+				xmin = 3.84
+				xmax = 3.92
+				text = "に"
+			intervals [12]:
+				xmin = 3.92
+				xmax = 4.08
+				text = "とって"
+			intervals [13]:
+				xmin = 4.08
+				xmax = 4.4
+				text = "家屋"
+			intervals [14]:
+				xmin = 4.4
+				xmax = 4.8
+				text = ""
+			intervals [15]:
+				xmin = 4.8
+				xmax = 4.88
+				text = "は"
+			intervals [16]:
+				xmin = 4.88
+				xmax = 5.04
+				text = "それ"
+			intervals [17]:
+				xmin = 5.04
+				xmax = 5.28
+				text = "ほど"
+			intervals [18]:
+				xmin = 5.28
+				xmax = 5.68
+				text = "重要"
+			intervals [19]:
+				xmin = 5.68
+				xmax = 5.76
+				text = "で"
+			intervals [20]:
+				xmin = 5.76
+				xmax = 5.84
+				text = "は"
+			intervals [21]:
+				xmin = 5.84
+				xmax = 6.0
+				text = "あり"
+			intervals [22]:
+				xmin = 6.0
+				xmax = 6.24
+				text = "ませ"
+			intervals [23]:
+				xmin = 6.24
+				xmax = 6.48
+				text = "でし"
+			intervals [24]:
+				xmin = 6.48
+				xmax = 6.64
+				text = "た"
+			intervals [25]:
+				xmin = 6.64
+				xmax = 8.76
+				text = ""

@@ -1,0 +1,102 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.72
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.72
+		intervals: size = 22
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.16
+				text = ""
+			intervals [2]:
+				xmin = 2.16
+				xmax = 2.56
+				text = "ms"
+			intervals [3]:
+				xmin = 2.56
+				xmax = 2.8
+				text = "は"
+			intervals [4]:
+				xmin = 2.8
+				xmax = 2.88
+				text = ""
+			intervals [5]:
+				xmin = 2.88
+				xmax = 3.2
+				text = "脳"
+			intervals [6]:
+				xmin = 3.2
+				xmax = 3.76
+				text = "脊髄"
+			intervals [7]:
+				xmin = 3.76
+				xmax = 3.84
+				text = ""
+			intervals [8]:
+				xmin = 3.84
+				xmax = 4.0
+				text = "視"
+			intervals [9]:
+				xmin = 4.0
+				xmax = 4.32
+				text = "神経"
+			intervals [10]:
+				xmin = 4.32
+				xmax = 4.56
+				text = "から"
+			intervals [11]:
+				xmin = 4.56
+				xmax = 4.72
+				text = "なる"
+			intervals [12]:
+				xmin = 4.72
+				xmax = 5.04
+				text = "中枢"
+			intervals [13]:
+				xmin = 5.04
+				xmax = 5.12
+				text = ""
+			intervals [14]:
+				xmin = 5.12
+				xmax = 5.52
+				text = "神経"
+			intervals [15]:
+				xmin = 5.52
+				xmax = 5.76
+				text = "系"
+			intervals [16]:
+				xmin = 5.76
+				xmax = 6.0
+				text = "に"
+			intervals [17]:
+				xmin = 6.0
+				xmax = 6.4
+				text = "影響"
+			intervals [18]:
+				xmin = 6.4
+				xmax = 6.48
+				text = "を"
+			intervals [19]:
+				xmin = 6.48
+				xmax = 6.8
+				text = "与える"
+			intervals [20]:
+				xmin = 6.8
+				xmax = 7.12
+				text = "病気"
+			intervals [21]:
+				xmin = 7.12
+				xmax = 7.52
+				text = "です"
+			intervals [22]:
+				xmin = 7.52
+				xmax = 9.72
+				text = ""

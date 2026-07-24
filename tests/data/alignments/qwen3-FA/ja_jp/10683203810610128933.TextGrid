@@ -1,0 +1,126 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 8.22
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 8.22
+		intervals: size = 28
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.16
+				text = ""
+			intervals [2]:
+				xmin = 2.16
+				xmax = 2.24
+				text = "を"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.56
+				text = "持ち"
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.88
+				text = ""
+			intervals [5]:
+				xmin = 2.88
+				xmax = 2.96
+				text = "を"
+			intervals [6]:
+				xmin = 2.96
+				xmax = 3.04
+				text = ""
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.36
+				text = "飛べる"
+			intervals [8]:
+				xmin = 3.36
+				xmax = 3.44
+				text = "の"
+			intervals [9]:
+				xmin = 3.44
+				xmax = 3.52
+				text = ""
+			intervals [10]:
+				xmin = 3.52
+				xmax = 3.6
+				text = "で"
+			intervals [11]:
+				xmin = 3.6
+				xmax = 4.16
+				text = ""
+			intervals [12]:
+				xmin = 4.16
+				xmax = 4.48
+				text = "恐竜"
+			intervals [13]:
+				xmin = 4.48
+				xmax = 4.64
+				text = ""
+			intervals [14]:
+				xmin = 4.64
+				xmax = 4.72
+				text = "だ"
+			intervals [15]:
+				xmin = 4.72
+				xmax = 4.8
+				text = ""
+			intervals [16]:
+				xmin = 4.8
+				xmax = 4.88
+				text = "と"
+			intervals [17]:
+				xmin = 4.88
+				xmax = 5.12
+				text = "思っ"
+			intervals [18]:
+				xmin = 5.12
+				xmax = 5.28
+				text = ""
+			intervals [19]:
+				xmin = 5.28
+				xmax = 5.36
+				text = "い"
+			intervals [20]:
+				xmin = 5.36
+				xmax = 5.6
+				text = ""
+			intervals [21]:
+				xmin = 5.6
+				xmax = 5.76
+				text = "ない"
+			intervals [22]:
+				xmin = 5.76
+				xmax = 6.08
+				text = "人"
+			intervals [23]:
+				xmin = 6.08
+				xmax = 6.32
+				text = "も"
+			intervals [24]:
+				xmin = 6.32
+				xmax = 6.8
+				text = ""
+			intervals [25]:
+				xmin = 6.8
+				xmax = 6.88
+				text = "大勢"
+			intervals [26]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "い"
+			intervals [27]:
+				xmin = 7.04
+				xmax = 7.2
+				text = "ます"
+			intervals [28]:
+				xmin = 7.2
+				xmax = 8.22
+				text = ""

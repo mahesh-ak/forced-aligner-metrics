@@ -1,0 +1,106 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.48
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.48
+		intervals: size = 23
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.4
+				text = "建造"
+			intervals [3]:
+				xmin = 2.4
+				xmax = 2.48
+				text = "物"
+			intervals [4]:
+				xmin = 2.48
+				xmax = 2.72
+				text = ""
+			intervals [5]:
+				xmin = 2.72
+				xmax = 2.8
+				text = "に"
+			intervals [6]:
+				xmin = 2.8
+				xmax = 2.96
+				text = ""
+			intervals [7]:
+				xmin = 2.96
+				xmax = 3.28
+				text = "塗料"
+			intervals [8]:
+				xmin = 3.28
+				xmax = 3.36
+				text = ""
+			intervals [9]:
+				xmin = 3.36
+				xmax = 3.44
+				text = "や"
+			intervals [10]:
+				xmin = 3.44
+				xmax = 3.84
+				text = "刃物"
+			intervals [11]:
+				xmin = 3.84
+				xmax = 3.92
+				text = "で"
+			intervals [12]:
+				xmin = 3.92
+				xmax = 4.32
+				text = "落書き"
+			intervals [13]:
+				xmin = 4.32
+				xmax = 4.56
+				text = "する"
+			intervals [14]:
+				xmin = 4.56
+				xmax = 4.72
+				text = "よう"
+			intervals [15]:
+				xmin = 4.72
+				xmax = 4.8
+				text = "な"
+			intervals [16]:
+				xmin = 4.8
+				xmax = 5.28
+				text = "名所"
+			intervals [17]:
+				xmin = 5.28
+				xmax = 5.68
+				text = "汚す"
+			intervals [18]:
+				xmin = 5.68
+				xmax = 5.76
+				text = ""
+			intervals [19]:
+				xmin = 5.76
+				xmax = 6.08
+				text = "行為"
+			intervals [20]:
+				xmin = 6.08
+				xmax = 6.4
+				text = ""
+			intervals [21]:
+				xmin = 6.4
+				xmax = 6.64
+				text = "慎み"
+			intervals [22]:
+				xmin = 6.64
+				xmax = 7.04
+				text = "ましょう"
+			intervals [23]:
+				xmin = 7.04
+				xmax = 9.48
+				text = ""

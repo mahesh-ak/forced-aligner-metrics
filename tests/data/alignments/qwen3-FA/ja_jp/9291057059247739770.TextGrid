@@ -1,0 +1,118 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.26
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 13.26
+		intervals: size = 26
+			intervals [1]:
+				xmin = 0.0
+				xmax = 3.12
+				text = ""
+			intervals [2]:
+				xmin = 3.12
+				xmax = 3.92
+				text = "モササウルス"
+			intervals [3]:
+				xmin = 3.92
+				xmax = 4.16
+				text = "は"
+			intervals [4]:
+				xmin = 4.16
+				xmax = 4.48
+				text = "その"
+			intervals [5]:
+				xmin = 4.48
+				xmax = 4.8
+				text = "時代"
+			intervals [6]:
+				xmin = 4.8
+				xmax = 5.04
+				text = "の"
+			intervals [7]:
+				xmin = 5.04
+				xmax = 5.6
+				text = "頂点"
+			intervals [8]:
+				xmin = 5.6
+				xmax = 5.92
+				text = "捕食"
+			intervals [9]:
+				xmin = 5.92
+				xmax = 6.08
+				text = "者"
+			intervals [10]:
+				xmin = 6.08
+				xmax = 6.16
+				text = "で"
+			intervals [11]:
+				xmin = 6.16
+				xmax = 6.48
+				text = "あった"
+			intervals [12]:
+				xmin = 6.48
+				xmax = 6.8
+				text = "ため"
+			intervals [13]:
+				xmin = 6.8
+				xmax = 7.2
+				text = ""
+			intervals [14]:
+				xmin = 7.2
+				xmax = 7.92
+				text = "モササウルス"
+			intervals [15]:
+				xmin = 7.92
+				xmax = 8.4
+				text = "同士"
+			intervals [16]:
+				xmin = 8.4
+				xmax = 8.64
+				text = "以外"
+			intervals [17]:
+				xmin = 8.64
+				xmax = 8.8
+				text = "に"
+			intervals [18]:
+				xmin = 8.8
+				xmax = 8.88
+				text = ""
+			intervals [19]:
+				xmin = 8.88
+				xmax = 9.28
+				text = "恐れる"
+			intervals [20]:
+				xmin = 9.28
+				xmax = 9.6
+				text = "相手"
+			intervals [21]:
+				xmin = 9.6
+				xmax = 9.76
+				text = "は"
+			intervals [22]:
+				xmin = 9.76
+				xmax = 9.84
+				text = "い"
+			intervals [23]:
+				xmin = 9.84
+				xmax = 10.16
+				text = "ませ"
+			intervals [24]:
+				xmin = 10.16
+				xmax = 10.4
+				text = "でし"
+			intervals [25]:
+				xmin = 10.4
+				xmax = 10.64
+				text = "た"
+			intervals [26]:
+				xmin = 10.64
+				xmax = 13.26
+				text = ""

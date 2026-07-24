@@ -1,0 +1,174 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.02
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 13.02
+		intervals: size = 40
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.76
+				text = ""
+			intervals [2]:
+				xmin = 1.76
+				xmax = 2.24
+				text = "バルセロナ"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.4
+				text = "の"
+			intervals [4]:
+				xmin = 2.4
+				xmax = 2.8
+				text = "公用"
+			intervals [5]:
+				xmin = 2.8
+				xmax = 2.88
+				text = "語"
+			intervals [6]:
+				xmin = 2.88
+				xmax = 3.2
+				text = "は"
+			intervals [7]:
+				xmin = 3.2
+				xmax = 3.6
+				text = "カタルーニャ"
+			intervals [8]:
+				xmin = 3.6
+				xmax = 3.84
+				text = "語"
+			intervals [9]:
+				xmin = 3.84
+				xmax = 3.92
+				text = "と"
+			intervals [10]:
+				xmin = 3.92
+				xmax = 4.32
+				text = "スペイン"
+			intervals [11]:
+				xmin = 4.32
+				xmax = 4.4
+				text = "語"
+			intervals [12]:
+				xmin = 4.4
+				xmax = 4.72
+				text = "です"
+			intervals [13]:
+				xmin = 4.72
+				xmax = 4.88
+				text = ""
+			intervals [14]:
+				xmin = 4.88
+				xmax = 5.12
+				text = "約"
+			intervals [15]:
+				xmin = 5.12
+				xmax = 5.52
+				text = "半数"
+			intervals [16]:
+				xmin = 5.52
+				xmax = 5.6
+				text = "が"
+			intervals [17]:
+				xmin = 5.6
+				xmax = 6.08
+				text = "カタルーニャ"
+			intervals [18]:
+				xmin = 6.08
+				xmax = 6.24
+				text = "語"
+			intervals [19]:
+				xmin = 6.24
+				xmax = 6.32
+				text = ""
+			intervals [20]:
+				xmin = 6.32
+				xmax = 6.72
+				text = "好み"
+			intervals [21]:
+				xmin = 6.72
+				xmax = 6.88
+				text = ""
+			intervals [22]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "大"
+			intervals [23]:
+				xmin = 7.04
+				xmax = 7.36
+				text = "多数"
+			intervals [24]:
+				xmin = 7.36
+				xmax = 7.44
+				text = "が"
+			intervals [25]:
+				xmin = 7.44
+				xmax = 8.0
+				text = "カタルーニャ"
+			intervals [26]:
+				xmin = 8.0
+				xmax = 8.08
+				text = "語"
+			intervals [27]:
+				xmin = 8.08
+				xmax = 8.16
+				text = "を"
+			intervals [28]:
+				xmin = 8.16
+				xmax = 8.48
+				text = "理解"
+			intervals [29]:
+				xmin = 8.48
+				xmax = 8.72
+				text = "し"
+			intervals [30]:
+				xmin = 8.72
+				xmax = 8.96
+				text = ""
+			intervals [31]:
+				xmin = 8.96
+				xmax = 9.12
+				text = "ほぼ"
+			intervals [32]:
+				xmin = 9.12
+				xmax = 9.52
+				text = "全員"
+			intervals [33]:
+				xmin = 9.52
+				xmax = 9.68
+				text = "が"
+			intervals [34]:
+				xmin = 9.68
+				xmax = 10.0
+				text = "スペイン"
+			intervals [35]:
+				xmin = 10.0
+				xmax = 10.16
+				text = "語"
+			intervals [36]:
+				xmin = 10.16
+				xmax = 10.4
+				text = "知っ"
+			intervals [37]:
+				xmin = 10.4
+				xmax = 10.48
+				text = "て"
+			intervals [38]:
+				xmin = 10.48
+				xmax = 10.56
+				text = "い"
+			intervals [39]:
+				xmin = 10.56
+				xmax = 11.04
+				text = "ます"
+			intervals [40]:
+				xmin = 11.04
+				xmax = 13.02
+				text = ""

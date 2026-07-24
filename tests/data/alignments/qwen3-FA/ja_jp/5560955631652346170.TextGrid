@@ -1,0 +1,170 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 18.48
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 18.48
+		intervals: size = 39
+			intervals [1]:
+				xmin = 0.0
+				xmax = 3.28
+				text = ""
+			intervals [2]:
+				xmin = 3.28
+				xmax = 4.0
+				text = "カリフォルニア"
+			intervals [3]:
+				xmin = 4.0
+				xmax = 4.32
+				text = "州"
+			intervals [4]:
+				xmin = 4.32
+				xmax = 4.56
+				text = "の"
+			intervals [5]:
+				xmin = 4.56
+				xmax = 4.8
+				text = ""
+			intervals [6]:
+				xmin = 4.8
+				xmax = 5.52
+				text = "アーノルド"
+			intervals [7]:
+				xmin = 5.52
+				xmax = 6.56
+				text = "シュワルツェネッガー"
+			intervals [8]:
+				xmin = 6.56
+				xmax = 6.88
+				text = "知事"
+			intervals [9]:
+				xmin = 6.88
+				xmax = 7.12
+				text = "は"
+			intervals [10]:
+				xmin = 7.12
+				xmax = 7.6
+				text = ""
+			intervals [11]:
+				xmin = 7.6
+				xmax = 8.0
+				text = "暴力"
+			intervals [12]:
+				xmin = 8.0
+				xmax = 8.32
+				text = "的"
+			intervals [13]:
+				xmin = 8.32
+				xmax = 8.4
+				text = "な"
+			intervals [14]:
+				xmin = 8.4
+				xmax = 8.8
+				text = "ビデオ"
+			intervals [15]:
+				xmin = 8.8
+				xmax = 9.12
+				text = "ゲーム"
+			intervals [16]:
+				xmin = 9.12
+				xmax = 9.2
+				text = ""
+			intervals [17]:
+				xmin = 9.2
+				xmax = 9.36
+				text = "を"
+			intervals [18]:
+				xmin = 9.36
+				xmax = 9.76
+				text = ""
+			intervals [19]:
+				xmin = 9.76
+				xmax = 10.0
+				text = "未"
+			intervals [20]:
+				xmin = 10.0
+				xmax = 10.32
+				text = "成年"
+			intervals [21]:
+				xmin = 10.32
+				xmax = 10.48
+				text = "者"
+			intervals [22]:
+				xmin = 10.48
+				xmax = 10.56
+				text = "に"
+			intervals [23]:
+				xmin = 10.56
+				xmax = 11.12
+				text = "販売"
+			intervals [24]:
+				xmin = 11.12
+				xmax = 11.28
+				text = "や"
+			intervals [25]:
+				xmin = 11.28
+				xmax = 11.36
+				text = ""
+			intervals [26]:
+				xmin = 11.36
+				xmax = 11.76
+				text = "レンタル"
+			intervals [27]:
+				xmin = 11.76
+				xmax = 12.0
+				text = "する"
+			intervals [28]:
+				xmin = 12.0
+				xmax = 12.32
+				text = "こと"
+			intervals [29]:
+				xmin = 12.32
+				xmax = 12.4
+				text = "を"
+			intervals [30]:
+				xmin = 12.4
+				xmax = 12.72
+				text = "禁止"
+			intervals [31]:
+				xmin = 12.72
+				xmax = 13.04
+				text = "する"
+			intervals [32]:
+				xmin = 13.04
+				xmax = 13.36
+				text = "法"
+			intervals [33]:
+				xmin = 13.36
+				xmax = 13.44
+				text = ""
+			intervals [34]:
+				xmin = 13.44
+				xmax = 13.6
+				text = "案"
+			intervals [35]:
+				xmin = 13.6
+				xmax = 13.76
+				text = "に"
+			intervals [36]:
+				xmin = 13.76
+				xmax = 14.08
+				text = "署名"
+			intervals [37]:
+				xmin = 14.08
+				xmax = 14.24
+				text = "し"
+			intervals [38]:
+				xmin = 14.24
+				xmax = 14.64
+				text = "ました"
+			intervals [39]:
+				xmin = 14.64
+				xmax = 18.48
+				text = ""

@@ -1,0 +1,98 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 8.34
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 8.34
+		intervals: size = 21
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.32
+				text = "洞窟"
+			intervals [3]:
+				xmin = 2.32
+				xmax = 2.56
+				text = "は"
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.88
+				text = "メッカ"
+			intervals [5]:
+				xmin = 2.88
+				xmax = 2.96
+				text = "の"
+			intervals [6]:
+				xmin = 2.96
+				xmax = 3.2
+				text = "北"
+			intervals [7]:
+				xmin = 3.2
+				xmax = 3.28
+				text = "に"
+			intervals [8]:
+				xmin = 3.28
+				xmax = 3.6
+				text = "あたる"
+			intervals [9]:
+				xmin = 3.6
+				xmax = 4.08
+				text = "山頂"
+			intervals [10]:
+				xmin = 4.08
+				xmax = 4.16
+				text = "に"
+			intervals [11]:
+				xmin = 4.16
+				xmax = 4.4
+				text = "あり"
+			intervals [12]:
+				xmin = 4.4
+				xmax = 4.88
+				text = "外界"
+			intervals [13]:
+				xmin = 4.88
+				xmax = 5.12
+				text = "から"
+			intervals [14]:
+				xmin = 5.12
+				xmax = 5.44
+				text = "完全"
+			intervals [15]:
+				xmin = 5.44
+				xmax = 5.52
+				text = "に"
+			intervals [16]:
+				xmin = 5.52
+				xmax = 5.84
+				text = "隔離"
+			intervals [17]:
+				xmin = 5.84
+				xmax = 6.0
+				text = "され"
+			intervals [18]:
+				xmin = 6.0
+				xmax = 6.16
+				text = "て"
+			intervals [19]:
+				xmin = 6.16
+				xmax = 6.24
+				text = "い"
+			intervals [20]:
+				xmin = 6.24
+				xmax = 6.72
+				text = "ます"
+			intervals [21]:
+				xmin = 6.72
+				xmax = 8.34
+				text = ""

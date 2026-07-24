@@ -1,0 +1,154 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 10.74
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 10.74
+		intervals: size = 35
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.68
+				text = ""
+			intervals [2]:
+				xmin = 1.68
+				xmax = 2.08
+				text = "離岸"
+			intervals [3]:
+				xmin = 2.08
+				xmax = 2.24
+				text = "流"
+			intervals [4]:
+				xmin = 2.24
+				xmax = 2.4
+				text = "と"
+			intervals [5]:
+				xmin = 2.4
+				xmax = 2.72
+				text = "は"
+			intervals [6]:
+				xmin = 2.72
+				xmax = 3.04
+				text = "砕け"
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.2
+				text = "て"
+			intervals [8]:
+				xmin = 3.2
+				xmax = 3.68
+				text = "浜辺"
+			intervals [9]:
+				xmin = 3.68
+				xmax = 3.84
+				text = "に"
+			intervals [10]:
+				xmin = 3.84
+				xmax = 4.08
+				text = "戻っ"
+			intervals [11]:
+				xmin = 4.08
+				xmax = 4.24
+				text = "て"
+			intervals [12]:
+				xmin = 4.24
+				xmax = 4.4
+				text = "くる"
+			intervals [13]:
+				xmin = 4.4
+				xmax = 4.56
+				text = ""
+			intervals [14]:
+				xmin = 4.56
+				xmax = 4.88
+				text = "引き波"
+			intervals [15]:
+				xmin = 4.88
+				xmax = 4.96
+				text = "の"
+			intervals [16]:
+				xmin = 4.96
+				xmax = 5.2
+				text = "こと"
+			intervals [17]:
+				xmin = 5.2
+				xmax = 5.28
+				text = "で"
+			intervals [18]:
+				xmin = 5.28
+				xmax = 5.52
+				text = ""
+			intervals [19]:
+				xmin = 5.52
+				xmax = 5.84
+				text = "多く"
+			intervals [20]:
+				xmin = 5.84
+				xmax = 6.0
+				text = "の"
+			intervals [21]:
+				xmin = 6.0
+				xmax = 6.24
+				text = "場合"
+			intervals [22]:
+				xmin = 6.24
+				xmax = 6.56
+				text = ""
+			intervals [23]:
+				xmin = 6.56
+				xmax = 7.04
+				text = "岩礁"
+			intervals [24]:
+				xmin = 7.04
+				xmax = 7.2
+				text = "や"
+			intervals [25]:
+				xmin = 7.2
+				xmax = 7.36
+				text = ""
+			intervals [26]:
+				xmin = 7.36
+				xmax = 7.68
+				text = "それ"
+			intervals [27]:
+				xmin = 7.68
+				xmax = 7.84
+				text = "に"
+			intervals [28]:
+				xmin = 7.84
+				xmax = 7.92
+				text = "似"
+			intervals [29]:
+				xmin = 7.92
+				xmax = 8.08
+				text = "た"
+			intervals [30]:
+				xmin = 8.08
+				xmax = 8.32
+				text = "場所"
+			intervals [31]:
+				xmin = 8.32
+				xmax = 8.4
+				text = "で"
+			intervals [32]:
+				xmin = 8.4
+				xmax = 8.8
+				text = "発生"
+			intervals [33]:
+				xmin = 8.8
+				xmax = 8.88
+				text = "し"
+			intervals [34]:
+				xmin = 8.88
+				xmax = 9.12
+				text = "ます"
+			intervals [35]:
+				xmin = 9.12
+				xmax = 10.74
+				text = ""

@@ -1,0 +1,174 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 22.5
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 22.5
+		intervals: size = 40
+			intervals [1]:
+				xmin = 0.0
+				xmax = 6.0
+				text = ""
+			intervals [2]:
+				xmin = 6.0
+				xmax = 6.4
+				text = "マウ"
+			intervals [3]:
+				xmin = 6.4
+				xmax = 6.8
+				text = "運動"
+			intervals [4]:
+				xmin = 6.8
+				xmax = 6.88
+				text = "に"
+			intervals [5]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "よっ"
+			intervals [6]:
+				xmin = 7.04
+				xmax = 7.36
+				text = "て"
+			intervals [7]:
+				xmin = 7.36
+				xmax = 7.68
+				text = "組織"
+			intervals [8]:
+				xmin = 7.68
+				xmax = 8.0
+				text = "され"
+			intervals [9]:
+				xmin = 8.0
+				xmax = 8.24
+				text = "た"
+			intervals [10]:
+				xmin = 8.24
+				xmax = 8.64
+				text = "独立"
+			intervals [11]:
+				xmin = 8.64
+				xmax = 9.2
+				text = "闘争"
+			intervals [12]:
+				xmin = 9.2
+				xmax = 9.36
+				text = "の"
+			intervals [13]:
+				xmin = 9.36
+				xmax = 9.6
+				text = "間"
+			intervals [14]:
+				xmin = 9.6
+				xmax = 9.84
+				text = "に"
+			intervals [15]:
+				xmin = 9.84
+				xmax = 10.08
+				text = ""
+			intervals [16]:
+				xmin = 10.08
+				xmax = 10.32
+				text = "町"
+			intervals [17]:
+				xmin = 10.32
+				xmax = 10.48
+				text = "で"
+			intervals [18]:
+				xmin = 10.48
+				xmax = 10.8
+				text = "開か"
+			intervals [19]:
+				xmin = 10.8
+				xmax = 10.88
+				text = "れ"
+			intervals [20]:
+				xmin = 10.88
+				xmax = 11.04
+				text = "た"
+			intervals [21]:
+				xmin = 11.04
+				xmax = 11.36
+				text = "平和"
+			intervals [22]:
+				xmin = 11.36
+				xmax = 11.52
+				text = "的"
+			intervals [23]:
+				xmin = 11.52
+				xmax = 11.68
+				text = "な"
+			intervals [24]:
+				xmin = 11.68
+				xmax = 12.16
+				text = "集会"
+			intervals [25]:
+				xmin = 12.16
+				xmax = 12.4
+				text = "で"
+			intervals [26]:
+				xmin = 12.4
+				xmax = 12.8
+				text = ""
+			intervals [27]:
+				xmin = 12.8
+				xmax = 13.28
+				text = "最高"
+			intervals [28]:
+				xmin = 13.28
+				xmax = 13.76
+				text = "責任"
+			intervals [29]:
+				xmin = 13.76
+				xmax = 14.0
+				text = "者"
+			intervals [30]:
+				xmin = 14.0
+				xmax = 14.16
+				text = ""
+			intervals [31]:
+				xmin = 14.16
+				xmax = 14.8
+				text = "トゥプア"
+			intervals [32]:
+				xmin = 14.8
+				xmax = 15.68
+				text = "タマセーゼ"
+			intervals [33]:
+				xmin = 15.68
+				xmax = 15.76
+				text = ""
+			intervals [34]:
+				xmin = 15.76
+				xmax = 16.32
+				text = "レアロフィ"
+			intervals [35]:
+				xmin = 16.32
+				xmax = 16.8
+				text = "三世"
+			intervals [36]:
+				xmin = 16.8
+				xmax = 16.96
+				text = "が"
+			intervals [37]:
+				xmin = 16.96
+				xmax = 17.36
+				text = "殺害"
+			intervals [38]:
+				xmin = 17.36
+				xmax = 17.6
+				text = "され"
+			intervals [39]:
+				xmin = 17.6
+				xmax = 18.0
+				text = "ました"
+			intervals [40]:
+				xmin = 18.0
+				xmax = 22.5
+				text = ""

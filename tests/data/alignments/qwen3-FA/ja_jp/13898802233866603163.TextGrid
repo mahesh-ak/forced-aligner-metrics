@@ -1,0 +1,178 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.84
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.84
+		intervals: size = 41
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.16
+				text = "この"
+			intervals [3]:
+				xmin = 2.16
+				xmax = 2.48
+				text = "伝統"
+			intervals [4]:
+				xmin = 2.48
+				xmax = 2.56
+				text = "に"
+			intervals [5]:
+				xmin = 2.56
+				xmax = 2.8
+				text = "つい"
+			intervals [6]:
+				xmin = 2.8
+				xmax = 2.88
+				text = "て"
+			intervals [7]:
+				xmin = 2.88
+				xmax = 3.04
+				text = "は"
+			intervals [8]:
+				xmin = 3.04
+				xmax = 3.44
+				text = "もちろん"
+			intervals [9]:
+				xmin = 3.44
+				xmax = 3.84
+				text = "キリスト"
+			intervals [10]:
+				xmin = 3.84
+				xmax = 4.0
+				text = "教"
+			intervals [11]:
+				xmin = 4.0
+				xmax = 4.16
+				text = "に"
+			intervals [12]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "おけ"
+			intervals [13]:
+				xmin = 4.32
+				xmax = 4.4
+				text = "る"
+			intervals [14]:
+				xmin = 4.4
+				xmax = 4.88
+				text = "神学"
+			intervals [15]:
+				xmin = 4.88
+				xmax = 5.04
+				text = "的"
+			intervals [16]:
+				xmin = 5.04
+				xmax = 5.2
+				text = "な"
+			intervals [17]:
+				xmin = 5.2
+				xmax = 5.6
+				text = "説明"
+			intervals [18]:
+				xmin = 5.6
+				xmax = 5.68
+				text = "が"
+			intervals [19]:
+				xmin = 5.68
+				xmax = 5.84
+				text = "あり"
+			intervals [20]:
+				xmin = 5.84
+				xmax = 6.08
+				text = "ます"
+			intervals [21]:
+				xmin = 6.08
+				xmax = 6.32
+				text = "が"
+			intervals [22]:
+				xmin = 6.32
+				xmax = 6.8
+				text = "西暦"
+			intervals [23]:
+				xmin = 6.8
+				xmax = 7.36
+				text = "紀元"
+			intervals [24]:
+				xmin = 7.36
+				xmax = 7.44
+				text = "に"
+			intervals [25]:
+				xmin = 7.44
+				xmax = 7.52
+				text = "見"
+			intervals [26]:
+				xmin = 7.52
+				xmax = 7.76
+				text = "られ"
+			intervals [27]:
+				xmin = 7.76
+				xmax = 8.0
+				text = "た"
+			intervals [28]:
+				xmin = 8.0
+				xmax = 8.08
+				text = ""
+			intervals [29]:
+				xmin = 8.08
+				xmax = 8.24
+				text = "春"
+			intervals [30]:
+				xmin = 8.24
+				xmax = 8.4
+				text = "と"
+			intervals [31]:
+				xmin = 8.4
+				xmax = 8.72
+				text = "豊穣"
+			intervals [32]:
+				xmin = 8.72
+				xmax = 8.8
+				text = "の"
+			intervals [33]:
+				xmin = 8.8
+				xmax = 9.12
+				text = "儀式"
+			intervals [34]:
+				xmin = 9.12
+				xmax = 9.2
+				text = "に"
+			intervals [35]:
+				xmin = 9.2
+				xmax = 9.52
+				text = "ちなむ"
+			intervals [36]:
+				xmin = 9.52
+				xmax = 9.76
+				text = "可能"
+			intervals [37]:
+				xmin = 9.76
+				xmax = 10.0
+				text = "性"
+			intervals [38]:
+				xmin = 10.0
+				xmax = 10.16
+				text = "が"
+			intervals [39]:
+				xmin = 10.16
+				xmax = 10.32
+				text = "あり"
+			intervals [40]:
+				xmin = 10.32
+				xmax = 10.72
+				text = "ます"
+			intervals [41]:
+				xmin = 10.72
+				xmax = 12.84
+				text = ""

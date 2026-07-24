@@ -1,0 +1,162 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 15.48
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 15.48
+		intervals: size = 37
+			intervals [1]:
+				xmin = 0.0
+				xmax = 3.92
+				text = ""
+			intervals [2]:
+				xmin = 3.92
+				xmax = 4.32
+				text = "授業"
+			intervals [3]:
+				xmin = 4.32
+				xmax = 4.4
+				text = "の"
+			intervals [4]:
+				xmin = 4.4
+				xmax = 4.56
+				text = "大"
+			intervals [5]:
+				xmin = 4.56
+				xmax = 4.96
+				text = "部分"
+			intervals [6]:
+				xmin = 4.96
+				xmax = 5.12
+				text = "は"
+			intervals [7]:
+				xmin = 5.12
+				xmax = 5.52
+				text = "郊外"
+			intervals [8]:
+				xmin = 5.52
+				xmax = 5.92
+				text = "学習"
+			intervals [9]:
+				xmin = 5.92
+				xmax = 6.32
+				text = "です"
+			intervals [10]:
+				xmin = 6.32
+				xmax = 6.56
+				text = ""
+			intervals [11]:
+				xmin = 6.56
+				xmax = 6.96
+				text = "教師"
+			intervals [12]:
+				xmin = 6.96
+				xmax = 7.12
+				text = "は"
+			intervals [13]:
+				xmin = 7.12
+				xmax = 7.2
+				text = ""
+			intervals [14]:
+				xmin = 7.2
+				xmax = 7.44
+				text = "バス"
+			intervals [15]:
+				xmin = 7.44
+				xmax = 7.76
+				text = "旅行"
+			intervals [16]:
+				xmin = 7.76
+				xmax = 7.84
+				text = ""
+			intervals [17]:
+				xmin = 7.84
+				xmax = 7.92
+				text = "で"
+			intervals [18]:
+				xmin = 7.92
+				xmax = 8.0
+				text = "は"
+			intervals [19]:
+				xmin = 8.0
+				xmax = 8.24
+				text = "行け"
+			intervals [20]:
+				xmin = 8.24
+				xmax = 8.4
+				text = "ない"
+			intervals [21]:
+				xmin = 8.4
+				xmax = 8.56
+				text = "よう"
+			intervals [22]:
+				xmin = 8.56
+				xmax = 8.72
+				text = "な"
+			intervals [23]:
+				xmin = 8.72
+				xmax = 8.96
+				text = "場所"
+			intervals [24]:
+				xmin = 8.96
+				xmax = 9.12
+				text = "に"
+			intervals [25]:
+				xmin = 9.12
+				xmax = 9.52
+				text = "かなり"
+			intervals [26]:
+				xmin = 9.52
+				xmax = 9.92
+				text = "頻繁"
+			intervals [27]:
+				xmin = 9.92
+				xmax = 10.0
+				text = "に"
+			intervals [28]:
+				xmin = 10.0
+				xmax = 10.32
+				text = "生徒"
+			intervals [29]:
+				xmin = 10.32
+				xmax = 10.64
+				text = "たち"
+			intervals [30]:
+				xmin = 10.64
+				xmax = 10.72
+				text = "を"
+			intervals [31]:
+				xmin = 10.72
+				xmax = 10.96
+				text = "連れ"
+			intervals [32]:
+				xmin = 10.96
+				xmax = 11.04
+				text = "て"
+			intervals [33]:
+				xmin = 11.04
+				xmax = 11.36
+				text = "いこう"
+			intervals [34]:
+				xmin = 11.36
+				xmax = 11.44
+				text = "と"
+			intervals [35]:
+				xmin = 11.44
+				xmax = 11.6
+				text = "し"
+			intervals [36]:
+				xmin = 11.6
+				xmax = 12.0
+				text = "ます"
+			intervals [37]:
+				xmin = 12.0
+				xmax = 15.48
+				text = ""

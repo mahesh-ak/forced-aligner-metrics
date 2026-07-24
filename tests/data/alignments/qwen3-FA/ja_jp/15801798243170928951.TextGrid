@@ -1,0 +1,170 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.2
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 13.2
+		intervals: size = 39
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.16
+				text = ""
+			intervals [2]:
+				xmin = 2.16
+				xmax = 2.48
+				text = "レイトン"
+			intervals [3]:
+				xmin = 2.48
+				xmax = 2.64
+				text = "氏"
+			intervals [4]:
+				xmin = 2.64
+				xmax = 2.88
+				text = "は"
+			intervals [5]:
+				xmin = 2.88
+				xmax = 3.2
+				text = "首相"
+			intervals [6]:
+				xmin = 3.2
+				xmax = 3.28
+				text = "と"
+			intervals [7]:
+				xmin = 3.28
+				xmax = 3.36
+				text = "の"
+			intervals [8]:
+				xmin = 3.36
+				xmax = 3.76
+				text = "会談"
+			intervals [9]:
+				xmin = 3.76
+				xmax = 4.0
+				text = "で"
+			intervals [10]:
+				xmin = 4.0
+				xmax = 4.24
+				text = "保守"
+			intervals [11]:
+				xmin = 4.24
+				xmax = 4.4
+				text = "党"
+			intervals [12]:
+				xmin = 4.4
+				xmax = 4.48
+				text = "の"
+			intervals [13]:
+				xmin = 4.48
+				xmax = 4.88
+				text = "環境"
+			intervals [14]:
+				xmin = 4.88
+				xmax = 4.96
+				text = "法"
+			intervals [15]:
+				xmin = 4.96
+				xmax = 5.04
+				text = ""
+			intervals [16]:
+				xmin = 5.04
+				xmax = 5.12
+				text = "案"
+			intervals [17]:
+				xmin = 5.12
+				xmax = 5.52
+				text = "対する"
+			intervals [18]:
+				xmin = 5.52
+				xmax = 5.92
+				text = "変更"
+			intervals [19]:
+				xmin = 5.92
+				xmax = 6.0
+				text = "を"
+			intervals [20]:
+				xmin = 6.0
+				xmax = 6.4
+				text = "求め"
+			intervals [21]:
+				xmin = 6.4
+				xmax = 6.72
+				text = ""
+			intervals [22]:
+				xmin = 6.72
+				xmax = 6.88
+				text = "保守"
+			intervals [23]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "党"
+			intervals [24]:
+				xmin = 7.04
+				xmax = 7.12
+				text = "の"
+			intervals [25]:
+				xmin = 7.12
+				xmax = 7.52
+				text = "環境"
+			intervals [26]:
+				xmin = 7.52
+				xmax = 7.76
+				text = "法"
+			intervals [27]:
+				xmin = 7.76
+				xmax = 7.92
+				text = "案"
+			intervals [28]:
+				xmin = 7.92
+				xmax = 8.08
+				text = "の"
+			intervals [29]:
+				xmin = 8.08
+				xmax = 8.16
+				text = ""
+			intervals [30]:
+				xmin = 8.16
+				xmax = 8.56
+				text = "徹底"
+			intervals [31]:
+				xmin = 8.56
+				xmax = 8.72
+				text = "的"
+			intervals [32]:
+				xmin = 8.72
+				xmax = 8.96
+				text = "かつ"
+			intervals [33]:
+				xmin = 8.96
+				xmax = 9.36
+				text = "完全"
+			intervals [34]:
+				xmin = 9.36
+				xmax = 9.44
+				text = "な"
+			intervals [35]:
+				xmin = 9.44
+				xmax = 9.92
+				text = "書き直し"
+			intervals [36]:
+				xmin = 9.92
+				xmax = 10.0
+				text = "を"
+			intervals [37]:
+				xmin = 10.0
+				xmax = 10.24
+				text = "求め"
+			intervals [38]:
+				xmin = 10.24
+				xmax = 10.64
+				text = "ました"
+			intervals [39]:
+				xmin = 10.64
+				xmax = 13.2
+				text = ""

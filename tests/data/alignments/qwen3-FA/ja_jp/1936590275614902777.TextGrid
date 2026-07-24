@@ -1,0 +1,110 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 11.52
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 11.52
+		intervals: size = 24
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.8
+				text = ""
+			intervals [2]:
+				xmin = 2.8
+				xmax = 2.88
+				text = "一"
+			intervals [3]:
+				xmin = 2.88
+				xmax = 3.44
+				text = "分間"
+			intervals [4]:
+				xmin = 3.44
+				xmax = 3.68
+				text = "で"
+			intervals [5]:
+				xmin = 3.68
+				xmax = 3.76
+				text = ""
+			intervals [6]:
+				xmin = 3.76
+				xmax = 4.08
+				text = "沸騰"
+			intervals [7]:
+				xmin = 4.08
+				xmax = 4.32
+				text = "する"
+			intervals [8]:
+				xmin = 4.32
+				xmax = 4.64
+				text = "地域"
+			intervals [9]:
+				xmin = 4.64
+				xmax = 4.8
+				text = "も"
+			intervals [10]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "あれ"
+			intervals [11]:
+				xmin = 4.96
+				xmax = 5.28
+				text = "ば"
+			intervals [12]:
+				xmin = 5.28
+				xmax = 5.68
+				text = "沸騰"
+			intervals [13]:
+				xmin = 5.68
+				xmax = 6.0
+				text = "する"
+			intervals [14]:
+				xmin = 6.0
+				xmax = 6.24
+				text = "まで"
+			intervals [15]:
+				xmin = 6.24
+				xmax = 6.4
+				text = "に"
+			intervals [16]:
+				xmin = 6.4
+				xmax = 6.64
+				text = "何"
+			intervals [17]:
+				xmin = 6.64
+				xmax = 6.88
+				text = "分"
+			intervals [18]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "も"
+			intervals [19]:
+				xmin = 7.04
+				xmax = 7.36
+				text = "かかる"
+			intervals [20]:
+				xmin = 7.36
+				xmax = 7.76
+				text = "地域"
+			intervals [21]:
+				xmin = 7.76
+				xmax = 7.92
+				text = "も"
+			intervals [22]:
+				xmin = 7.92
+				xmax = 8.08
+				text = "あり"
+			intervals [23]:
+				xmin = 8.08
+				xmax = 8.56
+				text = "ます"
+			intervals [24]:
+				xmin = 8.56
+				xmax = 11.52
+				text = ""

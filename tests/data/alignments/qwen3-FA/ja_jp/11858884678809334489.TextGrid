@@ -1,0 +1,154 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 11.7
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 11.7
+		intervals: size = 35
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.52
+				text = ""
+			intervals [2]:
+				xmin = 1.52
+				xmax = 1.76
+				text = "また"
+			intervals [3]:
+				xmin = 1.76
+				xmax = 2.0
+				text = "校外"
+			intervals [4]:
+				xmin = 2.0
+				xmax = 2.64
+				text = "学習"
+			intervals [5]:
+				xmin = 2.64
+				xmax = 3.04
+				text = "仮想"
+			intervals [6]:
+				xmin = 3.04
+				xmax = 3.12
+				text = "的"
+			intervals [7]:
+				xmin = 3.12
+				xmax = 3.2
+				text = ""
+			intervals [8]:
+				xmin = 3.2
+				xmax = 3.36
+				text = "に"
+			intervals [9]:
+				xmin = 3.36
+				xmax = 3.76
+				text = "共有"
+			intervals [10]:
+				xmin = 3.76
+				xmax = 4.0
+				text = "する"
+			intervals [11]:
+				xmin = 4.0
+				xmax = 4.24
+				text = "こと"
+			intervals [12]:
+				xmin = 4.24
+				xmax = 4.48
+				text = "は"
+			intervals [13]:
+				xmin = 4.48
+				xmax = 4.56
+				text = ""
+			intervals [14]:
+				xmin = 4.56
+				xmax = 4.88
+				text = "旅行"
+			intervals [15]:
+				xmin = 4.88
+				xmax = 5.36
+				text = "振り返る"
+			intervals [16]:
+				xmin = 5.36
+				xmax = 5.6
+				text = "と"
+			intervals [17]:
+				xmin = 5.6
+				xmax = 5.76
+				text = "とも"
+			intervals [18]:
+				xmin = 5.76
+				xmax = 6.16
+				text = ""
+			intervals [19]:
+				xmin = 6.16
+				xmax = 6.48
+				text = "今後"
+			intervals [20]:
+				xmin = 6.48
+				xmax = 6.56
+				text = "の"
+			intervals [21]:
+				xmin = 6.56
+				xmax = 6.88
+				text = "授業"
+			intervals [22]:
+				xmin = 6.88
+				xmax = 6.96
+				text = "で"
+			intervals [23]:
+				xmin = 6.96
+				xmax = 7.44
+				text = "経験"
+			intervals [24]:
+				xmin = 7.44
+				xmax = 7.52
+				text = "を"
+			intervals [25]:
+				xmin = 7.52
+				xmax = 7.6
+				text = ""
+			intervals [26]:
+				xmin = 7.6
+				xmax = 8.0
+				text = "共有"
+			intervals [27]:
+				xmin = 8.0
+				xmax = 8.24
+				text = "する"
+			intervals [28]:
+				xmin = 8.24
+				xmax = 8.32
+				text = ""
+			intervals [29]:
+				xmin = 8.32
+				xmax = 8.4
+				text = "うえ"
+			intervals [30]:
+				xmin = 8.4
+				xmax = 8.48
+				text = "で"
+			intervals [31]:
+				xmin = 8.48
+				xmax = 9.04
+				text = "すばらしい"
+			intervals [32]:
+				xmin = 9.04
+				xmax = 9.28
+				text = "方法"
+			intervals [33]:
+				xmin = 9.28
+				xmax = 9.6
+				text = ""
+			intervals [34]:
+				xmin = 9.6
+				xmax = 9.76
+				text = "です"
+			intervals [35]:
+				xmin = 9.76
+				xmax = 11.7
+				text = ""

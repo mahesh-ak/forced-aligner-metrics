@@ -1,0 +1,138 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 11.64
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 11.64
+		intervals: size = 31
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = "ここ"
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.08
+				text = "は"
+			intervals [3]:
+				xmin = 2.08
+				xmax = 2.88
+				text = "南アフリカ"
+			intervals [4]:
+				xmin = 2.88
+				xmax = 2.96
+				text = "の"
+			intervals [5]:
+				xmin = 2.96
+				xmax = 3.28
+				text = "主な"
+			intervals [6]:
+				xmin = 3.28
+				xmax = 3.68
+				text = "観光"
+			intervals [7]:
+				xmin = 3.68
+				xmax = 3.84
+				text = "地"
+			intervals [8]:
+				xmin = 3.84
+				xmax = 3.92
+				text = "の"
+			intervals [9]:
+				xmin = 3.92
+				xmax = 4.08
+				text = "一"
+			intervals [10]:
+				xmin = 4.08
+				xmax = 4.24
+				text = "つ"
+			intervals [11]:
+				xmin = 4.24
+				xmax = 4.32
+				text = "で"
+			intervals [12]:
+				xmin = 4.32
+				xmax = 4.48
+				text = "あり"
+			intervals [13]:
+				xmin = 4.48
+				xmax = 4.8
+				text = ""
+			intervals [14]:
+				xmin = 4.8
+				xmax = 5.6
+				text = "南アフリカ"
+			intervals [15]:
+				xmin = 5.6
+				xmax = 5.92
+				text = "国立"
+			intervals [16]:
+				xmin = 5.92
+				xmax = 6.08
+				text = ""
+			intervals [17]:
+				xmin = 6.08
+				xmax = 6.4
+				text = "公園"
+			intervals [18]:
+				xmin = 6.4
+				xmax = 6.96
+				text = ""
+			intervals [19]:
+				xmin = 6.96
+				xmax = 7.28
+				text = "san"
+			intervals [20]:
+				xmin = 7.28
+				xmax = 7.76
+				text = ""
+			intervals [21]:
+				xmin = 7.76
+				xmax = 8.24
+				text = "parks"
+			intervals [22]:
+				xmin = 8.24
+				xmax = 8.32
+				text = "の"
+			intervals [23]:
+				xmin = 8.32
+				xmax = 8.4
+				text = ""
+			intervals [24]:
+				xmin = 8.4
+				xmax = 8.64
+				text = "目玉"
+			intervals [25]:
+				xmin = 8.64
+				xmax = 8.72
+				text = ""
+			intervals [26]:
+				xmin = 8.72
+				xmax = 8.8
+				text = "と"
+			intervals [27]:
+				xmin = 8.8
+				xmax = 9.04
+				text = "され"
+			intervals [28]:
+				xmin = 9.04
+				xmax = 9.12
+				text = "て"
+			intervals [29]:
+				xmin = 9.12
+				xmax = 9.2
+				text = ""
+			intervals [30]:
+				xmin = 9.2
+				xmax = 9.52
+				text = "ます"
+			intervals [31]:
+				xmin = 9.52
+				xmax = 11.64
+				text = ""

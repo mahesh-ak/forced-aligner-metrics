@@ -1,0 +1,118 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 14.7
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 14.7
+		intervals: size = 26
+			intervals [1]:
+				xmin = 0.0
+				xmax = 4.32
+				text = ""
+			intervals [2]:
+				xmin = 4.32
+				xmax = 4.72
+				text = "地域"
+			intervals [3]:
+				xmin = 4.72
+				xmax = 5.04
+				text = "的"
+			intervals [4]:
+				xmin = 5.04
+				xmax = 5.36
+				text = "季節"
+			intervals [5]:
+				xmin = 5.36
+				xmax = 5.6
+				text = "的"
+			intervals [6]:
+				xmin = 5.6
+				xmax = 5.76
+				text = "な"
+			intervals [7]:
+				xmin = 5.76
+				xmax = 6.32
+				text = "厳しい"
+			intervals [8]:
+				xmin = 6.32
+				xmax = 6.64
+				text = "気象"
+			intervals [9]:
+				xmin = 6.64
+				xmax = 7.12
+				text = "現象"
+			intervals [10]:
+				xmin = 7.12
+				xmax = 7.28
+				text = "として"
+			intervals [11]:
+				xmin = 7.28
+				xmax = 7.52
+				text = ""
+			intervals [12]:
+				xmin = 7.52
+				xmax = 7.76
+				text = "は"
+			intervals [13]:
+				xmin = 7.76
+				xmax = 8.0
+				text = ""
+			intervals [14]:
+				xmin = 8.0
+				xmax = 8.56
+				text = "吹雪"
+			intervals [15]:
+				xmin = 8.56
+				xmax = 8.8
+				text = ""
+			intervals [16]:
+				xmin = 8.8
+				xmax = 9.28
+				text = "吹雪"
+			intervals [17]:
+				xmin = 9.28
+				xmax = 9.44
+				text = ""
+			intervals [18]:
+				xmin = 9.44
+				xmax = 9.68
+				text = "暴"
+			intervals [19]:
+				xmin = 9.68
+				xmax = 10.0
+				text = "氷"
+			intervals [20]:
+				xmin = 10.0
+				xmax = 10.08
+				text = ""
+			intervals [21]:
+				xmin = 10.08
+				xmax = 10.64
+				text = "砂嵐"
+			intervals [22]:
+				xmin = 10.64
+				xmax = 10.88
+				text = "など"
+			intervals [23]:
+				xmin = 10.88
+				xmax = 11.04
+				text = "が"
+			intervals [24]:
+				xmin = 11.04
+				xmax = 11.2
+				text = "あり"
+			intervals [25]:
+				xmin = 11.2
+				xmax = 11.6
+				text = "ます"
+			intervals [26]:
+				xmin = 11.6
+				xmax = 14.7
+				text = ""

@@ -1,0 +1,110 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.78
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.78
+		intervals: size = 24
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.0
+				text = ""
+			intervals [2]:
+				xmin = 2.0
+				xmax = 2.24
+				text = "日本"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.4
+				text = "の"
+			intervals [4]:
+				xmin = 2.4
+				xmax = 2.72
+				text = "原子"
+			intervals [5]:
+				xmin = 2.72
+				xmax = 2.88
+				text = "力"
+			intervals [6]:
+				xmin = 2.88
+				xmax = 3.04
+				text = "庁"
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.2
+				text = "に"
+			intervals [8]:
+				xmin = 3.2
+				xmax = 3.36
+				text = "よれ"
+			intervals [9]:
+				xmin = 3.36
+				xmax = 3.6
+				text = "ば"
+			intervals [10]:
+				xmin = 3.6
+				xmax = 4.0
+				text = "原発"
+			intervals [11]:
+				xmin = 4.0
+				xmax = 4.16
+				text = "内"
+			intervals [12]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "で"
+			intervals [13]:
+				xmin = 4.32
+				xmax = 4.72
+				text = "放射"
+			intervals [14]:
+				xmin = 4.72
+				xmax = 4.88
+				text = "性"
+			intervals [15]:
+				xmin = 4.88
+				xmax = 5.28
+				text = "セシウム"
+			intervals [16]:
+				xmin = 5.28
+				xmax = 5.44
+				text = "と"
+			intervals [17]:
+				xmin = 5.44
+				xmax = 5.76
+				text = "ヨウ素"
+			intervals [18]:
+				xmin = 5.76
+				xmax = 5.84
+				text = "が"
+			intervals [19]:
+				xmin = 5.84
+				xmax = 6.16
+				text = "特定"
+			intervals [20]:
+				xmin = 6.16
+				xmax = 6.4
+				text = "され"
+			intervals [21]:
+				xmin = 6.4
+				xmax = 6.48
+				text = "て"
+			intervals [22]:
+				xmin = 6.48
+				xmax = 6.56
+				text = "い"
+			intervals [23]:
+				xmin = 6.56
+				xmax = 7.04
+				text = "ます"
+			intervals [24]:
+				xmin = 7.04
+				xmax = 9.78
+				text = ""

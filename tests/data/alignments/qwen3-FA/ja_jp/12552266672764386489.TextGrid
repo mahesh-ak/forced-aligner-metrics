@@ -1,0 +1,134 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.78
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.78
+		intervals: size = 30
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.84
+				text = ""
+			intervals [2]:
+				xmin = 1.84
+				xmax = 2.08
+				text = "月"
+			intervals [3]:
+				xmin = 2.08
+				xmax = 2.24
+				text = "の"
+			intervals [4]:
+				xmin = 2.24
+				xmax = 2.48
+				text = "引力"
+			intervals [5]:
+				xmin = 2.48
+				xmax = 2.72
+				text = ""
+			intervals [6]:
+				xmin = 2.72
+				xmax = 3.04
+				text = "地球"
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.2
+				text = "に"
+			intervals [8]:
+				xmin = 3.2
+				xmax = 3.44
+				text = "潮"
+			intervals [9]:
+				xmin = 3.44
+				xmax = 3.52
+				text = "の"
+			intervals [10]:
+				xmin = 3.52
+				xmax = 4.0
+				text = "満ち引き"
+			intervals [11]:
+				xmin = 4.0
+				xmax = 4.08
+				text = "が"
+			intervals [12]:
+				xmin = 4.08
+				xmax = 4.32
+				text = "起きる"
+			intervals [13]:
+				xmin = 4.32
+				xmax = 4.56
+				text = "よう"
+			intervals [14]:
+				xmin = 4.56
+				xmax = 4.8
+				text = "に"
+			intervals [15]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "天"
+			intervals [16]:
+				xmin = 4.96
+				xmax = 5.12
+				text = "の"
+			intervals [17]:
+				xmin = 5.12
+				xmax = 5.28
+				text = "川"
+			intervals [18]:
+				xmin = 5.28
+				xmax = 5.52
+				text = "は"
+			intervals [19]:
+				xmin = 5.52
+				xmax = 5.76
+				text = "射手"
+			intervals [20]:
+				xmin = 5.76
+				xmax = 5.84
+				text = "座"
+			intervals [21]:
+				xmin = 5.84
+				xmax = 6.16
+				text = "銀河"
+			intervals [22]:
+				xmin = 6.16
+				xmax = 6.24
+				text = "に"
+			intervals [23]:
+				xmin = 6.24
+				xmax = 6.32
+				text = "も"
+			intervals [24]:
+				xmin = 6.32
+				xmax = 6.72
+				text = "力"
+			intervals [25]:
+				xmin = 6.72
+				xmax = 6.8
+				text = "を"
+			intervals [26]:
+				xmin = 6.8
+				xmax = 7.12
+				text = "及ぼし"
+			intervals [27]:
+				xmin = 7.12
+				xmax = 7.2
+				text = "て"
+			intervals [28]:
+				xmin = 7.2
+				xmax = 7.28
+				text = "い"
+			intervals [29]:
+				xmin = 7.28
+				xmax = 7.76
+				text = "ます"
+			intervals [30]:
+				xmin = 7.76
+				xmax = 9.78
+				text = ""

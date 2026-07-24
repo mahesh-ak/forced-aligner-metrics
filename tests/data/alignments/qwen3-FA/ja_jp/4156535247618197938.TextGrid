@@ -1,0 +1,114 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.18
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.18
+		intervals: size = 25
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.0
+				text = ""
+			intervals [2]:
+				xmin = 2.0
+				xmax = 2.08
+				text = "お"
+			intervals [3]:
+				xmin = 2.08
+				xmax = 2.16
+				text = ""
+			intervals [4]:
+				xmin = 2.16
+				xmax = 2.4
+				text = "別れ"
+			intervals [5]:
+				xmin = 2.4
+				xmax = 2.56
+				text = "で"
+			intervals [6]:
+				xmin = 2.56
+				xmax = 2.64
+				text = "は"
+			intervals [7]:
+				xmin = 2.64
+				xmax = 2.72
+				text = "あり"
+			intervals [8]:
+				xmin = 2.72
+				xmax = 3.04
+				text = "ません"
+			intervals [9]:
+				xmin = 3.04
+				xmax = 3.28
+				text = ""
+			intervals [10]:
+				xmin = 3.28
+				xmax = 3.52
+				text = "これ"
+			intervals [11]:
+				xmin = 3.52
+				xmax = 3.6
+				text = "は"
+			intervals [12]:
+				xmin = 3.6
+				xmax = 3.76
+				text = "一"
+			intervals [13]:
+				xmin = 3.76
+				xmax = 3.84
+				text = "つ"
+			intervals [14]:
+				xmin = 3.84
+				xmax = 4.0
+				text = "の"
+			intervals [15]:
+				xmin = 4.0
+				xmax = 4.16
+				text = "章"
+			intervals [16]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "の"
+			intervals [17]:
+				xmin = 4.32
+				xmax = 4.56
+				text = "終わり"
+			intervals [18]:
+				xmin = 4.56
+				xmax = 4.64
+				text = "で"
+			intervals [19]:
+				xmin = 4.64
+				xmax = 4.96
+				text = "あり"
+			intervals [20]:
+				xmin = 4.96
+				xmax = 5.44
+				text = "新しい"
+			intervals [21]:
+				xmin = 5.44
+				xmax = 5.76
+				text = "章"
+			intervals [22]:
+				xmin = 5.76
+				xmax = 5.84
+				text = "の"
+			intervals [23]:
+				xmin = 5.84
+				xmax = 6.24
+				text = "幕開け"
+			intervals [24]:
+				xmin = 6.24
+				xmax = 6.64
+				text = "です"
+			intervals [25]:
+				xmin = 6.64
+				xmax = 9.18
+				text = ""

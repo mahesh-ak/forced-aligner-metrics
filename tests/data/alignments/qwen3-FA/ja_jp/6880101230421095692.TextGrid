@@ -1,0 +1,170 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 17.82
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 17.82
+		intervals: size = 39
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.64
+				text = ""
+			intervals [2]:
+				xmin = 2.64
+				xmax = 2.88
+				text = "ゴマ"
+			intervals [3]:
+				xmin = 2.88
+				xmax = 3.04
+				text = "で"
+			intervals [4]:
+				xmin = 3.04
+				xmax = 3.2
+				text = "の"
+			intervals [5]:
+				xmin = 3.2
+				xmax = 3.52
+				text = "移動"
+			intervals [6]:
+				xmin = 3.52
+				xmax = 3.68
+				text = "に"
+			intervals [7]:
+				xmin = 3.68
+				xmax = 3.92
+				text = "は"
+			intervals [8]:
+				xmin = 3.92
+				xmax = 4.48
+				text = ""
+			intervals [9]:
+				xmin = 4.48
+				xmax = 5.12
+				text = "ボダボダ"
+			intervals [10]:
+				xmin = 5.12
+				xmax = 5.44
+				text = ""
+			intervals [11]:
+				xmin = 5.44
+				xmax = 5.84
+				text = "バイク"
+			intervals [12]:
+				xmin = 5.84
+				xmax = 6.24
+				text = "タクシー"
+			intervals [13]:
+				xmin = 6.24
+				xmax = 6.32
+				text = ""
+			intervals [14]:
+				xmin = 6.32
+				xmax = 6.4
+				text = "を"
+			intervals [15]:
+				xmin = 6.4
+				xmax = 6.64
+				text = "利用"
+			intervals [16]:
+				xmin = 6.64
+				xmax = 6.88
+				text = "する"
+			intervals [17]:
+				xmin = 6.88
+				xmax = 7.12
+				text = "こと"
+			intervals [18]:
+				xmin = 7.12
+				xmax = 7.2
+				text = "が"
+			intervals [19]:
+				xmin = 7.2
+				xmax = 7.44
+				text = "でき"
+			intervals [20]:
+				xmin = 7.44
+				xmax = 7.76
+				text = "ます"
+			intervals [21]:
+				xmin = 7.76
+				xmax = 8.72
+				text = ""
+			intervals [22]:
+				xmin = 8.72
+				xmax = 9.28
+				text = "通常"
+			intervals [23]:
+				xmin = 9.28
+				xmax = 9.44
+				text = "の"
+			intervals [24]:
+				xmin = 9.44
+				xmax = 9.6
+				text = ""
+			intervals [25]:
+				xmin = 9.6
+				xmax = 10.0
+				text = "現地"
+			intervals [26]:
+				xmin = 10.0
+				xmax = 10.48
+				text = "料金"
+			intervals [27]:
+				xmin = 10.48
+				xmax = 10.64
+				text = "は"
+			intervals [28]:
+				xmin = 10.64
+				xmax = 11.2
+				text = ""
+			intervals [29]:
+				xmin = 11.2
+				xmax = 11.68
+				text = "短い"
+			intervals [30]:
+				xmin = 11.68
+				xmax = 11.92
+				text = "距離"
+			intervals [31]:
+				xmin = 11.92
+				xmax = 12.0
+				text = "で"
+			intervals [32]:
+				xmin = 12.0
+				xmax = 12.24
+				text = "は"
+			intervals [33]:
+				xmin = 12.24
+				xmax = 12.32
+				text = ""
+			intervals [34]:
+				xmin = 12.32
+				xmax = 12.72
+				text = "五百"
+			intervals [35]:
+				xmin = 12.72
+				xmax = 13.12
+				text = "コンゴ"
+			intervals [36]:
+				xmin = 13.12
+				xmax = 13.44
+				text = "フラン"
+			intervals [37]:
+				xmin = 13.44
+				xmax = 13.76
+				text = "ほど"
+			intervals [38]:
+				xmin = 13.76
+				xmax = 14.16
+				text = "です"
+			intervals [39]:
+				xmin = 14.16
+				xmax = 17.82
+				text = ""

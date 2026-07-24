@@ -1,0 +1,94 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.06
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.06
+		intervals: size = 20
+			intervals [1]:
+				xmin = 0.0
+				xmax = 3.68
+				text = ""
+			intervals [2]:
+				xmin = 3.68
+				xmax = 4.08
+				text = "ロスビー"
+			intervals [3]:
+				xmin = 4.08
+				xmax = 4.32
+				text = "数"
+			intervals [4]:
+				xmin = 4.32
+				xmax = 4.4
+				text = "が"
+			intervals [5]:
+				xmin = 4.4
+				xmax = 4.88
+				text = "小さい"
+			intervals [6]:
+				xmin = 4.88
+				xmax = 5.28
+				text = "ほど"
+			intervals [7]:
+				xmin = 5.28
+				xmax = 5.52
+				text = "磁気"
+			intervals [8]:
+				xmin = 5.52
+				xmax = 5.92
+				text = "反転"
+			intervals [9]:
+				xmin = 5.92
+				xmax = 6.08
+				text = "に"
+			intervals [10]:
+				xmin = 6.08
+				xmax = 6.4
+				text = "関し"
+			intervals [11]:
+				xmin = 6.4
+				xmax = 6.56
+				text = "て"
+			intervals [12]:
+				xmin = 6.56
+				xmax = 6.88
+				text = "星"
+			intervals [13]:
+				xmin = 6.88
+				xmax = 6.96
+				text = "の"
+			intervals [14]:
+				xmin = 6.96
+				xmax = 7.36
+				text = "活性"
+			intervals [15]:
+				xmin = 7.36
+				xmax = 7.52
+				text = "が"
+			intervals [16]:
+				xmin = 7.52
+				xmax = 7.76
+				text = "低下"
+			intervals [17]:
+				xmin = 7.76
+				xmax = 8.08
+				text = "する"
+			intervals [18]:
+				xmin = 8.08
+				xmax = 8.24
+				text = "わけ"
+			intervals [19]:
+				xmin = 8.24
+				xmax = 8.72
+				text = "です"
+			intervals [20]:
+				xmin = 8.72
+				xmax = 12.06
+				text = ""

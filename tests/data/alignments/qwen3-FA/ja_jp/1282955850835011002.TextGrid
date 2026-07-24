@@ -1,0 +1,118 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.06
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.06
+		intervals: size = 26
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.52
+				text = ""
+			intervals [2]:
+				xmin = 1.52
+				xmax = 2.0
+				text = "月面"
+			intervals [3]:
+				xmin = 2.0
+				xmax = 2.16
+				text = "は"
+			intervals [4]:
+				xmin = 2.16
+				xmax = 2.56
+				text = "岩石"
+			intervals [5]:
+				xmin = 2.56
+				xmax = 2.64
+				text = ""
+			intervals [6]:
+				xmin = 2.64
+				xmax = 2.8
+				text = "と"
+			intervals [7]:
+				xmin = 2.8
+				xmax = 2.88
+				text = ""
+			intervals [8]:
+				xmin = 2.88
+				xmax = 3.12
+				text = "塵"
+			intervals [9]:
+				xmin = 3.12
+				xmax = 3.28
+				text = "で"
+			intervals [10]:
+				xmin = 3.28
+				xmax = 3.44
+				text = "でき"
+			intervals [11]:
+				xmin = 3.44
+				xmax = 3.6
+				text = "て"
+			intervals [12]:
+				xmin = 3.6
+				xmax = 3.68
+				text = "い"
+			intervals [13]:
+				xmin = 3.68
+				xmax = 3.92
+				text = "ます"
+			intervals [14]:
+				xmin = 3.92
+				xmax = 4.64
+				text = ""
+			intervals [15]:
+				xmin = 4.64
+				xmax = 4.88
+				text = "月"
+			intervals [16]:
+				xmin = 4.88
+				xmax = 4.96
+				text = "の"
+			intervals [17]:
+				xmin = 4.96
+				xmax = 5.44
+				text = "外層"
+			intervals [18]:
+				xmin = 5.44
+				xmax = 5.68
+				text = "は"
+			intervals [19]:
+				xmin = 5.68
+				xmax = 6.24
+				text = ""
+			intervals [20]:
+				xmin = 6.24
+				xmax = 6.56
+				text = "地殻"
+			intervals [21]:
+				xmin = 6.56
+				xmax = 6.64
+				text = "と"
+			intervals [22]:
+				xmin = 6.64
+				xmax = 6.88
+				text = "呼ば"
+			intervals [23]:
+				xmin = 6.88
+				xmax = 7.04
+				text = "て"
+			intervals [24]:
+				xmin = 7.04
+				xmax = 7.12
+				text = "い"
+			intervals [25]:
+				xmin = 7.12
+				xmax = 7.44
+				text = "ます"
+			intervals [26]:
+				xmin = 7.44
+				xmax = 9.06
+				text = ""

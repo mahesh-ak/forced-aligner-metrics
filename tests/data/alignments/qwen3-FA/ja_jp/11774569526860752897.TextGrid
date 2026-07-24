@@ -1,0 +1,182 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 16.5
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 16.5
+		intervals: size = 42
+			intervals [1]:
+				xmin = 0.0
+				xmax = 3.12
+				text = ""
+			intervals [2]:
+				xmin = 3.12
+				xmax = 3.6
+				text = "枕木"
+			intervals [3]:
+				xmin = 3.6
+				xmax = 3.84
+				text = "は"
+			intervals [4]:
+				xmin = 3.84
+				xmax = 4.32
+				text = "線路"
+			intervals [5]:
+				xmin = 4.32
+				xmax = 4.64
+				text = "所定"
+			intervals [6]:
+				xmin = 4.64
+				xmax = 4.72
+				text = "の"
+			intervals [7]:
+				xmin = 4.72
+				xmax = 4.96
+				text = "位置"
+			intervals [8]:
+				xmin = 4.96
+				xmax = 5.04
+				text = "に"
+			intervals [9]:
+				xmin = 5.04
+				xmax = 5.36
+				text = "固定"
+			intervals [10]:
+				xmin = 5.36
+				xmax = 5.52
+				text = "する"
+			intervals [11]:
+				xmin = 5.52
+				xmax = 5.76
+				text = "ため"
+			intervals [12]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "に"
+			intervals [13]:
+				xmin = 5.92
+				xmax = 6.24
+				text = "かなり"
+			intervals [14]:
+				xmin = 6.24
+				xmax = 6.48
+				text = "早い"
+			intervals [15]:
+				xmin = 6.48
+				xmax = 6.88
+				text = "段階"
+			intervals [16]:
+				xmin = 6.88
+				xmax = 6.96
+				text = "で"
+			intervals [17]:
+				xmin = 6.96
+				xmax = 7.2
+				text = "導入"
+			intervals [18]:
+				xmin = 7.2
+				xmax = 7.44
+				text = "され"
+			intervals [19]:
+				xmin = 7.44
+				xmax = 7.84
+				text = "ました"
+			intervals [20]:
+				xmin = 7.84
+				xmax = 8.48
+				text = ""
+			intervals [21]:
+				xmin = 8.48
+				xmax = 8.88
+				text = "やがて"
+			intervals [22]:
+				xmin = 8.88
+				xmax = 8.96
+				text = ""
+			intervals [23]:
+				xmin = 8.96
+				xmax = 9.2
+				text = "上部"
+			intervals [24]:
+				xmin = 9.2
+				xmax = 9.28
+				text = "に"
+			intervals [25]:
+				xmin = 9.28
+				xmax = 9.76
+				text = "鉄製"
+			intervals [26]:
+				xmin = 9.76
+				xmax = 9.84
+				text = "の"
+			intervals [27]:
+				xmin = 9.84
+				xmax = 10.24
+				text = "先端"
+			intervals [28]:
+				xmin = 10.24
+				xmax = 10.4
+				text = "部"
+			intervals [29]:
+				xmin = 10.4
+				xmax = 10.8
+				text = "設ける"
+			intervals [30]:
+				xmin = 10.8
+				xmax = 10.96
+				text = "と"
+			intervals [31]:
+				xmin = 10.96
+				xmax = 11.36
+				text = "効率"
+			intervals [32]:
+				xmin = 11.36
+				xmax = 11.52
+				text = "が"
+			intervals [33]:
+				xmin = 11.52
+				xmax = 11.76
+				text = "よい"
+			intervals [34]:
+				xmin = 11.76
+				xmax = 12.0
+				text = "こと"
+			intervals [35]:
+				xmin = 12.0
+				xmax = 12.16
+				text = "が"
+			intervals [36]:
+				xmin = 12.16
+				xmax = 12.4
+				text = "徐々"
+			intervals [37]:
+				xmin = 12.4
+				xmax = 12.48
+				text = "に"
+			intervals [38]:
+				xmin = 12.48
+				xmax = 12.72
+				text = "わかっ"
+			intervals [39]:
+				xmin = 12.72
+				xmax = 12.88
+				text = ""
+			intervals [40]:
+				xmin = 12.88
+				xmax = 12.96
+				text = "てき"
+			intervals [41]:
+				xmin = 12.96
+				xmax = 13.28
+				text = "ました"
+			intervals [42]:
+				xmin = 13.28
+				xmax = 16.5
+				text = ""

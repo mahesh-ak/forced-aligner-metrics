@@ -1,0 +1,126 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.06
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.06
+		intervals: size = 28
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.44
+				text = ""
+			intervals [2]:
+				xmin = 1.44
+				xmax = 1.84
+				text = "アピア"
+			intervals [3]:
+				xmin = 1.84
+				xmax = 2.0
+				text = "は"
+			intervals [4]:
+				xmin = 2.0
+				xmax = 2.08
+				text = ""
+			intervals [5]:
+				xmin = 2.08
+				xmax = 2.48
+				text = "サモア"
+			intervals [6]:
+				xmin = 2.48
+				xmax = 2.56
+				text = "の"
+			intervals [7]:
+				xmin = 2.56
+				xmax = 2.8
+				text = "首都"
+			intervals [8]:
+				xmin = 2.8
+				xmax = 3.04
+				text = "です"
+			intervals [9]:
+				xmin = 3.04
+				xmax = 3.44
+				text = ""
+			intervals [10]:
+				xmin = 3.44
+				xmax = 3.6
+				text = "この"
+			intervals [11]:
+				xmin = 3.6
+				xmax = 3.92
+				text = "町"
+			intervals [12]:
+				xmin = 3.92
+				xmax = 4.0
+				text = "は"
+			intervals [13]:
+				xmin = 4.0
+				xmax = 4.16
+				text = ""
+			intervals [14]:
+				xmin = 4.16
+				xmax = 4.48
+				text = "ウポル"
+			intervals [15]:
+				xmin = 4.48
+				xmax = 4.72
+				text = "島"
+			intervals [16]:
+				xmin = 4.72
+				xmax = 4.8
+				text = "に"
+			intervals [17]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "あり"
+			intervals [18]:
+				xmin = 4.96
+				xmax = 5.2
+				text = ""
+			intervals [19]:
+				xmin = 5.2
+				xmax = 5.76
+				text = "人口"
+			intervals [20]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "は"
+			intervals [21]:
+				xmin = 5.92
+				xmax = 6.0
+				text = ""
+			intervals [22]:
+				xmin = 6.0
+				xmax = 6.16
+				text = "四"
+			intervals [23]:
+				xmin = 6.16
+				xmax = 6.4
+				text = "万"
+			intervals [24]:
+				xmin = 6.4
+				xmax = 6.56
+				text = "人"
+			intervals [25]:
+				xmin = 6.56
+				xmax = 6.8
+				text = "弱"
+			intervals [26]:
+				xmin = 6.8
+				xmax = 6.88
+				text = ""
+			intervals [27]:
+				xmin = 6.88
+				xmax = 7.12
+				text = "です"
+			intervals [28]:
+				xmin = 7.12
+				xmax = 9.06
+				text = ""

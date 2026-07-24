@@ -1,0 +1,230 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 16.98
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 16.98
+		intervals: size = 54
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.08
+				text = ""
+			intervals [2]:
+				xmin = 2.08
+				xmax = 2.48
+				text = "グリーン"
+			intervals [3]:
+				xmin = 2.48
+				xmax = 2.8
+				text = "ランド"
+			intervals [4]:
+				xmin = 2.8
+				xmax = 2.88
+				text = "は"
+			intervals [5]:
+				xmin = 2.88
+				xmax = 3.2
+				text = "過疎"
+			intervals [6]:
+				xmin = 3.2
+				xmax = 3.36
+				text = "な"
+			intervals [7]:
+				xmin = 3.36
+				xmax = 3.68
+				text = "地域"
+			intervals [8]:
+				xmin = 3.68
+				xmax = 3.92
+				text = "でし"
+			intervals [9]:
+				xmin = 3.92
+				xmax = 4.0
+				text = "た"
+			intervals [10]:
+				xmin = 4.0
+				xmax = 4.32
+				text = ""
+			intervals [11]:
+				xmin = 4.32
+				xmax = 4.72
+				text = "北欧"
+			intervals [12]:
+				xmin = 4.72
+				xmax = 4.8
+				text = "の"
+			intervals [13]:
+				xmin = 4.8
+				xmax = 5.2
+				text = "伝承"
+			intervals [14]:
+				xmin = 5.2
+				xmax = 5.28
+				text = ""
+			intervals [15]:
+				xmin = 5.28
+				xmax = 5.36
+				text = "に"
+			intervals [16]:
+				xmin = 5.36
+				xmax = 5.52
+				text = "よれ"
+			intervals [17]:
+				xmin = 5.52
+				xmax = 5.68
+				text = "ば"
+			intervals [18]:
+				xmin = 5.68
+				xmax = 6.16
+				text = ""
+			intervals [19]:
+				xmin = 6.16
+				xmax = 6.4
+				text = "赤毛"
+			intervals [20]:
+				xmin = 6.4
+				xmax = 6.56
+				text = "の"
+			intervals [21]:
+				xmin = 6.56
+				xmax = 6.72
+				text = "エイ"
+			intervals [22]:
+				xmin = 6.72
+				xmax = 7.12
+				text = "リーク"
+			intervals [23]:
+				xmin = 7.12
+				xmax = 7.28
+				text = "が"
+			intervals [24]:
+				xmin = 7.28
+				xmax = 7.76
+				text = "殺人"
+			intervals [25]:
+				xmin = 7.76
+				xmax = 8.0
+				text = "罪"
+			intervals [26]:
+				xmin = 8.0
+				xmax = 8.08
+				text = "で"
+			intervals [27]:
+				xmin = 8.08
+				xmax = 8.64
+				text = "アイスランド"
+			intervals [28]:
+				xmin = 8.64
+				xmax = 8.8
+				text = "から"
+			intervals [29]:
+				xmin = 8.8
+				xmax = 9.2
+				text = "追放"
+			intervals [30]:
+				xmin = 9.2
+				xmax = 9.44
+				text = "され"
+			intervals [31]:
+				xmin = 9.44
+				xmax = 9.92
+				text = ""
+			intervals [32]:
+				xmin = 9.92
+				xmax = 10.16
+				text = "西"
+			intervals [33]:
+				xmin = 10.16
+				xmax = 10.24
+				text = "に"
+			intervals [34]:
+				xmin = 10.24
+				xmax = 10.56
+				text = "向かっ"
+			intervals [35]:
+				xmin = 10.56
+				xmax = 10.72
+				text = "た"
+			intervals [36]:
+				xmin = 10.72
+				xmax = 10.88
+				text = "とき"
+			intervals [37]:
+				xmin = 10.88
+				xmax = 11.04
+				text = "に"
+			intervals [38]:
+				xmin = 11.04
+				xmax = 11.36
+				text = "グリーン"
+			intervals [39]:
+				xmin = 11.36
+				xmax = 11.68
+				text = "ランド"
+			intervals [40]:
+				xmin = 11.68
+				xmax = 12.16
+				text = "発見"
+			intervals [41]:
+				xmin = 12.16
+				xmax = 12.24
+				text = "し"
+			intervals [42]:
+				xmin = 12.24
+				xmax = 12.4
+				text = "て"
+			intervals [43]:
+				xmin = 12.4
+				xmax = 12.64
+				text = ""
+			intervals [44]:
+				xmin = 12.64
+				xmax = 12.96
+				text = "グリーン"
+			intervals [45]:
+				xmin = 12.96
+				xmax = 13.28
+				text = "ランド"
+			intervals [46]:
+				xmin = 13.28
+				xmax = 13.44
+				text = "と"
+			intervals [47]:
+				xmin = 13.44
+				xmax = 13.6
+				text = ""
+			intervals [48]:
+				xmin = 13.6
+				xmax = 13.92
+				text = "名付け"
+			intervals [49]:
+				xmin = 13.92
+				xmax = 14.0
+				text = "た"
+			intervals [50]:
+				xmin = 14.0
+				xmax = 14.08
+				text = "と"
+			intervals [51]:
+				xmin = 14.08
+				xmax = 14.24
+				text = "さ"
+			intervals [52]:
+				xmin = 14.24
+				xmax = 14.32
+				text = "れ"
+			intervals [53]:
+				xmin = 14.32
+				xmax = 14.56
+				text = "ます"
+			intervals [54]:
+				xmin = 14.56
+				xmax = 16.98
+				text = ""

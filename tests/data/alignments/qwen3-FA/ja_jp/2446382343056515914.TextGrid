@@ -1,0 +1,194 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 15.54
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 15.54
+		intervals: size = 45
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.76
+				text = ""
+			intervals [2]:
+				xmin = 1.76
+				xmax = 1.92
+				text = "この"
+			intervals [3]:
+				xmin = 1.92
+				xmax = 2.32
+				text = "港"
+			intervals [4]:
+				xmin = 2.32
+				xmax = 2.56
+				text = "は"
+			intervals [5]:
+				xmin = 2.56
+				xmax = 2.8
+				text = "千"
+			intervals [6]:
+				xmin = 2.8
+				xmax = 3.28
+				text = "八百"
+			intervals [7]:
+				xmin = 3.28
+				xmax = 3.68
+				text = "八十"
+			intervals [8]:
+				xmin = 3.68
+				xmax = 4.0
+				text = "九"
+			intervals [9]:
+				xmin = 4.0
+				xmax = 4.16
+				text = "年"
+			intervals [10]:
+				xmin = 4.16
+				xmax = 4.24
+				text = ""
+			intervals [11]:
+				xmin = 4.24
+				xmax = 4.32
+				text = "に"
+			intervals [12]:
+				xmin = 4.32
+				xmax = 4.72
+				text = ""
+			intervals [13]:
+				xmin = 4.72
+				xmax = 5.2
+				text = "ドイツ"
+			intervals [14]:
+				xmin = 5.2
+				xmax = 5.28
+				text = ""
+			intervals [15]:
+				xmin = 5.28
+				xmax = 5.84
+				text = "アメリカ"
+			intervals [16]:
+				xmin = 5.84
+				xmax = 6.08
+				text = ""
+			intervals [17]:
+				xmin = 6.08
+				xmax = 6.32
+				text = "イギリス"
+			intervals [18]:
+				xmin = 6.32
+				xmax = 6.56
+				text = "から"
+			intervals [19]:
+				xmin = 6.56
+				xmax = 6.72
+				text = "来"
+			intervals [20]:
+				xmin = 6.72
+				xmax = 6.88
+				text = "た"
+			intervals [21]:
+				xmin = 6.88
+				xmax = 7.52
+				text = ""
+			intervals [22]:
+				xmin = 7.52
+				xmax = 7.68
+				text = "七"
+			intervals [23]:
+				xmin = 7.68
+				xmax = 8.0
+				text = "隻"
+			intervals [24]:
+				xmin = 8.0
+				xmax = 8.08
+				text = "の"
+			intervals [25]:
+				xmin = 8.08
+				xmax = 8.24
+				text = ""
+			intervals [26]:
+				xmin = 8.24
+				xmax = 8.48
+				text = "船"
+			intervals [27]:
+				xmin = 8.48
+				xmax = 8.64
+				text = "が"
+			intervals [28]:
+				xmin = 8.64
+				xmax = 8.8
+				text = ""
+			intervals [29]:
+				xmin = 8.8
+				xmax = 9.44
+				text = "出港"
+			intervals [30]:
+				xmin = 9.44
+				xmax = 9.76
+				text = "拒否"
+			intervals [31]:
+				xmin = 9.76
+				xmax = 9.92
+				text = "した"
+			intervals [32]:
+				xmin = 9.92
+				xmax = 10.24
+				text = "際"
+			intervals [33]:
+				xmin = 10.24
+				xmax = 10.4
+				text = "に"
+			intervals [34]:
+				xmin = 10.4
+				xmax = 10.64
+				text = ""
+			intervals [35]:
+				xmin = 10.64
+				xmax = 11.2
+				text = "海軍"
+			intervals [36]:
+				xmin = 11.2
+				xmax = 11.52
+				text = "同士"
+			intervals [37]:
+				xmin = 11.52
+				xmax = 11.6
+				text = "が"
+			intervals [38]:
+				xmin = 11.6
+				xmax = 12.08
+				text = "睨み合っ"
+			intervals [39]:
+				xmin = 12.08
+				xmax = 12.32
+				text = "た"
+			intervals [40]:
+				xmin = 12.32
+				xmax = 12.48
+				text = ""
+			intervals [41]:
+				xmin = 12.48
+				xmax = 12.88
+				text = "有名"
+			intervals [42]:
+				xmin = 12.88
+				xmax = 13.04
+				text = "な"
+			intervals [43]:
+				xmin = 13.04
+				xmax = 13.28
+				text = "場所"
+			intervals [44]:
+				xmin = 13.28
+				xmax = 13.6
+				text = "です"
+			intervals [45]:
+				xmin = 13.6
+				xmax = 15.54
+				text = ""

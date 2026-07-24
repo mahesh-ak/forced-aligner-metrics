@@ -1,0 +1,114 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.18
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.18
+		intervals: size = 25
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.76
+				text = ""
+			intervals [2]:
+				xmin = 1.76
+				xmax = 2.08
+				text = "昆虫"
+			intervals [3]:
+				xmin = 2.08
+				xmax = 2.24
+				text = "学"
+			intervals [4]:
+				xmin = 2.24
+				xmax = 2.4
+				text = "者"
+			intervals [5]:
+				xmin = 2.4
+				xmax = 2.56
+				text = "は"
+			intervals [6]:
+				xmin = 2.56
+				xmax = 2.8
+				text = "この"
+			intervals [7]:
+				xmin = 2.8
+				xmax = 3.2
+				text = "昆虫"
+			intervals [8]:
+				xmin = 3.2
+				xmax = 3.36
+				text = "群"
+			intervals [9]:
+				xmin = 3.36
+				xmax = 3.52
+				text = "に"
+			intervals [10]:
+				xmin = 3.52
+				xmax = 3.76
+				text = "つい"
+			intervals [11]:
+				xmin = 3.76
+				xmax = 4.0
+				text = "て"
+			intervals [12]:
+				xmin = 4.0
+				xmax = 4.48
+				text = "昆虫"
+			intervals [13]:
+				xmin = 4.48
+				xmax = 4.64
+				text = "と"
+			intervals [14]:
+				xmin = 4.64
+				xmax = 4.8
+				text = "いう"
+			intervals [15]:
+				xmin = 4.8
+				xmax = 5.2
+				text = "呼称"
+			intervals [16]:
+				xmin = 5.2
+				xmax = 5.28
+				text = "を"
+			intervals [17]:
+				xmin = 5.28
+				xmax = 5.68
+				text = "正式"
+			intervals [18]:
+				xmin = 5.68
+				xmax = 5.76
+				text = "な"
+			intervals [19]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "意味"
+			intervals [20]:
+				xmin = 5.92
+				xmax = 6.08
+				text = "で"
+			intervals [21]:
+				xmin = 6.08
+				xmax = 6.32
+				text = "使用"
+			intervals [22]:
+				xmin = 6.32
+				xmax = 6.4
+				text = "し"
+			intervals [23]:
+				xmin = 6.4
+				xmax = 6.56
+				text = "て"
+			intervals [24]:
+				xmin = 6.56
+				xmax = 7.04
+				text = "ます"
+			intervals [25]:
+				xmin = 7.04
+				xmax = 9.18
+				text = ""

@@ -1,0 +1,310 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 22.08
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 22.08
+		intervals: size = 74
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.84
+				text = ""
+			intervals [2]:
+				xmin = 1.84
+				xmax = 2.24
+				text = "恐竜"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.4
+				text = "の"
+			intervals [4]:
+				xmin = 2.4
+				xmax = 2.64
+				text = "羽毛"
+			intervals [5]:
+				xmin = 2.64
+				xmax = 2.8
+				text = "に"
+			intervals [6]:
+				xmin = 2.8
+				xmax = 3.2
+				text = "は"
+			intervals [7]:
+				xmin = 3.2
+				xmax = 3.52
+				text = "羽軸"
+			intervals [8]:
+				xmin = 3.52
+				xmax = 3.68
+				text = "と"
+			intervals [9]:
+				xmin = 3.68
+				xmax = 3.84
+				text = "呼ば"
+			intervals [10]:
+				xmin = 3.84
+				xmax = 4.08
+				text = "れる"
+			intervals [11]:
+				xmin = 4.08
+				xmax = 4.4
+				text = "十分"
+			intervals [12]:
+				xmin = 4.4
+				xmax = 4.48
+				text = "に"
+			intervals [13]:
+				xmin = 4.48
+				xmax = 4.96
+				text = "発達"
+			intervals [14]:
+				xmin = 4.96
+				xmax = 5.2
+				text = "した"
+			intervals [15]:
+				xmin = 5.2
+				xmax = 5.44
+				text = "軸"
+			intervals [16]:
+				xmin = 5.44
+				xmax = 5.6
+				text = "が"
+			intervals [17]:
+				xmin = 5.6
+				xmax = 5.76
+				text = "ない"
+			intervals [18]:
+				xmin = 5.76
+				xmax = 6.0
+				text = "もの"
+			intervals [19]:
+				xmin = 6.0
+				xmax = 6.16
+				text = "の"
+			intervals [20]:
+				xmin = 6.16
+				xmax = 6.56
+				text = ""
+			intervals [21]:
+				xmin = 6.56
+				xmax = 6.8
+				text = "他"
+			intervals [22]:
+				xmin = 6.8
+				xmax = 6.96
+				text = "の"
+			intervals [23]:
+				xmin = 6.96
+				xmax = 7.04
+				text = ""
+			intervals [24]:
+				xmin = 7.04
+				xmax = 7.36
+				text = "羽毛"
+			intervals [25]:
+				xmin = 7.36
+				xmax = 7.44
+				text = "の"
+			intervals [26]:
+				xmin = 7.44
+				xmax = 7.84
+				text = "特徴"
+			intervals [27]:
+				xmin = 7.84
+				xmax = 8.0
+				text = "で"
+			intervals [28]:
+				xmin = 8.0
+				xmax = 8.16
+				text = "ある"
+			intervals [29]:
+				xmin = 8.16
+				xmax = 8.96
+				text = ""
+			intervals [30]:
+				xmin = 8.96
+				xmax = 9.2
+				text = "綿"
+			intervals [31]:
+				xmin = 9.2
+				xmax = 9.36
+				text = "羽"
+			intervals [32]:
+				xmin = 9.36
+				xmax = 9.44
+				text = "や"
+			intervals [33]:
+				xmin = 9.44
+				xmax = 10.8
+				text = ""
+			intervals [34]:
+				xmin = 10.8
+				xmax = 10.96
+				text = "小"
+			intervals [35]:
+				xmin = 10.96
+				xmax = 11.04
+				text = ""
+			intervals [36]:
+				xmin = 11.04
+				xmax = 11.36
+				text = "羽"
+			intervals [37]:
+				xmin = 11.36
+				xmax = 11.52
+				text = "が"
+			intervals [38]:
+				xmin = 11.52
+				xmax = 11.68
+				text = ""
+			intervals [39]:
+				xmin = 11.68
+				xmax = 11.76
+				text = "ある"
+			intervals [40]:
+				xmin = 11.76
+				xmax = 12.08
+				text = "こと"
+			intervals [41]:
+				xmin = 12.08
+				xmax = 12.24
+				text = "から"
+			intervals [42]:
+				xmin = 12.24
+				xmax = 13.04
+				text = ""
+			intervals [43]:
+				xmin = 13.04
+				xmax = 13.44
+				text = "研究"
+			intervals [44]:
+				xmin = 13.44
+				xmax = 13.76
+				text = "者ら"
+			intervals [45]:
+				xmin = 13.76
+				xmax = 13.92
+				text = "は"
+			intervals [46]:
+				xmin = 13.92
+				xmax = 14.24
+				text = ""
+			intervals [47]:
+				xmin = 14.24
+				xmax = 14.64
+				text = "羽軸"
+			intervals [48]:
+				xmin = 14.64
+				xmax = 14.72
+				text = "は"
+			intervals [49]:
+				xmin = 14.72
+				xmax = 15.04
+				text = "こう"
+			intervals [50]:
+				xmin = 15.04
+				xmax = 15.2
+				text = "した"
+			intervals [51]:
+				xmin = 15.2
+				xmax = 15.6
+				text = "他"
+			intervals [52]:
+				xmin = 15.6
+				xmax = 15.68
+				text = "の"
+			intervals [53]:
+				xmin = 15.68
+				xmax = 16.16
+				text = "特徴"
+			intervals [54]:
+				xmin = 16.16
+				xmax = 16.24
+				text = "より"
+			intervals [55]:
+				xmin = 16.24
+				xmax = 16.4
+				text = "も"
+			intervals [56]:
+				xmin = 16.4
+				xmax = 16.8
+				text = ""
+			intervals [57]:
+				xmin = 16.8
+				xmax = 17.04
+				text = "後"
+			intervals [58]:
+				xmin = 17.04
+				xmax = 17.2
+				text = "に"
+			intervals [59]:
+				xmin = 17.2
+				xmax = 17.36
+				text = "起き"
+			intervals [60]:
+				xmin = 17.36
+				xmax = 17.52
+				text = "た"
+			intervals [61]:
+				xmin = 17.52
+				xmax = 17.92
+				text = "進化"
+			intervals [62]:
+				xmin = 17.92
+				xmax = 18.0
+				text = "で"
+			intervals [63]:
+				xmin = 18.0
+				xmax = 18.16
+				text = "た"
+			intervals [64]:
+				xmin = 18.16
+				xmax = 18.48
+				text = "可能"
+			intervals [65]:
+				xmin = 18.48
+				xmax = 18.64
+				text = "性"
+			intervals [66]:
+				xmin = 18.64
+				xmax = 18.8
+				text = "が"
+			intervals [67]:
+				xmin = 18.8
+				xmax = 19.04
+				text = "高い"
+			intervals [68]:
+				xmin = 19.04
+				xmax = 19.2
+				text = "と"
+			intervals [69]:
+				xmin = 19.2
+				xmax = 19.6
+				text = "推測"
+			intervals [70]:
+				xmin = 19.6
+				xmax = 19.68
+				text = "し"
+			intervals [71]:
+				xmin = 19.68
+				xmax = 19.76
+				text = "て"
+			intervals [72]:
+				xmin = 19.76
+				xmax = 19.84
+				text = "い"
+			intervals [73]:
+				xmin = 19.84
+				xmax = 20.24
+				text = "ます"
+			intervals [74]:
+				xmin = 20.24
+				xmax = 22.08
+				text = ""

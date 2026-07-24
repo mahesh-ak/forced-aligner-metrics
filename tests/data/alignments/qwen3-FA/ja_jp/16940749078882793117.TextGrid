@@ -1,0 +1,130 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.24
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.24
+		intervals: size = 29
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.24
+				text = "旅行"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.4
+				text = "者"
+			intervals [4]:
+				xmin = 2.4
+				xmax = 2.56
+				text = "は"
+			intervals [5]:
+				xmin = 2.56
+				xmax = 2.88
+				text = "帰国"
+			intervals [6]:
+				xmin = 2.88
+				xmax = 2.96
+				text = "に"
+			intervals [7]:
+				xmin = 2.96
+				xmax = 3.28
+				text = "際し"
+			intervals [8]:
+				xmin = 3.28
+				xmax = 3.36
+				text = "て"
+			intervals [9]:
+				xmin = 3.36
+				xmax = 3.52
+				text = "も"
+			intervals [10]:
+				xmin = 3.52
+				xmax = 3.92
+				text = "忍耐"
+			intervals [11]:
+				xmin = 3.92
+				xmax = 4.0
+				text = "と"
+			intervals [12]:
+				xmin = 4.0
+				xmax = 4.32
+				text = "理解"
+			intervals [13]:
+				xmin = 4.32
+				xmax = 4.48
+				text = "を"
+			intervals [14]:
+				xmin = 4.48
+				xmax = 4.64
+				text = "要する"
+			intervals [15]:
+				xmin = 4.64
+				xmax = 4.96
+				text = "こと"
+			intervals [16]:
+				xmin = 4.96
+				xmax = 5.04
+				text = "を"
+			intervals [17]:
+				xmin = 5.04
+				xmax = 5.44
+				text = "人々"
+			intervals [18]:
+				xmin = 5.44
+				xmax = 5.52
+				text = "は"
+			intervals [19]:
+				xmin = 5.52
+				xmax = 5.84
+				text = "予想"
+			intervals [20]:
+				xmin = 5.84
+				xmax = 5.92
+				text = "し"
+			intervals [21]:
+				xmin = 5.92
+				xmax = 6.08
+				text = "て"
+			intervals [22]:
+				xmin = 6.08
+				xmax = 6.16
+				text = "い"
+			intervals [23]:
+				xmin = 6.16
+				xmax = 6.32
+				text = "ない"
+			intervals [24]:
+				xmin = 6.32
+				xmax = 6.4
+				text = "か"
+			intervals [25]:
+				xmin = 6.4
+				xmax = 6.48
+				text = "も"
+			intervals [26]:
+				xmin = 6.48
+				xmax = 6.72
+				text = "しれ"
+			intervals [27]:
+				xmin = 6.72
+				xmax = 6.96
+				text = "ませ"
+			intervals [28]:
+				xmin = 6.96
+				xmax = 7.04
+				text = "ん"
+			intervals [29]:
+				xmin = 7.04
+				xmax = 9.24
+				text = ""

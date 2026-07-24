@@ -1,0 +1,158 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 17.1
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 17.1
+		intervals: size = 36
+			intervals [1]:
+				xmin = 0.0
+				xmax = 4.32
+				text = ""
+			intervals [2]:
+				xmin = 4.32
+				xmax = 4.72
+				text = "昨日"
+			intervals [3]:
+				xmin = 4.72
+				xmax = 4.8
+				text = "の"
+			intervals [4]:
+				xmin = 4.8
+				xmax = 5.2
+				text = "朝"
+			intervals [5]:
+				xmin = 5.2
+				xmax = 5.52
+				text = "トルコ"
+			intervals [6]:
+				xmin = 5.52
+				xmax = 5.68
+				text = "の"
+			intervals [7]:
+				xmin = 5.68
+				xmax = 6.4
+				text = "ガジアンテップ"
+			intervals [8]:
+				xmin = 6.4
+				xmax = 6.48
+				text = "の"
+			intervals [9]:
+				xmin = 6.48
+				xmax = 6.96
+				text = "警察"
+			intervals [10]:
+				xmin = 6.96
+				xmax = 7.28
+				text = "本部"
+			intervals [11]:
+				xmin = 7.28
+				xmax = 7.52
+				text = "で"
+			intervals [12]:
+				xmin = 7.52
+				xmax = 7.6
+				text = ""
+			intervals [13]:
+				xmin = 7.6
+				xmax = 7.92
+				text = "自動"
+			intervals [14]:
+				xmin = 7.92
+				xmax = 8.0
+				text = "車"
+			intervals [15]:
+				xmin = 8.0
+				xmax = 8.4
+				text = "爆弾"
+			intervals [16]:
+				xmin = 8.4
+				xmax = 8.56
+				text = "の"
+			intervals [17]:
+				xmin = 8.56
+				xmax = 8.96
+				text = "爆発"
+			intervals [18]:
+				xmin = 8.96
+				xmax = 9.12
+				text = "に"
+			intervals [19]:
+				xmin = 9.12
+				xmax = 9.44
+				text = "より"
+			intervals [20]:
+				xmin = 9.44
+				xmax = 9.84
+				text = ""
+			intervals [21]:
+				xmin = 9.84
+				xmax = 10.24
+				text = "警官"
+			intervals [22]:
+				xmin = 10.24
+				xmax = 10.56
+				text = "二人"
+			intervals [23]:
+				xmin = 10.56
+				xmax = 10.72
+				text = "が"
+			intervals [24]:
+				xmin = 10.72
+				xmax = 10.96
+				text = "死亡"
+			intervals [25]:
+				xmin = 10.96
+				xmax = 11.28
+				text = "し"
+			intervals [26]:
+				xmin = 11.28
+				xmax = 11.44
+				text = ""
+			intervals [27]:
+				xmin = 11.44
+				xmax = 11.76
+				text = "負傷"
+			intervals [28]:
+				xmin = 11.76
+				xmax = 11.84
+				text = "者"
+			intervals [29]:
+				xmin = 11.84
+				xmax = 12.0
+				text = "は"
+			intervals [30]:
+				xmin = 12.0
+				xmax = 12.32
+				text = "二十"
+			intervals [31]:
+				xmin = 12.32
+				xmax = 12.48
+				text = "人"
+			intervals [32]:
+				xmin = 12.48
+				xmax = 12.56
+				text = ""
+			intervals [33]:
+				xmin = 12.56
+				xmax = 12.64
+				text = "を"
+			intervals [34]:
+				xmin = 12.64
+				xmax = 12.88
+				text = "超え"
+			intervals [35]:
+				xmin = 12.88
+				xmax = 13.28
+				text = "ました"
+			intervals [36]:
+				xmin = 13.28
+				xmax = 17.1
+				text = ""

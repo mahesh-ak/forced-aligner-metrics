@@ -1,0 +1,122 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.66
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.66
+		intervals: size = 27
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.84
+				text = ""
+			intervals [2]:
+				xmin = 1.84
+				xmax = 2.16
+				text = "日本"
+			intervals [3]:
+				xmin = 2.16
+				xmax = 2.24
+				text = "の"
+			intervals [4]:
+				xmin = 2.24
+				xmax = 2.64
+				text = "原子"
+			intervals [5]:
+				xmin = 2.64
+				xmax = 2.8
+				text = "力"
+			intervals [6]:
+				xmin = 2.8
+				xmax = 3.04
+				text = "庁"
+			intervals [7]:
+				xmin = 3.04
+				xmax = 3.2
+				text = "に"
+			intervals [8]:
+				xmin = 3.2
+				xmax = 3.36
+				text = "よれ"
+			intervals [9]:
+				xmin = 3.36
+				xmax = 3.76
+				text = "ば"
+			intervals [10]:
+				xmin = 3.76
+				xmax = 3.84
+				text = ""
+			intervals [11]:
+				xmin = 3.84
+				xmax = 4.24
+				text = "原発"
+			intervals [12]:
+				xmin = 4.24
+				xmax = 4.4
+				text = "内"
+			intervals [13]:
+				xmin = 4.4
+				xmax = 4.56
+				text = "で"
+			intervals [14]:
+				xmin = 4.56
+				xmax = 4.72
+				text = ""
+			intervals [15]:
+				xmin = 4.72
+				xmax = 5.04
+				text = "放射"
+			intervals [16]:
+				xmin = 5.04
+				xmax = 5.28
+				text = "性"
+			intervals [17]:
+				xmin = 5.28
+				xmax = 5.84
+				text = "セシウム"
+			intervals [18]:
+				xmin = 5.84
+				xmax = 6.0
+				text = "と"
+			intervals [19]:
+				xmin = 6.0
+				xmax = 6.08
+				text = ""
+			intervals [20]:
+				xmin = 6.08
+				xmax = 6.4
+				text = "ヨウ素"
+			intervals [21]:
+				xmin = 6.4
+				xmax = 6.56
+				text = "が"
+			intervals [22]:
+				xmin = 6.56
+				xmax = 6.88
+				text = "特定"
+			intervals [23]:
+				xmin = 6.88
+				xmax = 7.12
+				text = "され"
+			intervals [24]:
+				xmin = 7.12
+				xmax = 7.28
+				text = "て"
+			intervals [25]:
+				xmin = 7.28
+				xmax = 7.36
+				text = "い"
+			intervals [26]:
+				xmin = 7.36
+				xmax = 7.6
+				text = "ます"
+			intervals [27]:
+				xmin = 7.6
+				xmax = 9.66
+				text = ""

@@ -1,0 +1,214 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 18.72
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 18.72
+		intervals: size = 50
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.0
+				text = ""
+			intervals [2]:
+				xmin = 2.0
+				xmax = 2.32
+				text = "疾病"
+			intervals [3]:
+				xmin = 2.32
+				xmax = 2.56
+				text = ""
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.8
+				text = "の"
+			intervals [5]:
+				xmin = 2.8
+				xmax = 2.96
+				text = ""
+			intervals [6]:
+				xmin = 2.96
+				xmax = 3.44
+				text = "専門"
+			intervals [7]:
+				xmin = 3.44
+				xmax = 3.52
+				text = ""
+			intervals [8]:
+				xmin = 3.52
+				xmax = 3.6
+				text = "家"
+			intervals [9]:
+				xmin = 3.6
+				xmax = 3.84
+				text = "で"
+			intervals [10]:
+				xmin = 3.84
+				xmax = 4.72
+				text = ""
+			intervals [11]:
+				xmin = 4.72
+				xmax = 5.04
+				text = "国連"
+			intervals [12]:
+				xmin = 5.04
+				xmax = 5.12
+				text = "に"
+			intervals [13]:
+				xmin = 5.12
+				xmax = 5.6
+				text = "所属"
+			intervals [14]:
+				xmin = 5.6
+				xmax = 5.92
+				text = "する"
+			intervals [15]:
+				xmin = 5.92
+				xmax = 6.32
+				text = ""
+			intervals [16]:
+				xmin = 6.32
+				xmax = 7.04
+				text = "ダニエル"
+			intervals [17]:
+				xmin = 7.04
+				xmax = 7.36
+				text = ""
+			intervals [18]:
+				xmin = 7.36
+				xmax = 8.48
+				text = "ランターニュ"
+			intervals [19]:
+				xmin = 8.48
+				xmax = 8.72
+				text = ""
+			intervals [20]:
+				xmin = 8.72
+				xmax = 8.8
+				text = "氏"
+			intervals [21]:
+				xmin = 8.8
+				xmax = 8.96
+				text = "は"
+			intervals [22]:
+				xmin = 8.96
+				xmax = 9.84
+				text = ""
+			intervals [23]:
+				xmin = 9.84
+				xmax = 10.0
+				text = "大"
+			intervals [24]:
+				xmin = 10.0
+				xmax = 10.32
+				text = ""
+			intervals [25]:
+				xmin = 10.32
+				xmax = 10.96
+				text = "流行"
+			intervals [26]:
+				xmin = 10.96
+				xmax = 11.12
+				text = "は"
+			intervals [27]:
+				xmin = 11.12
+				xmax = 11.92
+				text = ""
+			intervals [28]:
+				xmin = 11.92
+				xmax = 12.32
+				text = "平和"
+			intervals [29]:
+				xmin = 12.32
+				xmax = 12.48
+				text = ""
+			intervals [30]:
+				xmin = 12.48
+				xmax = 12.72
+				text = "維持"
+			intervals [31]:
+				xmin = 12.72
+				xmax = 12.8
+				text = "軍"
+			intervals [32]:
+				xmin = 12.8
+				xmax = 13.04
+				text = ""
+			intervals [33]:
+				xmin = 13.04
+				xmax = 13.2
+				text = "に"
+			intervals [34]:
+				xmin = 13.2
+				xmax = 14.0
+				text = ""
+			intervals [35]:
+				xmin = 14.0
+				xmax = 14.24
+				text = "起因"
+			intervals [36]:
+				xmin = 14.24
+				xmax = 14.48
+				text = ""
+			intervals [37]:
+				xmin = 14.48
+				xmax = 14.72
+				text = "する"
+			intervals [38]:
+				xmin = 14.72
+				xmax = 14.8
+				text = ""
+			intervals [39]:
+				xmin = 14.8
+				xmax = 15.12
+				text = "可能"
+			intervals [40]:
+				xmin = 15.12
+				xmax = 15.2
+				text = ""
+			intervals [41]:
+				xmin = 15.2
+				xmax = 15.28
+				text = "性"
+			intervals [42]:
+				xmin = 15.28
+				xmax = 15.36
+				text = ""
+			intervals [43]:
+				xmin = 15.36
+				xmax = 15.44
+				text = "が"
+			intervals [44]:
+				xmin = 15.44
+				xmax = 15.76
+				text = "高い"
+			intervals [45]:
+				xmin = 15.76
+				xmax = 16.0
+				text = ""
+			intervals [46]:
+				xmin = 16.0
+				xmax = 16.16
+				text = "と"
+			intervals [47]:
+				xmin = 16.16
+				xmax = 16.24
+				text = ""
+			intervals [48]:
+				xmin = 16.24
+				xmax = 16.48
+				text = "述べ"
+			intervals [49]:
+				xmin = 16.48
+				xmax = 16.88
+				text = "ました"
+			intervals [50]:
+				xmin = 16.88
+				xmax = 18.72
+				text = ""

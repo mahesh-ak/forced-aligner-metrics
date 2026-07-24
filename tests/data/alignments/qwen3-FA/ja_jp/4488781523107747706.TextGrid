@@ -1,0 +1,138 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 14.64
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 14.64
+		intervals: size = 31
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.4
+				text = ""
+			intervals [2]:
+				xmin = 2.4
+				xmax = 2.96
+				text = "税金"
+			intervals [3]:
+				xmin = 2.96
+				xmax = 3.04
+				text = "の"
+			intervals [4]:
+				xmin = 3.04
+				xmax = 3.44
+				text = "高い"
+			intervals [5]:
+				xmin = 3.44
+				xmax = 3.76
+				text = "国"
+			intervals [6]:
+				xmin = 3.76
+				xmax = 3.84
+				text = "を"
+			intervals [7]:
+				xmin = 3.84
+				xmax = 4.4
+				text = "訪れる"
+			intervals [8]:
+				xmin = 4.4
+				xmax = 4.8
+				text = "旅行"
+			intervals [9]:
+				xmin = 4.8
+				xmax = 4.96
+				text = "者"
+			intervals [10]:
+				xmin = 4.96
+				xmax = 5.2
+				text = "は"
+			intervals [11]:
+				xmin = 5.2
+				xmax = 5.76
+				text = ""
+			intervals [12]:
+				xmin = 5.76
+				xmax = 6.16
+				text = "特に"
+			intervals [13]:
+				xmin = 6.16
+				xmax = 6.72
+				text = "酒類"
+			intervals [14]:
+				xmin = 6.72
+				xmax = 6.88
+				text = "や"
+			intervals [15]:
+				xmin = 6.88
+				xmax = 7.28
+				text = "たばこ"
+			intervals [16]:
+				xmin = 7.28
+				xmax = 7.52
+				text = "など"
+			intervals [17]:
+				xmin = 7.52
+				xmax = 7.6
+				text = "の"
+			intervals [18]:
+				xmin = 7.6
+				xmax = 8.16
+				text = "商品"
+			intervals [19]:
+				xmin = 8.16
+				xmax = 8.32
+				text = "で"
+			intervals [20]:
+				xmin = 8.32
+				xmax = 8.48
+				text = ""
+			intervals [21]:
+				xmin = 8.48
+				xmax = 8.8
+				text = "かなり"
+			intervals [22]:
+				xmin = 8.8
+				xmax = 8.96
+				text = "の"
+			intervals [23]:
+				xmin = 8.96
+				xmax = 9.44
+				text = "金額"
+			intervals [24]:
+				xmin = 9.44
+				xmax = 9.52
+				text = "を"
+			intervals [25]:
+				xmin = 9.52
+				xmax = 10.08
+				text = "節約"
+			intervals [26]:
+				xmin = 10.08
+				xmax = 10.4
+				text = "できる"
+			intervals [27]:
+				xmin = 10.4
+				xmax = 10.64
+				text = "こと"
+			intervals [28]:
+				xmin = 10.64
+				xmax = 10.88
+				text = "が"
+			intervals [29]:
+				xmin = 10.88
+				xmax = 11.04
+				text = "あり"
+			intervals [30]:
+				xmin = 11.04
+				xmax = 11.44
+				text = "ます"
+			intervals [31]:
+				xmin = 11.44
+				xmax = 14.64
+				text = ""

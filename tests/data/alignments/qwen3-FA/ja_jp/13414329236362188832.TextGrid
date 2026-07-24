@@ -1,0 +1,146 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 18.9
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 18.9
+		intervals: size = 33
+			intervals [1]:
+				xmin = 0.0
+				xmax = 5.12
+				text = ""
+			intervals [2]:
+				xmin = 5.12
+				xmax = 5.76
+				text = "強風"
+			intervals [3]:
+				xmin = 5.76
+				xmax = 5.84
+				text = ""
+			intervals [4]:
+				xmin = 5.84
+				xmax = 6.24
+				text = "ひょう"
+			intervals [5]:
+				xmin = 6.24
+				xmax = 6.32
+				text = ""
+			intervals [6]:
+				xmin = 6.32
+				xmax = 6.56
+				text = "過度"
+			intervals [7]:
+				xmin = 6.56
+				xmax = 6.72
+				text = "の"
+			intervals [8]:
+				xmin = 6.72
+				xmax = 7.2
+				text = "降水"
+			intervals [9]:
+				xmin = 7.2
+				xmax = 7.52
+				text = "量"
+			intervals [10]:
+				xmin = 7.52
+				xmax = 7.92
+				text = "および"
+			intervals [11]:
+				xmin = 7.92
+				xmax = 8.16
+				text = "山"
+			intervals [12]:
+				xmin = 8.16
+				xmax = 8.4
+				text = "火事"
+			intervals [13]:
+				xmin = 8.4
+				xmax = 8.72
+				text = "は"
+			intervals [14]:
+				xmin = 8.72
+				xmax = 8.8
+				text = ""
+			intervals [15]:
+				xmin = 8.8
+				xmax = 9.28
+				text = "雷雨"
+			intervals [16]:
+				xmin = 9.28
+				xmax = 9.6
+				text = ""
+			intervals [17]:
+				xmin = 9.6
+				xmax = 10.08
+				text = "噴き"
+			intervals [18]:
+				xmin = 10.08
+				xmax = 11.28
+				text = ""
+			intervals [19]:
+				xmin = 11.28
+				xmax = 11.6
+				text = "および"
+			intervals [20]:
+				xmin = 11.6
+				xmax = 12.16
+				text = "サイクロン"
+			intervals [21]:
+				xmin = 12.16
+				xmax = 12.4
+				text = "など"
+			intervals [22]:
+				xmin = 12.4
+				xmax = 12.48
+				text = "の"
+			intervals [23]:
+				xmin = 12.48
+				xmax = 13.04
+				text = "厳しい"
+			intervals [24]:
+				xmin = 13.04
+				xmax = 13.36
+				text = "気象"
+			intervals [25]:
+				xmin = 13.36
+				xmax = 13.76
+				text = "形態"
+			intervals [26]:
+				xmin = 13.76
+				xmax = 13.92
+				text = "や"
+			intervals [27]:
+				xmin = 13.92
+				xmax = 14.24
+				text = "その"
+			intervals [28]:
+				xmin = 14.24
+				xmax = 14.56
+				text = "影響"
+			intervals [29]:
+				xmin = 14.56
+				xmax = 14.72
+				text = "に"
+			intervals [30]:
+				xmin = 14.72
+				xmax = 14.88
+				text = "よる"
+			intervals [31]:
+				xmin = 14.88
+				xmax = 15.04
+				text = "もの"
+			intervals [32]:
+				xmin = 15.04
+				xmax = 15.36
+				text = "です"
+			intervals [33]:
+				xmin = 15.36
+				xmax = 18.9
+				text = ""

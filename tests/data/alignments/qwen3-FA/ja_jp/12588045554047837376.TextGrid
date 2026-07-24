@@ -1,0 +1,234 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 22.5
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 22.5
+		intervals: size = 55
+			intervals [1]:
+				xmin = 0.0
+				xmax = 4.48
+				text = ""
+			intervals [2]:
+				xmin = 4.48
+				xmax = 5.2
+				text = "例えば"
+			intervals [3]:
+				xmin = 5.2
+				xmax = 5.6
+				text = "ノース"
+			intervals [4]:
+				xmin = 5.6
+				xmax = 6.16
+				text = "カロライナ"
+			intervals [5]:
+				xmin = 6.16
+				xmax = 6.4
+				text = "州"
+			intervals [6]:
+				xmin = 6.4
+				xmax = 6.64
+				text = "の"
+			intervals [7]:
+				xmin = 6.64
+				xmax = 7.12
+				text = "ベネット"
+			intervals [8]:
+				xmin = 7.12
+				xmax = 7.6
+				text = "スクール"
+			intervals [9]:
+				xmin = 7.6
+				xmax = 7.68
+				text = "の"
+			intervals [10]:
+				xmin = 7.68
+				xmax = 8.08
+				text = "生徒"
+			intervals [11]:
+				xmin = 8.08
+				xmax = 8.16
+				text = "は"
+			intervals [12]:
+				xmin = 8.16
+				xmax = 8.8
+				text = "毎年"
+			intervals [13]:
+				xmin = 8.8
+				xmax = 8.88
+				text = ""
+			intervals [14]:
+				xmin = 8.88
+				xmax = 9.44
+				text = "州都"
+			intervals [15]:
+				xmin = 9.44
+				xmax = 9.52
+				text = "へ"
+			intervals [16]:
+				xmin = 9.52
+				xmax = 9.68
+				text = "の"
+			intervals [17]:
+				xmin = 9.68
+				xmax = 9.76
+				text = ""
+			intervals [18]:
+				xmin = 9.76
+				xmax = 10.0
+				text = "旅行"
+			intervals [19]:
+				xmin = 10.0
+				xmax = 10.16
+				text = "に"
+			intervals [20]:
+				xmin = 10.16
+				xmax = 10.56
+				text = "関する"
+			intervals [21]:
+				xmin = 10.56
+				xmax = 11.12
+				text = "ウェブサイト"
+			intervals [22]:
+				xmin = 11.12
+				xmax = 11.68
+				text = "制作"
+			intervals [23]:
+				xmin = 11.68
+				xmax = 11.76
+				text = "し"
+			intervals [24]:
+				xmin = 11.76
+				xmax = 11.84
+				text = "て"
+			intervals [25]:
+				xmin = 11.84
+				xmax = 12.16
+				text = "おり"
+			intervals [26]:
+				xmin = 12.16
+				xmax = 12.72
+				text = ""
+			intervals [27]:
+				xmin = 12.72
+				xmax = 13.28
+				text = "ウェブサイト"
+			intervals [28]:
+				xmin = 13.28
+				xmax = 13.36
+				text = "は"
+			intervals [29]:
+				xmin = 13.36
+				xmax = 13.76
+				text = "毎年"
+			intervals [30]:
+				xmin = 13.76
+				xmax = 14.16
+				text = "改訂"
+			intervals [31]:
+				xmin = 14.16
+				xmax = 14.4
+				text = "され"
+			intervals [32]:
+				xmin = 14.4
+				xmax = 14.64
+				text = "ます"
+			intervals [33]:
+				xmin = 14.64
+				xmax = 14.88
+				text = "が"
+			intervals [34]:
+				xmin = 14.88
+				xmax = 14.96
+				text = ""
+			intervals [35]:
+				xmin = 14.96
+				xmax = 15.2
+				text = "旧"
+			intervals [36]:
+				xmin = 15.2
+				xmax = 15.6
+				text = "サイト"
+			intervals [37]:
+				xmin = 15.6
+				xmax = 15.76
+				text = "は"
+			intervals [38]:
+				xmin = 15.76
+				xmax = 16.24
+				text = "スクラップ"
+			intervals [39]:
+				xmin = 16.24
+				xmax = 16.56
+				text = "ブック"
+			intervals [40]:
+				xmin = 16.56
+				xmax = 16.72
+				text = "と"
+			intervals [41]:
+				xmin = 16.72
+				xmax = 16.8
+				text = "し"
+			intervals [42]:
+				xmin = 16.8
+				xmax = 17.04
+				text = "て"
+			intervals [43]:
+				xmin = 17.04
+				xmax = 17.52
+				text = "閲覧"
+			intervals [44]:
+				xmin = 17.52
+				xmax = 17.76
+				text = "できる"
+			intervals [45]:
+				xmin = 17.76
+				xmax = 18.0
+				text = "よう"
+			intervals [46]:
+				xmin = 18.0
+				xmax = 18.16
+				text = "に"
+			intervals [47]:
+				xmin = 18.16
+				xmax = 18.4
+				text = "オン"
+			intervals [48]:
+				xmin = 18.4
+				xmax = 18.72
+				text = "ライン"
+			intervals [49]:
+				xmin = 18.72
+				xmax = 18.8
+				text = "で"
+			intervals [50]:
+				xmin = 18.8
+				xmax = 19.12
+				text = "保管"
+			intervals [51]:
+				xmin = 19.12
+				xmax = 19.28
+				text = "され"
+			intervals [52]:
+				xmin = 19.28
+				xmax = 19.44
+				text = "て"
+			intervals [53]:
+				xmin = 19.44
+				xmax = 19.52
+				text = "い"
+			intervals [54]:
+				xmin = 19.52
+				xmax = 20.0
+				text = "ます"
+			intervals [55]:
+				xmin = 20.0
+				xmax = 22.5
+				text = ""

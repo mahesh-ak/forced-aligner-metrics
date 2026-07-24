@@ -1,0 +1,122 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.84
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 9.84
+		intervals: size = 27
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.92
+				text = ""
+			intervals [2]:
+				xmin = 1.92
+				xmax = 2.24
+				text = "警察"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.32
+				text = ""
+			intervals [4]:
+				xmin = 2.32
+				xmax = 2.48
+				text = "の"
+			intervals [5]:
+				xmin = 2.48
+				xmax = 2.88
+				text = "チャンドラ"
+			intervals [6]:
+				xmin = 2.88
+				xmax = 2.96
+				text = "シェ"
+			intervals [7]:
+				xmin = 2.96
+				xmax = 3.2
+				text = "カール"
+			intervals [8]:
+				xmin = 3.2
+				xmax = 3.6
+				text = "ソランキ"
+			intervals [9]:
+				xmin = 3.6
+				xmax = 4.16
+				text = "総監"
+			intervals [10]:
+				xmin = 4.16
+				xmax = 4.32
+				text = "よれ"
+			intervals [11]:
+				xmin = 4.32
+				xmax = 4.56
+				text = "ば"
+			intervals [12]:
+				xmin = 4.56
+				xmax = 4.64
+				text = ""
+			intervals [13]:
+				xmin = 4.64
+				xmax = 4.88
+				text = "被告"
+			intervals [14]:
+				xmin = 4.88
+				xmax = 4.96
+				text = "人"
+			intervals [15]:
+				xmin = 4.96
+				xmax = 5.04
+				text = ""
+			intervals [16]:
+				xmin = 5.04
+				xmax = 5.2
+				text = "は"
+			intervals [17]:
+				xmin = 5.2
+				xmax = 5.36
+				text = "顔"
+			intervals [18]:
+				xmin = 5.36
+				xmax = 5.44
+				text = "を"
+			intervals [19]:
+				xmin = 5.44
+				xmax = 5.76
+				text = "隠し"
+			intervals [20]:
+				xmin = 5.76
+				xmax = 5.84
+				text = "て"
+			intervals [21]:
+				xmin = 5.84
+				xmax = 6.16
+				text = "法廷"
+			intervals [22]:
+				xmin = 6.16
+				xmax = 6.24
+				text = "に"
+			intervals [23]:
+				xmin = 6.24
+				xmax = 6.64
+				text = "出頭"
+			intervals [24]:
+				xmin = 6.64
+				xmax = 6.72
+				text = "した"
+			intervals [25]:
+				xmin = 6.72
+				xmax = 6.96
+				text = "そう"
+			intervals [26]:
+				xmin = 6.96
+				xmax = 7.28
+				text = "です"
+			intervals [27]:
+				xmin = 7.28
+				xmax = 9.84
+				text = ""

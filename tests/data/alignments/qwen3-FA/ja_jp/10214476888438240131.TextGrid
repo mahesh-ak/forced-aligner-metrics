@@ -1,0 +1,110 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 8.88
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 8.88
+		intervals: size = 24
+			intervals [1]:
+				xmin = 0.0
+				xmax = 2.08
+				text = ""
+			intervals [2]:
+				xmin = 2.08
+				xmax = 2.24
+				text = "パリジャン"
+			intervals [3]:
+				xmin = 2.24
+				xmax = 2.56
+				text = "は"
+			intervals [4]:
+				xmin = 2.56
+				xmax = 2.72
+				text = "自己"
+			intervals [5]:
+				xmin = 2.72
+				xmax = 2.8
+				text = ""
+			intervals [6]:
+				xmin = 2.8
+				xmax = 3.2
+				text = "中心"
+			intervals [7]:
+				xmin = 3.2
+				xmax = 3.44
+				text = "的"
+			intervals [8]:
+				xmin = 3.44
+				xmax = 4.24
+				text = ""
+			intervals [9]:
+				xmin = 4.24
+				xmax = 4.48
+				text = "横柄"
+			intervals [10]:
+				xmin = 4.48
+				xmax = 4.56
+				text = "で"
+			intervals [11]:
+				xmin = 4.56
+				xmax = 4.72
+				text = ""
+			intervals [12]:
+				xmin = 4.72
+				xmax = 5.04
+				text = "失礼"
+			intervals [13]:
+				xmin = 5.04
+				xmax = 5.12
+				text = "な"
+			intervals [14]:
+				xmin = 5.12
+				xmax = 5.2
+				text = ""
+			intervals [15]:
+				xmin = 5.2
+				xmax = 5.36
+				text = "人"
+			intervals [16]:
+				xmin = 5.36
+				xmax = 5.52
+				text = "が"
+			intervals [17]:
+				xmin = 5.52
+				xmax = 5.68
+				text = "多い"
+			intervals [18]:
+				xmin = 5.68
+				xmax = 5.76
+				text = "と"
+			intervals [19]:
+				xmin = 5.76
+				xmax = 6.0
+				text = "言わ"
+			intervals [20]:
+				xmin = 6.0
+				xmax = 6.08
+				text = "れ"
+			intervals [21]:
+				xmin = 6.08
+				xmax = 6.16
+				text = "て"
+			intervals [22]:
+				xmin = 6.16
+				xmax = 6.24
+				text = "い"
+			intervals [23]:
+				xmin = 6.24
+				xmax = 6.48
+				text = "ます"
+			intervals [24]:
+				xmin = 6.48
+				xmax = 8.88
+				text = ""

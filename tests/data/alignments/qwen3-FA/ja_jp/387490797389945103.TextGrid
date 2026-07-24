@@ -1,0 +1,170 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 12.3
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 12.3
+		intervals: size = 39
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.76
+				text = ""
+			intervals [2]:
+				xmin = 1.76
+				xmax = 2.0
+				text = "北部"
+			intervals [3]:
+				xmin = 2.0
+				xmax = 2.16
+				text = "に"
+			intervals [4]:
+				xmin = 2.16
+				xmax = 2.32
+				text = "は"
+			intervals [5]:
+				xmin = 2.32
+				xmax = 2.88
+				text = "ロマンチック"
+			intervals [6]:
+				xmin = 2.88
+				xmax = 2.96
+				text = "で"
+			intervals [7]:
+				xmin = 2.96
+				xmax = 3.28
+				text = "魅力"
+			intervals [8]:
+				xmin = 3.28
+				xmax = 3.44
+				text = "的"
+			intervals [9]:
+				xmin = 3.44
+				xmax = 3.52
+				text = "な"
+			intervals [10]:
+				xmin = 3.52
+				xmax = 4.0
+				text = "シントラ"
+			intervals [11]:
+				xmin = 4.0
+				xmax = 4.08
+				text = "の"
+			intervals [12]:
+				xmin = 4.08
+				xmax = 4.32
+				text = "町"
+			intervals [13]:
+				xmin = 4.32
+				xmax = 4.4
+				text = "が"
+			intervals [14]:
+				xmin = 4.4
+				xmax = 4.64
+				text = "あり"
+			intervals [15]:
+				xmin = 4.64
+				xmax = 4.72
+				text = ""
+			intervals [16]:
+				xmin = 4.72
+				xmax = 4.96
+				text = "この"
+			intervals [17]:
+				xmin = 4.96
+				xmax = 5.2
+				text = "町"
+			intervals [18]:
+				xmin = 5.2
+				xmax = 5.36
+				text = "は"
+			intervals [19]:
+				xmin = 5.36
+				xmax = 5.76
+				text = "バイロン"
+			intervals [20]:
+				xmin = 5.76
+				xmax = 5.92
+				text = "卿"
+			intervals [21]:
+				xmin = 5.92
+				xmax = 6.08
+				text = "が"
+			intervals [22]:
+				xmin = 6.08
+				xmax = 6.32
+				text = "その"
+			intervals [23]:
+				xmin = 6.32
+				xmax = 6.72
+				text = "素晴らし"
+			intervals [24]:
+				xmin = 6.72
+				xmax = 6.8
+				text = "さ"
+			intervals [25]:
+				xmin = 6.8
+				xmax = 6.88
+				text = "を"
+			intervals [26]:
+				xmin = 6.88
+				xmax = 7.2
+				text = "熱く"
+			intervals [27]:
+				xmin = 7.2
+				xmax = 7.44
+				text = "語っ"
+			intervals [28]:
+				xmin = 7.44
+				xmax = 7.52
+				text = "た"
+			intervals [29]:
+				xmin = 7.52
+				xmax = 7.76
+				text = "こと"
+			intervals [30]:
+				xmin = 7.76
+				xmax = 8.0
+				text = "で"
+			intervals [31]:
+				xmin = 8.0
+				xmax = 8.4
+				text = "外国"
+			intervals [32]:
+				xmin = 8.4
+				xmax = 8.56
+				text = "人"
+			intervals [33]:
+				xmin = 8.56
+				xmax = 8.64
+				text = "に"
+			intervals [34]:
+				xmin = 8.64
+				xmax = 8.8
+				text = "も"
+			intervals [35]:
+				xmin = 8.8
+				xmax = 9.12
+				text = "有名"
+			intervals [36]:
+				xmin = 9.12
+				xmax = 9.2
+				text = "に"
+			intervals [37]:
+				xmin = 9.2
+				xmax = 9.44
+				text = "なり"
+			intervals [38]:
+				xmin = 9.44
+				xmax = 9.76
+				text = "ました"
+			intervals [39]:
+				xmin = 9.76
+				xmax = 12.3
+				text = ""
