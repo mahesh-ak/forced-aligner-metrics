@@ -68,6 +68,14 @@ The returned metrics dictionary contains the available scores for the evaluated 
 
 ## Installation for development
 
+Install the package from PyPI with:
+
+```bash
+pip install forced-aligner-metrics
+```
+
+The source code is available in the [GitHub repository](https://github.com/mahesh-ak/forced-aligner-metrics).
+
 Install the project in editable mode for development:
 
 ```bash
