@@ -1,6 +1,6 @@
 # Forced Alignment Evaluation Metrics: PCMI and WACS
 
-This repository contains the implementation of two reference-free forced alignment evaluation metrics:
+This repository contains the implementation of two reference-free forced alignment evaluation metrics as defined in this [paper](https://arxiv.org/pdf/2608.28508):
 
 * **PCMI** (Phoneme-Cluster Mutual Information)
 * **WACS** (Word Acoustic Consistency Score)
@@ -88,4 +88,17 @@ Run the regression tests with:
 
 ```bash
 python -m pytest
+```
+
+
+## Citation
+
+```
+@article{akavarapu2026phoneme,
+      title={Phoneme- and Word-Level Metrics Using Self-Supervised Speech Representations for Forced Alignment Evaluation}, 
+      author={V.S.D.S.Mahesh Akavarapu and Michael Daniel and Gerhard Jäger},
+      year={2026},
+      journal={arXiv preprint arXiv:2608.28508},
+      url={https://arxiv.org/abs/2608.28508}, 
+}
 ```
