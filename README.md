@@ -54,6 +54,7 @@ array([0.        , 0.        , 0.        , ..., 0.00074703, 0.00074613, 0.000781
     ],
 }
 ```
+Presence of each of tiers `"phones"` and `"wacs"` is optional.
 
 ```python
 from forced_aligner_metrics import ForcedAlignEval, ForcedAlignEvalConfig
