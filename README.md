@@ -97,7 +97,7 @@ python -m pytest
 ```
 @article{akavarapu2026phoneme,
       title={Phoneme- and Word-Level Metrics Using Self-Supervised Speech Representations for Forced Alignment Evaluation}, 
-      author={V.S.D.S.Mahesh Akavarapu and Michael Daniel and Gerhard Jäger},
+      author={Akavarapu, V.S.D.S.Mahesh and Daniel, Michael and J{\"a}ger, Gerhard},
       year={2026},
       journal={arXiv preprint arXiv:2608.28508},
       url={https://arxiv.org/abs/2608.28508}, 
