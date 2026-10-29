@@ -95,11 +95,22 @@ python -m pytest
 ## Citation
 
 ```
-@article{akavarapu2026phoneme,
-      title={Phoneme- and Word-Level Metrics Using Self-Supervised Speech Representations for Forced Alignment Evaluation}, 
-      author={Akavarapu, V.S.D.S.Mahesh and Daniel, Michael and J{\"a}ger, Gerhard},
-      year={2026},
-      journal={arXiv preprint arXiv:2608.28508},
-      url={https://arxiv.org/abs/2608.28508}, 
+@inproceedings{akavarapu-etal-2026-phoneme,
+    title = "Phoneme- and Word-Level Metrics Using Self-Supervised Speech Representations for Forced Alignment Evaluation",
+    author = {Akavarapu, V.S.D.S.Mahesh  and
+      Daniel, Michael  and
+      J{\"a}ger, Gerhard},
+    editor = "Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Jessy  and
+      Elliott, Desmond",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {EMNLP} 2026",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-emnlp.279/",
+    pages = "5865--5892",
+    ISBN = "979-8-89176-462-0",
 }
 ```
