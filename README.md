@@ -190,6 +190,11 @@ python -m pytest
 
 The kernel/aligner unit tests run CPU-only; `-m integration` marks the tests that download datasets and models.
 
+`tests/test_aligner_vs_reference.py` compares the GPU CTC aligner against the stored
+`mms-300m-ipa` reference alignments (generated with `mahesh27/mms-300m-ipa-fleurs` and the
+original ctc-segmentation aligner) at token and word level; the number of items is
+controlled via `FAM_REF_ITEMS` (default 20).
+
 
 ## Citation
 
