@@ -3,40 +3,44 @@
 The stored alignments in ``tests/data/alignments/mms-300m-ipa/de_de`` were
 generated with the model ``mahesh27/mms-300m-ipa-fleurs`` and the original
 lumaku ctc-segmentation aligner (audio truncated to the first 360000
-samples, as in the metric tests). This test re-aligns the same FLEURS audio
-with this package's GPU aligner and measures boundary differences:
+samples, ``trim_silence=False`` - the stored TextGrids are NOT the
+silence-trimmed "-SIL" variant). The generation pipeline ran:
 
-* **token (phone) level**: the token sequence comes from the model's own
-  tokenizer (``tokenizer.from_pretrained(model).tokenize(ipa)``); the
-  reference generation merged some adjacent codepoints into single tokens
-  ("i" + "ː" -> "iː", doubled consonants like "nn") - a quirk specific to
-  that generation - so the two token sequences are matched by their
-  concatenated character offsets and compared at every shared boundary
-  offset (start and end times).
+* one ctc run with the IPA words as utterances -> word tier, and
+* a hierarchic second ctc run per word on ``lingpy ipa2tokens``-tokenized
+  IPA (which merges codepoint pairs like "i" + "ː" and geminates like
+  "nn" - the reference tokenization quirk), on probabilities cropped to
+  the word's frame span -> phone tier;
+* it fed softmax probabilities (not log-probabilities) to ctc-segmentation
+  and derived ``index_duration`` from the exact audio/frame lengths.
+
+This test does NOT replicate those generation-internal choices; it uses
+this package's general aligner semantics and compares:
+
+* **token (phone) level**: tokens come from the model's own tokenizer
+  (``tokenizer.from_pretrained(model).tokenize(ipa)``); the two token
+  sequences concatenate to the same string, so they are matched by
+  character offsets and compared at every shared boundary offset.
 * **word level**: words are defined on the spaces of the IPA transcription;
   their timestamps are constructed from the token alignment (a word spans
   from the start of its first token to the end of its last token).
 
-**Fallback items**: when the original aligner failed on an item, the
-reference generation divided the affected (non-silent) segment equally
-among its tokens. Such reference "alignments" carry no alignment signal -
-their token durations are (near-)constant, e.g. within-word duration
-coefficient of variation ~0.02 versus ~0.5 for real alignments. The test
-detects these per reference word (CV < 0.05 over >= 3 words' tokens) and
-excludes them from both tier comparisons; items dominated by fallback
-words (> 50% of tokens) are skipped entirely and reported.
+**Fallback items**: on ctc-segmentation exceptions the generation fell back
+to equal (or token-count-proportional) division of the span: per-word phone
+fallbacks produce exactly constant token durations (within-word duration
+coefficient of variation ~0.02 versus ~0.5 for real alignments), word-run
+failures produce near-equal word spans. Such reference entries carry no
+alignment signal; the test detects them per reference word (CV < 0.05 over
+>= 3 of the word's tokens), excludes them from both tier comparisons, and
+skips items dominated by fallback words (> 25% of tokens) entirely.
 
-Both sides run the same CTC-Segmentation construction: one ctc run with
-the token list as utterances (``prepare_text`` -> ``ctc_segmentation`` ->
-``determine_utterance_segments``). Residual differences are dominated by
-model-forward/logit drift between the environment that generated the
-references and the current one, and by reference-generation post-processing
-we deliberately do not replicate: a deterministic silence cutter excluded
-leading/trailing silence from each word's span (measured: simple
-RMS-envelope trims do not improve agreement, so word boundaries keep the
-raw token-span semantics; the median word offset is ~12 ms either way).
-The tolerances assert that the boundary drift stays frame-scale overall
-and only DP branches through long silences tail out beyond ~1 s.
+Residual differences therefore bundle (a) model-forward/logit drift
+between the generation environment and the current one and (b) the known
+construction differences (tokenizer vs lingpy tokenization, single-pass
+token DP vs per-word cropped DP, log vs softmax scale). The tolerances
+assert that the boundary drift stays frame-scale overall (measured on the
+full set: MAE ~0.036 s, p95 <= 0.16 s) and only DP branches through long
+silences tail out beyond ~1 s.
 
 **Data**: loaded exactly like ``test_metrics.py`` - the streaming wrapper
 ``load_dataset(tests/data/fleurs.py, "de_de", split="test", streaming=True)``
