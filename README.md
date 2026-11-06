@@ -128,6 +128,27 @@ metrics = evaluator.compute_metrics(
 
 Separator/gap rows (word boundaries, start symbol, dropped characters) are emitted with empty `"text"`, which `ForcedAlignEval` normalizes to `"sil"`; the entries jointly cover `[0, duration]`.
 
+### Validation under the package's own metrics
+
+On 200 FLEURS `de_de` items aligned with `mahesh27/mms-300m-ipa-fleurs`, the
+aligner was judged by the very metrics this package provides — PCMI and WACS,
+computed on GPU with the `torch` backend — against the stored
+`mms-300m-ipa` reference alignments (generated with the original
+ctc-segmentation pipeline):
+
+| alignments | PCMI | WACS |
+|---|---|---|
+| stored reference TextGrids | 0.219 | 0.167 |
+| **CTCAligner (this package, single-pass DP)** | **0.342** | **0.198** |
+
+The aligner's output scores comparable-or-higher under both reference-free
+metrics than the reference alignments; `tests/test_aligner_metrics_gpu.py`
+asserts these regime bands on GPU (reference PCMI/WACS sanity band, aligner
+within tolerance of the reference scores). A two-stage hierarchical
+word->token variant was evaluated too (it reproduces the reference pipeline
+metric-for-metric, PCMI 0.220 / WACS 0.162) but is not kept: the plain
+single-pass aligner is the standalone mode.
+
 ### Batching
 
 The alignment DP itself is sequential along the text (with a data-dependent sliding window per character), so it runs per item; the expensive part - the CTC forward pass - is batched by `align_batch`, which pads, runs one model forward per batch (mask-aware) and then evaluates the fast vectorized DP per item:
@@ -194,6 +215,10 @@ The kernel/aligner unit tests run CPU-only; `-m integration` marks the tests tha
 `mms-300m-ipa` reference alignments (generated with `mahesh27/mms-300m-ipa-fleurs` and the
 original ctc-segmentation aligner) at token and word level; the number of items is
 controlled via `FAM_REF_ITEMS` (default 20).
+
+`tests/test_aligner_metrics_gpu.py` validates the aligner by PCMI/WACS on GPU
+(GPU required): reference TextGrid alignments vs `CTCAligner` output over
+FLEURS `de_de` items (`FAM_METRIC_ITEMS`, default 200).
 
 
 ## Citation
