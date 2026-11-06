@@ -1,5 +1,6 @@
 import warnings
 import numpy as np
+import torch
 from transformers import Wav2Vec2Model, Wav2Vec2FeatureExtractor
 from collections import defaultdict
 from dataclasses import dataclass
@@ -11,11 +12,17 @@ from scipy.spatial.distance import cosine
 from collections import Counter
 from scipy.stats import entropy
 
+from forced_aligner_metrics.torch_ops import (
+    batched_dtw_cosine_sims,
+    kmeans_fit_predict,
+    normalized_mutual_info,
+)
+
 
 
 class W2V2Embedding:
-    
-    def __init__(self, model_str, layer_range = (12, 16), device = "cuda"):
+
+    def __init__(self, model_str, layer_range = (12, 16), device = "cuda", as_torch = False):
         self.device = device
         self.processor = Wav2Vec2FeatureExtractor.from_pretrained(model_str)
         self.model = Wav2Vec2Model.from_pretrained(model_str).to(self.device)
@@ -26,6 +33,9 @@ class W2V2Embedding:
         # With frozen params and non-grad inputs this is equivalent to
         # running under no_grad, without importing a specific framework.
         self.model.requires_grad_(False)
+        # When True, embeddings stay on the compute device as torch tensors
+        # instead of being copied to CPU numpy arrays after every batch.
+        self.as_torch = as_torch
 
     def _feat_extract_output_lengths(self, input_lengths):
         """Compute exact wav2vec2 frame counts in numpy.
@@ -54,6 +64,32 @@ class W2V2Embedding:
         outputs = self.model(input_values, attention_mask=attention_mask, output_hidden_states=True)
 
         lo, hi = self.layer_range
+
+        if self.as_torch:
+            # keep everything on the compute device: no per-layer CPU roundtrip
+            hidden = torch.stack(list(outputs.hidden_states[lo:hi])).mean(0)
+
+            # sample lengths
+            input_lengths = attention_mask.sum(-1).cpu().numpy()
+
+            # exact wav2vec2 frame lengths
+            frame_lengths = self._feat_extract_output_lengths(input_lengths)
+
+            for i in range(len(audios)):
+
+                num_samples = int(input_lengths[i])
+                duration = num_samples / self.sampling_rate
+                num_frames = int(frame_lengths[i])
+
+                emb = hidden[i, :num_frames].contiguous()
+
+                # frame timestamps
+                frame_times = np.linspace(0,duration,num_frames,endpoint=False)
+
+                results.append((emb, frame_times))
+
+            return results
+
         hidden = np.stack(
             [h.cpu().numpy() for h in outputs.hidden_states[lo:hi]]
         ).mean(0)
@@ -78,8 +114,7 @@ class W2V2Embedding:
             results.append((emb, frame_times))
 
         return results
-    
-    
+
 
 def normalize_intervals(intervals: Dict[str, List[Dict[str, Any]]]) -> Dict[str, List[Tuple[float, float, str]]]:
     normalized = {}
@@ -117,6 +152,8 @@ def pool_emb(x, k=2):
 
 def crop_frames(emb, frame_times, start, end):
     idx=(frame_times>=start)&(frame_times<=end)
+    if isinstance(emb, torch.Tensor):
+        return emb[torch.as_tensor(idx, device=emb.device)]
     return emb[idx]
 
 def dtw_sim(x,y):
@@ -157,6 +194,19 @@ class ForcedAlignEvalConfig:
         Minimum occurrence count required for a word to enter the WACS vocabulary.
     max_pairs:
         Maximum number of positive/negative DTW pairs per word.
+    backend:
+        Which kernels drive DTW (WACS), clustering and NMI (PCMI).
+        ``"auto"`` (default) uses the batched torch/GPU kernels whenever
+        ``device`` is a CUDA device and falls back to the original
+        numpy/fastdtw/sklearn implementation otherwise; ``"torch"``
+        forces the torch kernels (also usable on CPU tensors);
+        ``"legacy"`` always uses the original numpy implementation.
+    kmeans_seed:
+        Seed for the GPU k-means initialization (torch backend only).
+        The legacy MiniBatchKMeans path remains unseeded/global-RNG driven.
+    dtw_chunk_size:
+        Number of word pairs evaluated per batched DTW kernel
+        (torch backend only).
     """
 
     model : str = "facebook/mms-300m"
@@ -171,8 +221,12 @@ class ForcedAlignEvalConfig:
     samples_word_eval : int = 200
     max_words: int = 200
     min_occ : int = 3
-    max_pairs: int = 10
-    
+    max_pairs : int = 10
+
+    backend : str = "auto"
+    kmeans_seed : int = 0
+    dtw_chunk_size : int = 256
+
 
 class ForcedAlignEval:
     """Main import-based evaluator for PCMI and WACS metrics.
@@ -185,8 +239,21 @@ class ForcedAlignEval:
 
     def __init__(self, config=ForcedAlignEvalConfig()):
         self.config=config
-        self.emb_model = W2V2Embedding(config.model, config.layer_range, config.device)
-    
+        self.backend = self._resolve_backend(config)
+        self.emb_model = W2V2Embedding(
+            config.model, config.layer_range, config.device,
+            as_torch=(self.backend == "torch"),
+        )
+
+    @staticmethod
+    def _resolve_backend(config):
+        backend = getattr(config, "backend", "auto")
+        if backend == "auto":
+            backend = "torch" if config.device.startswith("cuda") else "legacy"
+        if backend not in ("torch", "legacy"):
+            raise ValueError(f"Unknown backend: {backend!r} (expected 'auto', 'torch' or 'legacy')")
+        return backend
+
     def collect_embeddings(self, audios: Iterator[np.ndarray], intervals_iter: Iterator[Dict[str, List[Dict[str, Any]]]]) -> dict:
 
         all_frame_embs = []
@@ -244,8 +311,101 @@ class ForcedAlignEval:
             "frame_labels": all_frame_labels,
             "word_embeddings": word2embs,
         }
-        
-        
+
+    def _cluster_pcmi_torch(self, X: torch.Tensor, y: np.ndarray):
+        """PCMI clustering + NMI with the batched torch/GPU kernels."""
+        if len(X) > self.config.max_frames:
+
+            label_to_indices=defaultdict(list)
+
+            for i,label in enumerate(y):
+                label_to_indices[label].append(i)
+
+            freqs={
+                label:len(indices)
+                for label,indices in label_to_indices.items()
+            }
+
+            weights={
+                label:np.sqrt(freq)
+                for label,freq in freqs.items()
+            }
+
+            total_weight=sum(weights.values())
+            selected=[]
+
+            for label,indices in label_to_indices.items():
+
+                n=int(self.config.max_frames*weights[label]/total_weight)
+                n=min(n,len(indices))
+
+                chosen=np.random.choice(indices, n, replace=False)
+
+                selected.extend(chosen)
+
+            selected=np.array(selected)
+
+            X=X[torch.as_tensor(selected, device=X.device)]
+            y=y[selected]
+
+        X = X / torch.clamp(torch.linalg.vector_norm(X, dim=1, keepdim=True), min=1.0)
+
+        cluster_ids = kmeans_fit_predict(
+            X, self.config.n_clusters, seed=self.config.kmeans_seed
+        ).cpu().numpy()
+
+        nmi_val = float(normalized_mutual_info(y, cluster_ids))
+        return nmi_val, cluster_ids, y
+
+    def _cluster_pcmi_legacy(self, X: np.ndarray, y: np.ndarray):
+        """PCMI clustering + NMI with the original numpy/sklearn kernels."""
+        if len(X)>self.config.max_frames:
+
+            label_to_indices=defaultdict(list)
+
+            for i,label in enumerate(y):
+                label_to_indices[label].append(i)
+
+            freqs={
+                label:len(indices)
+                for label,indices in label_to_indices.items()
+            }
+
+            weights={
+                label:np.sqrt(freq)
+                for label,freq in freqs.items()
+            }
+
+            total_weight=sum(weights.values())
+            selected=[]
+
+            for label,indices in label_to_indices.items():
+
+                n=int(self.config.max_frames*weights[label]/total_weight)
+                n=min(n,len(indices))
+
+                chosen=np.random.choice(indices, n, replace=False)
+
+                selected.extend(chosen)
+
+            selected=np.array(selected)
+
+            X=X[selected]
+            y=y[selected]
+
+        norms=np.linalg.norm(X,axis=1,keepdims=True)
+        norms[norms==0]=1
+
+        X=(X/norms).astype(np.float16)
+
+        cluster_ids=MiniBatchKMeans(
+            n_clusters=self.config.n_clusters,
+            batch_size=1000
+        ).fit_predict(X)
+
+        nmi_val = float(normalized_mutual_info_score(y, cluster_ids))
+        return nmi_val, cluster_ids, y
+
     def compute_metrics(self, audios:Iterator[np.ndarray], intervals_iter: Iterator[Dict[str, List[Dict[str, Any]]]]) -> dict:
         """Compute evaluation metrics from audio arrays and interval dictionaries.
 
@@ -276,54 +436,16 @@ class ForcedAlignEval:
 
         if len(all_embeddings):
 
-            X=np.concatenate(all_embeddings,axis=0)
             y=np.array(all_labels)
 
-            if len(X)>self.config.max_frames:
+            if self.backend == "torch":
+                X=torch.cat(all_embeddings, dim=0)
+                nmi_val, cluster_ids, y = self._cluster_pcmi_torch(X, y)
+            else:
+                X=np.concatenate(all_embeddings,axis=0)
+                nmi_val, cluster_ids, y = self._cluster_pcmi_legacy(X, y)
 
-                label_to_indices=defaultdict(list)
-
-                for i,label in enumerate(y):
-                    label_to_indices[label].append(i)
-
-                freqs={
-                    label:len(indices)
-                    for label,indices in label_to_indices.items()
-                }
-
-                weights={
-                    label:np.sqrt(freq)
-                    for label,freq in freqs.items()
-                }
-
-                total_weight=sum(weights.values())
-                selected=[]
-
-                for label,indices in label_to_indices.items():
-
-                    n=int(self.config.max_frames*weights[label]/total_weight)
-                    n=min(n,len(indices))
-
-                    chosen=np.random.choice(indices, n, replace=False)
-
-                    selected.extend(chosen)
-
-                selected=np.array(selected)
-
-                X=X[selected]
-                y=y[selected]
-
-            norms=np.linalg.norm(X,axis=1,keepdims=True)
-            norms[norms==0]=1
-
-            X=(X/norms).astype(np.float16)
-
-            cluster_ids=MiniBatchKMeans(
-                n_clusters=self.config.n_clusters,
-                batch_size=1000
-            ).fit_predict(X)
-
-            nmi= {"pcmi_score": float(normalized_mutual_info_score(y, cluster_ids))}
+            nmi= {"pcmi_score": nmi_val}
 
             label_counts=Counter(y)
             label_probs=np.array(list(label_counts.values()),dtype=np.float64)
@@ -349,7 +471,7 @@ class ForcedAlignEval:
 
             nmi.update({
                 "pcmi_normalized_label_entropy":label_ent_norm,
-                "pcmi_num_frames":int(len(X)),
+                "pcmi_num_frames":int(len(y)),
                 "pcmi_num_labels":int(len(label_counts)),
             })
         # -------------------------
@@ -372,6 +494,11 @@ class ForcedAlignEval:
             reverse=True
         )[:self.config.max_words]
 
+        # collect all pair specs first so that the RNG call order is
+        # identical between backends; similarities are then computed either
+        # all at once (torch) or sequentially (legacy).
+        pos_specs=[]
+        neg_specs=[]
         for word in vocab:
 
             embs=word2embs[word]
@@ -380,10 +507,7 @@ class ForcedAlignEval:
             for i in range(len(embs)):
                 for j in range(i+1,len(embs)):
 
-                    sim=dtw_sim(embs[i],embs[j])
-
-                    if sim is not None:
-                        pos_sims.append(sim)
+                    pos_specs.append((embs[i],embs[j]))
 
                     pairs+=1
 
@@ -405,12 +529,26 @@ class ForcedAlignEval:
                     continue
 
                 x=embs[np.random.randint(len(embs))]
-                y=word2embs[nw][
+                y_=word2embs[nw][
                     np.random.randint(len(word2embs[nw]))
                 ]
 
-                sim=dtw_sim(x,y)
+                neg_specs.append((x,y_))
 
+        if self.backend == "torch":
+            for sim in batched_dtw_cosine_sims(pos_specs, device=self.config.device, chunk_size=self.config.dtw_chunk_size):
+                if sim is not None:
+                    pos_sims.append(sim)
+            for sim in batched_dtw_cosine_sims(neg_specs, device=self.config.device, chunk_size=self.config.dtw_chunk_size):
+                if sim is not None:
+                    neg_sims.append(sim)
+        else:
+            for x,ys in pos_specs:
+                sim=dtw_sim(x,ys)
+                if sim is not None:
+                    pos_sims.append(sim)
+            for x,ys in neg_specs:
+                sim=dtw_sim(x,ys)
                 if sim is not None:
                     neg_sims.append(sim)
 
@@ -449,12 +587,12 @@ class ForcedAlignEval:
                 "wacs_cohen_d":float(cohen_d),
                 "wacs_vocab_size": len(vocab)
             }
-                        
+
         if nmi and wacs:
             nmi.update(wacs)
         elif wacs:
             nmi = wacs
         if not nmi:
             warnings.warn("No tiers phones or words", UserWarning)
-            
+
         return nmi

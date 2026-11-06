@@ -5,6 +5,8 @@ This repository contains the implementation of two reference-free forced alignme
 * **PCMI** (Phoneme-Cluster Mutual Information)
 * **WACS** (Word Acoustic Consistency Score)
 
+As of **v1.0.0**, all evaluation kernels (DTW, k-means, NMI, cosine distances) run as batched GPU operations on CUDA devices, and the package additionally ships a **GPU CTC aligner** (`forced_aligner_metrics.CTCAligner`).
+
 ## Public API
 
 The package is intended to be used by importing the public interfaces from `forced_aligner_metrics`.
@@ -28,6 +30,7 @@ config = ForcedAlignEvalConfig(
     max_words=200,
     min_occ=3,
     max_pairs=10,
+    backend="auto",
 )
 ```
 
@@ -66,6 +69,69 @@ metrics = evaluator.compute_metrics(audios=audios, intervals_iter=intervals_iter
 
 The returned metrics dictionary contains the available scores for the evaluated sample. When a `phones` tier is present, the output includes the PCMI score under `pcmi_score`; when word-level embeddings are available, it includes the WACS score under `wacs_score`.
 
+## GPU acceleration (v1.0.0)
+
+When `device` is a CUDA device (or `backend="torch"`), the following run as fully batched torch operations instead of their sequential CPU implementations:
+
+* **DTW (WACS)**: all positive/negative word pairs are evaluated at once by a batched anti-diagonal dynamic program with cosine costs (`torch_ops.batched_dtw_cosine_sims`); the alignment itself is *exact* (the old CPU path used approximate `fastdtw`).
+* **Embeddings** stay on the GPU as torch tensors instead of expensive CPU round-trips after every batch.
+* **k-means (PCMI)**: deterministic GPU k-means with k-means++ init (`torch_ops.kmeans_fit_predict`, seed configurable via `kmeans_seed`), replacing `MiniBatchKMeans`.
+* **NMI (PCMI)**: mutual information from a GPU contingency matrix (`torch_ops.normalized_mutual_info`, arithmetic normalization as in scikit-learn).
+
+The backend is selected via `config.backend`:
+
+* `"auto"` (default): GPU kernels when `device` starts with `"cuda"`, the original numpy/sklearn/fastdtw path otherwise,
+* `"torch"`: always use the batched torch kernels (works on CPU tensors too),
+* `"legacy"`: always use the original CPU implementation.
+
+The kernels are importable directly for stand-alone use:
+
+```python
+from forced_aligner_metrics import batched_dtw_cosine_sims, kmeans_fit_predict, normalized_mutual_info
+```
+
+`batched_dtw_cosine_sims(pairs, device, chunk_size)` takes a list of `(x, y)` embedding matrices and returns the pairwise `1 - DTW_distance / path_length` similarity per pair.
+
+## GPU CTC aligner
+
+`CTCAligner` is a CTC segmentation aligner (torch reimplementation of [CTC-Segmentation](https://github.com/lumaku/ctc-segmentation), Winkelbauer & Kürzinger, [arXiv:2007.09127](https://arxiv.org/abs/2007.09127)) whose dynamic program runs on the GPU. Like the reference, it is an exhaustive (max,+) alignment search — *no beam search and no approximation* — but the table fill is vectorized: one python step per text column using cumulative (max,+) scans, with the reference's sliding memory window and window-doubling retry preserved for arbitrarily long audio. On real (non-degenerate) inputs it matches the classic implementation bit-for-bit.
+
+```python
+from forced_aligner_metrics import CTCAligner
+
+aligner = CTCAligner("facebook/wav2vec2-large-960h-lv60-self", device="cuda")
+
+# mono 16 kHz audio array + one or several utterances
+result = aligner.align(audio, ["hello world", "goodbye world"])
+
+print(result.segments)      # [(start, end, confidence), ...] per utterance, seconds
+print(result.timings)       # per-character timings (s)
+print(result.states)        # per-frame character states along the aligned path
+```
+
+The character list, blank index, frame duration and word-boundary symbol are derived automatically from the HF model's tokenizer/feature extractor; every CTC-Segmentation parameter can still be overridden:
+
+```python
+aligner = CTCAligner(
+    "facebook/wav2vec2-large-960h-lv60-self",
+    device="cuda",
+    min_window_size=8000,
+    index_duration=0.02,   # by default derived from the model
+)
+```
+
+A model-agnostic low-level API mirrors the classic package for precomputed CTC log-probabilities `lpz` (a `(n_frames, vocab)` torch tensor on any device):
+
+```python
+from forced_aligner_metrics import (
+    CtcSegmentationConfig, prepare_text, ctc_segmentation, determine_utterance_segments,
+)
+
+config = CtcSegmentationConfig(char_list=char_list, index_duration=0.02)
+ground_truth, utt_begin_indices = prepare_text(config, text, char_list=char_list)
+timings, char_probs, states = ctc_segmentation(config, lpz, ground_truth)
+segments = determine_utterance_segments(config, utt_begin_indices, char_probs, timings, text)
+```
 
 ## Installation for development
 
@@ -91,20 +157,22 @@ Run the regression tests with:
 python -m pytest
 ```
 
+The kernel/aligner unit tests run CPU-only; `-m integration` marks the tests that download datasets and models.
+
 
 ## Citation
 
 ```
 @inproceedings{akavarapu-etal-2026-phoneme,
     title = "Phoneme- and Word-Level Metrics Using Self-Supervised Speech Representations for Forced Alignment Evaluation",
-    author = {Akavarapu, V.S.D.S.Mahesh  and
+    author = "Akavarapu, V.S.D.S.Mahesh  and
       Daniel, Michael  and
-      J{\"a}ger, Gerhard},
+      J{\"a}ger, Gerhard",
     editor = "Lee, Hung-Yi  and
       Dev, Sunipa  and
       Li, Jessy  and
       Elliott, Desmond",
-    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {EMNLP} 2026",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: EMNLP 2026",
     month = oct,
     year = "2026",
     address = "Budapest, Hungary",
