@@ -31,7 +31,7 @@ exhaustive over the window, as in the original.
 
 import math
 from dataclasses import dataclass
-from typing import Dict, List, Optional, Sequence, Tuple, Union
+from typing import Any, Dict, List, Optional, Sequence, Tuple, Union
 
 import numpy as np
 import torch
@@ -494,6 +494,14 @@ class CtcAlignmentResult:
         (``self_transition`` symbol on frames where the path stays).
     utt_begin_indices:
         Index of the ground-truth label that starts each utterance.
+    duration:
+        Total audio duration in seconds (filled by :class:`CTCAligner`).
+    char_symbols:
+        Ground-truth symbol (or ``None`` for unalignable rows) per label,
+        used to build :meth:`intervals`.
+    separator_symbols:
+        Symbols treated as word/utterance separators (the space and the
+        start-of-ground-truth symbols).
     """
 
     segments: List[Tuple[float, float, float]]
@@ -501,6 +509,108 @@ class CtcAlignmentResult:
     char_probs: np.ndarray
     states: List[str]
     utt_begin_indices: List[int]
+    duration: float = 0.0
+    char_symbols: Optional[List[Optional[str]]] = None
+    separator_symbols: Tuple[str, ...] = ()
+
+    def intervals(
+        self, char_tier: str = "phones", word_tier: str = "words"
+    ) -> Dict[str, List[Dict[str, Any]]]:
+        """Alignment as interval dicts in the ``ForcedAlignEval`` input format.
+
+        Character symbols become the entries of one tier and consecutive
+        non-separator symbols are merged into word entries of a second
+        tier. Separator and unalignable rows are emitted with empty
+        ``"text"`` (``ForcedAlignEval`` normalizes those to ``"sil"``), so
+        the emitted intervals cover the whole audio timeline:
+
+        .. code-block:: python
+
+            {
+                "phones": [{"text": "", "start": 0.0, "end": 0.4}, ...],
+                "words":  [{"text": "hi", "start": 0.4, "end": 1.0}, ...],
+            }
+
+        Parameter
+        ---------
+        char_tier:
+            Key under which the character-level entries are returned
+            (default ``"phones"`` so the dict plugs directly into
+            ``ForcedAlignEval.compute_metrics``; the CTC units are
+            characters, acting as the phone-like symbols of the DP).
+        word_tier:
+            Key for the word-level entries (default ``"words"``).
+
+        Returns
+        -------
+        Dict with the two tiers; every entry is a
+        ``{"text": str, "start": float, "end": float}`` dict in seconds.
+        """
+        if not self.char_symbols:
+            raise ValueError(
+                "intervals() needs the character symbols produced by "
+                "CTCAligner.align()/align_batch() (char_symbols)"
+            )
+        t = np.asarray(self.timings, dtype=np.float64)
+        n = len(self.char_symbols)
+        duration = float(self.duration)
+
+        # span of row i: [midpoint(t_{i-1}, t_i), midpoint(t_i, t_{i+1})];
+        # rows before the first symbol and after the last extend to the
+        # audio bounds so that the entries cover [0, duration].
+        starts = np.empty(n)
+        ends = np.empty(n)
+        starts[0] = 0.0
+        if n > 1:
+            starts[1:] = (t[:-1] + t[1:]) / 2.0
+        ends[:-1] = starts[1:]
+        ends[n - 1] = duration
+        # guard against tiny timing disorder around multi-char symbols
+        starts = np.maximum.accumulate(np.clip(starts, 0.0, duration))
+        ends = np.maximum.accumulate(np.clip(ends, starts, duration))
+
+        char_entries: List[Dict[str, Any]] = []
+        word_entries: List[Dict[str, Any]] = []
+        current: List[Tuple[str, float, float]] = []
+
+        def flush_word():
+            if current:
+                word_entries.append(
+                    {
+                        "text": "".join(c for c, _, _ in current),
+                        "start": current[0][1],
+                        "end": current[-1][2],
+                    }
+                )
+                current.clear()
+
+        for sym, s_, e_ in zip(self.char_symbols, starts.tolist(), ends.tolist()):
+            is_separator = sym is None or sym in self.separator_symbols
+            text = "" if is_separator else sym
+            char_entries.append({"text": text, "start": s_, "end": e_})
+            if is_separator:
+                flush_word()
+                word_entries.append({"text": "", "start": s_, "end": e_})
+            else:
+                current.append((sym, s_, e_))
+        flush_word()
+
+        return {char_tier: char_entries, word_tier: word_entries}
+
+
+def _symbols_from_ground_truth(
+    config: CtcSegmentationConfig, ground_truth: np.ndarray
+) -> List[Optional[str]]:
+    """The ground-truth symbol per label row (``None`` if not alignable)."""
+    symbols: List[Optional[str]] = []
+    for i in range(ground_truth.shape[0]):
+        symbol = None
+        for s in range(ground_truth.shape[1]):
+            if ground_truth[i, s] != -1:
+                symbol = config.char_list[ground_truth[i, s]]
+                break
+        symbols.append(symbol)
+    return symbols
 
 
 class CTCAligner:
@@ -519,6 +629,9 @@ class CTCAligner:
         Torch device for the model and DP (e.g. ``"cuda"``).
     config:
         Optional pre-built :class:`CtcSegmentationConfig`.
+    batch_size:
+        Audio items per model forward pass used by :meth:`align_batch`
+        (default 8); the alignment DP always runs per item.
     any constructor ``kwargs`` override the respective config attribute (e.g.
     ``space="|"``, ``min_window_size=8000``). The character list, blank
     index and frame duration are always derived from the model.
@@ -531,8 +644,16 @@ class CTCAligner:
     (0.01, 2.53, -0.31)
     """
 
-    def __init__(self, model: str, device: str = "cuda", config: Optional[CtcSegmentationConfig] = None, **kwargs):
+    def __init__(
+        self,
+        model: str,
+        device: str = "cuda",
+        config: Optional[CtcSegmentationConfig] = None,
+        batch_size: int = 8,
+        **kwargs,
+    ):
         self.device = device
+        self.batch_size = batch_size
         self.processor = AutoProcessor.from_pretrained(model)
         self.model = AutoModelForCTC.from_pretrained(model).to(device)
         self.model.eval()
@@ -563,18 +684,82 @@ class CTCAligner:
         self.config = config if config is not None else CtcSegmentationConfig()
         self.config.set(index_duration=index_duration, blank=blank_id, char_list=char_list, **overrides)
 
+    def _feat_extract_output_lengths(self, input_lengths) -> np.ndarray:
+        """Exact CTC frame counts for the given sample lengths."""
+        lengths = np.asarray(input_lengths)
+        for kernel_size, stride in zip(self.model.config.conv_kernel, self.model.config.conv_stride):
+            lengths = (lengths - kernel_size) // stride + 1
+        return lengths
+
     @torch.no_grad()
-    def log_probs(self, audio: np.ndarray) -> torch.Tensor:
-        """CTC log-probabilities ``(n_frames, vocab)`` for one audio array."""
+    def log_probs_batch(
+        self, audios: Sequence[np.ndarray]
+    ) -> Tuple[torch.Tensor, np.ndarray]:
+        """Batched CTC log-probabilities.
+
+        Parameter
+        ---------
+        audios:
+            List of mono audio arrays at 16 kHz (padded internally).
+
+        Returns
+        -------
+        ``(lpz, frame_lengths)``: log-probabilities with shape
+        ``(batch, max_frames, vocab)`` (padded region is garbage - slice
+        per item up to its frame length) and the exact CTC frame count
+        per item.
+        """
         inputs = self.processor(
-            audio, sampling_rate=self.sampling_rate, return_tensors="pt"
+            audios, sampling_rate=self.sampling_rate, return_tensors="pt", padding=True
         )
         input_values = inputs.input_values.to(self.device)
         attention_mask = getattr(inputs, "attention_mask", None)
         if attention_mask is not None:
             attention_mask = attention_mask.to(self.device)
+            sample_lengths = attention_mask.sum(-1).cpu().numpy()
+        else:
+            # pad-aware mask so batched padded inputs match single inputs
+            sample_lengths = np.asarray([len(a) for a in audios])
+            attention_mask = (
+                torch.arange(input_values.shape[1], device=self.device)[None, :]
+                < torch.as_tensor(sample_lengths, device=self.device)[:, None]
+            ).long()
         logits = self.model(input_values, attention_mask=attention_mask).logits
-        return torch.log_softmax(logits[0].float(), dim=-1)
+        lpz = torch.log_softmax(logits.float(), dim=-1)
+        frame_lengths = self._feat_extract_output_lengths(sample_lengths)
+        return lpz, frame_lengths
+
+    @torch.no_grad()
+    def log_probs(self, audio: np.ndarray) -> torch.Tensor:
+        """CTC log-probabilities ``(n_frames, vocab)`` for one audio array."""
+        lpz, frame_lengths = self.log_probs_batch([audio])
+        return lpz[0, : int(frame_lengths[0])]
+
+    def _alignment_from_lpz(
+        self, lpz: torch.Tensor, text: Sequence[str]
+    ) -> CtcAlignmentResult:
+        """Run text preparation, the GPU DP and segmentation for one item."""
+        ground_truth, utt_begin_indices = prepare_text(self.config, text)
+        timings, char_probs, states = ctc_segmentation(self.config, lpz, ground_truth)
+        segments = determine_utterance_segments(
+            self.config, utt_begin_indices, char_probs, timings, text
+        )
+        return CtcAlignmentResult(
+            segments=segments,
+            timings=timings,
+            char_probs=char_probs,
+            states=states,
+            utt_begin_indices=utt_begin_indices,
+            duration=lpz.shape[0] * self.config.index_duration_in_seconds,
+            char_symbols=_symbols_from_ground_truth(self.config, ground_truth),
+            # the blank token also marks separators: prepare_text maps the
+            # space symbol onto the blank character of the model vocab
+            separator_symbols=(
+                self.config.space,
+                self.config.start_of_ground_truth,
+                self.config.char_list[self.config.blank],
+            ),
+        )
 
     def align(
         self, audio: np.ndarray, text: Union[str, Sequence[str]], **kwargs
@@ -600,15 +785,59 @@ class CTCAligner:
         self.config.set(**kwargs)
 
         lpz = self.log_probs(audio)
-        ground_truth, utt_begin_indices = prepare_text(self.config, text)
-        timings, char_probs, states = ctc_segmentation(self.config, lpz, ground_truth)
-        segments = determine_utterance_segments(
-            self.config, utt_begin_indices, char_probs, timings, text
-        )
-        return CtcAlignmentResult(
-            segments=segments,
-            timings=timings,
-            char_probs=char_probs,
-            states=states,
-            utt_begin_indices=utt_begin_indices,
-        )
+        return self._alignment_from_lpz(lpz, text)
+
+    def align_batch(
+        self,
+        audios: Sequence[np.ndarray],
+        texts: Sequence[Union[str, Sequence[str]]],
+        batch_size: Optional[int] = None,
+        **kwargs,
+    ) -> List[CtcAlignmentResult]:
+        """Align many audio/text pairs with batched CTC forward passes.
+
+        The CTC encoder runs on whole batches (padded, mask-aware), then
+        the (fast, vectorized) alignment DP is evaluated per item. The
+        DP itself is inherently sequential along the text and slides a
+        data-dependent window per character, so it stays per item - the
+        batching win comes from the model forward, which dominates the
+        runtime for short files.
+
+        Parameter
+        ---------
+        audios:
+            Mono audio arrays at 16 kHz.
+        texts:
+            One text per audio; each text is a single utterance string or
+            a list of utterance strings within that audio.
+        batch_size:
+            Audio items per model forward pass; defaults to the
+            constructor's ``batch_size``.
+
+        Returns
+        -------
+        One :class:`CtcAlignmentResult` per input pair, in input order.
+        """
+        if len(audios) != len(texts):
+            raise ValueError("audios and texts must have the same length")
+        if len(audios) == 0:
+            return []
+
+        self.config.set(**kwargs)
+        bs = self.batch_size if batch_size is None else int(batch_size)
+
+        # length-bucketed batches keep the padded forward efficient: items
+        # sorted by audio length, chunked, results restored to input order
+        order = sorted(range(len(audios)), key=lambda i: len(audios[i]))
+        results: List[Optional[CtcAlignmentResult]] = [None] * len(audios)
+        for i0 in range(0, len(audios), bs):
+            idx = order[i0 : i0 + bs]
+            chunk = [np.asarray(audios[i]) for i in idx]
+            lpz_b, frame_lengths = self.log_probs_batch(chunk)
+            for j, i in enumerate(idx):
+                text = texts[i]
+                if isinstance(text, str):
+                    text = [text]
+                lpz = lpz_b[j, : int(frame_lengths[j])]
+                results[i] = self._alignment_from_lpz(lpz, text)
+        return results  # type: ignore[return-value]

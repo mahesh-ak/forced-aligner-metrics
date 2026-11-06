@@ -1,6 +1,6 @@
 # Forced Alignment Evaluation Metrics: PCMI and WACS
 
-This repository contains the implementation of two reference-free forced alignment evaluation metrics as defined in this [paper](https://arxiv.org/pdf/2608.28508):
+This repository contains the implementation of two reference-free forced alignment evaluation metrics as defined in this [paper](https://aclanthology.org/2026.findings-emnlp.279/):
 
 * **PCMI** (Phoneme-Cluster Mutual Information)
 * **WACS** (Word Acoustic Consistency Score)
@@ -108,6 +108,37 @@ print(result.segments)      # [(start, end, confidence), ...] per utterance, sec
 print(result.timings)       # per-character timings (s)
 print(result.states)        # per-frame character states along the aligned path
 ```
+
+### Metrics-format interval output
+
+`result.intervals()` returns the alignment in exactly the format that `ForcedAlignEval` consumes - every entry is a `{"text", "start", "end"}` dict, with one tier built from the character units and one from merged words (both tier names configurable):
+
+```python
+intervals = result.intervals()
+# {
+#   "phones": [{"text": "", "start": 0.0, "end": 0.4}, {"text": "h", ...}, ...],
+#   "words":  [{"text": "", "start": 0.0, "end": 0.4}, {"text": "hi", ...}, ...],
+# }
+
+# evaluated directly by the metrics
+metrics = evaluator.compute_metrics(
+    audios=[audio], intervals_iter=[intervals]
+)
+```
+
+Separator/gap rows (word boundaries, start symbol, dropped characters) are emitted with empty `"text"`, which `ForcedAlignEval` normalizes to `"sil"`; the entries jointly cover `[0, duration]`.
+
+### Batching
+
+The alignment DP itself is sequential along the text (with a data-dependent sliding window per character), so it runs per item; the expensive part - the CTC forward pass - is batched by `align_batch`, which pads, runs one model forward per batch (mask-aware) and then evaluates the fast vectorized DP per item:
+
+```python
+audios = [a1, a2, a3]           # mono 16 kHz arrays
+texts = ["hello world", "goodbye world", "third utterance"]
+results = aligner.align_batch(audios, texts, batch_size=8)   # -> List[CtcAlignmentResult]
+```
+
+`CTCAligner(..., batch_size=8)` sets the default; `align_batch(..., batch_size=...)` overrides it per call. `align()` is the single-item shorthand. Items are length-bucketed internally, so the padded batches stay compute-efficient. Measured with `facebook/wav2vec2-large-960h-lv60-self` on an RTX 2080 Ti: many short clips (~3 s) run ~1.4× faster per item through the batched forward, while long compute-bound clips (~20 s) are roughly at parity with sequential `align()` calls - the wav2vec2 encoder already saturates the GPU on such inputs. Very large batches are bounded by GPU memory (the forwards are attention-heavy), so keep `batch_size` moderate (4-16 worked on 11 GB).
 
 The character list, blank index, frame duration and word-boundary symbol are derived automatically from the HF model's tokenizer/feature extractor; every CTC-Segmentation parameter can still be overridden:
 
