@@ -128,23 +128,6 @@ metrics = evaluator.compute_metrics(
 
 Separator/gap rows (word boundaries, start symbol, dropped characters) are emitted with empty `"text"`, which `ForcedAlignEval` normalizes to `"sil"`; the entries jointly cover `[0, duration]`.
 
-### Hierarchical word -> token alignment
-
-`CTCAligner(..., hierarchical=True)` switches the token tier to the classic
-two-stage construction: one CTC-Segmentation pass with the words as
-utterances yields word spans, then each word is re-aligned locally (log
-probabilities cropped to its frame span) for per-token times. The output
-`CtcAlignmentResult` then carries `word_segments`, `token_segments` and
-`word_tokens`, and `intervals()` builds both tiers from them. Word spans
-that cannot host a local run are divided equally among the word's tokens,
-as in the classic generation pipelines. This improves token-level
-boundaries at the cost of one extra (small) DP run per word.
-
-```python
-aligner = CTCAligner("mahesh27/mms-300m-ipa-fleurs", device="cuda", hierarchical=True)
-result = aligner.align(audio, ipa_text)
-```
-
 ### Batching
 
 The alignment DP itself is sequential along the text (with a data-dependent sliding window per character), so it runs per item; the expensive part - the CTC forward pass - is batched by `align_batch`, which pads, runs one model forward per batch (mask-aware) and then evaluates the fast vectorized DP per item:

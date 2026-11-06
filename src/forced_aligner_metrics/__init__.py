@@ -31,7 +31,6 @@ from forced_aligner_metrics.ctc_aligner import (
     CtcSegmentationConfig,
     ctc_segmentation,
     determine_utterance_segments,
-    hierarchical_alignment,
     prepare_text,
     prepare_tokenized_text,
 )
@@ -52,7 +51,6 @@ __all__ = [
     "CtcSegmentationConfig",
     "ctc_segmentation",
     "determine_utterance_segments",
-    "hierarchical_alignment",
     "prepare_text",
     "prepare_tokenized_text",
     "__version__",
