@@ -512,6 +512,61 @@ class CtcAlignmentResult:
     duration: float = 0.0
     char_symbols: Optional[List[Optional[str]]] = None
     separator_symbols: Tuple[str, ...] = ()
+    # hierarchical mode (CTCAligner(hierarchical=True)): per-word and
+    # per-token segments from the two-stage word -> token alignment
+    word_segments: Optional[List[Tuple[float, float, float]]] = None
+    token_segments: Optional[List[Tuple[float, float, float]]] = None
+    word_tokens: Optional[List[List[str]]] = None
+
+    def _intervals_hierarchical(
+        self, char_tier: str, word_tier: str
+    ) -> Dict[str, List[Dict[str, Any]]]:
+        """Intervals from the two-stage word -> token segments.
+
+        The per-token segments become the character-tier entries (gaps
+        inside/around word spans are emitted with empty ``"text"``) and the
+        word segments the word-tier entries, so that the tiers cover the
+        whole [0, duration] timeline like in :meth:`intervals`.
+        """
+        duration = float(self.duration)
+        assert self.token_segments is not None and self.word_tokens is not None
+
+        char_entries: List[Dict[str, Any]] = []
+        word_entries: List[Dict[str, Any]] = []
+
+        def add(entry_list, start, end, text):
+            if end - start > 1e-6:
+                entry_list.append(
+                    {"text": text, "start": float(start), "end": float(end)}
+                )
+
+        tok_i = 0
+        cursor = 0.0
+        for (ws, we, _wc), toks in zip(self.word_segments, self.word_tokens):
+            # silence before the word
+            add(char_entries, cursor, ws, "")
+            add(word_entries, cursor, ws, "")
+            if toks:
+                # per-token segments, spliced after the word start
+                start_tok = float(self.token_segments[tok_i][0])
+                add(char_entries, ws, start_tok, "")
+                for k, tok in enumerate(toks):
+                    ts, te, _tc = self.token_segments[tok_i + k]
+                    if te - ts > 1e-6:
+                        char_entries.append(
+                            {"text": tok, "start": float(ts), "end": float(te)}
+                        )
+                tok_i += len(toks)
+                # silence between last token end and the word end
+                last_end = float(self.token_segments[tok_i - 1][1])
+                add(char_entries, last_end, we, "")
+            word_entries.append(
+                {"text": "".join(toks), "start": float(ws), "end": float(we)}
+            )
+            cursor = we
+        add(char_entries, cursor, duration, "")
+        add(word_entries, cursor, duration, "")
+        return {char_tier: char_entries, word_tier: word_entries}
 
     def intervals(
         self, char_tier: str = "phones", word_tier: str = "words"
@@ -551,6 +606,8 @@ class CtcAlignmentResult:
                 "intervals() needs the character symbols produced by "
                 "CTCAligner.align()/align_batch() (char_symbols)"
             )
+        if self.token_segments is not None and self.word_segments is not None:
+            return self._intervals_hierarchical(char_tier, word_tier)
         t = np.asarray(self.timings, dtype=np.float64)
         n = len(self.char_symbols)
         duration = float(self.duration)
@@ -598,6 +655,108 @@ class CtcAlignmentResult:
         return {char_tier: char_entries, word_tier: word_entries}
 
 
+def hierarchical_alignment(
+    config: CtcSegmentationConfig,
+    lpz: torch.Tensor,
+    text: Sequence[str],
+    tokenize,
+) -> Optional[Dict[str, Any]]:
+    """Two-stage word -> token alignment (classic generation-style).
+
+    Stage 1 runs one CTC-Segmentation pass with the words of the whole
+    text as utterances, yielding one segment per word. Stage 2 re-aligns
+    each word locally: the log probabilities are cropped to the word's
+    frame span and a second CTC-Segmentation run aligns the word's tokens
+    inside that span (local times are mapped back to global seconds).
+    If a local run cannot align (span too short, DP failure), the word's
+    span is divided equally among its tokens, exactly like the reference
+    generation pipelines.
+
+    Parameter
+    ---------
+    config:
+        CtcSegmentationConfig with the model's char_list.
+    lpz:
+        ``(n_frames, vocab)`` log-probability tensor.
+    text:
+        Utterance strings; words are the whitespace-split tokens in
+        utterance order.
+    tokenize:
+        Callable mapping one word to its model tokens (e.g. the HF
+        tokenizer of the aligner, without the word-delimiter symbol).
+
+    Returns
+    -------
+    ``None`` if the text has no words; otherwise a dict with
+    ``segments`` (one per input utterance, merged from its word spans),
+    ``word_segments``, ``word_tokens`` (per word) and ``token_segments``
+    (one per token, in word order).
+    """
+    words = [w for utt in text for w in utt.split()]
+    if not words:
+        return None
+    word_utt = []
+    ui = 0
+    for utt in text:
+        n = len(utt.split())
+        word_utt.extend([ui] * n)
+        ui += 1
+
+    # ---- stage 1: words as utterances over the whole audio ----
+    gt, ub = prepare_text(config, words)
+    tim, cp, _ = ctc_segmentation(config, lpz, gt)
+    word_segments = determine_utterance_segments(config, ub, cp, tim, words)
+
+    # ---- stage 2: per-word local token alignment ----
+    idur = config.index_duration_in_seconds
+    word_tokens: List[List[str]] = []
+    token_symbols: List[str] = []
+    token_segments: List[Tuple[float, float, float]] = []
+    for word, (ws, we, _conf) in zip(words, word_segments):
+        toks = list(tokenize(word))
+        word_tokens.append(toks)
+        if not toks:
+            continue
+        sf = int(ws / idur)
+        ef = min(int(we / idur), lpz.shape[0])
+        if ef > sf:
+            try:
+                lgt, lub = prepare_text(config, toks)
+                ltim, lcp, _lst = ctc_segmentation(config, lpz[sf:ef], lgt)
+                lsegs = determine_utterance_segments(config, lub, lcp, ltim, toks)
+                off = sf * idur
+                token_symbols.extend(toks)
+                token_segments.extend((a + off, b + off, c) for a, b, c in lsegs)
+                continue
+            except Exception:
+                pass
+        # fallback: divide the word span equally among its tokens
+        unit = max(0.001, (we - ws) / len(toks))
+        token_symbols.extend(toks)
+        for k in range(len(toks)):
+            token_segments.append((ws + k * unit, ws + (k + 1) * unit, 0.0))
+
+    # ---- per-utterance segments merged from the word spans ----
+    segments = []
+    cur_ui, cur_ws, cur_we, cur_conf = word_utt[0], word_segments[0][0], word_segments[0][1], word_segments[0][2]
+    for i in range(1, len(words)):
+        if word_utt[i] == cur_ui:
+            cur_we = word_segments[i][1]
+            cur_conf = min(cur_conf, word_segments[i][2])
+            continue
+        segments.append((cur_ws, cur_we, cur_conf))
+        cur_ui, cur_ws, cur_we, cur_conf = word_utt[i], word_segments[i][0], word_segments[i][1], word_segments[i][2]
+    segments.append((cur_ws, cur_we, cur_conf))
+
+    return {
+        "segments": segments,
+        "word_segments": word_segments,
+        "word_tokens": word_tokens,
+        "token_symbols": token_symbols,
+        "token_segments": token_segments,
+    }
+
+
 def _symbols_from_ground_truth(
     config: CtcSegmentationConfig, ground_truth: np.ndarray
 ) -> List[Optional[str]]:
@@ -632,6 +791,12 @@ class CTCAligner:
     batch_size:
         Audio items per model forward pass used by :meth:`align_batch`
         (default 8); the alignment DP always runs per item.
+    hierarchical:
+        Opt-in two-stage word -> token alignment (default ``False``):
+        words as utterances first, then a local per-word token pass cropped
+        to each word's frames, as in the classic generation pipelines.
+        Improves token-level boundaries; costs one extra small DP run per
+        word.
     any constructor ``kwargs`` override the respective config attribute (e.g.
     ``space="|"``, ``min_window_size=8000``). The character list, blank
     index and frame duration are always derived from the model.
@@ -650,10 +815,15 @@ class CTCAligner:
         device: str = "cuda",
         config: Optional[CtcSegmentationConfig] = None,
         batch_size: int = 8,
+        hierarchical: bool = False,
         **kwargs,
     ):
         self.device = device
         self.batch_size = batch_size
+        # two-stage word -> token alignment (see hierarchical_alignment):
+        # better token boundaries inside words, at the cost of one local
+        # ctc-segmentation run per word
+        self.hierarchical = bool(hierarchical)
         self.processor = AutoProcessor.from_pretrained(model)
         self.model = AutoModelForCTC.from_pretrained(model).to(device)
         self.model.eval()
@@ -735,10 +905,34 @@ class CTCAligner:
         lpz, frame_lengths = self.log_probs_batch([audio])
         return lpz[0, : int(frame_lengths[0])]
 
+    def _tokenize_word(self, word: str) -> List[str]:
+        """The model tokens of one word (without the word delimiter)."""
+        tok = self.processor.tokenizer
+        delim = tok.word_delimiter_token
+        return [t for t in tok.tokenize(word) if t != delim]
+
     def _alignment_from_lpz(
         self, lpz: torch.Tensor, text: Sequence[str]
     ) -> CtcAlignmentResult:
         """Run text preparation, the GPU DP and segmentation for one item."""
+        if self.hierarchical:
+            hh = hierarchical_alignment(self.config, lpz, text, self._tokenize_word)
+            if hh is not None:
+                tok = hh["token_symbols"]
+                tseg = hh["token_segments"]
+                return CtcAlignmentResult(
+                    segments=hh["segments"],
+                    timings=np.asarray([a for a, _, _ in tseg], dtype=np.float64),
+                    char_probs=np.asarray([c for _, _, c in tseg], dtype=np.float64),
+                    states=list(tok),
+                    utt_begin_indices=[],
+                    duration=lpz.shape[0] * self.config.index_duration_in_seconds,
+                    char_symbols=tok,
+                    separator_symbols=(),
+                    word_segments=hh["word_segments"],
+                    token_segments=tseg,
+                    word_tokens=hh["word_tokens"],
+                )
         ground_truth, utt_begin_indices = prepare_text(self.config, text)
         timings, char_probs, states = ctc_segmentation(self.config, lpz, ground_truth)
         segments = determine_utterance_segments(

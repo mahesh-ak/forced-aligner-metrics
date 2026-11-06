@@ -234,3 +234,125 @@ def test_ctc_aligner_with_model():
         got = [e["text"] for e in iv["words"] if e["text"]]
         assert got == t.upper().split()
         assert r.duration == pytest.approx(len(a) / sr, abs=0.02)
+
+
+def _structured_lpz_words(seed=11, T=20000, V=32, n_utt=8):
+    """Structured log probs with known word/character blocks."""
+    rng = np.random.default_rng(seed)
+    chars = [chr(97 + i) for i in range(V - 1)]
+    char_list = ["<pad>"] + chars
+    text, pos = [], 0
+    lpz = np.full((T, V), -10.0, dtype=np.float32)
+    for _ in range(n_utt):
+        word = "".join(rng.choice(chars, 5))
+        text.append(" ".join(rng.choice(chars, 3)) + " " + word)
+        for w in word.split() if False else []:
+            pass
+        for w in [word]:
+            n = rng.integers(30, 60)
+            for _ in range(n):
+                if pos >= T:
+                    break
+                lpz[pos, 0] = -0.9
+                lpz[pos, char_list.index(w[0])] = -0.05
+                pos += 1
+        pos += 30
+    lpz += rng.uniform(-0.01, 0.01, lpz.shape).astype(np.float32)
+    return char_list, lpz, text
+
+
+def test_hierarchical_alignment_tokens_within_word_spans():
+    from forced_aligner_metrics.ctc_aligner import (
+        CtcSegmentationConfig,
+        hierarchical_alignment,
+    )
+
+    char_list, lpz, text = _structured_lpz_words()
+    cfg = CtcSegmentationConfig(char_list=char_list, index_duration=0.02)
+    lpz_t = torch.from_numpy(lpz)
+
+    hh = hierarchical_alignment(cfg, lpz_t, text, tokenize=list)
+
+    n_words = sum(len(t.split()) for t in text)
+    assert len(hh["word_segments"]) == n_words
+    assert len(hh["segments"]) == len(text)
+    # tokens per word and in total, in word order
+    assert sum(len(w) for w in hh["word_tokens"]) == len(hh["token_segments"])
+    assert [t for w in hh["word_tokens"] for t in w] == hh["token_symbols"]
+
+    # every token segment lies within its word's span (+ small tolerance)
+    k = 0
+    for toks, (ws, we, _c) in zip(hh["word_tokens"], hh["word_segments"]):
+        for _ in toks:
+            ts, te, _tc = hh["token_segments"][k]
+            assert ws - 1e-6 <= ts <= te <= we + 1e-6, (ws, ts, te, we)
+            k += 1
+
+    # utterance segments merge the word spans
+    spoken_words = 0
+    for seg in hh["segments"]:
+        first = hh["word_segments"][spoken_words]
+        n_in_utt = len(text[hh["segments"].index(seg)].split())
+        last = hh["word_segments"][spoken_words + n_in_utt - 1]
+        assert seg[0] == pytest.approx(first[0], abs=1e-6)
+        assert seg[1] == pytest.approx(last[1], abs=1e-6)
+        spoken_words += n_in_utt
+
+
+def test_hierarchical_alignment_empty_text_returns_none():
+    from forced_aligner_metrics.ctc_aligner import (
+        CtcSegmentationConfig,
+        hierarchical_alignment,
+    )
+
+    char_list = ["<pad>", "a"]
+    cfg = CtcSegmentationConfig(char_list=char_list, index_duration=0.02)
+    lpz = torch.full((100, 2), -1.0)
+    assert hierarchical_alignment(cfg, lpz, [""], tokenize=list) is None
+
+
+def test_hierarchical_intervals_cover_timeline():
+    from forced_aligner_metrics import CtcAlignmentResult
+    from forced_aligner_metrics.eval_aligns import (
+        assign_labels_to_frames,
+        normalize_intervals,
+    )
+
+    res = CtcAlignmentResult(
+        segments=[(1.0, 4.0, -0.1)],
+        timings=np.asarray([1.0, 1.5, 2.0]),
+        char_probs=np.asarray([-0.1]),
+        states=["a", "b", "c"],
+        utt_begin_indices=[],
+        duration=5.0,
+        char_symbols=["a", "b", "c"],
+        separator_symbols=(),
+        word_segments=[(1.0, 2.5, -0.1), (3.0, 4.0, -0.2)],
+        token_segments=[(1.0, 1.5, -0.1), (1.5, 2.0, -0.1), (2.0, 2.5, -0.1),
+                        (3.0, 3.5, -0.2), (3.5, 4.0, -0.2)],
+        word_tokens=[["a", "b", "c"], ["a", "b"]],
+    )
+    iv = res.intervals()
+
+    # timelines fully covered and monotone
+    for tier in ("phones", "words"):
+        entries = iv[tier]
+        assert entries[0]["start"] == pytest.approx(0.0)
+        assert entries[-1]["end"] == pytest.approx(res.duration)
+        for e1, e2 in zip(entries, entries[1:]):
+            assert e1["start"] <= e2["start"]
+            assert e1["end"] <= e2["end"] + 1e-9
+            assert e1["end"] <= e2["start"] + 1e-6
+
+    # token entries carry the token segment times
+    nonempty = [e for e in iv["phones"] if e["text"]]
+    assert [e["text"] for e in nonempty] == ["a", "b", "c", "a", "b"]
+    assert nonempty[0]["start"] == pytest.approx(1.0)
+    assert nonempty[-1]["end"] == pytest.approx(4.0)
+
+    # the dict plugs into the metrics helpers
+    normalized = normalize_intervals(iv)
+    labels = assign_labels_to_frames(
+        np.linspace(0.0, 5.0, 100, endpoint=False), normalized["phones"]
+    )
+    assert len(labels) == 100
