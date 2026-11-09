@@ -5,7 +5,7 @@ This repository contains the implementation of two reference-free forced alignme
 * **PCMI** (Phoneme-Cluster Mutual Information)
 * **WACS** (Word Acoustic Consistency Score)
 
-As of **v1.0.0**, all evaluation kernels (DTW, k-means, NMI, cosine distances) run as batched GPU operations on CUDA devices, and the package additionally ships a **GPU CTC aligner** (`forced_aligner_metrics.CTCAligner`).
+As of **v1.0.0**, all evaluation kernels (DTW, k-means, NMI, cosine distances) run as batched GPU operations on CUDA devices, and the package additionally ships a **GPU CTC aligner** (`forced_aligner_metrics.CTCAligner`). As of **v1.1.0**, `CTCAligner` silence-trims its interval outputs by default on the GPU (see [Feeding the metrics](#feeding-the-metrics)).
 
 ## Public API
 
@@ -113,12 +113,21 @@ results = aligner.align_batch(audios, texts, batch_size=8)
 
 ### Feeding the metrics
 
-`result.intervals()` returns the alignment in exactly the format `ForcedAlignEval` consumes — `{"text", "start", "end"}` dicts for a `phones` (character) tier and a `words` tier, covering the full timeline:
+`result.intervals()` returns the alignment in exactly the format `ForcedAlignEval` consumes — `{"text", "start", "end"}` dicts for a `phones` (character) tier and a `words` tier, covering the full timeline. **As of v1.1.0, the intervals are silence-trimmed by default** with the paper's pipeline: word/phone spans are shrunk onto their voiced region via a global energy threshold (`SILENCE_RATIO=0.05` of the 95th percentile of the smoothed `|audio|`, `MIN_WORD_DUR=0.04`, `MIN_PHONE_DUR=0.02`), and the trims are propagated to contained phones. Pass `intervals(trim_silence=False)` for the raw timeline-covering intervals:
 
 ```python
-intervals = result.intervals()
+intervals = result.intervals()                     # silence-trimmed (default)
 metrics = evaluator.compute_metrics(audios=[audio], intervals_iter=[intervals])
 ```
+
+The whole trimming pipeline is implemented as vectorized torch kernels and runs on the aligner's GPU device: batched energy smoothing (`conv1d` with the 400-sample window, numerically identical to the paper's `np.convolve`), per-item `quantile` thresholds, and one gather/argmax search over *all* word spans of a batch at once. `aligner.intervals_batch(results)` trims many results in batched GPU passes (same `batch_size` as `align_batch`), which is exact per item:
+
+```python
+results = aligner.align_batch(audios, texts, batch_size=8)
+intervals_list = aligner.intervals_batch(results)  # batched GPU trim, one dict per result
+```
+
+The kernels are also public for stand-alone use: `trim_alignment_silence` / `trim_alignment_silence_batch` (and `compute_global_threshold`, `trim_interval`).
 
 ### Validation under the package's own metrics
 
@@ -126,10 +135,10 @@ On 200 FLEURS `de_de` items aligned with `mahesh27/mms-300m-ipa-fleurs`, the ali
 
 | alignments | PCMI | WACS |
 |---|---|---|
-| reference TextGrids (paper's pipeline) | 0.219 | 0.167 |
-| **CTCAligner (this package)** | **0.342** | **0.198** |
+| reference TextGrids (paper's pipeline) | 0.220 | 0.165 |
+| **CTCAligner (this package, default silence trimming)** | **0.345** | **0.197** |
 
-The single-pass CTC aligner scores comparably-or-higher than the reference under both reference-free metrics; `tests/test_aligner_metrics_gpu.py` asserts these bands on GPU.
+The single-pass CTC aligner scores comparably-or-higher than the reference under both reference-free metrics (measured with the v1.1.0 default `intervals()`, i.e. GPU silence-trimmed intervals); `tests/test_aligner_metrics_gpu.py` asserts these bands on GPU.
 
 ## Installation for development
 

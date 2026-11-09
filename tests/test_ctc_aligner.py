@@ -3,6 +3,13 @@ import pytest
 import torch
 
 from forced_aligner_metrics.ctc_aligner import (
+    SILENCE_RATIO,
+    MIN_PHONE_DUR,
+    MIN_WORD_DUR,
+    compute_global_threshold,
+    trim_alignment_silence,
+    trim_alignment_silence_batch,
+    trim_interval,
     CtcSegmentationConfig,
     ctc_segmentation,
     determine_utterance_segments,
@@ -234,3 +241,353 @@ def test_ctc_aligner_with_model():
         got = [e["text"] for e in iv["words"] if e["text"]]
         assert got == t.upper().split()
         assert r.duration == pytest.approx(len(a) / sr, abs=0.02)
+
+# ---------------------------------------------------------------------------
+# silence trimming (GPU port of the paper's reference pipeline)
+# ---------------------------------------------------------------------------
+
+SR = 16000
+
+
+def _tensor_devices():
+    devices = ["cpu"]
+    if torch.cuda.is_available():
+        devices.append("cuda")
+    return devices
+
+
+def _voiced_audio(voiced_spans, duration=3.0, amp=1.0, noise=1e-4):
+    """Silence with voiced bursts: sine bursts in the given [(s, e)] spans."""
+    rng = np.random.default_rng(3)
+    t = np.arange(int(duration * SR)) / SR
+    audio = rng.normal(0.0, noise, len(t))
+    for s, e in voiced_spans:
+        mask = (t >= s) & (t < e)
+        audio[mask] += amp * np.sin(2 * np.pi * 100.0 * t[mask])
+    return audio.astype(np.float32)
+
+
+# -----------------------
+# numpy reference (the paper's pipeline) for GPU parity
+# -----------------------
+
+
+def _np_compute_global_threshold(audio, factor=SILENCE_RATIO):
+    energy = np.abs(audio)
+    smooth = np.convolve(energy, np.ones(400) / 400, mode="same")
+    thr = factor * np.percentile(smooth, 95)
+    return smooth, thr
+
+
+def _np_trim_interval(smooth, sr, thr, start, end, min_word_dur=MIN_WORD_DUR):
+    s = int(start * sr)
+    e = int(end * sr)
+    if e <= s:
+        return start, end
+    idx = np.where(smooth[s:e] > thr)[0]
+    if len(idx) == 0:
+        return start, end
+    ns = (s + idx[0]) / sr
+    ne = (s + idx[-1]) / sr
+    if ne - ns < min_word_dur:
+        return start, end
+    return float(ns), float(ne)
+
+
+def _np_trim_alignment_silence(alignment, audio, sr=SR, min_phone_dur=MIN_PHONE_DUR):
+    smooth, thr = _np_compute_global_threshold(audio)
+    words = alignment["words"]
+    phones = alignment["phones"]
+    for w in words:
+        ns, ne = _np_trim_interval(smooth, sr, thr, w["start"], w["end"])
+        w["start"] = float(ns)
+        w["end"] = float(ne)
+    if len(phones) > 0:
+        for w in words:
+            contained = [
+                ph for ph in phones
+                if ph["text"].strip() and ph["end"] > w["start"] and ph["start"] < w["end"]
+            ]
+            if not contained:
+                continue
+            first, last = contained[0], contained[-1]
+            if first["start"] < w["start"]:
+                new_start = min(w["start"], first["end"] - min_phone_dur)
+                if new_start < first["end"]:
+                    first["start"] = float(new_start)
+            if last["end"] > w["end"]:
+                new_end = max(w["end"], last["start"] + min_phone_dur)
+                if new_end > last["start"]:
+                    last["end"] = float(new_end)
+        alignment["phones"] = [ph for ph in phones if ph["end"] > ph["start"]]
+    return alignment
+
+
+@pytest.mark.parametrize("device", _tensor_devices())
+def test_compute_global_threshold_matches_numpy_reference(device):
+    audio = _voiced_audio([(1.0, 1.4)])
+
+    smooth, thr = compute_global_threshold(audio, device=device)
+
+    ref_smooth, ref_thr = _np_compute_global_threshold(audio)
+    assert smooth.device.type == torch.device(device).type
+    assert smooth.numel() == len(audio)
+    np.testing.assert_allclose(
+        smooth.cpu().numpy(), ref_smooth, rtol=1e-4, atol=1e-6
+    )
+    assert thr == pytest.approx(ref_thr, rel=1e-5)
+
+
+@pytest.mark.parametrize("device", _tensor_devices())
+def test_trim_interval_trims_voiced_and_keeps_silent(device):
+    audio = _voiced_audio([(1.0, 1.4)])
+    smooth, thr = compute_global_threshold(audio, device=device)
+
+    # a word spanning silence around the burst is trimmed onto the burst
+    ns, ne = trim_interval(smooth, SR, thr, 0.6, 1.8)
+    assert ns > 0.9 and ne < 1.5
+    assert ne - ns >= MIN_WORD_DUR
+
+    # a purely silent interval is left untouched
+    assert trim_interval(smooth, SR, thr, 0.0, 0.5) == (0.0, 0.5)
+
+    # an inverted/degenerate interval is left untouched
+    assert trim_interval(smooth, SR, thr, 1.0, 1.0) == (1.0, 1.0)
+
+    # a voiced span shorter than min_word_dur is left untouched
+    tiny = np.zeros(int(SR * 2.0))
+    tiny[int(1.0 * SR) : int(1.0 * SR) + 10] = 1.0
+    tiny_smooth, _ = compute_global_threshold(tiny, device=device)
+    out = trim_interval(tiny_smooth, SR, 0.0, 0.9, 1.1, min_word_dur=MIN_WORD_DUR)
+    assert out == (0.9, 1.1)
+
+
+def _alignment_fixture():
+    return {
+        "words": [{"text": "hi", "start": 0.6, "end": 1.8}],
+        "phones": [
+            {"text": "", "start": 0.0, "end": 0.6},
+            {"text": "h", "start": 0.6, "end": 1.2},
+            {"text": "i", "start": 1.2, "end": 1.8},
+            {"text": "", "start": 1.8, "end": 3.0},
+        ],
+    }
+
+
+@pytest.mark.parametrize("device", _tensor_devices())
+def test_trim_alignment_silence_matches_numpy_reference(device):
+    audio = _voiced_audio([(1.0, 1.4)])
+
+    alignment = _alignment_fixture()
+    ref = _alignment_fixture()
+    out = trim_alignment_silence(alignment, audio, sr=SR, device=device)
+    ref = _np_trim_alignment_silence(ref, audio)
+
+    assert out is alignment
+    for tier in ("words", "phones"):
+        assert len(out[tier]) == len(ref[tier])
+        for got, want in zip(out[tier], ref[tier]):
+            assert got["text"] == want["text"]
+            assert got["start"] == pytest.approx(want["start"], abs=1e-9)
+            assert got["end"] == pytest.approx(want["end"], abs=1e-9)
+
+    # the word is trimmed to its voiced region and phones follow
+    w = out["words"][0]
+    assert w["start"] > 0.9 and w["end"] < 1.5
+    h, i = out["phones"][1], out["phones"][2]
+    assert h["end"] - h["start"] >= MIN_PHONE_DUR - 1e-9
+    assert i["end"] - i["start"] >= MIN_PHONE_DUR - 1e-9
+
+
+def test_trim_alignment_silence_drops_collapsed_phones():
+    audio = _voiced_audio([(1.0, 1.4)])
+    alignment = {
+        "words": [{"text": "hi", "start": 1.1, "end": 1.3}],
+        "phones": [
+            # phone collapsed to a point: must be filtered out
+            {"text": "h", "start": 1.1, "end": 1.1},
+        ],
+    }
+    out = trim_alignment_silence(alignment, audio, sr=SR)
+    assert out["phones"] == []
+
+
+def _mean_alignment_fixture(seed):
+    """Alignment + audio with several words/bursts for batch parity."""
+    rng = np.random.default_rng(seed)
+    duration = 3.0
+    t = np.arange(int(duration * SR)) / SR
+    audio = rng.normal(0.0, 1e-4, len(t))
+    spans = [(0.2, 0.6), (1.4, 1.9), (2.3, 2.5)]
+    for s, e in spans:
+        mask = (t >= s) & (t < e)
+        audio[mask] += np.sin(2 * np.pi * 100.0 * t[mask])
+    audio = audio.astype(np.float32)
+    words = [
+        {"text": "aa", "start": 0.05, "end": 0.75},
+        {"text": "bb", "start": 1.0, "end": 2.2},
+        {"text": "cc", "start": 2.4, "end": 2.9},
+        {"text": "", "start": 2.9, "end": 3.0},
+    ]
+    phones = [
+        {"text": "a", "start": 0.05, "end": 0.4},
+        {"text": "a", "start": 0.4, "end": 0.75},
+        {"text": "b", "start": 1.0, "end": 1.6},
+        {"text": "b", "start": 1.6, "end": 2.2},
+        {"text": "c", "start": 2.4, "end": 2.65},
+        {"text": "c", "start": 2.65, "end": 2.9},
+        {"text": "", "start": 2.9, "end": 3.0},
+    ]
+    return {"words": words, "phones": phones}, audio
+
+
+@pytest.mark.parametrize("device", _tensor_devices())
+def test_trim_alignment_silence_batch_matches_numpy_reference(device):
+    items = [_mean_alignment_fixture(seed) for seed in (0, 1, 2)]
+    alignments = [_mean_alignment_fixture(seed)[0] for seed in (0, 1, 2)]
+    audios = [a for _, a in items]
+    refs = [_np_trim_alignment_silence(_mean_alignment_fixture(seed)[0], a)
+            for seed, (_, a) in zip((0, 1, 2), items)]
+
+    out = trim_alignment_silence_batch(
+        alignments, audios, sr=SR, device=device, batch_size=2
+    )
+
+    assert out is alignments
+    for got, want in zip(alignments, refs):
+        for tier in ("words", "phones"):
+            assert len(got[tier]) == len(want[tier])
+            for g, w in zip(got[tier], want[tier]):
+                assert g["text"] == w["text"]
+                assert g["start"] == pytest.approx(w["start"], abs=1e-9)
+                assert g["end"] == pytest.approx(w["end"], abs=1e-9)
+
+
+@pytest.mark.parametrize("device", _tensor_devices())
+def test_trim_alignment_silence_batch_equals_single(device):
+    # per-item trimming and one batched pass must agree exactly
+    items = [_mean_alignment_fixture(seed) for seed in (0, 1, 2)]
+    audios = [a for _, a in items]
+
+    single = [
+        trim_alignment_silence(_mean_alignment_fixture(seed)[0], a, sr=SR, device=device)
+        for seed, (_, a) in zip((0, 1, 2), items)
+    ]
+    batched = trim_alignment_silence_batch(
+        [_mean_alignment_fixture(seed)[0] for seed in (0, 1, 2)],
+        audios,
+        sr=SR,
+        device=device,
+        batch_size=2,
+    )
+    for got, want in zip(batched, single):
+        for tier in ("words", "phones"):
+            for g, w in zip(got[tier], want[tier]):
+                assert g["start"] == w["start"]
+                assert g["end"] == w["end"]
+
+
+# -----------------------
+# CtcAlignmentResult.intervals / CTCAligner.intervals_batch
+# -----------------------
+
+
+def _result_with_audio(voiced_spans, symbols, timings, duration, sr=SR, device=None):
+    from forced_aligner_metrics.ctc_aligner import CtcAlignmentResult
+
+    return CtcAlignmentResult(
+        segments=[],
+        timings=np.asarray(timings, dtype=np.float64),
+        char_probs=np.zeros(1),
+        states=[""],
+        utt_begin_indices=[],
+        duration=duration,
+        char_symbols=list(symbols),
+        separator_symbols=("#", "·", "<pad>"),
+        audio=_voiced_audio(voiced_spans, duration=duration),
+        sampling_rate=sr,
+        device=device,
+    )
+
+
+def _intervals_setup():
+    # shared fixture: "#"/"·" separators with a word "hi" spanning the
+    # voiced burst (1.0-1.4 s) plus silence around it
+    return (
+        [(1.0, 1.4)],
+        ["#", "·", "h", "i", "·"],
+        [0.0, 0.6, 0.6, 1.8, 1.8],
+        3.0,
+    )
+
+
+def test_intervals_trims_silence_by_default():
+    result = _result_with_audio(*_intervals_setup())
+
+    trimmed = result.intervals()
+    raw = result.intervals(trim_silence=False)
+
+    word_raw = [w for w in raw["words"] if w["text"] == "hi"][0]
+    word_trim = [w for w in trimmed["words"] if w["text"] == "hi"][0]
+    assert word_raw["start"] == pytest.approx(0.6)
+    assert word_trim["start"] > word_raw["start"]
+    assert word_trim["end"] < word_raw["end"]
+    assert 0.95 < word_trim["start"] < 1.05
+    assert 1.35 < word_trim["end"] < 1.45
+
+    # phones stay valid intervals after trimming
+    for ph in trimmed["phones"]:
+        assert ph["end"] > ph["start"]
+
+    # without audio stored, intervals() degrades to the raw timeline
+    result.audio = None
+    plain = result.intervals()
+    assert plain == raw
+
+
+def test_intervals_trim_silence_keeps_custom_tier_names():
+    result = _result_with_audio(*_intervals_setup())
+    trimmed = result.intervals(char_tier="chars", word_tier="tokens")
+    assert set(trimmed.keys()) == {"chars", "tokens"}
+    word_trim = [w for w in trimmed["tokens"] if w["text"] == "hi"][0]
+    assert 0.95 < word_trim["start"] < 1.05
+
+
+def _stub_aligner(device=None, batch_size=8):
+    # intervals_batch wiring test without a model download
+    from forced_aligner_metrics import CTCAligner
+
+    aligner = object.__new__(CTCAligner)
+    aligner.device = device
+    aligner.batch_size = batch_size
+    return aligner
+
+
+@pytest.mark.parametrize("device", _tensor_devices())
+def test_aligner_intervals_batch_matches_per_item(device):
+    results = [_result_with_audio(*_intervals_setup(), device=device) for _ in range(3)]
+    aligner = _stub_aligner(device=device, batch_size=2)
+
+    batched = aligner.intervals_batch(results)
+    per_item = [r.intervals() for r in results]
+
+    assert len(batched) == len(per_item)
+    for got, want in zip(batched, per_item):
+        for tier in ("words", "phones"):
+            for g, w in zip(got[tier], want[tier]):
+                assert g["text"] == w["text"]
+                assert g["start"] == w["start"]
+                assert g["end"] == w["end"]
+
+
+def test_aligner_intervals_batch_requires_audio():
+    results = [_result_with_audio(*_intervals_setup()) for _ in range(2)]
+    results[1].audio = None
+    aligner = _stub_aligner(device=None, batch_size=2)
+
+    with pytest.raises(ValueError, match="audios"):
+        aligner.intervals_batch(results)
+
+    # trim_silence=False does not need the audios
+    tiers = aligner.intervals_batch(results, trim_silence=False)
+    assert len(tiers) == 2

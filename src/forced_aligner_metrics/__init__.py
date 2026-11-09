@@ -33,6 +33,10 @@ from forced_aligner_metrics.ctc_aligner import (
     determine_utterance_segments,
     prepare_text,
     prepare_tokenized_text,
+    trim_alignment_silence,
+    trim_alignment_silence_batch,
+    trim_interval,
+    compute_global_threshold,
 )
 
 try:
@@ -53,5 +57,9 @@ __all__ = [
     "determine_utterance_segments",
     "prepare_text",
     "prepare_tokenized_text",
+    "trim_alignment_silence",
+    "trim_alignment_silence_batch",
+    "trim_interval",
+    "compute_global_threshold",
     "__version__",
 ]
