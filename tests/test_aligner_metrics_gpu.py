@@ -9,9 +9,9 @@ this package provides: ``ForcedAlignEval.compute_metrics`` runs on the GPU
 2. the CTC aligner's ``intervals()`` from the single-pass DP.
 
 Measured on 200 de_de FLEURS items (mahesh27/mms-300m-ipa-fleurs):
-the reference alignments score PCMI 0.220 / WACS 0.165, and the CTC
-aligner's alignments score PCMI 0.345 / WACS 0.197 (with the default
-v1.1.0 silence trimming in ``intervals()``) - comparable-or-higher
+the reference alignments score PCMI 0.224 / WACS 0.167, and the CTC
+aligner's alignments score PCMI 0.343 / WACS 0.199 (with
+``trim_silence=True``: silence-trimmed intervals stored at align time) - comparable-or-higher
 under both reference-free metrics.
 
 The item count is controlled by ``FAM_METRIC_ITEMS`` (default 200; the
@@ -39,7 +39,7 @@ FLEURS_LOCAL_ONLY = os.environ.get("FAM_FLEURS_LOCAL_ONLY", "") == "1"
 MAX_AUDIO_SAMPLES = 360_000
 
 # tolerances (absolute deltas of the metrics between the aligner output
-# and the reference TextGrid alignments; measured delta: 0.120/0.034)
+# and the reference TextGrid alignments; measured delta: 0.119/0.032)
 PLAIN_TOL = (0.15, 0.08)
 # sanity band around the published reference-test values
 REF_RANGE = {"pcmi": (0.185, 0.245), "wacs": (0.135, 0.215)}
@@ -109,7 +109,7 @@ def test_pcmi_wacs_on_aligner_intervals():
             }
         )
 
-    plain = CTCAligner(MODEL, device="cuda", batch_size=8)
+    plain = CTCAligner(MODEL, device="cuda", batch_size=8, trim_silence=True)
     plain_ivs = [r.intervals() for r in plain.align_batch(audios, texts)]
 
     # the evaluator must run the GPU/torch kernels for this test
