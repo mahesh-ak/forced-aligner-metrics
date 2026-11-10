@@ -48,7 +48,6 @@ aligner = CTCAligner(model, processor, device="cuda")
 
 result = aligner.align(audio, "ellaɾuku namaskaːɾam")  # one audio, one IPA transcription string
 intervals = result.intervals()                        # {"phones": [...], "words": [...]} -> ForcedAlignEval input
-metrics = ForcedAlignEval(ForcedAlignEvalConfig()).compute_metrics(audios=[audio], intervals_iter=[intervals])
 ```
 
 Batched alignment:
@@ -66,15 +65,14 @@ word_segmented = ["ఎల్లరుకు నమస్కారం", "సర�
 
 results = aligner.align_batch(audios, texts, word_texts=word_segmented, batch_size=8)
 intervals_list = aligner.intervals_batch(results)
-metrics = evaluator.compute_metrics(audios=audios, intervals_iter=intervals_list)
 ```
 
-Silence trimming is opt-in — off by default:
+Silence trimming is optional — off by default; it runs at align time (batched) and the trimmed intervals are stored on every result:
 
 ```python
 aligner = CTCAligner(model, processor, device="cuda", trim_silence=True)
-result = aligner.align(audio, "ellaɾuku namaskaːɾam")
-result.intervals()                    # trimmed, stored on the result (result.segments too)
+results = aligner.align_batch(audios, texts, batch_size=8)
+intervals_list = aligner.intervals_batch(results)  # trimmed; result.segments trimmed too
 ```
 
 ## Performance Benchmarks
