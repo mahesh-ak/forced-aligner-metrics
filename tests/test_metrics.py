@@ -74,7 +74,7 @@ def test_pcmi_wacs_values():
 
     items = list(itertools.islice(ds, 200))
 
-    align_dir = os.path.join(TEST_DATA_ROOT, "alignments", "mms-300m-ipa", lang)
+    align_dir = os.path.join(TEST_DATA_ROOT, "alignments", "mms-300m-ipa-FAM-SIL", lang)
 
     cfg = ForcedAlignEvalConfig(device=DEVICE)
     evaluator = ForcedAlignEval(cfg)
@@ -90,8 +90,8 @@ def test_pcmi_wacs_values():
     wacs_value = metrics["wacs_score"]
 
     # expected values with allowed tolerance
-    assert pcmi_value == pytest.approx(0.215, abs=0.03)
-    assert wacs_value == pytest.approx(0.184, abs=0.03)
+    assert pcmi_value == pytest.approx(0.346, abs=0.03)
+    assert wacs_value == pytest.approx(0.212, abs=0.03)
 
 
 @pytest.mark.integration

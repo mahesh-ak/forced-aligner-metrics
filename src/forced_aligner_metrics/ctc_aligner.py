@@ -36,8 +36,6 @@ from typing import Any, Dict, List, Optional, Sequence, Tuple, Union
 import numpy as np
 import torch
 
-from transformers import AutoModelForCTC, AutoProcessor
-
 _INF_PROB = -10000000000.0
 
 # ---------------------------------------------------------------------------
@@ -957,6 +955,12 @@ class CtcAlignmentResult:
         trimming was enabled (``trim_silence=True``); :meth:`intervals`
         returns these by default then. ``None`` when no trimming was
         applied.
+    word_text:
+        Optional orthographic/word-segmented text aligned alongside the
+        (IPA) transcription. When given and its whitespace-split word count
+        matches the aligned word count, :meth:`intervals` labels the words
+        tier with these words (spans still come from the token alignment);
+        otherwise the words tier is the joined non-separator tokens.
     """
 
     segments: List[Tuple[float, float, float]]
@@ -971,12 +975,12 @@ class CtcAlignmentResult:
     sampling_rate: int = 16000
     device: Optional[str] = None
     trimmed_intervals: Optional[Dict[str, List[Dict[str, Any]]]] = None
+    word_text: Optional[str] = None
 
     def intervals(
         self,
         char_tier: str = "phones",
         word_tier: str = "words",
-        trim_silence: Optional[bool] = None,
     ) -> Dict[str, List[Dict[str, Any]]]:
         """Alignment as interval dicts in the ``ForcedAlignEval`` input format.
 
@@ -1002,32 +1006,21 @@ class CtcAlignmentResult:
             characters, acting as the phone-like symbols of the DP).
         word_tier:
             Key for the word-level entries (default ``"words"``).
-        trim_silence:
-            Trim word/phone spans onto their voiced region via the
-            paper's energy-threshold pipeline
-            (:func:`trim_alignment_silence`). ``None`` (default) follows
-            what was done at align time: trimmed when
-            :class:`CTCAligner` ran with ``trim_silence=True`` (the trimmed
-            dict is then stored on the result as ``trimmed_intervals`` and
-            returned here), raw otherwise. Pass ``True`` to trim on the fly
-            (needs the stored ``audio``), ``False`` for the raw
-            timeline-covering intervals.
-
         Returns
         -------
         Dict with the two tiers; every entry is a
         ``{"text": str, "start": float, "end": float}`` dict in seconds.
+        If the aligner ran with ``trim_silence=True``, the stored trimmed
+        dict (:attr:`trimmed_intervals`) is returned; otherwise the raw
+        timeline-covering intervals.
         """
         if not self.char_symbols:
             raise ValueError(
                 "intervals() needs the character symbols produced by "
                 "CTCAligner.align()/align_batch() (char_symbols)"
             )
-        if trim_silence is None:
-            trim_silence = self.trimmed_intervals is not None
         if (
-            trim_silence
-            and self.trimmed_intervals is not None
+            self.trimmed_intervals is not None
             and set(self.trimmed_intervals.keys()) == {char_tier, word_tier}
         ):
             # return a copy so callers cannot mutate the stored trimmed dict
@@ -1078,19 +1071,16 @@ class CtcAlignmentResult:
                 current.append((sym, s_, e_))
         flush_word()
 
-        tiers = {char_tier: char_entries, word_tier: word_entries}
+        if self.word_text is not None:
+            orth_words = self.word_text.split()
+            filled = [w for w in word_entries if w["text"]]
+            if len(filled) == len(orth_words):
+                it = iter(orth_words)
+                for w in word_entries:
+                    if w["text"]:
+                        w["text"] = next(it)
 
-        if trim_silence and self.audio is not None:
-            trim_alignment_silence(
-                tiers,
-                self.audio,
-                sr=self.sampling_rate,
-                word_key=word_tier,
-                phone_key=char_tier,
-                device=self.device,
-            )
-
-        return tiers
+        return {char_tier: char_entries, word_tier: word_entries}
 
 
 def _symbols_from_ground_truth(
@@ -1109,21 +1099,31 @@ def _symbols_from_ground_truth(
 
 
 class CTCAligner:
-    """GPU CTC aligner built around a Hugging Face CTC model.
+    """GPU CTC aligner built around a loaded Hugging Face CTC model.
 
     Runs the CTC forward pass and the alignment DP on ``device`` and returns
     utterance segments with confidence scores, as
     :class:`CtcAlignmentResult`.
 
+    The aligner deliberately does **not** load anything from a model id:
+    model-specific loading (base model, language adapter, dtype, ...) is the
+    caller's job. It takes the loaded objects directly:
+
     Parameter
     ---------
     model:
-        Hugging Face model id of a CTC-based ASR model, e.g.
-        ``"facebook/wav2vec2-large-960h-lv60-self"``.
+        A loaded CTC-family model, e.g.
+        ``AutoModelForCTC.from_pretrained("facebook/mms-300m")`` (optionally
+        with a language adapter loaded). Only its forward pass and
+        ``config.conv_kernel``/``config.conv_stride`` (frame duration) are
+        used; it is moved to ``device``.
+    processor:
+        A loaded processor (``AutoProcessor.from_pretrained(...)`` or
+        anything with ``.tokenizer`` and ``.feature_extractor``). Provides
+        the vocab/blank/word-delimiter symbol and the audio feature
+        extraction (padding, sampling rate).
     device:
         Torch device for the model and DP (e.g. ``"cuda"``).
-    config:
-        Optional pre-built :class:`CtcSegmentationConfig`.
     batch_size:
         Audio items per model forward pass used by :meth:`align_batch`
         (default 8); the alignment DP always runs per item.
@@ -1135,38 +1135,53 @@ class CTCAligner:
         **Off by default** (v1.1.1); pass ``trim_silence=True`` here or per
         call to :meth:`align`/:meth:`align_batch` to enable it.
     any constructor ``kwargs`` override the respective config attribute (e.g.
-    ``space="|"``, ``min_window_size=8000``). The character list, blank
-    index and frame duration are always derived from the model.
+    ``space="|"``, ``min_window_size=8000``, ``index_duration=0.02``). The
+    character list, blank index and frame duration (conv-stride product over
+    the sampling rate) are derived from the model/processor.
 
     Example
     -------
-    >>> aligner = CTCAligner("facebook/wav2vec2-large-960h-lv60-self", device="cuda")
-    >>> result = aligner.align(audio_16k, ["hello world", "goodbye world"])
+    >>> from transformers import AutoModelForCTC, AutoProcessor
+    >>> processor = AutoProcessor.from_pretrained("facebook/wav2vec2-large-960h-lv60-self")
+    >>> model = AutoModelForCTC.from_pretrained("facebook/wav2vec2-large-960h-lv60-self")
+    >>> aligner = CTCAligner(model, processor, device="cuda")
+    >>> result = aligner.align(audio_16k, "hello world")
     >>> result.segments[0]
     (0.01, 2.53, -0.31)
     """
 
     def __init__(
         self,
-        model: str,
+        model,
+        processor,
         device: str = "cuda",
-        config: Optional[CtcSegmentationConfig] = None,
         batch_size: int = 8,
         trim_silence: bool = False,
         **kwargs,
     ):
+        if not hasattr(getattr(model, "config", None), "conv_kernel"):
+            raise TypeError(
+                "model must be a loaded CTC-family model (config.conv_kernel/"
+                "conv_stride present), e.g. AutoModelForCTC.from_pretrained(...)"
+            )
+        tokenizer = processor.tokenizer
+        if not hasattr(tokenizer, "get_vocab"):
+            raise TypeError("processor must expose a .tokenizer with get_vocab()")
+
         self.device = device
         self.batch_size = batch_size
         self.trim_silence = bool(trim_silence)
-        self.processor = AutoProcessor.from_pretrained(model)
-        self.model = AutoModelForCTC.from_pretrained(model).to(device)
+        self.processor = processor
+        self.model = model.to(device)
         self.model.eval()
         self.model.requires_grad_(False)
-        self.sampling_rate = self.processor.feature_extractor.sampling_rate
+        self.sampling_rate = int(
+            getattr(processor.feature_extractor, "sampling_rate", 16000)
+        )
 
-        vocab: Dict[str, int] = self.processor.tokenizer.get_vocab()
+        vocab: Dict[str, int] = tokenizer.get_vocab()
         char_list = [tok for tok, _ in sorted(vocab.items(), key=lambda kv: kv[1])]
-        blank_id = getattr(self.processor.tokenizer, "pad_token_id", None)
+        blank_id = getattr(tokenizer, "pad_token_id", None)
         if blank_id is None:
             blank_id = 0
 
@@ -1177,8 +1192,9 @@ class CTCAligner:
         index_duration = stride / self.sampling_rate
 
         overrides = dict(kwargs)
+        overrides.setdefault("index_duration", index_duration)
 
-        default_space = _detect_space_symbol(self.processor.tokenizer, char_list)
+        default_space = _detect_space_symbol(tokenizer, char_list)
         if default_space is not None:
             # use the model's word-boundary symbol for all whitespace so that
             # utterance-internal word boundaries are visible to the DP (and
@@ -1187,8 +1203,8 @@ class CTCAligner:
             overrides.setdefault("space", default_space)
             overrides.setdefault("replace_spaces_with_blanks", True)
 
-        self.config = config if config is not None else CtcSegmentationConfig()
-        self.config.set(index_duration=index_duration, blank=blank_id, char_list=char_list, **overrides)
+        self.config = CtcSegmentationConfig()
+        self.config.set(blank=blank_id, char_list=char_list, **overrides)
 
     def _feat_extract_output_lengths(self, input_lengths) -> np.ndarray:
         """Exact CTC frame counts for the given sample lengths."""
@@ -1242,7 +1258,11 @@ class CTCAligner:
         return lpz[0, : int(frame_lengths[0])]
 
     def _alignment_from_lpz(
-        self, lpz: torch.Tensor, text: Sequence[str], audio: Optional[np.ndarray] = None
+        self,
+        lpz: torch.Tensor,
+        text: Sequence[str],
+        audio: Optional[np.ndarray] = None,
+        word_text: Optional[str] = None,
     ) -> CtcAlignmentResult:
         """Run text preparation, the GPU DP and segmentation for one item."""
         ground_truth, utt_begin_indices = prepare_text(self.config, text)
@@ -1268,6 +1288,7 @@ class CTCAligner:
             audio=audio,
             sampling_rate=self.sampling_rate,
             device=self.device,
+            word_text=word_text,
         )
 
     def _apply_trim_to_results(
@@ -1289,7 +1310,7 @@ class CTCAligner:
         thrs = _global_thresholds(smooth, lengths, SILENCE_RATIO)
         sr = results[0].sampling_rate
 
-        tiers_list = [r.intervals(trim_silence=False) for r in results]
+        tiers_list = [r.intervals() for r in results]
         _trim_words_batched(
             tiers_list, smooth, lengths, thrs, sr,
             MIN_WORD_DUR, "words", "phones", MIN_PHONE_DUR,
@@ -1318,19 +1339,26 @@ class CTCAligner:
     def align(
         self,
         audio: np.ndarray,
-        text: Union[str, Sequence[str]],
+        text: str,
+        word_text: Optional[str] = None,
         trim_silence: Optional[bool] = None,
         **kwargs,
     ) -> CtcAlignmentResult:
-        """Align one audio array with its transcription.
+        """Align one audio array with its transcription (a single utterance).
 
         Parameter
         ---------
         audio:
             Mono audio array at 16 kHz.
         text:
-            A single utterance string or a list of utterance strings; the
-            result then contains one segment per utterance.
+            The transcription of this audio as a single string (e.g. IPA).
+            For many audio/text pairs use :meth:`align_batch`.
+        word_text:
+            Optional orthographic/word-segmented rendering of the same
+            utterance (e.g. ``word_segmented``); its whitespace-split words
+            should correspond 1:1 to the whitespace-split words of ``text``.
+            When given, the words tier of :meth:`CtcAlignmentResult.intervals`
+            carries these words instead of the joined tokens.
         trim_silence:
             Silence-trim this result (stored on it as ``trimmed_intervals``
             and in ``segments``); ``None`` uses the constructor's
@@ -1338,17 +1366,20 @@ class CTCAligner:
 
         Returns
         -------
-        :class:`CtcAlignmentResult` with utterance segments, character
+        :class:`CtcAlignmentResult` with the utterance segment, character
         timings, per-frame character states and confidences.
         """
-        if isinstance(text, str):
-            text = [text]
+        if not isinstance(text, str):
+            raise TypeError(
+                "align() takes a single transcription string; "
+                "for many audio/text pairs use align_batch(audios, texts)"
+            )
 
         self.config.set(**kwargs)
 
         lpz = self.log_probs(audio)
         audio = np.asarray(audio)
-        result = self._alignment_from_lpz(lpz, text, audio=audio)
+        result = self._alignment_from_lpz(lpz, [text], audio=audio, word_text=word_text)
         trim = self.trim_silence if trim_silence is None else bool(trim_silence)
         if trim:
             self._apply_trim_to_results([result], [audio])
@@ -1358,6 +1389,7 @@ class CTCAligner:
         self,
         audios: Sequence[np.ndarray],
         texts: Sequence[Union[str, Sequence[str]]],
+        word_texts: Optional[Sequence[Optional[str]]] = None,
         batch_size: Optional[int] = None,
         trim_silence: Optional[bool] = None,
         **kwargs,
@@ -1378,6 +1410,9 @@ class CTCAligner:
         texts:
             One text per audio; each text is a single utterance string or
             a list of utterance strings within that audio.
+        word_texts:
+            Optional per-audio orthographic/word-segmented text (see
+            :meth:`align`); labels the words tier of the intervals.
         batch_size:
             Audio items per model forward pass; defaults to the
             constructor's ``batch_size``.
@@ -1392,6 +1427,8 @@ class CTCAligner:
         """
         if len(audios) != len(texts):
             raise ValueError("audios and texts must have the same length")
+        if word_texts is not None and len(word_texts) != len(audios):
+            raise ValueError("word_texts must have the same length as audios")
         if len(audios) == 0:
             return []
 
@@ -1412,7 +1449,8 @@ class CTCAligner:
                 if isinstance(text, str):
                     text = [text]
                 lpz = lpz_b[j, : int(frame_lengths[j])]
-                results[i] = self._alignment_from_lpz(lpz, text, audio=chunk[j])
+                wt = word_texts[i] if word_texts is not None else None
+                results[i] = self._alignment_from_lpz(lpz, text, audio=chunk[j], word_text=wt)
             if trim:
                 # one batched GPU trim pass per forward batch
                 self._apply_trim_to_results([results[i] for i in idx], chunk)
@@ -1421,35 +1459,21 @@ class CTCAligner:
     def intervals_batch(
         self,
         results: Sequence[CtcAlignmentResult],
-        batch_size: Optional[int] = None,
-        trim_silence: Optional[bool] = None,
         char_tier: str = "phones",
         word_tier: str = "words",
     ) -> List[Dict[str, List[Dict[str, Any]]]]:
-        """Materialize intervals for many results, batched on the GPU.
+        """Materialize intervals for many results, in input order.
 
-        With ``trim_silence=True``, results not trimmed at align time are
-        trimmed in batched GPU passes first - energies smoothed in one
-        convolution per audio batch (default: the aligner's
-        ``batch_size``, i.e. the same batching as :meth:`align_batch`),
-        per-item thresholds and one vectorized span search over all word
-        spans of the batch - and the trimmed dicts are stored on the
-        results (``result.trimmed_intervals``). Results already trimmed at
-        align time are returned from the store, so trimmed intervals are
-        consistently what every accessor returns.
+        Results aligned with ``trim_silence=True`` return their stored
+        trimmed dicts (:attr:`CtcAlignmentResult.trimmed_intervals`);
+        all others return the raw timeline-covering intervals - exactly
+        what :meth:`CtcAlignmentResult.intervals` returns per result.
 
         Parameter
         ---------
         results:
             :class:`CtcAlignmentResult` items, e.g. as returned by
             :meth:`align_batch`.
-        batch_size:
-            Audio items per GPU pass of the trimming (defaults to the
-            constructor's ``batch_size``).
-        trim_silence:
-            ``None`` (default) uses the aligner's ``trim_silence`` setting;
-            ``True`` trims (storing on the results), ``False`` returns the
-            raw timeline-covering intervals.
         char_tier / word_tier:
             Tier names of the returned dicts (defaults plug directly into
             ``ForcedAlignEval.compute_metrics``).
@@ -1458,31 +1482,6 @@ class CTCAligner:
         -------
         One interval dict per result, in input order.
         """
-        if len(results) == 0:
-            return []
-        trim = self.trim_silence if trim_silence is None else bool(trim_silence)
-        if trim:
-            todo = [i for i, r in enumerate(results) if r.trimmed_intervals is None]
-            missing = [i for i in todo if results[i].audio is None]
-            if missing:
-                raise ValueError(
-                    f"trim_silence=True requires the audios stored on the "
-                    f"results (missing on indices {missing[:5]})"
-                )
-            bs = self.batch_size if batch_size is None else int(batch_size)
-            for i0 in range(0, len(todo), bs):
-                idxs = todo[i0 : i0 + bs]
-                self._apply_trim_to_results(
-                    [results[i] for i in idxs], [results[i].audio for i in idxs]
-                )
-
-        out: List[Dict[str, List[Dict[str, Any]]]] = []
-        for r in results:
-            stored = r.trimmed_intervals
-            if trim and stored is not None and set(stored.keys()) == {char_tier, word_tier}:
-                out.append({k: [dict(e) for e in v] for k, v in stored.items()})
-            else:
-                out.append(
-                    r.intervals(char_tier=char_tier, word_tier=word_tier, trim_silence=trim)
-                )
-        return out
+        return [
+            r.intervals(char_tier=char_tier, word_tier=word_tier) for r in results
+        ]

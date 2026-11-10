@@ -1,187 +1,130 @@
 # Forced Alignment Evaluation Metrics: PCMI and WACS
 
-This repository contains the implementation of two reference-free forced alignment evaluation metrics as defined in this [paper](https://aclanthology.org/2026.findings-emnlp.279/):
+This repository implements two reference-free forced alignment evaluation metrics from this [paper](https://aclanthology.org/2026.findings-emnlp.279/):
 
 * **PCMI** (Phoneme-Cluster Mutual Information)
 * **WACS** (Word Acoustic Consistency Score)
 
-As of **v1.0.0**, all evaluation kernels (DTW, k-means, NMI, cosine distances) run as batched GPU operations on CUDA devices, and the package additionally ships a **GPU CTC aligner** (`forced_aligner_metrics.CTCAligner`). As of **v1.1.0**, `CTCAligner` can silence-trim its outputs on the GPU with the paper's pipeline; as of **v1.1.1** the trimming runs at align time and the trimmed intervals are stored on every result (opt-in, off by default — see [Feeding the metrics](#feeding-the-metrics)).
+It also contains `CTCAligner`, a GPU implementation of CTC-Segmentation whose output plugs directly into the metrics.
 
 ## Public API
-
-The package is intended to be used by importing the public interfaces from `forced_aligner_metrics`.
-
-### Configuration
-
-Use `ForcedAlignEvalConfig` to define evaluation behavior. Default config:
-
-```python
-from forced_aligner_metrics import ForcedAlignEvalConfig
-
-config = ForcedAlignEvalConfig(
-    model="facebook/mms-300m",
-    device="cuda",
-    layer_range=(15, 16),
-    batch_size=2,
-    samples_phon_eval=50,
-    max_frames=10_000,
-    n_clusters=50,
-    samples_word_eval=200,
-    max_words=200,
-    min_occ=3,
-    max_pairs=10,
-    backend="auto",
-)
-```
-
-### Main evaluator
-
-Use `ForcedAlignEval` with:
-
-- `audios`: an iterator of audio arrays, each item is a numpy `array` sampled at **16kHz**:
-```python
-array([0.        , 0.        , 0.        , ..., 0.00074703, 0.00074613, 0.00078106])
-```
-- `intervals_iter`: an iterator of interval dictionaries, where each item is shaped like:
-
-```python
-{
-    "phones": [
-        {"text": "",  "start": 0.0, "end": 0.2},
-        {"text": "h", "start": 0.2, "end": 0.5},
-        {"text": "aI", "start": 0.5, "end": 1.0},
-    ],
-    "words": [
-        {"text": "",  "start": 0.0, "end": 0.2},
-        {"text": "Hi", "start": 0.2, "end": 1.0},
-    ],
-}
-```
-Presence of each of the tiers `"phones"` and `"words"` is optional.
-
-```python
-from forced_aligner_metrics import ForcedAlignEval, ForcedAlignEvalConfig
-
-config = ForcedAlignEvalConfig()
-evaluator = ForcedAlignEval(config)
-metrics = evaluator.compute_metrics(audios=audios, intervals_iter=intervals_iter)
-```
-
-The returned metrics dictionary contains the available scores for the evaluated sample. When a `phones` tier is present, the output includes the PCMI score under `pcmi_score`; when word-level embeddings are available, it includes the WACS score under `wacs_score`.
-
-## GPU acceleration (v1.0.0)
-
-When `device` is a CUDA device (or `backend="torch"`), the following run as fully batched torch operations instead of their sequential CPU implementations:
-
-* **DTW (WACS)**: all positive/negative word pairs are evaluated at once by a batched anti-diagonal dynamic program with cosine costs (`torch_ops.batched_dtw_cosine_sims`); the alignment itself is *exact* (the old CPU path used approximate `fastdtw`).
-* **Embeddings** stay on the GPU as torch tensors instead of expensive CPU round-trips after every batch.
-* **k-means (PCMI)**: deterministic GPU k-means with k-means++ init (`torch_ops.kmeans_fit_predict`, seed configurable via `kmeans_seed`), replacing `MiniBatchKMeans`.
-* **NMI (PCMI)**: mutual information from a GPU contingency matrix (`torch_ops.normalized_mutual_info`, arithmetic normalization as in scikit-learn).
-
-The backend is selected via `config.backend`:
-
-* `"auto"` (default): GPU kernels when `device` starts with `"cuda"`, the original numpy/sklearn/fastdtw path otherwise,
-* `"torch"`: always use the batched torch kernels (works on CPU tensors too),
-* `"legacy"`: always use the original CPU implementation.
-
-The kernels are importable directly for stand-alone use:
-
-```python
-from forced_aligner_metrics import batched_dtw_cosine_sims, kmeans_fit_predict, normalized_mutual_info
-```
-
-`batched_dtw_cosine_sims(pairs, device, chunk_size)` takes a list of `(x, y)` embedding matrices and returns the pairwise `1 - DTW_distance / path_length` similarity per pair.
-
-## GPU CTC aligner
-
-`CTCAligner` is a GPU implementation of [CTC-Segmentation](https://github.com/lumaku/ctc-segmentation)
-([arXiv:2007.09127](https://arxiv.org/abs/2007.09127)): an exhaustive alignment search — no beam search, no approximation — that matches the classic implementation bit-for-bit, with a vectorized table fill handling hour-long audio in seconds. It works with any Hugging Face CTC model; the character list, blank, frame duration and word-boundary symbol are derived automatically. The word-boundary symbol is detected from the vocab (`|`, `$`, `·`, `▁`), the tokenizer's `word_delimiter_token`, or by probing `tokenizer.encode("a b")` — so vocabs that use an unusual separator (e.g. `#`) still split words correctly instead of merging the whole utterance into one word.
-
-```python
-from forced_aligner_metrics import CTCAligner
-
-aligner = CTCAligner("facebook/wav2vec2-large-960h-lv60-self", device="cuda")
-
-# mono 16 kHz audio + one or several utterances
-result = aligner.align(audio, ["hello world", "goodbye world"])
-print(result.segments)                 # [(start, end, confidence), ...] per utterance, in seconds
-print(result.timings, result.states)   # per-character timings, per-frame character states
-
-# many items at once: batched CTC forward, fast DP per item
-results = aligner.align_batch(audios, texts, batch_size=8)
-```
-
-### Feeding the metrics
-
-`result.intervals()` returns the alignment in exactly the format `ForcedAlignEval` consumes — `{"text", "start", "end"}` dicts for a `phones` (character) tier and a `words` tier, covering the full timeline:
-
-```python
-intervals = result.intervals()
-metrics = evaluator.compute_metrics(audios=[audio], intervals_iter=[intervals])
-```
-
-**Silence trimming (v1.1.0/v1.1.1, opt-in — off by default).** The paper's pipeline — word/phone spans are shrunk onto their voiced region via a global energy threshold (`SILENCE_RATIO=0.05` of the 95th percentile of the smoothed `|audio|`, `MIN_WORD_DUR=0.04`, `MIN_PHONE_DUR=0.02`), trims propagated to contained phones — runs as vectorized torch kernels on the aligner's GPU device: batched energy smoothing (`conv1d` with the 400-sample window, numerically identical to the paper's `np.convolve`), per-item `quantile` thresholds, and one gather/argmax search over *all* word spans of a batch at once. Enable it at align time and the **trimmed intervals are stored on every result**, so all accessors agree:
-
-```python
-aligner = CTCAligner("mahesh27/mms-300m-ipa-fleurs", device="cuda", trim_silence=True)
-result = aligner.align(audio, ["hello world"])     # or align(..., trim_silence=True)
-result.intervals()        # trimmed (stored as result.trimmed_intervals)
-result.segments           # trimmed utterance spans
-result.intervals(trim_silence=False)               # raw timeline-covering intervals
-
-results = aligner.align_batch(audios, texts)       # batched GPU trim per batch
-intervals_list = aligner.intervals_batch(results)  # stored trimmed dicts, one per result
-```
-
-Without trimming, `intervals()` returns the raw intervals; `intervals(trim_silence=True)` trims on the fly (per item). The kernels are also public for stand-alone use: `trim_alignment_silence` / `trim_alignment_silence_batch` (and `compute_global_threshold`, `trim_interval`).
-
-### Validation under the package's own metrics
-
-On 200 FLEURS `de_de` items aligned with `mahesh27/mms-300m-ipa-fleurs`, the single-pass CTC aligner scores comparably-or-higher than the stored reference TextGrids (paper's hierarchical pipeline) under PCMI/WACS on GPU (0.343 / 0.199 with `trim_silence=True` vs 0.224 / 0.167 reference); `tests/test_aligner_metrics_gpu.py` asserts these bands on GPU.
-
-On the DORECO corpus, alignments from `mahesh27/mms-300m-ipa-doreco` were judged by PCMI/WACS computed with mms-300m embeddings on GPU and by the absolute boundary deviation (AAS, in ms) against the gold alignments:
-
-| Model | PCMI (mms) | WACS (mms) | Phone AAS (ms) | Word AAS (ms) |
-| --- | --- | --- | --- | --- |
-| gold_doreco | 0.334 ± 0.040 | 0.131 ± 0.029 | 0.0 ± 0.0 (self) | 0.0 ± 0.0 (self) |
-| mms-300m-ipa-doreco (paper) | 0.202 ± 0.033 | 0.112 ± 0.024 | 89.3 ± 34.6 | 114.3 ± 51.8 |
-| mms-300m-ipa-doreco-SIL (paper) | 0.203 ± 0.033 | 0.114 ± 0.026 | 88.1 ± 32.6 | 106.5 ± 44.1 |
-| mms-300m-ipa-doreco-FAM (this package) | 0.301 ± 0.040 | 0.125 ± 0.024 | 65.1 ± 34.5 | 87.4 ± 43.0 |
-| mms-300m-ipa-doreco-FAM-SIL (this package) | 0.310 ± 0.040 | 0.129 ± 0.025 | 73.9 ± 40.0 | 111.6 ± 53.4 |
-
-`-SIL` marks the silence-trimmed variants (the trimming pipeline above, enabled with `trim_silence=True` — **not the default**). Silence trimming achieves the best PCMI and WACS (FAM-SIL), but not the best AAS (plain FAM has the lowest phone/word boundary deviation).
-
-## Installation for development
-
-Install the package from PyPI with:
 
 ```bash
 pip install forced-aligner-metrics
 ```
 
-The source code is available in the [GitHub repository](https://github.com/mahesh-ak/forced-aligner-metrics).
+### Usage
 
-Install the project in editable mode for development:
+```python
+from forced_aligner_metrics import ForcedAlignEval, ForcedAlignEvalConfig
+
+evaluator = ForcedAlignEval(ForcedAlignEvalConfig())  # defaults in the config dataclass
+metrics = evaluator.compute_metrics(audios=audios, intervals_iter=intervals_iter)
+# metrics["pcmi_score"] with a phones tier, metrics["wacs_score"] with a words tier
+```
+
+- `audios`: iterator of mono numpy arrays sampled at 16 kHz
+- `intervals_iter`: iterator of interval dicts (either tier optional), each entry `{"text": str, "start": float, "end": float}` in seconds:
+
+```python
+{
+    "phones": [{"text": "", "start": 0.0, "end": 0.2}, {"text": "h", "start": 0.2, "end": 0.5}, ...],
+    "words":  [{"text": "", "start": 0.0, "end": 0.2}, {"text": "Hi", "start": 0.2, "end": 1.0}, ...],
+}
+```
+
+## GPU CTC aligner
+
+`CTCAligner` is a GPU implementation of [CTC-Segmentation](https://github.com/lumaku/ctc-segmentation) ([arXiv:2007.09127](https://arxiv.org/abs/2007.09127)). It takes the *loaded* model and processor, so model-specific loading (language adapters, dtype, ...) stays with the user:
+
+```python
+from transformers import AutoModelForCTC, AutoProcessor
+from forced_aligner_metrics import CTCAligner, ForcedAlignEval, ForcedAlignEvalConfig
+
+processor = AutoProcessor.from_pretrained("mahesh27/mms-300m-ipa-fleurs")
+model = AutoModelForCTC.from_pretrained("mahesh27/mms-300m-ipa-fleurs")
+model.load_adapter("te_in")                           # adapters etc.: load BEFORE passing the model in
+aligner = CTCAligner(model, processor, device="cuda")
+
+result = aligner.align(audio, "ellaɾuku namaskaːɾam")  # one audio, one IPA transcription string
+intervals = result.intervals()                        # {"phones": [...], "words": [...]} -> ForcedAlignEval input
+metrics = ForcedAlignEval(ForcedAlignEvalConfig()).compute_metrics(audios=[audio], intervals_iter=[intervals])
+```
+
+Batched alignment:
+
+```python
+audios = [audio1_16k, audio2_16k]
+texts = ["ellaɾuku namaskaːɾam", "sɐrʋeːʂaːm sʋɐsti"]  # IPA transcriptions
+
+results = aligner.align_batch(audios, texts, batch_size=8)
+intervals_list = aligner.intervals_batch(results)            # one intervals dict per result
+
+# optional: pass the orthographic word-segmented text per audio; when its
+# words correspond 1:1 to the IPA words, the words tier carries those words
+word_segmented = ["ఎల్లరుకు నమస్కారం", "సర్వేషాం స్వస్తి"]
+
+results = aligner.align_batch(audios, texts, word_texts=word_segmented, batch_size=8)
+intervals_list = aligner.intervals_batch(results)
+metrics = evaluator.compute_metrics(audios=audios, intervals_iter=intervals_list)
+```
+
+Silence trimming is opt-in — off by default:
+
+```python
+aligner = CTCAligner(model, processor, device="cuda", trim_silence=True)
+result = aligner.align(audio, "ellaɾuku namaskaːɾam")
+result.intervals()                    # trimmed, stored on the result (result.segments too)
+```
+
+## Performance Benchmarks
+
+PCMI/WACS computed with mms-300m embeddings on GPU; AAS = absolute boundary deviation vs gold (ms). `-SIL` = silence-trimmed (`trim_silence=True`).
+
+FLEURS (85 languages):
+
+| Model | PCMI (mms) | WACS (mms) |
+| --- | --- | --- |
+| MFA | 0.247 ± 0.106 (83/85 langs) | 0.143 ± 0.078 (82/85) |
+| mms-300m-ipa (v0.1.0) | 0.239 ± 0.028 | 0.195 ± 0.025 |
+| mms-300m-ipa-FAM (v1.1.1+) | 0.370 ± 0.033 | 0.220 ± 0.026 |
+| mms-300m-ipa-FAM-SIL (v1.1.1+) | **0.382 ± 0.033** | **0.225 ± 0.027** |
+
+DORECO (45 langauges):
+
+| Model | PCMI (mms) | WACS (mms) | Phone AAS (ms) | Word AAS (ms) |
+| --- | --- | --- | --- | --- |
+| gold_doreco | 0.334 ± 0.040 | 0.131 ± 0.029 | 0.0 ± 0.0 (self) | 0.0 ± 0.0 (self) |
+| mms-300m-ipa-doreco (v0.1.0) | 0.202 ± 0.033 | 0.112 ± 0.024 | 89.3 ± 34.6 | 114.3 ± 51.8 |
+| mms-300m-ipa-doreco-SIL (v0.1.0) | 0.203 ± 0.033 | 0.114 ± 0.026 | 88.1 ± 32.6 | 106.5 ± 44.1 |
+| mms-300m-ipa-doreco-FAM (v1.1.1+) | 0.301 ± 0.040 | 0.125 ± 0.024 | **65.1 ± 34.5** | **87.4 ± 43.0** |
+| mms-300m-ipa-doreco-FAM-SIL (v1.1.1+) | **0.310 ± 0.040** | **0.129 ± 0.025** | 73.9 ± 40.0 | 111.6 ± 53.4 |
+
+-SIL gives the best PCMI/WACS, but not the best AAS (plain FAM is lowest). On FLEURS, -FAM-SIL beats MFA in **75/85 languages** in both PCMI and WACS.
+
+## Installation for development
 
 ```bash
+git clone https://github.com/mahesh-ak/forced-aligner-metrics.git
+cd forced-aligner-metrics
 python -m pip install -e '.[test]'
 ```
 
 ## Tests
 
-Run the regression tests with:
-
 ```bash
 python -m pytest
 ```
 
-The kernel/aligner unit tests run CPU-only; `-m integration` marks the tests that download datasets and models.
+`tests/test_aligner_vs_reference.py` aligns the FLEURS `de_de` test split with `CTCAligner(trim_silence=True)` and checks the output against the stored `mms-300m-ipa-FAM-SIL` alignments (counts/texts exact, timestamps within one 0.02 s frame); `FAM_REF_ITEMS=<n>` limits the item count. GPU + dataset required (`-m integration`).
 
-`tests/test_aligner_vs_reference.py` compares the aligner to the stored
-`mms-300m-ipa` reference alignments at token and word level
-(`FAM_REF_ITEMS`, default 20). `tests/test_aligner_metrics_gpu.py` scores the
-aligner by PCMI/WACS on GPU (`FAM_METRIC_ITEMS`, default 200).
+## Version Release Notes
 
+- **v2.0.0** (unreleased): `CTCAligner` takes a loaded CTC model + processor instead of a model id.
+- **v1.1.1**: silence trimming runs at align time and is stored on every result (`result.trimmed_intervals`, `result.segments`); opt-in, off by default. Word-boundary symbol auto-detection incl. `#`-style tokenizers.
+- **v1.1.0**: GPU silence-trimming pipeline for `CTCAligner` interval outputs.
+- **v1.0.0**: all evaluation kernels (DTW, k-means, NMI, cosine) as batched GPU operations; added the GPU CTC aligner.
+- **v0.1.0**: initial release.
 
 ## Citation
 
