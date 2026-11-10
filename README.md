@@ -118,7 +118,7 @@ python -m pytest
 
 ## Version Release Notes
 
-- **v2.0.0** (unreleased): `CTCAligner` takes a loaded CTC model + processor instead of a model id.
+- **v2.0.0**: `CTCAligner` takes a loaded CTC model + processor instead of a model id.
 - **v1.1.1**: silence trimming runs at align time and is stored on every result (`result.trimmed_intervals`, `result.segments`); opt-in, off by default. Word-boundary symbol auto-detection incl. `#`-style tokenizers.
 - **v1.1.0**: GPU silence-trimming pipeline for `CTCAligner` interval outputs.
 - **v1.0.0**: all evaluation kernels (DTW, k-means, NMI, cosine) as batched GPU operations; added the GPU CTC aligner.
