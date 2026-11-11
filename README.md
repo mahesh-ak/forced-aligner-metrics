@@ -33,7 +33,7 @@ metrics = evaluator.compute_metrics(audios=audios, intervals_iter=intervals_iter
 }
 ```
 
-`compute_aas` gives the Average Accumulated Shift (AAS) scores defined in [this paper](https://doi.org/10.1007/978-981-99-2401-1_8), in ms, for two alignments in the same interval-dict format:
+`compute_aas` gives the Average Accumulated Shift (AAS) scores defined in [this paper](https://doi.org/10.1007/978-981-99-2401-1_8), in ms, for two alignments in the same interval-dict format (silence spans — empty labels and gaps between adjacent intervals — become `sil` entries that are scored like any other interval):
 
 ```python
 from forced_aligner_metrics import compute_aas
@@ -127,7 +127,7 @@ python -m pytest
 
 ## Version Release Notes
 
-- **v2.1.0**: `CTCAligner` aligns the model tokenizer's token ids, not characters — each word is tokenized with `processor.tokenizer` (multi-character vocab symbols such as affricates stay single tokens; symbols unknown to the vocab map to `<unk>`), and the word delimiter is taken *only* from `tokenizer.word_delimiter_token`. New shipped metric `compute_aas(gold, pred)` giving the Average Accumulated Shift (AAS) scores. `tests/test_aligner_vs_reference.py` now regression-tests against external references only (MFA TextGrids for FLEURS `de_de`, DORECO `anal1239` validation): exact phone/word sequence match (`spn` ignored, `<unk>` excused), timing scored via `compute_aas` on DORECO only.
+- **v2.1.0**: `CTCAligner` aligns the model tokenizer's token ids, not characters — each word is tokenized with `processor.tokenizer` (multi-character vocab symbols such as affricates stay single tokens; symbols unknown to the vocab map to `<unk>`), and the word delimiter is taken *only* from `tokenizer.word_delimiter_token`. New shipped metric `compute_aas(gold, pred)` giving the Average Accumulated Shift (AAS) scores (silence spans scored as `sil` sequence elements). `tests/test_aligner_vs_reference.py` now regression-tests against external references only (MFA TextGrids for FLEURS `de_de`, DORECO `anal1239` validation): exact phone/word sequence match (`spn` ignored, `<unk>` excused), timing scored via `compute_aas` on DORECO only.
 - **v2.0.0**: `CTCAligner` takes a loaded CTC model + processor instead of a model id.
 - **v1.1.1**: silence trimming runs at align time and is stored on every result (`result.trimmed_intervals`, `result.segments`); opt-in, off by default. Word-boundary symbol auto-detection incl. `#`-style tokenizers.
 - **v1.1.0**: GPU silence-trimming pipeline for `CTCAligner` interval outputs.

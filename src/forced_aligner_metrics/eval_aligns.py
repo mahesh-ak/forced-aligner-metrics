@@ -155,35 +155,37 @@ def compute_aas(gold: Dict[str, List[Dict[str, Any]]], pred: Dict[str, List[Dict
     milliseconds per tier (``None`` for a tier missing on either side or
     with no errors).
 
-    Empty-label intervals are concatenated into the adjacent interval
-    (their span is merged, the label is unchanged), so silence gaps do not
-    appear as separate labels in the sequence alignment.
+    Silence spans are treated as sequence elements of their own (label
+    ``"sil"``): empty-label intervals become ``"sil"`` entries, and a gap
+    between two adjacent intervals is assumed to be a silence span as well.
+    Silence is then scored like any other interval - equal silence pairs
+    contribute their boundary deviation, unmatched silence contributes its
+    full duration.
     """
 
     def norm_tier(intervals, tier):
-        out: List[Tuple[float, float, str]] = []
+        SIL = "sil"
+        raw: List[Tuple[float, float, str]] = []
+        prev_end = None
         for entry in (intervals or {}).get(tier, []):
             if not isinstance(entry, dict):
                 continue
             s = float(entry.get("start", entry.get("start_time", 0.0)))
             e = float(entry.get("end", entry.get("end_time", s)))
-            lab = str(entry.get("text", "")).strip()
-            if lab == "":
-                if out:
-                    # concatenate the empty interval into the previous one
-                    ps, pe, pl = out[-1]
-                    out[-1] = (ps, max(pe, e), pl)
-                else:
-                    out.append((s, e, ""))
-                continue
-            if out and out[-1][2] == "":
-                # leading empty interval: concatenated into this one
-                ps, _pe, _ = out[-1]
-                out[-1] = (ps, e, lab)
+            lab = str(entry.get("text", "")).strip() or SIL
+            if prev_end is not None and s > prev_end + 1e-9:
+                # adjacent interval begins later: assume silence in the gap
+                raw.append((prev_end, s, SIL))
+            raw.append((s, e, lab))
+            prev_end = e if prev_end is None else max(prev_end, e)
+        # merge contiguous silence spans into single "sil" entries
+        out: List[Tuple[float, float, str]] = []
+        for s, e, lab in raw:
+            if out and lab == SIL and out[-1][2] == SIL and s <= out[-1][1] + 1e-9:
+                out[-1] = (out[-1][0], max(out[-1][1], e), SIL)
             else:
                 out.append((s, e, lab))
-        # drop any trailing empty-only remainder
-        return [x for x in out if x[2] != ""]
+        return out
 
     def align_and_score(g, p):
         sm = SequenceMatcher(a=[x[2] for x in g], b=[x[2] for x in p])

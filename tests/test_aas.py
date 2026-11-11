@@ -1,8 +1,10 @@
-"""Self-tests for the shipped ``compute_aas`` (absolute boundary deviation).
+"""Self-tests for the shipped ``compute_aas`` (Average Accumulated Shift).
 
 ``compute_aas(x, x)`` must be exactly 0.0 on both tiers - checked on the
 DORECO reference alignments (real interval dicts, same format as the other
-metrics) and on a synthetic example exercising the empty-label concatenation.
+metrics) and on synthetic examples exercising the silence-span handling
+(empty labels and gaps between adjacent intervals become ``"sil"`` spans
+that are scored as sequence elements).
 """
 
 import os
@@ -40,9 +42,9 @@ def test_compute_aas_self_on_doreco_is_zero():
         assert aas["phone_aas_ms"] == 0.0, f"row {row.name}: {aas}"
 
 
-def test_compute_aas_empty_labels_concatenated():
-    # empty-label intervals are concatenated into the adjacent interval, so
-    # the self-comparison is still exactly 0 and a shifted copy scores > 0
+def test_compute_aas_silence_spans_scored_as_labels():
+    # empty-label intervals become "sil" sequence elements; the
+    # self-comparison is still exactly 0 and a shifted copy scores > 0
     gold = {
         "words": [
             {"text": "", "start": 0.0, "end": 0.3},
@@ -64,6 +66,28 @@ def test_compute_aas_empty_labels_concatenated():
     aas = compute_aas(gold, shifted)
     assert aas["word_aas_ms"] > 0.0
     assert aas["phone_aas_ms"] > 0.0
+
+
+def test_compute_aas_gap_between_intervals_is_assumed_silence():
+    # gold has a 0.2 s gap between "a" and "b" -> a "sil" span is assumed
+    # there; pred has none -> the unmatched gold silence contributes its
+    # full duration and the shifted "b" boundary its deviation:
+    # errs = [0 (a), 0.2 (sil), (|0.7-0.5|+0)/2 = 0.1 (b)] -> mean 0.1 s
+    gold = {
+        "words": [
+            {"text": "a", "start": 0.0, "end": 0.5},
+            {"text": "b", "start": 0.7, "end": 1.0},
+        ]
+    }
+    pred = {
+        "words": [
+            {"text": "a", "start": 0.0, "end": 0.5},
+            {"text": "b", "start": 0.5, "end": 1.0},
+        ]
+    }
+    aas = compute_aas(gold, pred)
+    assert aas["word_aas_ms"] == pytest.approx(100.0)
+    assert aas["phone_aas_ms"] is None
 
 
 def test_compute_aas_missing_tier_is_none():

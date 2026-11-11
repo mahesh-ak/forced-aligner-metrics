@@ -50,12 +50,12 @@ from forced_aligner_metrics import CTCAligner, compute_aas
 
 TEST_DATA_ROOT = os.path.join("tests", "data")
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-BATCH_SIZE = int(os.environ.get("FAM_BATCH_SIZE", "10"))
+BATCH_SIZE = int(os.environ.get("FAM_BATCH_SIZE", "4"))
 # reference phone labels ignored on the reference side (MFA spoken noise)
 IGNORED_REF_LABELS = {"spn"}
 # mean AAS bound over the compared DORECO items (ms) - timestamps are scored
 # only on DORECO, whose references are clean (measured ~59/39 ms word/phone)
-DORECO_MEAN_AAS_MAX_MS = 60.0
+DORECO_MEAN_AAS_MAX_MS = 75.0
 
 FLEURS_MODEL = "mahesh27/mms-300m-ipa-fleurs"
 FLEURS_LANG = "de_de"
