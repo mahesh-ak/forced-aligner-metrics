@@ -12,6 +12,7 @@ from importlib.metadata import PackageNotFoundError, version as _version
 from forced_aligner_metrics.eval_aligns import (
     ForcedAlignEval,
     ForcedAlignEvalConfig,
+    compute_aas,
 )
 from forced_aligner_metrics.ctc_aligner import (
     CTCAligner,
@@ -26,6 +27,7 @@ except PackageNotFoundError:  # running from a source tree without an install
 __all__ = [
     "ForcedAlignEval",
     "ForcedAlignEvalConfig",
+    "compute_aas",
     "CTCAligner",
     "CtcAlignmentResult",
     "__version__",

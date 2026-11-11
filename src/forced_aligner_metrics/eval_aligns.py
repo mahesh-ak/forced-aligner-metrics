@@ -1,6 +1,7 @@
 import warnings
 import numpy as np
 import torch
+from difflib import SequenceMatcher
 from transformers import Wav2Vec2Model, Wav2Vec2FeatureExtractor
 from collections import defaultdict
 from dataclasses import dataclass
@@ -133,6 +134,81 @@ def normalize_intervals(intervals: Dict[str, List[Dict[str, Any]]]) -> Dict[str,
             normalized_tier.append((start, end, label))
         normalized[tier_name] = normalized_tier
     return normalized
+
+
+def compute_aas(gold: Dict[str, List[Dict[str, Any]]], pred: Dict[str, List[Dict[str, Any]]]) -> Dict[str, Any]:
+    """Absolute boundary deviation (AAS) between two alignments, in ms.
+
+    Parameters
+    ----------
+    gold, pred:
+        Interval dicts in the same format as the other metrics
+        (``{"words": [{"text", "start", "end"}, ...], "phones": [...]}``).
+        Each tier present in both is aligned with a ``SequenceMatcher`` over
+        the label sequence: equal pairs contribute ``(|dstart| + |dend|) / 2``
+        to the error, non-equal (insertion/deletion/substitution) gold
+        intervals contribute their full duration.
+
+    Returns
+    -------
+    ``{"word_aas_ms": ..., "phone_aas_ms": ...}`` - the mean error in
+    milliseconds per tier (``None`` for a tier missing on either side or
+    with no errors).
+
+    Empty-label intervals are concatenated into the adjacent interval
+    (their span is merged, the label is unchanged), so silence gaps do not
+    appear as separate labels in the sequence alignment.
+    """
+
+    def norm_tier(intervals, tier):
+        out: List[Tuple[float, float, str]] = []
+        for entry in (intervals or {}).get(tier, []):
+            if not isinstance(entry, dict):
+                continue
+            s = float(entry.get("start", entry.get("start_time", 0.0)))
+            e = float(entry.get("end", entry.get("end_time", s)))
+            lab = str(entry.get("text", "")).strip()
+            if lab == "":
+                if out:
+                    # concatenate the empty interval into the previous one
+                    ps, pe, pl = out[-1]
+                    out[-1] = (ps, max(pe, e), pl)
+                else:
+                    out.append((s, e, ""))
+                continue
+            if out and out[-1][2] == "":
+                # leading empty interval: concatenated into this one
+                ps, _pe, _ = out[-1]
+                out[-1] = (ps, e, lab)
+            else:
+                out.append((s, e, lab))
+        # drop any trailing empty-only remainder
+        return [x for x in out if x[2] != ""]
+
+    def align_and_score(g, p):
+        sm = SequenceMatcher(a=[x[2] for x in g], b=[x[2] for x in p])
+        errs = []
+        for tag, i1, i2, j1, j2 in sm.get_opcodes():
+            if tag == "equal":
+                for gx, px in zip(g[i1:i2], p[j1:j2]):
+                    errs.append((abs(gx[0] - px[0]) + abs(gx[1] - px[1])) / 2)
+            else:
+                for x in g[i1:i2]:
+                    errs.append(x[1] - x[0])
+        if not errs:
+            return None
+        return 1000.0 * float(np.mean(errs))
+
+    out: Dict[str, Any] = {}
+    for tier, key in (("words", "word_aas_ms"), ("phones", "phone_aas_ms")):
+        g = norm_tier(gold, tier)
+        p = norm_tier(pred, tier)
+        if g and p:
+            aas = align_and_score(g, p)
+            out[key] = round(aas, 3) if aas is not None else None
+        else:
+            out[key] = None
+    return out
 
 
 def assign_labels_to_frames(frame_times, intervals):

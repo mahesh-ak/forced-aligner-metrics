@@ -33,6 +33,15 @@ metrics = evaluator.compute_metrics(audios=audios, intervals_iter=intervals_iter
 }
 ```
 
+`compute_aas` gives the Average Accumulated Shift (AAS) scores defined in [this paper](https://doi.org/10.1007/978-981-99-2401-1_8), in ms, for two alignments in the same interval-dict format:
+
+```python
+from forced_aligner_metrics import compute_aas
+
+aas = compute_aas(gold_intervals, pred_intervals)
+# aas["word_aas_ms"], aas["phone_aas_ms"]
+```
+
 ## GPU CTC aligner
 
 `CTCAligner` is a GPU implementation of [CTC-Segmentation](https://github.com/lumaku/ctc-segmentation) ([arXiv:2007.09127](https://arxiv.org/abs/2007.09127)). It takes the *loaded* model and processor, so model-specific loading (language adapters, dtype, ...) stays with the user:
@@ -114,10 +123,11 @@ python -m pip install -e '.[test]'
 python -m pytest
 ```
 
-`tests/test_aligner_vs_reference.py` aligns the FLEURS `de_de` test split with `CTCAligner(trim_silence=True)` and checks the output against the stored `mms-300m-ipa-FAM-SIL` alignments (counts/texts exact, timestamps within one 0.02 s frame); `FAM_REF_ITEMS=<n>` limits the item count. GPU + dataset required (`-m integration`).
+`tests/test_aligner_vs_reference.py` aligns the FLEURS `de_de` test split and the DORECO `anal1239` validation split with `CTCAligner` and checks the output against *external* reference alignments (MFA TextGrids in `tests/data/alignments/mfa/de_de`, DORECO parquet in `tests/data/alignments/doreco/anal1239`): the phone and word symbol sequences must match exactly at the tokenizer's granularity (`spn` ignored, `<unk>` excused); timestamps are scored with `compute_aas` on DORECO only (mean AAS < 60 ms). `MFA_REF_ITEMS=<n>` / `DORECO_REF_ITEMS=<n>` limit the item counts. GPU + dataset required (`-m integration`). `tests/test_aas.py` unit-tests `compute_aas` (self-comparison on DORECO is exactly 0.0/0.0).
 
 ## Version Release Notes
 
+- **v2.1.0**: `CTCAligner` aligns the model tokenizer's token ids, not characters — each word is tokenized with `processor.tokenizer` (multi-character vocab symbols such as affricates stay single tokens; symbols unknown to the vocab map to `<unk>`), and the word delimiter is taken *only* from `tokenizer.word_delimiter_token`. New shipped metric `compute_aas(gold, pred)` giving the Average Accumulated Shift (AAS) scores. `tests/test_aligner_vs_reference.py` now regression-tests against external references only (MFA TextGrids for FLEURS `de_de`, DORECO `anal1239` validation): exact phone/word sequence match (`spn` ignored, `<unk>` excused), timing scored via `compute_aas` on DORECO only.
 - **v2.0.0**: `CTCAligner` takes a loaded CTC model + processor instead of a model id.
 - **v1.1.1**: silence trimming runs at align time and is stored on every result (`result.trimmed_intervals`, `result.segments`); opt-in, off by default. Word-boundary symbol auto-detection incl. `#`-style tokenizers.
 - **v1.1.0**: GPU silence-trimming pipeline for `CTCAligner` interval outputs.

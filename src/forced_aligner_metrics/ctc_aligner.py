@@ -30,6 +30,7 @@ exhaustive over the window, as in the original.
 """
 
 import math
+import warnings
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Sequence, Tuple, Union
 
@@ -452,31 +453,19 @@ def trim_alignment_silence_batch(
     return alignments
 
 
-def _detect_space_symbol(tokenizer, char_list):
-    """The model vocab's word-boundary symbol, or ``None``.
+def _word_delimiter_symbol(tokenizer, char_list):
+    """The tokenizer's own word-delimiter symbol, or ``None``.
 
-    Checks the usual candidates (``|``, ``$``, ``·``, ``▁``) first, then the
-    tokenizer's own ``word_delimiter_token``, then probes
-    ``tokenizer.encode("a b")`` - vocabs that use an unusual separator
-    (e.g. ``"#"``) are detected there. Without a detected space symbol,
-    whitespace in the transcription is dropped by :func:`prepare_text` and
-    all words merge into one interval.
+    Only ``tokenizer.word_delimiter_token`` is consulted: no other symbol
+    (``$``, ``#``, ``|``, ``·``, ``▁``, ...) is ever *assumed* to be a word
+    delimiter just because it happens to be in the vocab. When the tokenizer
+    declares an empty/missing word delimiter, whitespace in the transcription
+    cannot be represented to the model and each utterance aligns as a single
+    word (the caller warns about this).
     """
-    for c in ("|", "$", "·", "▁"):
-        if c in char_list:
-            return c
     wdelim = getattr(tokenizer, "word_delimiter_token", None)
-    if wdelim is not None and wdelim in char_list:
+    if wdelim is not None and wdelim != "" and wdelim in char_list:
         return wdelim
-    try:
-        toks = tokenizer.convert_ids_to_tokens(
-            tokenizer.encode("a b", add_special_tokens=False)
-        )
-        cand = [t for t in toks if t not in ("a", "b")]
-        if len(cand) == 1 and cand[0] in char_list:
-            return cand[0]
-    except Exception:
-        pass
     return None
 
 
@@ -617,6 +606,49 @@ def prepare_tokenized_text(config: CtcSegmentationConfig, text: Sequence[str]) -
         else:
             char_index = config.char_list.index(ground_truth[i])
             ground_truth_mat[i, 0] = char_index
+    return ground_truth_mat, utt_begin_indices
+
+
+def prepare_token_seq(config: CtcSegmentationConfig, token_id_lists: Sequence[Sequence[int]]) -> Tuple[np.ndarray, List[int]]:
+    """Ground-truth label matrix from pre-tokenized utterances (token ids).
+
+    Parameter
+    ---------
+    config:
+        An instance of CtcSegmentationConfig.
+    token_id_lists:
+        One list of tokenizer token ids per utterance (e.g. as produced by
+        :meth:`CTCAligner._tokenize_utterance`). Every id becomes exactly one
+        label row (span length 1), so multi-character vocabulary symbols
+        (e.g. affricates) stay single labels. The tokenizer's word-delimiter
+        id separates utterances/words and maps onto the blank; the
+        start-of-ground-truth row stays unalignable (``-1``).
+
+    Returns
+    -------
+    Label matrix of shape ``(n_labels, 1)`` (token ids, word delimiter
+    replaced by the blank id, ``-1`` for the preamble row) and utterance
+    begin indices.
+    """
+    delim_id = config.char_list.index(config.space) if config.space in config.char_list else None
+    # word-delimiter id between utterances (or a plain blank row when the
+    # tokenizer declares no delimiter)
+    sep = delim_id if delim_id is not None else config.blank
+    # one flat id array: preamble row (-1), then per utterance [sep, *ids]
+    flat: List[int] = [-1]
+    utt_begin_indices = []
+    for ids in token_id_lists:
+        flat.append(sep)
+        utt_begin_indices.append(len(flat) - 1)
+        flat.extend(ids)
+    flat.append(sep)
+    utt_begin_indices.append(len(flat) - 1)
+    # single vectorized conversion - O(n_tokens), no per-token python work
+    ground_truth_mat = np.asarray(flat, dtype=np.int64).reshape(-1, 1)
+    if delim_id is not None:
+        # word-delimiter rows emit the blank, exactly like the space symbol
+        # in the classic char-based preparation
+        ground_truth_mat[ground_truth_mat == delim_id] = config.blank
     return ground_truth_mat, utt_begin_indices
 
 
@@ -1194,14 +1226,21 @@ class CTCAligner:
         overrides = dict(kwargs)
         overrides.setdefault("index_duration", index_duration)
 
-        default_space = _detect_space_symbol(tokenizer, char_list)
-        if default_space is not None:
-            # use the model's word-boundary symbol for all whitespace so that
-            # utterance-internal word boundaries are visible to the DP (and
-            # split into separate word intervals); without one, whitespace
-            # would be dropped and all words would merge into a single entry
-            overrides.setdefault("space", default_space)
-            overrides.setdefault("replace_spaces_with_blanks", True)
+        # the word delimiter is the tokenizer's own word_delimiter_token -
+        # nothing else is ever assumed to delimit words
+        self._word_delimiter = _word_delimiter_symbol(tokenizer, char_list)
+        self._word_delimiter_id = vocab.get(self._word_delimiter) if self._word_delimiter else None
+        if self._word_delimiter is not None:
+            # mark word boundaries with the tokenizer's delimiter symbol so
+            # whitespace-split words become separate word intervals
+            overrides.setdefault("space", self._word_delimiter)
+        else:
+            warnings.warn(
+                "the tokenizer declares no usable word_delimiter_token, so "
+                "whitespace in the transcription cannot be represented to "
+                "the model: each utterance will be aligned as a single word",
+                stacklevel=2,
+            )
 
         self.config = CtcSegmentationConfig()
         self.config.set(blank=blank_id, char_list=char_list, **overrides)
@@ -1257,6 +1296,35 @@ class CTCAligner:
         lpz, frame_lengths = self.log_probs_batch([audio])
         return lpz[0, : int(frame_lengths[0])]
 
+    def _tokenize_utterance(self, utt) -> List[int]:
+        """The phones of one utterance: the model tokenizer's token ids.
+
+        The utterance is split on whitespace - the only word delimiter -
+        into words, and **each word is tokenized separately** with
+        ``processor.tokenizer(word)["input_ids"]``. This matters because
+        added tokens with ``lstrip``/``rstrip`` would otherwise swallow the
+        spaces around them when the whole string is tokenized at once.
+        Tokenizing word-wise segments each word into the tokenizer's own
+        symbols (longest match over its vocab/added tokens, so
+        multi-character symbols that exist in the vocab - e.g. affricates
+        ``t͡s`` or X-SAMPA ``m_0`` - stay single tokens, while combinations
+        absent from the vocab fall back to single characters), and symbols
+        unknown to the vocab map onto the tokenizer's ``<unk>`` id. Between
+        words the tokenizer's ``word_delimiter_token`` id is inserted (when
+        the tokenizer declares one). The alignment itself works purely on
+        these ids - no characters involved.
+        """
+        tokenizer = self.processor.tokenizer
+        words = utt.split() if isinstance(utt, str) else list(utt)
+        ids: List[int] = []
+        for w in words:
+            if not w:
+                continue
+            if ids and self._word_delimiter_id is not None:
+                ids.append(self._word_delimiter_id)
+            ids.extend(tokenizer(w, add_special_tokens=False)["input_ids"])
+        return ids
+
     def _alignment_from_lpz(
         self,
         lpz: torch.Tensor,
@@ -1265,7 +1333,8 @@ class CTCAligner:
         word_text: Optional[str] = None,
     ) -> CtcAlignmentResult:
         """Run text preparation, the GPU DP and segmentation for one item."""
-        ground_truth, utt_begin_indices = prepare_text(self.config, text)
+        token_id_lists = [self._tokenize_utterance(utt) for utt in text]
+        ground_truth, utt_begin_indices = prepare_token_seq(self.config, token_id_lists)
         timings, char_probs, states = ctc_segmentation(self.config, lpz, ground_truth)
         segments = determine_utterance_segments(
             self.config, utt_begin_indices, char_probs, timings, text
