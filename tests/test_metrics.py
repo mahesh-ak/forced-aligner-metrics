@@ -41,7 +41,7 @@ def load_textgrid(tg_path, tier_names=["phones", "words"]):
                 label = call(tg, "Get label of interval", tier_index, j)
 
                 if label.strip() == "":
-                    label = "sil"
+                    label = "<SIL>"
 
                 intervals.append({'start': start,'end': end, 'text': label})
             out[tier_name] = intervals

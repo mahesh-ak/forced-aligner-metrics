@@ -33,7 +33,7 @@ metrics = evaluator.compute_metrics(audios=audios, intervals_iter=intervals_iter
 }
 ```
 
-`compute_aas` gives the Average Accumulated Shift (AAS) scores defined in [this paper](https://doi.org/10.1007/978-981-99-2401-1_8), in ms, for two alignments in the same interval-dict format (silence spans — empty labels and gaps between adjacent intervals — become `sil` entries that are scored like any other interval):
+`compute_aas` gives the Average Accumulated Shift (AAS) scores defined in [this paper](https://doi.org/10.1007/978-981-99-2401-1_8), in ms, for two alignments in the same interval-dict format (silence spans — empty labels and gaps between adjacent intervals — become `<SIL>` entries that are scored like any other interval):
 
 ```python
 from forced_aligner_metrics import compute_aas
@@ -102,12 +102,12 @@ DORECO (45 langauges):
 | Model | PCMI (mms) | WACS (mms) | Phone AAS (ms) | Word AAS (ms) |
 | --- | --- | --- | --- | --- |
 | gold_doreco | 0.334 ± 0.040 | 0.131 ± 0.029 | 0.0 ± 0.0 (self) | 0.0 ± 0.0 (self) |
-| mms-300m-ipa-doreco (v0.1.0) | 0.202 ± 0.033 | 0.112 ± 0.024 | 89.3 ± 34.6 | 114.3 ± 51.8 |
+| mms-300m-ipa-doreco (v0.1.0) | 0.207 ± 0.033 | 0.112 ± 0.024 | 89.4 ± 34.6 | 114.5 ± 51.9 |
 | mms-300m-ipa-doreco-SIL (v0.1.0) | 0.203 ± 0.033 | 0.114 ± 0.026 | 88.1 ± 32.6 | 106.5 ± 44.1 |
-| mms-300m-ipa-doreco-FAM (v1.1.1+) | 0.301 ± 0.040 | 0.125 ± 0.024 | **65.1 ± 34.5** | **87.4 ± 43.0** |
-| mms-300m-ipa-doreco-FAM-SIL (v1.1.1+) | **0.310 ± 0.040** | **0.129 ± 0.025** | 73.9 ± 40.0 | 111.6 ± 53.4 |
+| mms-300m-ipa-doreco-FAM (v2.1.0) | 0.309 ± 0.037 | 0.124 ± 0.024 | 59.0 ± 34.0 | 87.4 ± 42.0 |
+| mms-300m-ipa-doreco-FAM-SIL (v2.1.0) | **0.317 ± 0.038** | **0.129 ± 0.026** | **57.5 ± 34.0** | **80.3 ± 36.1** |
 
--SIL gives the best PCMI/WACS, but not the best AAS (plain FAM is lowest). On FLEURS, -FAM-SIL beats MFA in **75/85 languages** in both PCMI and WACS.
+With v2.1.0, -FAM-SIL gives the best PCMI/WACS and also the lowest AAS on DORECO. On FLEURS, -FAM-SIL beats MFA in **75/85 languages** in both PCMI and WACS.
 
 ## Installation for development
 
@@ -127,7 +127,7 @@ python -m pytest
 
 ## Version Release Notes
 
-- **v2.1.0**: `CTCAligner` aligns the model tokenizer's token ids, not characters — each word is tokenized with `processor.tokenizer` (multi-character vocab symbols such as affricates stay single tokens; symbols unknown to the vocab map to `<unk>`), and the word delimiter is taken *only* from `tokenizer.word_delimiter_token`. New shipped metric `compute_aas(gold, pred)` giving the Average Accumulated Shift (AAS) scores (silence spans scored as `sil` sequence elements). `tests/test_aligner_vs_reference.py` now regression-tests against external references only (MFA TextGrids for FLEURS `de_de`, DORECO `anal1239` validation): exact phone/word sequence match (`spn` ignored, `<unk>` excused), timing scored via `compute_aas` on DORECO only.
+- **v2.1.0**: `CTCAligner` aligns the model tokenizer's token ids, not characters — each word is tokenized with `processor.tokenizer` (multi-character vocab symbols such as affricates stay single tokens; symbols unknown to the vocab map to `<unk>`), and the word delimiter is taken *only* from `tokenizer.word_delimiter_token`. New shipped metric `compute_aas(gold, pred)` giving the Average Accumulated Shift (AAS) scores. `tests/test_aligner_vs_reference.py` now regression-tests against external references only (MFA TextGrids for FLEURS `de_de`, DORECO `anal1239` validation): exact phone/word sequence match (`spn` ignored, `<unk>` excused), timing scored via `compute_aas` on DORECO only.
 - **v2.0.0**: `CTCAligner` takes a loaded CTC model + processor instead of a model id.
 - **v1.1.1**: silence trimming runs at align time and is stored on every result (`result.trimmed_intervals`, `result.segments`); opt-in, off by default. Word-boundary symbol auto-detection incl. `#`-style tokenizers.
 - **v1.1.0**: GPU silence-trimming pipeline for `CTCAligner` interval outputs.

@@ -3,7 +3,7 @@
 ``compute_aas(x, x)`` must be exactly 0.0 on both tiers - checked on the
 DORECO reference alignments (real interval dicts, same format as the other
 metrics) and on synthetic examples exercising the silence-span handling
-(empty labels and gaps between adjacent intervals become ``"sil"`` spans
+(empty labels and gaps between adjacent intervals become ``"<SIL>"`` spans
 that are scored as sequence elements).
 """
 
@@ -43,7 +43,7 @@ def test_compute_aas_self_on_doreco_is_zero():
 
 
 def test_compute_aas_silence_spans_scored_as_labels():
-    # empty-label intervals become "sil" sequence elements; the
+    # empty-label intervals become "<SIL>" sequence elements; the
     # self-comparison is still exactly 0 and a shifted copy scores > 0
     gold = {
         "words": [
@@ -69,7 +69,7 @@ def test_compute_aas_silence_spans_scored_as_labels():
 
 
 def test_compute_aas_gap_between_intervals_is_assumed_silence():
-    # gold has a 0.2 s gap between "a" and "b" -> a "sil" span is assumed
+    # gold has a 0.2 s gap between "a" and "b" -> a "<SIL>" span is assumed
     # there; pred has none -> the unmatched gold silence contributes its
     # full duration and the shifted "b" boundary its deviation:
     # errs = [0 (a), 0.2 (sil), (|0.7-0.5|+0)/2 = 0.1 (b)] -> mean 0.1 s

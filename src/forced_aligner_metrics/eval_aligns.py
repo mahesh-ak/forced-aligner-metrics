@@ -130,7 +130,7 @@ def normalize_intervals(intervals: Dict[str, List[Dict[str, Any]]]) -> Dict[str,
                 continue
 
             if not label:
-                label = "sil"
+                label = "<SIL>"
             normalized_tier.append((start, end, label))
         normalized[tier_name] = normalized_tier
     return normalized
@@ -156,7 +156,7 @@ def compute_aas(gold: Dict[str, List[Dict[str, Any]]], pred: Dict[str, List[Dict
     with no errors).
 
     Silence spans are treated as sequence elements of their own (label
-    ``"sil"``): empty-label intervals become ``"sil"`` entries, and a gap
+    ``"<SIL>"``): empty-label intervals become ``"<SIL>"`` entries, and a gap
     between two adjacent intervals is assumed to be a silence span as well.
     Silence is then scored like any other interval - equal silence pairs
     contribute their boundary deviation, unmatched silence contributes its
@@ -164,7 +164,7 @@ def compute_aas(gold: Dict[str, List[Dict[str, Any]]], pred: Dict[str, List[Dict
     """
 
     def norm_tier(intervals, tier):
-        SIL = "sil"
+        SIL = "<SIL>"
         raw: List[Tuple[float, float, str]] = []
         prev_end = None
         for entry in (intervals or {}).get(tier, []):
@@ -178,7 +178,7 @@ def compute_aas(gold: Dict[str, List[Dict[str, Any]]], pred: Dict[str, List[Dict
                 raw.append((prev_end, s, SIL))
             raw.append((s, e, lab))
             prev_end = e if prev_end is None else max(prev_end, e)
-        # merge contiguous silence spans into single "sil" entries
+        # merge contiguous silence spans into single "<SIL>" entries
         out: List[Tuple[float, float, str]] = []
         for s, e, lab in raw:
             if out and lab == SIL and out[-1][2] == SIL and s <= out[-1][1] + 1e-9:
@@ -375,7 +375,7 @@ class ForcedAlignEval:
                 if processed < self.config.samples_word_eval and "words" in normalized_intervals:
                     for start, end, label in normalized_intervals["words"]:
                         label = label.strip().lower()
-                        if not label or label in ["sp", "sil", "<unk>"]:
+                        if not label or label in ["sp", "sil", "<SIL>", "<unk>"]:
                             continue
 
                         wemb = crop_frames(emb, frame_times, start, end)
