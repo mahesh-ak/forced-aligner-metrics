@@ -92,10 +92,10 @@ FLEURS (85 languages):
 
 | Model | PCMI (mms) | WACS (mms) |
 | --- | --- | --- |
-| MFA | 0.247 ± 0.106 (83/85 langs) | 0.143 ± 0.078 (82/85) |
-| mms-300m-ipa (v0.1.0) | 0.239 ± 0.028 | 0.195 ± 0.025 |
-| mms-300m-ipa-FAM (v1.1.1+) | 0.370 ± 0.033 | 0.220 ± 0.026 |
-| mms-300m-ipa-FAM-SIL (v1.1.1+) | **0.382 ± 0.033** | **0.225 ± 0.027** |
+| mfa (83/85 langs) | 0.247 ± 0.106 | 0.143 ± 0.078 (82/85) |
+| mms-300m-ipa (v0.1.0) | 0.248 ± 0.030 | 0.194 ± 0.023 |
+| mms-300m-ipa-FAM (v2.1.0) | 0.370 ± 0.032 | 0.219 ± 0.025 |
+| mms-300m-ipa-FAM-SIL (v2.1.0) | **0.382 ± 0.033** | **0.224 ± 0.026** |
 
 DORECO (45 langauges):
 
@@ -107,7 +107,7 @@ DORECO (45 langauges):
 | mms-300m-ipa-doreco-FAM (v2.1.0) | 0.309 ± 0.037 | 0.124 ± 0.024 | 59.0 ± 34.0 | 87.4 ± 42.0 |
 | mms-300m-ipa-doreco-FAM-SIL (v2.1.0) | **0.317 ± 0.038** | **0.129 ± 0.026** | **57.5 ± 34.0** | **80.3 ± 36.1** |
 
-With v2.1.0, -FAM-SIL gives the best PCMI/WACS and also the lowest AAS on DORECO. On FLEURS, -FAM-SIL beats MFA in **75/85 languages** in both PCMI and WACS.
+With v2.1.0, -FAM-SIL gives the best PCMI/WACS and also the lowest AAS on DORECO. On FLEURS, -FAM-SIL beats MFA in **71/82 languages** in both PCMI and WACS.
 
 ## Installation for development
 
